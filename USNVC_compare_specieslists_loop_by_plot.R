@@ -136,4 +136,4 @@ plotassociations <- rbind(plotassociations,plotassociations1)
 }
 rm(plotassociations1)
 plotassociations <- plotassociations[-1,]
-write.csv(plotassociations, 'output/plotassociations.csv')
+write.csv(plotassociations, 'output/plotassociations.csv', row.names = F)
