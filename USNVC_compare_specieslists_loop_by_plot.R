@@ -106,9 +106,10 @@ level <- 'Association'
 level <- unique(unit[unit$hierarchylevel %in% level,'element_global_id'])
 states <- unique(vegstates[vegstates$subnation_code %in% states,'element_global_id'])
 g <- subset(plotgroupsum, clust==cluster)
-if(F){
-g <- subset(plotdata, soilplot=='Houghton.DSP.ER1')
-g$Imp <- g$Total}
+plotassociations <- as.data.frame(lapply(as.data.frame(cbind(soilplot='x', clust = 'x', 'element_global_id'=0, 'scientificname'='x')), as.character), stringsAsFactors=FALSE)
+for(i in 1:nrow(groupdf)){
+g <- subset(plotdata, soilplot==groupdf[i,1])
+g$Imp <- g$Total
 g$Imp <- g$Imp^0.5
 
 gtotal <- sum(g$Imp)
@@ -129,4 +130,10 @@ g <- g[,!colnames(g)%in% c('intersect','vegtotal')]
 rm(gmerge, vegtotal, gintersect)
 g <- subset(g, best >= 25 & level == 'yes' & state == 'yes')
 g <- g[order(g$best, decreasing = TRUE),]
-paste0('https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.',g[1,1])
+plotassociations1 <- as.data.frame(lapply(as.data.frame(cbind(groupdf[i,],g[1,1:2])), as.character), stringsAsFactors=FALSE)
+
+plotassociations <- rbind(plotassociations,plotassociations1)
+}
+rm(plotassociations1)
+plotassociations <- plotassociations[-1,]
+write.csv(plotassociations, 'output/plotassociations.csv')
