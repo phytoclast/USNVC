@@ -22,5 +22,4 @@ veg1$acctaxon <- listofacc[i]
 veg <- rbind(veg, veg1)}
 }
 
-saveRDS(veg, 'output/vegDesc.RDS')
-
+#saveRDS(veg, 'output/vegDesc.RDS')
