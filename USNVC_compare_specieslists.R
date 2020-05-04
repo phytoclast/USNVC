@@ -122,8 +122,8 @@ core <- unique(vegstates[vegstates$subnation_code %in% core,'element_global_id']
 ecoregion <- unique(vegecoregion[vegecoregion$usfs_ecoregion_2007_concat_cd %in% ecoregion,'element_global_id'])
 
 g <- subset(plotgroupsum, clust==cluster)
-if(F){
-g <- subset(plotdata, soilplot=='Toto.s20190820.04')
+if(T){
+g <- subset(plotdata, soilplot=='Grayling.Lake.County.RCA.Site')
 g$Imp <- g$Total}
 g$Imp <- g$Imp^0.5
 

@@ -110,7 +110,6 @@ names(plotgroupmax)[names(plotgroupmax)=='x'] <-'max'
 plotgroupsum <- merge(plotgroupsum, plotgroupmax, by='clust')
 plotgroupsum$Imp <- plotgroupsum$sum/plotgroupsum$max
 rm(plotgroupmax, plotgroup)
-cluster <- '8'
 
 states <- c('MI','IN','OH')
 core <- c('MI')
@@ -121,46 +120,45 @@ states <- unique(vegstates[vegstates$subnation_code %in% states,'element_global_
 core <- unique(vegstates[vegstates$subnation_code %in% core,'element_global_id'])
 ecoregion <- unique(vegecoregion[vegecoregion$usfs_ecoregion_2007_concat_cd %in% ecoregion,'element_global_id'])
 
-g <- subset(plotgroupsum, clust==cluster)
-plotassociations <- as.data.frame(lapply(as.data.frame(cbind(soilplot='x', clust = 'x', 'element_global_id'=0, 'scientificname'='x')), as.character), stringsAsFactors=FALSE)
-for(i in 1:nrow(groupdf)){
-g <- subset(plotdata, soilplot==groupdf[i,1])
-g$Imp <- g$Total
-g$Imp <- g$Imp^0.5
+plotassociations <- as.data.frame(lapply(as.data.frame(cbind(clust = 'x', 'element_global_id'=0, 'scientificname'='x')), as.character), stringsAsFactors=FALSE)
 
-gtotal <- sum(g$Imp)
-vegtotal <- aggregate(USNVClist$x, by=list(element_global_id = USNVClist$element_global_id, scientificname = USNVClist$scientificname), FUN='sum')
-names(vegtotal)[names(vegtotal)=='x'] <-'vegtotal'
-gmerge <- merge(g, USNVClist, by.x = 'Species', by.y = 'acctaxon')
-gmerge$intersect <- (gmerge$Imp*gmerge$x)^0.5
-gintersect <- aggregate(gmerge$intersect, by=list(element_global_id = gmerge$element_global_id, scientificname = gmerge$scientificname), FUN='sum')
-names(gintersect)[names(gintersect)=='x'] <-'intersect'
-g <- merge(gintersect, vegtotal, by=c('element_global_id', 'scientificname'))
-g$affinity <- g$intersect/(g$vegtotal*gtotal)^0.5*100
-g$state <- 'no'
-if(nrow(g[g$element_global_id %in% states,])>0){
-g[g$element_global_id %in% states,]$state <- 'near'}
-if(nrow(g[g$element_global_id %in% core,])>0){
-g[g$element_global_id %in% core,]$state <- 'yes'}
-g$ecoregion <- 'no'
-if(nrow(g[g$element_global_id %in% ecoregion,])>0){
-g[g$element_global_id %in% ecoregion,]$ecoregion <- 'yes'}
-g$level <- 'no'
-g[g$element_global_id %in% level,]$level <- 'yes'
-g <- subset(g, level == 'yes')
-g$best <- g$affinity
-g[g$ecoregion == 'no',]$best <- g[g$ecoregion == 'no',]$best*0.75
-g[g$element_global_id %in% states,]$best <- g[g$element_global_id %in% states,]$best*1/0.75
-g[g$element_global_id %in% core,]$best <- g[g$element_global_id %in% core,]$best*1/0.75
-g$best <- g$best/max(g$best)*100
-g <- g[,!colnames(g)%in% c('intersect','vegtotal')]
-rm(gmerge, vegtotal, gintersect)
-g <- subset(g, best >= 0 & level == 'yes')# & state == 'yes')
-g <- g[order(g$best, decreasing = TRUE),]
-plotassociations1 <- as.data.frame(lapply(as.data.frame(cbind(groupdf[i,],g[1,1:2])), as.character), stringsAsFactors=FALSE)
-
-plotassociations <- rbind(plotassociations,plotassociations1)
+for(i in 1:k){
+  g <- subset(plotgroupsum, clust %in% i)
+  g$Imp <- g$Imp^1 #aggregate data should not be square rooted
+  
+  gtotal <- sum(g$Imp)
+  vegtotal <- aggregate(USNVClist$x, by=list(element_global_id = USNVClist$element_global_id, scientificname = USNVClist$scientificname), FUN='sum')
+  names(vegtotal)[names(vegtotal)=='x'] <-'vegtotal'
+  gmerge <- merge(g, USNVClist, by.x = 'Species', by.y = 'acctaxon')
+  gmerge$intersect <- (gmerge$Imp*gmerge$x)^0.5
+  gintersect <- aggregate(gmerge$intersect, by=list(element_global_id = gmerge$element_global_id, scientificname = gmerge$scientificname), FUN='sum')
+  names(gintersect)[names(gintersect)=='x'] <-'intersect'
+  g <- merge(gintersect, vegtotal, by=c('element_global_id', 'scientificname'))
+  g$affinity <- g$intersect/(g$vegtotal*gtotal)^0.5*100
+  g$state <- 'no'
+  if(nrow(g[g$element_global_id %in% states,])>0){
+    g[g$element_global_id %in% states,]$state <- 'near'}
+  if(nrow(g[g$element_global_id %in% core,])>0){
+    g[g$element_global_id %in% core,]$state <- 'yes'}
+  g$ecoregion <- 'no'
+  if(nrow(g[g$element_global_id %in% ecoregion,])>0){
+    g[g$element_global_id %in% ecoregion,]$ecoregion <- 'yes'}
+  g$level <- 'no'
+  g[g$element_global_id %in% level,]$level <- 'yes'
+  g <- subset(g, level == 'yes')
+  g$best <- g$affinity
+  g[g$ecoregion == 'no',]$best <- g[g$ecoregion == 'no',]$best*0.75
+  g[g$element_global_id %in% states,]$best <- g[g$element_global_id %in% states,]$best*1/0.75
+  g[g$element_global_id %in% core,]$best <- g[g$element_global_id %in% core,]$best*1/0.75
+  g$best <- g$best/max(g$best)*100
+  g <- g[,!colnames(g)%in% c('intersect','vegtotal')]
+  rm(gmerge, vegtotal, gintersect)
+  g <- subset(g, best >= 0 & level == 'yes')# & state == 'yes')
+  g <- g[order(g$best, decreasing = TRUE),]
+  plotassociations1 <- as.data.frame(lapply(as.data.frame(cbind(clust = i,g[1,1:2])), as.character), stringsAsFactors=FALSE)
+  
+  plotassociations <- rbind(plotassociations,plotassociations1)
 }
 rm(plotassociations1)
 plotassociations <- plotassociations[-1,]
-write.csv(plotassociations, 'output/allplotassociations.csv', row.names = F)
+write.csv(plotassociations, 'output/allclustassociations.csv', row.names = F)
