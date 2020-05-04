@@ -61,6 +61,10 @@ makeplot <- function(amethod,d,t,k){
   dev.off()
   
 }
+ecoregion <-  read.delim('data/d_usfs_ecoregion2007.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
+vegecoregion <-  read.delim('data/UnitXEcoregionUsfs2007.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
+vegecoregion <- merge(vegecoregion, ecoregion, by='usfs_ecoregion_2007_id')
+
 unit <-  read.delim('data/unit.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
 states <-read.delim('data/d_subnation.txt')
 vegstates <-read.delim('data/UnitXSubnation.txt')
@@ -84,6 +88,13 @@ if (T){
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
 }
+if (F){
+  amethod <- 'bray-agnes' 
+  k=8
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='average')
+  makeplot(amethod,d,t,k)
+}
 
 groups <- cutree(t, k = k)
 #Get species importance by cluster
@@ -101,13 +112,18 @@ plotgroupsum$Imp <- plotgroupsum$sum/plotgroupsum$max
 rm(plotgroupmax, plotgroup)
 cluster <- '5'
 
-states <- c('MI', 'IN')
+states <- c('MI','IN','OH')
+core <- c('MI')
+ecoregion <- c('222')
 level <- 'Association'
 level <- unique(unit[unit$hierarchylevel %in% level,'element_global_id'])
 states <- unique(vegstates[vegstates$subnation_code %in% states,'element_global_id'])
+core <- unique(vegstates[vegstates$subnation_code %in% core,'element_global_id'])
+ecoregion <- unique(vegecoregion[vegecoregion$usfs_ecoregion_2007_concat_cd %in% ecoregion,'element_global_id'])
+
 g <- subset(plotgroupsum, clust==cluster)
 if(F){
-g <- subset(plotdata, soilplot=='Houghton.DSP.ER1')
+g <- subset(plotdata, soilplot=='Toto.s20190820.04')
 g$Imp <- g$Total}
 g$Imp <- g$Imp^0.5
 
@@ -121,12 +137,22 @@ names(gintersect)[names(gintersect)=='x'] <-'intersect'
 g <- merge(gintersect, vegtotal, by=c('element_global_id', 'scientificname'))
 g$affinity <- g$intersect/(g$vegtotal*gtotal)^0.5*100
 g$state <- 'no'
-g[g$element_global_id %in% states,]$state <- 'yes'
+g[g$element_global_id %in% states,]$state <- 'nearly'
+g[g$element_global_id %in% core,]$state <- 'yes'
+g$ecoregion <- 'no'
+g[g$element_global_id %in% ecoregion,]$ecoregion <- 'yes'
 g$level <- 'no'
 g[g$element_global_id %in% level,]$level <- 'yes'
-g$best <- g$affinity/max(g$affinity)*100
+g <- subset(g, level == 'yes')
+g$best <- g$affinity
+g[g$ecoregion == 'no',]$best <- g[g$ecoregion == 'no',]$best*0.75
+g[g$element_global_id %in% states,]$best <- g[g$element_global_id %in% states,]$best*1/0.75
+g[g$element_global_id %in% core,]$best <- g[g$element_global_id %in% core,]$best*1/0.75
+g$best <- g$best/max(g$best)*100
 g <- g[,!colnames(g)%in% c('intersect','vegtotal')]
 rm(gmerge, vegtotal, gintersect)
-g <- subset(g, best >= 25 & level == 'yes' & state == 'yes')
+g <- subset(g, best >= 25 & level == 'yes')# & state == 'yes')
 g <- g[order(g$best, decreasing = TRUE),]
 paste0('https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.',g[1,1])
+
+
