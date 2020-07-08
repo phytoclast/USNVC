@@ -72,19 +72,69 @@ vegstates <- merge(vegstates, states, by='subnation_id')
 
 USNVClist <- readRDS('data/USNVClist.RDS')
 USNVClist <- subset(USNVClist, !grepl('\\.', acctaxon))
-plotdata <- readRDS('data/allplotdata.RDS')
+plotdata <- readRDS('data/plotdata.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
+plots <- c(
+  'GRR.GJS.2016.21',
+  'GRR.GJS.2016.59',
+  'GRR.GJS.2016.30',
+  'GRR.GJS.2016.32',
+  'GRR.2011.GJS.12',
+  'GRR.GJS.2015.27',
+  'GRR.GJS.2015.26',
+  'GRR.GJS.2015.28',
+  'GRR.GJS.2015.20',
+  'GRR.GJS.2015.22',
+  'GRR.GJS.2015.21',
+  'GRR.GJS.2015.25',
+  'GRR.GJS.2015.29',
+  'GRR.GJS.2015.30',
+  'GRR.GJS.2017.8',
+  'GRR.GJS.2017.9',
+  'GRR.GJS.2017.19',
+  'GRR.GJS.2017.23',
+  'GRR.GJS.2018.13',
+  'GRR.GJS.2018.14',
+  'GRR.GJS.2018.3',
+  'GRR.GJS.2018.4',
+  'GRR.GJS.2018.5',
+  'GRR.GJS.2018.17',
+  'GRR.GJS.2018.21',
+  'GRR.GJS.2018.22',
+  'GRR.GJS.2018.24',
+  'GRR.GJS.2018.28',
+  'GRR.GJS.2018.29',
+  'GRR.GJS.2015.24',
+  'GRR.GJS.2015.23',
+  'GRR.GJS.2012.23',
+  'GRR.GJS.2012.24',
+  'GRR.GJS.2012.25',
+  'GRR.GJS.2012.31',
+  'GRR.GJS.2012.70',
+  'GRR.GJS.2012.34',
+  'GRR.GJS.2012.35',
+  'GRR.GJS.2012.36',
+  'GRR.GJS.2012.40',
+  'GRR.GJS.2019.22',
+  'GRR.GJS.2019.11',
+  'GRR.GJS.2019.12',
+  'GRR.GJS.2019.13',
+  'GRR.GJS.2019.17',
+  'GRR.GJS.2014.39',
+  'GRR.GJS.2014.40',
+  'GRR.GJS.2020.13',
+  'GRR.GJS.2020.14'
+)
 
+prematrix <- subset(plotdata, Observation_ID %in% plots)
 
-
-plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
-
+plotmatrix <- makecommunitydataset(prematrix, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
 
 
 if (T){
-  amethod <- 'all-bray-ward' 
-  k=13
+  amethod <- 'bray-ward' 
+  k=8
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
@@ -163,4 +213,5 @@ plotassociations <- rbind(plotassociations,plotassociations1)
 }
 rm(plotassociations1)
 plotassociations <- plotassociations[-1,]
+plotassociations <- merge(unique(plotdata[,c('soilplot', 'Observation_ID')]), plotassociations, by='soilplot')
 write.csv(plotassociations, 'output/allplotassociations.csv', row.names = F)

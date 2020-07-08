@@ -9,6 +9,7 @@ library(rpart)
 library(rpart.plot)
 library(goeveg)
 library(proxy)
+library(isopam)
 betasim <- function(p){
   d <- matrix(1, nrow = nrow(p), ncol = nrow(p))
   rownames(d) <- rownames(p)
@@ -21,10 +22,10 @@ betasim <- function(p){
 }
 makeplot <- function(amethod,d,t,k){
   filename <- paste0('output/vegplots_',amethod,'.png')
-  
+  t <- as.hclust(t)
   #make cuts and reformat dendrogram
   ngroups=k
-  groups <- cutree(t, k = ngroups)
+  groups <- cutree(t, k = k)
   
   soilplot <- names(groups)
   clust <- unname(groups)
@@ -37,17 +38,17 @@ makeplot <- function(amethod,d,t,k){
     for (i in 1:numberzeros){ #assign all zero clusters to unique cluster number.
       groupdf[whichrecords[i],]$clust <- maxcluster+i}}
   
-  newlabels <- t$order.lab
+  newlabels <- t$labels
   newlabels <- as.data.frame(newlabels)
   newlabels$row <- row(newlabels)
   newlabels <- merge(newlabels, groupdf, by.x='newlabels', by.y ='soilplot')
   newlabels$newlabels <- paste(newlabels$clust, newlabels$newlabels)
   newlabels <- newlabels[order(newlabels$row),1]
   newtree <- t
-  newtree$order.lab <- newlabels
+  newtree$labels <- newlabels
   
-  dend1 <- color_branches(as.hclust(newtree), k = ngroups)
-  dend1 <- color_labels(dend1, k = ngroups)
+  dend1 <- color_branches(as.hclust(newtree), k = k)
+  dend1 <- color_labels(dend1, k = k)
   
   #output file
   
@@ -72,7 +73,7 @@ vegstates <- merge(vegstates, states, by='subnation_id')
 
 USNVClist <- readRDS('data/USNVClist.RDS')
 USNVClist <- subset(USNVClist, !grepl('\\.', acctaxon))
-plotdata <- readRDS('data/allplotdata.RDS')
+plotdata <- readRDS('data/Com.Sp.mean.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
 
@@ -83,11 +84,21 @@ plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species
 
 
 if (T){
-  amethod <- 'all-bray-ward' 
-  k=13
+  amethod <- 'bray-ward' 
+  k=8
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
+}
+if (T){
+  amethod <- 'kulczynski-isopam' 
+  k=4
+  d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
+  pamtree <- isopam(plotmatrix, distance = 'kulczynski', stopat = c(1,7))
+  t <- pamtree$dendro
+  makeplot(amethod,d,t,k)
+  pamtab <- isotab(pamtree, level = 3)
+  pamtab <- pamtab$tab
 }
 if (F){
   amethod <- 'bray-agnes' 
