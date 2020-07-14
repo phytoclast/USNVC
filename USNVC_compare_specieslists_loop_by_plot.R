@@ -124,7 +124,9 @@ plots <- c(
   'GRR.GJS.2014.39',
   'GRR.GJS.2014.40',
   'GRR.GJS.2020.13',
-  'GRR.GJS.2020.14'
+  'GRR.GJS.2020.14',
+  'GRR.GJS.2020.15',
+  'GRR.GJS.2020.16'
 )
 
 prematrix <- subset(plotdata, Observation_ID %in% plots)
@@ -134,7 +136,7 @@ plotmatrix <- makecommunitydataset(prematrix, row = 'soilplot', column = 'Specie
 
 if (T){
   amethod <- 'bray-ward' 
-  k=8
+  k=9
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
