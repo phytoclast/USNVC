@@ -9,6 +9,7 @@ library(rpart)
 library(rpart.plot)
 library(goeveg)
 library(proxy)
+#setwd("C:/workspace2/USNVC")
 betasim <- function(p){
   d <- matrix(1, nrow = nrow(p), ncol = nrow(p))
   rownames(d) <- rownames(p)
@@ -61,11 +62,11 @@ makeplot <- function(amethod,d,t,k){
   dev.off()
   
 }
-ecoregion <-  read.delim('data/d_usfs_ecoregion2007.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
-vegecoregion <-  read.delim('data/UnitXEcoregionUsfs2007.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
+ecoregion <-  read.delim('data/d_usfs_ecoregion2007.txt', encoding = 'latin1', na.strings = '', stringsAsFactors=FALSE)
+vegecoregion <-  read.delim('data/UnitXEcoregionUsfs2007.txt', encoding = 'latin1', na.strings = '', stringsAsFactors=FALSE)
 vegecoregion <- merge(vegecoregion, ecoregion, by='usfs_ecoregion_2007_id')
 
-unit <-  read.delim('data/unit.txt', encoding = 'UTF-8', na.strings = '', stringsAsFactors=FALSE)
+unit <-  read.delim('data/unit.txt', encoding = 'latin1', na.strings = '', stringsAsFactors=FALSE)
 states <-read.delim('data/d_subnation.txt')
 vegstates <-read.delim('data/UnitXSubnation.txt')
 vegstates <- merge(vegstates, states, by='subnation_id')
@@ -129,27 +130,56 @@ plots <- c(
   'GRR.GJS.2020.16'
 )
 
+#plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')] <- plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')]/1000
+#plotdata$Total <- 100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
+#plotdata$sqrttotal <- plotdata$Total^0.5
 prematrix <- subset(plotdata, Observation_ID %in% plots)
 
+Com.Sp.agg <- aggregate(log10(1-(prematrix[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), by=list(soilplot = prematrix$soilplot),  FUN='sum')
+Com.Sp.agg[,c('Field', 'Shrub', 'Subcanopy', 'Tree')] <- 100*(1-10^(Com.Sp.agg[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]))                 
+Com.Sp.agg$over <- 100*(1-10^(apply(log10(1-(Com.Sp.agg[,c('Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
+Com.Sp.agg$under <- 100*(1-10^(apply(log10(1-(Com.Sp.agg[,c('Field', 'Shrub')]/100.001)), MARGIN = 1, FUN='sum')))
+Com.Sp.agg$invover <- 100- Com.Sp.agg$over
+rownames(Com.Sp.agg) <- Com.Sp.agg$soilplot
+Com.Sp.agg <- Com.Sp.agg[,-1]
+
+
+
+
+
 plotmatrix <- makecommunitydataset(prematrix, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
-
-
+#plotmatrix <- merge(Com.Sp.agg,plotmatrix , by=0) 
+#rownames(plotmatrix) <- plotmatrix$Row.names
+#plotmatrix <- plotmatrix[,-1]
+#plotmatrix <- plotmatrix[,-c(1:4,6)]
 if (T){
   amethod <- 'bray-ward' 
   k=9
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  p.over <- Com.Sp.agg[,c('over', 'invover')]
+  p.over$over <- p.over$over/(p.over$over+12.5)*(1+12.5/100)*100
+  p.over$invover <- 100 -  p.over$over
+  d.over <- vegdist(p.over, method='euclidean', binary=FALSE, na.rm=T)
+  wt <- 9
+  d2 <- (d.over/mean(d.over) + d/mean(d)*wt)/(wt+1)
+  t <- agnes(d2, method='ward')
+  makeplot(amethod,d,t,k)
+}
+if (F){
+  amethod <- 'kulczynski-ward' 
+  k=9
+  d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
 }
 if (F){
-  amethod <- 'bray-agnes' 
-  k=8
-  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  amethod <- 'kulczynski-upgma' 
+  k=9
+  d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
   t <- agnes(d, method='average')
   makeplot(amethod,d,t,k)
 }
 groups <- cutree(t, k = k)
-#Get species importance by cluster
 soilplot <- names(groups)
 clust <- unname(groups)
 groupdf <- as.data.frame(cbind(soilplot, clust))
@@ -169,6 +199,9 @@ core <- c('MI')
 ecoregion <- c('222')
 level <- 'Association'
 level <- unique(unit[unit$hierarchylevel %in% level,'element_global_id'])
+unit$woodland <- 0
+unit[substring(unit$unitsort,1,1) %in% '1',]$woodland <- 1
+
 states <- unique(vegstates[vegstates$subnation_code %in% states,'element_global_id'])
 core <- unique(vegstates[vegstates$subnation_code %in% core,'element_global_id'])
 ecoregion <- unique(vegecoregion[vegecoregion$usfs_ecoregion_2007_concat_cd %in% ecoregion,'element_global_id'])
@@ -177,6 +210,8 @@ g <- subset(plotgroupsum, clust==cluster)
 plotassociations <- as.data.frame(lapply(as.data.frame(cbind(soilplot='x', clust = 'x', 'element_global_id'=0, 'scientificname'='x')), as.character), stringsAsFactors=FALSE)
 for(i in 1:nrow(groupdf)){
 g <- subset(plotdata, soilplot==groupdf[i,1])
+overstory <- Com.Sp.agg[groupdf[i,1],'over']
+overwt <- overstory/(overstory+12.5)*(1+12.5/100)#skews weight to woodlands at 10% cover. Change 12.5 to 50 for a 25% threshold.
 g$Imp <- g$Total
 g$Imp <- g$Imp^0.5
 
@@ -189,6 +224,8 @@ gintersect <- aggregate(gmerge$intersect, by=list(element_global_id = gmerge$ele
 names(gintersect)[names(gintersect)=='x'] <-'intersect'
 g <- merge(gintersect, vegtotal, by=c('element_global_id', 'scientificname'))
 g$affinity <- g$intersect/(g$vegtotal*gtotal)^0.5*100
+g <- merge(g, unit[,c('element_global_id', 'woodland')], by='element_global_id')
+g$wt <- overwt*g$woodland + (1-g$woodland)*(1-overwt)
 g$state <- 'no'
 if(nrow(g[g$element_global_id %in% states,])>0){
 g[g$element_global_id %in% states,]$state <- 'near'}
@@ -200,7 +237,7 @@ g[g$element_global_id %in% ecoregion,]$ecoregion <- 'yes'}
 g$level <- 'no'
 g[g$element_global_id %in% level,]$level <- 'yes'
 g <- subset(g, level == 'yes')
-g$best <- g$affinity
+g$best <- g$affinity * g$wt #bias towards matching structure
 g[g$ecoregion == 'no',]$best <- g[g$ecoregion == 'no',]$best*0.75
 g[g$element_global_id %in% states,]$best <- g[g$element_global_id %in% states,]$best*1/0.75
 g[g$element_global_id %in% core,]$best <- g[g$element_global_id %in% core,]$best*1/0.75
