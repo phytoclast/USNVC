@@ -9,7 +9,7 @@ library(rpart)
 library(rpart.plot)
 library(goeveg)
 library(proxy)
-#setwd("C:/workspace2/USNVC")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 betasim <- function(p){
   d <- matrix(1, nrow = nrow(p), ncol = nrow(p))
   rownames(d) <- rownames(p)
@@ -127,8 +127,12 @@ plots <- c(
   'GRR.GJS.2020.13',
   'GRR.GJS.2020.14',
   'GRR.GJS.2020.15',
-  'GRR.GJS.2020.16'
+  'GRR.GJS.2020.16',
+  'GRR.GJS.2021.1',
+  'GRR.GJS.2021.2',
+  'GRR.GJS.2021.3'
 )
+
 
 #plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')] <- plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')]/1000
 #plotdata$Total <- 100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
