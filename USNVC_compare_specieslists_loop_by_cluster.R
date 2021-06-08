@@ -10,6 +10,8 @@ library(rpart.plot)
 library(goeveg)
 library(proxy)
 library(isopam)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 betasim <- function(p){
   d <- matrix(1, nrow = nrow(p), ncol = nrow(p))
   rownames(d) <- rownames(p)
@@ -85,12 +87,12 @@ plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species
 
 if (T){
   amethod <- 'bray-ward' 
-  k=8
+  k=9
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
 }
-if (T){
+if (F){
   amethod <- 'kulczynski-isopam' 
   k=4
   d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
