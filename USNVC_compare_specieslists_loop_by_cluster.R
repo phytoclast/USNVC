@@ -78,8 +78,28 @@ USNVClist <- subset(USNVClist, !grepl('\\.', acctaxon))
 plotdata <- readRDS('data/Com.Sp.mean.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
+#plotdata <- subset(plotdata, !Observation_Label %in% c('S12062901', 'W14090801'))
+plotdata$over <- 100*(1-10^(apply(log10(1-(plotdata[,c('Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
+plotdata.summary <- aggregate(
+  list(Trees = log10(1-(plotdata[,c('over')]/100.001)), 
+       Shrubs = log10(1-(plotdata[,c('Shrub')]/100.001)), 
+       Field = log10(1-(plotdata[,c('Field')]/100.001))),
+       by= list(Observation_ID = plotdata$Observation_ID), FUN='sum')
+plotdata.summary[,c('Trees','Shrubs','Field')] <- 100*(1-10^plotdata.summary[,c('Trees','Shrubs','Field')])
+Woodland <-  subset(plotdata.summary, Trees >= 25)$Observation_ID
+Shrubland <-  subset(plotdata.summary, Trees < 10 & Shrubs >= 25)$Observation_ID
+Grassland <-  subset(plotdata.summary, Trees < 10 & Shrubs < 10 & Field >= 25)$Observation_ID
 
+plotdata[plotdata$Observation_ID %in% Woodland,c('Field', 'Shrub')] <- 
+  plotdata[plotdata$Observation_ID %in% Woodland,c('Field', 'Shrub')]/100
 
+plotdata[plotdata$Observation_ID %in% Shrubland,c('Field', 'Subcanopy', 'Tree')] <- 
+  plotdata[plotdata$Observation_ID %in% Shrubland,c('Field', 'Subcanopy', 'Tree')]/100
+
+plotdata[plotdata$Observation_ID %in% Grassland,c('Shrub', 'Subcanopy', 'Tree')] <- 
+  plotdata[plotdata$Observation_ID %in% Grassland,c('Shrub', 'Subcanopy', 'Tree')]/100
+
+plotdata$sqrttotal <- (100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum'))))^0.5
 
 plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
 
