@@ -1,3 +1,4 @@
+
 library(stringr)
 library(BiodiversityR)
 library(cluster)
@@ -10,6 +11,7 @@ library(rpart.plot)
 library(goeveg)
 library(proxy)
 library(isopam)
+library(optpart)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 betasim <- function(p){
@@ -79,7 +81,7 @@ plotdata <- readRDS('data/Com.Sp.mean.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
 #plotdata <- subset(plotdata, !Observation_Label %in% c('S12062901', 'W14090801'))
-plotdata$over <- 100*(1-10^(apply(log10(1-(plotdata[,c('Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
+if(F){plotdata$over <- 100*(1-10^(apply(log10(1-(plotdata[,c('Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
 plotdata.summary <- aggregate(
   list(Trees = log10(1-(plotdata[,c('over')]/100.001)), 
        Shrubs = log10(1-(plotdata[,c('Shrub')]/100.001)), 
@@ -100,18 +102,84 @@ plotdata[plotdata$Observation_ID %in% Grassland,c('Shrub', 'Subcanopy', 'Tree')]
   plotdata[plotdata$Observation_ID %in% Grassland,c('Shrub', 'Subcanopy', 'Tree')]/100
 
 plotdata$sqrttotal <- (100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum'))))^0.5
-
+}
 plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
 
 
 
 if (T){
   amethod <- 'bray-ward' 
-  k=9
+  k=8
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   makeplot(amethod,d,t,k)
 }
+if (T){
+  amethod <- 'bray-wardbin' 
+  k=8
+  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
+  t <- agnes(d, method='ward')
+  makeplot(amethod,d,t,k)
+}
+if (T){
+   k=8
+   c = 1
+  #flex
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.25)
+  s <- stride(seq= 2:k,arg2= t)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- data.frame(cbind(clusters = o$clusters, flex.sp = o$sig.spc, flex.cl = o$sig.clust))
+  #ward
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='ward')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, ward.sp = o$sig.spc, ward.cl = o$sig.clust)
+  #upgma
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='average')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, upgma.sp = o$sig.spc, upgma.cl = o$sig.clust)
+  #jacc
+  d <- vegdist(plotmatrix, method='jaccard', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='average')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, jacc.sp = o$sig.spc, jacc.cl = o$sig.clust)
+  #diana
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- diana(d)
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, diana.sp = o$sig.spc, diana.cl = o$sig.clust)
+  #flexbin
+  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.25)
+  s <- stride(seq= 2:k,arg2= t)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, flexbin.sp = o$sig.spc, flexbin.cl = o$sig.clust)
+  #wardbin
+  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
+  t <- agnes(d, method='ward')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, wardbin.sp = o$sig.spc, wardbin.cl = o$sig.clust)
+  #upgmabin
+  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
+  t <- agnes(d, method='average')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, upgmabin.sp = o$sig.spc, upgmabin.cl = o$sig.clust)
+    #dianabin
+  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
+  t <- diana(d)
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  oo <- cbind(oo, dianabin.sp = o$sig.spc, dianabin.cl = o$sig.clust)
+  oo <- oo[,c(1, (1:9)*2+1, (1:9)*2)]
+  }
 if (F){
   amethod <- 'kulczynski-isopam' 
   k=4
@@ -127,6 +195,13 @@ if (F){
   k=8
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='average')
+  makeplot(amethod,d,t,k)
+}
+if (F){
+  amethod <- 'bray-diana' 
+  k=8
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- diana(d)
   makeplot(amethod,d,t,k)
 }
 groups <- cutree(t, k = k)
@@ -194,4 +269,5 @@ for(i in 1:k){
 }
 rm(plotassociations1)
 plotassociations <- plotassociations[-1,]
+dmatrix <-  as.data.frame(as.matrix(d))
 write.csv(plotassociations, 'output/allclustassociations.csv', row.names = F)

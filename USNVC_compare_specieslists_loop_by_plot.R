@@ -73,9 +73,11 @@ vegstates <- merge(vegstates, states, by='subnation_id')
 
 USNVClist <- readRDS('data/USNVClist.RDS')
 USNVClist <- subset(USNVClist, !grepl('\\.', acctaxon))
-plotdata <- readRDS('data/plotdata.RDS')
+#plotdata <- readRDS('data/plotdata.RDS')
+plotdata <- readRDS('data/Com.Sp.mean.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
+
 plots <- c(
   'GRR.GJS.2016.21',
   'GRR.GJS.2016.59',
@@ -158,7 +160,7 @@ plotmatrix <- makecommunitydataset(prematrix, row = 'soilplot', column = 'Specie
 #plotmatrix <- plotmatrix[,-c(1:4,6)]
 if (T){
   amethod <- 'bray-ward' 
-  k=9
+  k=8
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   p.over <- Com.Sp.agg[,c('over', 'invover')]
   p.over$over <- p.over$over/(p.over$over+12.5)*(1+12.5/100)*100

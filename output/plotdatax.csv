@@ -1,0 +1,1281 @@
+"","Observation_Label","Observation_ID","Species","Simple","Field","Shrub","Subcanopy","Tree","mfreq","Total","Soil","soilplot","sqrttotal"
+"1","2016MI037001","GRR.GJS.2016.21","Typha angustifolia","Graminoid",99.9,0,0,0,1,99.8990010099899,"Houghton","Houghton.2016MI037001",9.99494877475567
+"2","2016MI037001","GRR.GJS.2016.21","Saururus cernuus","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.2016MI037001",0.547719818912913
+"3","2016MI037001","GRR.GJS.2016.21","Xanthium strumarium","Forb",0.7,0,0,0,1,0.699993000069998,"Houghton","Houghton.2016MI037001",0.836655843265317
+"4","2016MI037001","GRR.GJS.2016.21","Echinocystis lobata","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.2016MI037001",0.547719818912913
+"5","2016MI037001","GRR.GJS.2016.21","Lysimachia terrestris","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.2016MI037001",0.547719818912913
+"6","2016MI045005","GRR.GJS.2016.59","Parthenocissus quinquefolia","Deciduous",1.4,0,0,0,1,1.39998600014,"Palms","Palms.2016MI045005",1.18321004058451
+"7","2016MI045005","GRR.GJS.2016.59","Thelypteris palustris","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"8","2016MI045005","GRR.GJS.2016.59","Impatiens capensis","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"9","2016MI045005","GRR.GJS.2016.59","Equisetum fluviatile","Forb",13.4,0,0,0,1,13.39986600134,"Palms","Palms.2016MI045005",3.66058274067668
+"10","2016MI045005","GRR.GJS.2016.59","Mentha arvensis","Forb",1.4,0,0,0,1,1.39998600014,"Palms","Palms.2016MI045005",1.18321004058451
+"11","2016MI045005","GRR.GJS.2016.59","Torilis japonica","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"12","2016MI045005","GRR.GJS.2016.59","Ulmus americana","Deciduous",0,6.9,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"13","2016MI045005","GRR.GJS.2016.59","Rosa multiflora","Deciduous",0,6.9,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"14","2016MI045005","GRR.GJS.2016.59","Cuscuta gronovii","Forb",1.4,0,0,0,1,1.39998600014,"Palms","Palms.2016MI045005",1.18321004058451
+"15","2016MI045005","GRR.GJS.2016.59","Cornus alba","Deciduous",0,52.9,0,0,1,52.8994710052899,"Palms","Palms.2016MI045005",7.27320225246693
+"16","2016MI045005","GRR.GJS.2016.59","Populus tremuloides","Deciduous",0,0,20,0,1,19.999800002,"Palms","Palms.2016MI045005",4.47211359448751
+"17","2016MI045005","GRR.GJS.2016.59","Solidago altissima","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"18","2016MI045005","GRR.GJS.2016.59","Typha angustifolia","Graminoid",52.9,0,0,0,1,52.8994710052899,"Palms","Palms.2016MI045005",7.27320225246693
+"19","2016MI045005","GRR.GJS.2016.59","Amphicarpaea bracteata","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"20","2016MI045005","GRR.GJS.2016.59","Galium asprellum","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"21","2016MI045005","GRR.GJS.2016.59","Cornus racemosa","Deciduous",0,13.4,0,0,1,13.39986600134,"Palms","Palms.2016MI045005",3.66058274067668
+"22","2016MI045005","GRR.GJS.2016.59","Symphyotrichum puniceum","Forb",92.2,0,0,0,1,92.1990780092199,"Palms","Palms.2016MI045005",9.60203509727078
+"23","2016MI045005","GRR.GJS.2016.59","Carex lacustris","Graminoid",52.9,0,0,0,1,52.8994710052899,"Palms","Palms.2016MI045005",7.27320225246693
+"24","2016MI045005","GRR.GJS.2016.59","Epilobium coloratum","Forb",6.9,0,0,0,1,6.89993100069,"Palms","Palms.2016MI045005",2.62677197348571
+"25","2016MI045005","GRR.GJS.2016.59","Leersia oryzoides","Graminoid",52.9,0,0,0,1,52.8994710052899,"Palms","Palms.2016MI045005",7.27320225246693
+"26","2016MI045005","GRR.GJS.2016.59","Eutrochium maculatum","Forb",30.7,0,0,0,1,30.69969300307,"Palms","Palms.2016MI045005",5.54073036729545
+"27","2016MI067008","GRR.GJS.2016.30","Pilea pumila","Forb",5,0,0,0,1,4.9999500005,"Wallkill","Wallkill.2016MI067008",2.23605679724375
+"28","2016MI067008","GRR.GJS.2016.30","Fraxinus pennsylvanica","Deciduous",0,0,0,0.2,1,0.199998000019996,"Wallkill","Wallkill.2016MI067008",0.447211359448747
+"29","2016MI067008","GRR.GJS.2016.30","Acer saccharinum","Deciduous",0,5,10,40,1,48.69957400367,"Wallkill","Wallkill.2016MI067008",6.97850800699333
+"30","2016MI067008","GRR.GJS.2016.30","Parthenocissus quinquefolia","Deciduous",0.2,0,0,0,1,0.199998000019996,"Wallkill","Wallkill.2016MI067008",0.447211359448747
+"31","2016MI067008","GRR.GJS.2016.30","Cephalanthus occidentalis","Deciduous",0,60,0,0,1,59.9994000059999,"Wallkill","Wallkill.2016MI067008",7.74592796287184
+"32","2016MI067008","GRR.GJS.2016.30","Boehmeria cylindrica","Forb",1,0,0,0,1,0.999990000100004,"Wallkill","Wallkill.2016MI067008",0.999995000037502
+"33","2016MI067008","GRR.GJS.2016.30","Leersia oryzoides","Graminoid",1,0,0,0,1,0.999990000100004,"Wallkill","Wallkill.2016MI067008",0.999995000037502
+"34","2016MI067010","GRR.GJS.2016.32","Ulmus americana","Deciduous",0,0.5,0,0,1,0.499995000050002,"Palms","Palms.2016MI067010",0.70710324567916
+"35","2016MI067010","GRR.GJS.2016.32","Glyceria striata","Graminoid",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.2016MI067010",0.70710324567916
+"36","2016MI067010","GRR.GJS.2016.32","Carex bebbii","Graminoid",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.2016MI067010",0.70710324567916
+"37","2016MI067010","GRR.GJS.2016.32","Scutellaria lateriflora","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"38","2016MI067010","GRR.GJS.2016.32","Symphyotrichum ontarionis","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"39","2016MI067010","GRR.GJS.2016.32","Boehmeria cylindrica","Forb",12.4,0,0,0,1,12.39987600124,"Palms","Palms.2016MI067010",3.52134576564699
+"40","2016MI067010","GRR.GJS.2016.32","Thelypteris palustris","Forb",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.2016MI067010",0.70710324567916
+"41","2016MI067010","GRR.GJS.2016.32","Fraxinus pennsylvanica","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"42","2016MI067010","GRR.GJS.2016.32","Cephalanthus occidentalis","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"43","2016MI067010","GRR.GJS.2016.32","Acer saccharinum","Deciduous",0,0,4.9,94.7,1,94.9587968145678,"Palms","Palms.2016MI067010",9.74468043675973
+"44","2016MI067010","GRR.GJS.2016.32","Pilea pumila","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"45","2016MI067010","GRR.GJS.2016.32","Lysimachia nummularia","Forb",12.4,0,0,0,1,12.39987600124,"Palms","Palms.2016MI067010",3.52134576564699
+"46","2016MI067010","GRR.GJS.2016.32","Onoclea sensibilis","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.2016MI067010",0.316226184889864
+"47","Barry County - Houghton swamp","GRR.2011.GJS.12","Zanthoxylum americanum","Deciduous",0,1,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"48","Barry County - Houghton swamp","GRR.2011.GJS.12","Rumex crispus","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"49","Barry County - Houghton swamp","GRR.2011.GJS.12","Solidago rugosa","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"50","Barry County - Houghton swamp","GRR.2011.GJS.12","Galium aparine","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"51","Barry County - Houghton swamp","GRR.2011.GJS.12","Acer saccharinum","Deciduous",0,0,0,0.2,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"52","Barry County - Houghton swamp","GRR.2011.GJS.12","Tilia americana","Deciduous",0,0,0,1,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"53","Barry County - Houghton swamp","GRR.2011.GJS.12","Betula alleghaniensis","Deciduous",0,0,0,5,1,4.9999500005,"Palms","Palms.Barry.County...Houghton.swamp",2.23605679724375
+"54","Barry County - Houghton swamp","GRR.2011.GJS.12","Collinsonia canadensis","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"55","Barry County - Houghton swamp","GRR.2011.GJS.12","Glyceria grandis","Graminoid",3,0,0,0,1,2.9999700003,"Palms","Palms.Barry.County...Houghton.swamp",1.73204214737979
+"56","Barry County - Houghton swamp","GRR.2011.GJS.12","Equisetum arvense","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"57","Barry County - Houghton swamp","GRR.2011.GJS.12","Impatiens capensis","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"58","Barry County - Houghton swamp","GRR.2011.GJS.12","Vitis riparia","Deciduous",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"59","Barry County - Houghton swamp","GRR.2011.GJS.12","Lobelia cardinalis","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"60","Barry County - Houghton swamp","GRR.2011.GJS.12","Carex cristatella","Graminoid",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.Barry.County...Houghton.swamp",0.70710324567916
+"61","Barry County - Houghton swamp","GRR.2011.GJS.12","Toxicodendron vernix","Deciduous",0,2,0,0,1,1.9999800002,"Palms","Palms.Barry.County...Houghton.swamp",1.41420649135832
+"62","Barry County - Houghton swamp","GRR.2011.GJS.12","Ribes cynosbati","Deciduous",0,0.2,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"63","Barry County - Houghton swamp","GRR.2011.GJS.12","Carex comosa","Graminoid",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"64","Barry County - Houghton swamp","GRR.2011.GJS.12","Eupatorium perfoliatum","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"65","Barry County - Houghton swamp","GRR.2011.GJS.12","Fraxinus pennsylvanica","Deciduous",0,0,0,2,1,1.9999800002,"Palms","Palms.Barry.County...Houghton.swamp",1.41420649135832
+"66","Barry County - Houghton swamp","GRR.2011.GJS.12","Leersia oryzoides","Graminoid",25,0,0,0,1,24.9997500025,"Palms","Palms.Barry.County...Houghton.swamp",4.9999750001875
+"67","Barry County - Houghton swamp","GRR.2011.GJS.12","Carex stipata","Graminoid",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.Barry.County...Houghton.swamp",0.70710324567916
+"68","Barry County - Houghton swamp","GRR.2011.GJS.12","Cornus obliqua","Deciduous",0,0.2,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"69","Barry County - Houghton swamp","GRR.2011.GJS.12","Caltha palustris","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"70","Barry County - Houghton swamp","GRR.2011.GJS.12","Osmunda spectabilis","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"71","Barry County - Houghton swamp","GRR.2011.GJS.12","Scrophularia lanceolata","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"72","Barry County - Houghton swamp","GRR.2011.GJS.12","Thelypteris palustris","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"73","Barry County - Houghton swamp","GRR.2011.GJS.12","Athyrium filix-femina","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"74","Barry County - Houghton swamp","GRR.2011.GJS.12","Populus deltoides","Deciduous",0,0,0,0.2,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"75","Barry County - Houghton swamp","GRR.2011.GJS.12","Lysimachia ciliata","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"76","Barry County - Houghton swamp","GRR.2011.GJS.12","Symplocarpus foetidus","Forb",15,0,0,0,1,14.9998500015,"Palms","Palms.Barry.County...Houghton.swamp",3.87296398143592
+"77","Barry County - Houghton swamp","GRR.2011.GJS.12","Arisaema triphyllum","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"78","Barry County - Houghton swamp","GRR.2011.GJS.12","Asclepias incarnata","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"79","Barry County - Houghton swamp","GRR.2011.GJS.12","Lycopus uniflorus","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"80","Barry County - Houghton swamp","GRR.2011.GJS.12","Lindera benzoin","Deciduous",0,5,0,0,1,4.9999500005,"Palms","Palms.Barry.County...Houghton.swamp",2.23605679724375
+"81","Barry County - Houghton swamp","GRR.2011.GJS.12","Iris virginica","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.Barry.County...Houghton.swamp",0.447211359448747
+"82","Barry County - Houghton swamp","GRR.2011.GJS.12","Salix discolor","Deciduous",0,2,0,0,1,1.9999800002,"Palms","Palms.Barry.County...Houghton.swamp",1.41420649135832
+"83","Barry County - Houghton swamp","GRR.2011.GJS.12","Fraxinus nigra","Deciduous",0,1,0,5,1,5.949941000585,"Palms","Palms.Barry.County...Houghton.swamp",2.43925008979912
+"84","Barry County - Houghton swamp","GRR.2011.GJS.12","Acer rubrum","Deciduous",0,0,0,1,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"85","Barry County - Houghton swamp","GRR.2011.GJS.12","Onoclea sensibilis","Forb",5,0,0,0,1,4.9999500005,"Palms","Palms.Barry.County...Houghton.swamp",2.23605679724375
+"86","Barry County - Houghton swamp","GRR.2011.GJS.12","Phalaris arundinacea","Graminoid",15,0,0,0,1,14.9998500015,"Palms","Palms.Barry.County...Houghton.swamp",3.87296398143592
+"87","Barry County - Houghton swamp","GRR.2011.GJS.12","Cicuta maculata","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"88","Barry County - Houghton swamp","GRR.2011.GJS.12","Ulmus rubra","Deciduous",0,0,0,3,1,2.9999700003,"Palms","Palms.Barry.County...Houghton.swamp",1.73204214737979
+"89","Barry County - Houghton swamp","GRR.2011.GJS.12","Carpinus caroliniana","Deciduous",0,5,0,0,1,4.9999500005,"Palms","Palms.Barry.County...Houghton.swamp",2.23605679724375
+"90","Barry County - Houghton swamp","GRR.2011.GJS.12","Ilex verticillata","Deciduous",0,1,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"91","Barry County - Houghton swamp","GRR.2011.GJS.12","Osmundastrum cinnamomeum","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"92","Barry County - Houghton swamp","GRR.2011.GJS.12","Typha latifolia","Graminoid",25,0,0,0,1,24.9997500025,"Palms","Palms.Barry.County...Houghton.swamp",4.9999750001875
+"93","Barry County - Houghton swamp","GRR.2011.GJS.12","Boehmeria cylindrica","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.Barry.County...Houghton.swamp",0.999995000037502
+"94","DSP ER1","GRR.GJS.2015.27","Mentha arvensis","Forb",1.235,0,0,0,4,1.2349876501235,"Houghton","Houghton.DSP.ER1",1.11129998205862
+"95","DSP ER1","GRR.GJS.2015.27","Galium tinctorium","Forb",0.56,0,0,0,4,0.559994400055996,"Houghton","Houghton.DSP.ER1",0.748327735725462
+"96","DSP ER1","GRR.GJS.2015.27","Typha angustifolia","Graminoid",35.78,0,0,0,4,35.779642203578,"Houghton","Houghton.DSP.ER1",5.98160866352672
+"97","DSP ER1","GRR.GJS.2015.27","Asclepias incarnata","Forb",1.01,0,0,0,4,1.00998990010099,"Houghton","Houghton.DSP.ER1",1.00498253721196
+"98","DSP ER1","GRR.GJS.2015.27","Leersia oryzoides","Graminoid",32.2525,0,0,0,4,32.2521774782252,"Houghton","Houghton.DSP.ER1",5.67910005883196
+"99","DSP ER1","GRR.GJS.2015.27","Mimulus ringens","Forb",0.785,0,0,0,4,0.784992150078501,"Houghton","Houghton.DSP.ER1",0.885997827355406
+"100","DSP ER1","GRR.GJS.2015.27","Carex bebbii","Graminoid",0.675,0,0,0,4,0.674993250067502,"Houghton","Houghton.DSP.ER1",0.821579728369378
+"101","DSP ER1","GRR.GJS.2015.27","Lycopus americanus","Forb",0.45,0,0,0,4,0.449995500044997,"Houghton","Houghton.DSP.ER1",0.670817039173125
+"102","DSP ER1","GRR.GJS.2015.27","Cinna arundinacea","Graminoid",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.ER1",0.474339277334804
+"103","DSP ER1","GRR.GJS.2015.27","Eutrochium maculatum","Forb",5.525,0,0,0,4,5.5249447505525,"Houghton","Houghton.DSP.ER1",2.3505201021375
+"104","DSP ER1","GRR.GJS.2015.27","Verbena hastata","Forb",1.01,0,0,0,4,1.00998990010099,"Houghton","Houghton.DSP.ER1",1.00498253721196
+"105","DSP ER1","GRR.GJS.2015.27","Geum aleppicum","Forb",0.45,0,0,0,4,0.449995500044997,"Houghton","Houghton.DSP.ER1",0.670817039173125
+"106","DSP ER1","GRR.GJS.2015.27","Eleocharis palustris","Graminoid",5.4125,0,0,0,4,5.41244587554124,"Houghton","Houghton.DSP.ER1",2.32646639252349
+"107","DSP ER1","GRR.GJS.2015.27","Sium suave","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.ER1",0.474339277334804
+"108","DSP ER1","GRR.GJS.2015.27","Carex stipata","Graminoid",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.ER1",0.474339277334804
+"109","DSP ER1","GRR.GJS.2015.27","Eupatorium perfoliatum","Forb",1.12,0,0,0,4,1.119988800112,"Houghton","Houghton.DSP.ER1",1.0582952329629
+"110","DSP ER1","GRR.GJS.2015.27","Persicaria sagittata","Forb",1.235,0,0,0,4,1.2349876501235,"Houghton","Houghton.DSP.ER1",1.11129998205862
+"111","DSP ER1","GRR.GJS.2015.27","Scirpus cyperinus","Graminoid",1.3375,0,0,0,4,1.33748662513374,"Houghton","Houghton.DSP.ER1",1.15649756814865
+"112","DSP ER1","GRR.GJS.2015.27","Vitis riparia","Deciduous",0,0.225,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.ER1",0.474339277334804
+"113","DSP ER1","GRR.GJS.2015.27","Solidago gigantea","Forb",0.9,0,0,0,4,0.899991000089995,"Houghton","Houghton.DSP.ER1",0.948678554669596
+"114","DSP ER1","GRR.GJS.2015.27","Scirpus atrovirens","Graminoid",0.45,0,0,0,4,0.449995500044997,"Houghton","Houghton.DSP.ER1",0.670817039173125
+"115","DSP ER1","GRR.GJS.2015.27","Symphyotrichum puniceum","Forb",96.0425,0,0,0,4,96.0415395846042,"Houghton","Houghton.DSP.ER1",9.80007854992011
+"116","DSP ER1","GRR.GJS.2015.27","Euthamia graminifolia","Forb",1.01,0,0,0,4,1.00998990010099,"Houghton","Houghton.DSP.ER1",1.00498253721196
+"117","DSP ER1","GRR.GJS.2015.27","Boehmeria cylindrica","Forb",0.675,0,0,0,4,0.674993250067502,"Houghton","Houghton.DSP.ER1",0.821579728369378
+"118","DSP ER1","GRR.GJS.2015.27","Phalaris arundinacea","Graminoid",5.6375,0,0,0,4,5.63744362556374,"Houghton","Houghton.DSP.ER1",2.37433014249572
+"119","DSP ER1","GRR.GJS.2015.27","Carex hystericina","Graminoid",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.ER1",0.474339277334804
+"120","DSP ER1","GRR.GJS.2015.27","Carex cristatella","Graminoid",1.1125,0,0,0,4,1.11248887511125,"Houghton","Houghton.DSP.ER1",1.05474588177023
+"121","DSP ER2","GRR.GJS.2015.26","Boehmeria cylindrica","Forb",0.165,0,0,0,4,0.164998350016499,"Adrian","Adrian.DSP.ER2",0.406199889237428
+"122","DSP ER2","GRR.GJS.2015.26","Phalaris arundinacea","Graminoid",99.36,0,0,0,4,99.3590064099359,"Adrian","Adrian.DSP.ER2",9.96789879613231
+"123","DSP ER2","GRR.GJS.2015.26","Typha latifolia","Graminoid",16.0625,0,0,0,4,16.0623393766062,"Adrian","Adrian.DSP.ER2",4.00778484659621
+"124","DSP ER2","GRR.GJS.2015.26","Ulmus americana","Deciduous",0.0825,0,0,0,4,0.0824991750082549,"Adrian","Adrian.DSP.ER2",0.287226696197019
+"125","DSP ER2","GRR.GJS.2015.26","Leersia oryzoides","Graminoid",0.42,0,0,0,4,0.419995800041995,"Adrian","Adrian.DSP.ER2",0.648070829494735
+"126","DSP ER2","GRR.GJS.2015.26","Acer saccharinum","Deciduous",0.33,0,0,0,4,0.329996700032997,"Adrian","Adrian.DSP.ER2",0.574453392394019
+"127","DSP ER2","GRR.GJS.2015.26","Scirpus cyperinus","Graminoid",0.165,0,0,0,4,0.164998350016499,"Adrian","Adrian.DSP.ER2",0.406199889237428
+"128","DSP ER3","GRR.GJS.2015.28","Verbena hastata","Forb",2.005,0,0,0,4,2.0049799502005,"Houghton","Houghton.DSP.ER3",1.4159731460026
+"129","DSP ER3","GRR.GJS.2015.28","Eutrochium maculatum","Forb",0.195,0,0,0,4,0.194998050019501,"Houghton","Houghton.DSP.ER3",0.441585835392737
+"130","DSP ER3","GRR.GJS.2015.28","Cirsium vulgare","Forb",0.13,0,0,0,4,0.129998700013001,"Houghton","Houghton.DSP.ER3",0.360553324784283
+"131","DSP ER3","GRR.GJS.2015.28","Cirsium arvense","Forb",2.0625,0,0,0,4,2.06247937520625,"Houghton","Houghton.DSP.ER3",1.43613348098505
+"132","DSP ER3","GRR.GJS.2015.28","Symphyotrichum puniceum","Forb",14.695,0,0,0,4,14.6948530514695,"Houghton","Houghton.DSP.ER3",3.83338662953132
+"133","DSP ER3","GRR.GJS.2015.28","Acer saccharinum","Deciduous",8.2575,0,0,0,4,8.25741742582574,"Houghton","Houghton.DSP.ER3",2.87357224127492
+"134","DSP ER3","GRR.GJS.2015.28","Populus deltoides","Deciduous",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"135","DSP ER3","GRR.GJS.2015.28","Rubus pubescens","Deciduous",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"136","DSP ER3","GRR.GJS.2015.28","Iris virginica","Forb",0.1675,0,0,0,4,0.167498325016746,"Houghton","Houghton.DSP.ER3",0.409265592270772
+"137","DSP ER3","GRR.GJS.2015.28","Cornus obliqua","Deciduous",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"138","DSP ER3","GRR.GJS.2015.28","Phalaris arundinacea","Graminoid",38.7225,0,0,0,4,38.7221127788722,"Houghton","Houghton.DSP.ER3",6.22270944033804
+"139","DSP ER3","GRR.GJS.2015.28","Solidago altissima","Forb",0.4,0,0,0,4,0.399996000040004,"Houghton","Houghton.DSP.ER3",0.632452369779736
+"140","DSP ER3","GRR.GJS.2015.28","Senecio hieraciifolius","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"141","DSP ER3","GRR.GJS.2015.28","Boehmeria cylindrica","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"142","DSP ER3","GRR.GJS.2015.28","Eupatorium perfoliatum","Forb",0.3625,0,0,0,4,0.362496375036248,"Houghton","Houghton.DSP.ER3",0.602076718563546
+"143","DSP ER3","GRR.GJS.2015.28","Euthamia graminifolia","Forb",12.0975,0,0,0,4,12.0973790262097,"Houghton","Houghton.DSP.ER3",3.47812866728788
+"144","DSP ER3","GRR.GJS.2015.28","Asclepias incarnata","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"145","DSP ER3","GRR.GJS.2015.28","Verbascum thapsus","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.ER3",0.254949700934323
+"146","DSP ER3","GRR.GJS.2015.28","Carex stricta","Graminoid",0.5025,0,0,0,4,0.502494975050249,"Houghton","Houghton.DSP.ER3",0.708868799602754
+"147","DSP ER3","GRR.GJS.2015.28","Sonchus asper","Forb",0.195,0,0,0,4,0.194998050019501,"Houghton","Houghton.DSP.ER3",0.441585835392737
+"148","DSP ER3","GRR.GJS.2015.28","Erigeron canadensis","Forb",0.8375,0,0,0,4,0.837491625083753,"Houghton","Houghton.DSP.ER3",0.915145685169172
+"149","DSP ER3","GRR.GJS.2015.28","Typha angustifolia","Graminoid",0.1675,0,0,0,4,0.167498325016746,"Houghton","Houghton.DSP.ER3",0.409265592270772
+"150","DSP ER3","GRR.GJS.2015.28","Lycopus americanus","Forb",0.53,0,0,0,4,0.529994700053005,"Houghton","Houghton.DSP.ER3",0.728007348900411
+"151","DSP RF1","GRR.GJS.2015.20","Mitchella repens","Forb",0.18,0,0,0,4,0.179998200017994,"Houghton","Houghton.DSP.RF1",0.424261947407488
+"152","DSP RF1","GRR.GJS.2015.20","Rubus pubescens","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"153","DSP RF1","GRR.GJS.2015.20","Lycopus uniflorus","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"154","DSP RF1","GRR.GJS.2015.20","Vitis riparia","Deciduous",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"155","DSP RF1","GRR.GJS.2015.20","Amelanchier arborea","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"156","DSP RF1","GRR.GJS.2015.20","Carex comosa","Graminoid",0.3675,0,0,0,4,0.367496325036754,"Houghton","Houghton.DSP.RF1",0.60621475158293
+"157","DSP RF1","GRR.GJS.2015.20","Maianthemum canadense","Forb",0.18,0,0,0,4,0.179998200017994,"Houghton","Houghton.DSP.RF1",0.424261947407488
+"158","DSP RF1","GRR.GJS.2015.20","Torreyochloa pallida","Graminoid",0.315,0,0,0,4,0.314996850031501,"Houghton","Houghton.DSP.RF1",0.561245801794099
+"159","DSP RF1","GRR.GJS.2015.20","Fagus grandifolia","Deciduous",0.0325,0,0.5,0,4,0.532332178303208,"Houghton","Houghton.DSP.RF1",0.729610977373016
+"160","DSP RF1","GRR.GJS.2015.20","Caltha palustris","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"161","DSP RF1","GRR.GJS.2015.20","Lemna minor","Forb",0.265,0,0,0,4,0.264997350026497,"Houghton","Houghton.DSP.RF1",0.514778933161116
+"162","DSP RF1","GRR.GJS.2015.20","Ilex verticillata","Deciduous",2.2425,10.4475,0,0,4,12.4555925994025,"Houghton","Houghton.DSP.RF1",3.52924816347653
+"163","DSP RF1","GRR.GJS.2015.20","Sassafras albidum","Deciduous",0.065,0.0325,0,0,4,0.0974779004322412,"Houghton","Houghton.DSP.RF1",0.312214510284582
+"164","DSP RF1","GRR.GJS.2015.20","Rosa palustris","Deciduous",0,0.115,0,0,4,0.114998850011505,"Houghton","Houghton.DSP.RF1",0.339114803586492
+"165","DSP RF1","GRR.GJS.2015.20","Dryopteris carthusiana","Forb",0.13,0,0,0,4,0.129998700013001,"Houghton","Houghton.DSP.RF1",0.360553324784283
+"166","DSP RF1","GRR.GJS.2015.20","Toxicodendron vernix","Deciduous",0.91,4.61,0,0,4,5.4779946395594,"Houghton","Houghton.DSP.RF1",2.34051161918915
+"167","DSP RF1","GRR.GJS.2015.20","Symphyotrichum lateriflorum","Forb",0.0825,0,0,0,4,0.0824991750082549,"Houghton","Houghton.DSP.RF1",0.287226696197019
+"168","DSP RF1","GRR.GJS.2015.20","Woodwardia virginica","Forb",0.0825,0,0,0,4,0.0824991750082549,"Houghton","Houghton.DSP.RF1",0.287226696197019
+"169","DSP RF1","GRR.GJS.2015.20","Cicuta bulbifera","Forb",0.315,0,0,0,4,0.314996850031501,"Houghton","Houghton.DSP.RF1",0.561245801794099
+"170","DSP RF1","GRR.GJS.2015.20","Quercus alba","Deciduous",0,0.0325,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"171","DSP RF1","GRR.GJS.2015.20","Osmunda spectabilis","Forb",0.1475,0,0,0,4,0.147498525014755,"Houghton","Houghton.DSP.RF1",0.384055367121403
+"172","DSP RF1","GRR.GJS.2015.20","Parthenocissus quinquefolia","Deciduous",0.4,0.0825,0.05,0,4,0.531923601473139,"Houghton","Houghton.DSP.RF1",0.729330927270426
+"173","DSP RF1","GRR.GJS.2015.20","Viola blanda","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"174","DSP RF1","GRR.GJS.2015.20","Pilea fontana","Forb",0.8375,0,0,0,4,0.837491625083753,"Houghton","Houghton.DSP.RF1",0.915145685169172
+"175","DSP RF1","GRR.GJS.2015.20","Lindera benzoin","Deciduous",0.265,0.9275,0,0,4,1.19003024927601,"Houghton","Houghton.DSP.RF1",1.09088507610839
+"176","DSP RF1","GRR.GJS.2015.20","Leersia oryzoides","Graminoid",19.8175,0,0,0,4,19.8173018269817,"Houghton","Houghton.DSP.RF1",4.45166281595784
+"177","DSP RF1","GRR.GJS.2015.20","Quercus rubra","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"178","DSP RF1","GRR.GJS.2015.20","Onoclea sensibilis","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"179","DSP RF1","GRR.GJS.2015.20","Vaccinium angustifolium","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF1",0.223605679724386
+"180","DSP RF1","GRR.GJS.2015.20","Boehmeria cylindrica","Forb",0.45,0,0,0,4,0.449995500044997,"Houghton","Houghton.DSP.RF1",0.670817039173125
+"181","DSP RF1","GRR.GJS.2015.20","Quercus bicolor","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"182","DSP RF1","GRR.GJS.2015.20","Scutellaria lateriflora","Forb",0.0975,0,0,0,4,0.0974990250097507,"Houghton","Houghton.DSP.RF1",0.312248338682131
+"183","DSP RF1","GRR.GJS.2015.20","Solidago rugosa","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"184","DSP RF1","GRR.GJS.2015.20","Symplocarpus foetidus","Forb",1.2575,0,0,0,4,1.25748742512575,"Houghton","Houghton.DSP.RF1",1.12137746772697
+"185","DSP RF1","GRR.GJS.2015.20","Sphagnum","Nonvascular",1.175,0,0,0,4,1.1749882501175,"Houghton","Houghton.DSP.RF1",1.08396874960374
+"186","DSP RF1","GRR.GJS.2015.20","Smilax hispida","Deciduous",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"187","DSP RF1","GRR.GJS.2015.20","Galium aparine","Forb",0.065,0,0,0,4,0.0649993500065005,"Houghton","Houghton.DSP.RF1",0.254949700934323
+"188","DSP RF1","GRR.GJS.2015.20","Lysimachia borealis","Forb",0.13,0,0,0,4,0.129998700013001,"Houghton","Houghton.DSP.RF1",0.360553324784283
+"189","DSP RF1","GRR.GJS.2015.20","Osmundastrum cinnamomeum","Forb",7.7075,0,0,0,4,7.70742292577075,"Houghton","Houghton.DSP.RF1",2.77622458129215
+"190","DSP RF1","GRR.GJS.2015.20","Symphyotrichum puniceum","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"191","DSP RF1","GRR.GJS.2015.20","Mitella diphylla","Forb",0.0825,0,0,0,4,0.0824991750082549,"Houghton","Houghton.DSP.RF1",0.287226696197019
+"192","DSP RF1","GRR.GJS.2015.20","Betula alleghaniensis","Deciduous",0,0,2.25,0,4,2.249977500225,"Houghton","Houghton.DSP.RF1",1.49999250005625
+"193","DSP RF1","GRR.GJS.2015.20","Cardamine bulbosa","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF1",0.223605679724386
+"194","DSP RF1","GRR.GJS.2015.20","Amphicarpaea bracteata","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"195","DSP RF1","GRR.GJS.2015.20","Ulmus americana","Deciduous",0.065,1.69,9.5,0,4,11.0871716619145,"Houghton","Houghton.DSP.RF1",3.32974047966422
+"196","DSP RF1","GRR.GJS.2015.20","Coptis trifolia","Forb",0.25,0,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RF1",0.499997500018751
+"197","DSP RF1","GRR.GJS.2015.20","Aralia nudicaulis","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"198","DSP RF1","GRR.GJS.2015.20","Fraxinus nigra","Deciduous",0.0325,0.1675,1.75,0,4,1.94642708641035,"Houghton","Houghton.DSP.RF1",1.39514410954939
+"199","DSP RF1","GRR.GJS.2015.20","Alnus incana","Deciduous",0,0.2,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF1",0.447211359448747
+"200","DSP RF1","GRR.GJS.2015.20","Carex seorsa","Graminoid",0.3325,0,0,0,4,0.332496675033245,"Houghton","Houghton.DSP.RF1",0.57662524661451
+"201","DSP RF1","GRR.GJS.2015.20","Vaccinium corymbosum","Deciduous",0.1675,2.715,0,0,4,2.87792364123939,"Houghton","Houghton.DSP.RF1",1.69644441147931
+"202","DSP RF1","GRR.GJS.2015.20","Acer rubrum","Deciduous",0.1475,0,18.75,1.25,4,19.8837744971897,"Houghton","Houghton.DSP.RF1",4.45912261517775
+"203","DSP RF1","GRR.GJS.2015.20","Rubus hispidus","Deciduous",0.3325,0,0,0,4,0.332496675033245,"Houghton","Houghton.DSP.RF1",0.57662524661451
+"204","DSP RF1","GRR.GJS.2015.20","Solanum dulcamara","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"205","DSP RF1","GRR.GJS.2015.20","Medeola virginiana","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF1",0.223605679724386
+"206","DSP RF1","GRR.GJS.2015.20","Quercus velutina","Deciduous",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"207","DSP RF1","GRR.GJS.2015.20","Typha angustifolia","Graminoid",0.0825,0,0,0,4,0.0824991750082549,"Houghton","Houghton.DSP.RF1",0.287226696197019
+"208","DSP RF1","GRR.GJS.2015.20","Bartonia virginica","Forb",0.0975,0,0,0,4,0.0974990250097507,"Houghton","Houghton.DSP.RF1",0.312248338682131
+"209","DSP RF1","GRR.GJS.2015.20","Pinus strobus","Evergreen",0.13,0.5025,1.55,1.25,4,3.39486888718474,"Houghton","Houghton.DSP.RF1",1.84251699780076
+"210","DSP RF1","GRR.GJS.2015.20","Solidago patula","Forb",0.18,0,0,0,4,0.179998200017994,"Houghton","Houghton.DSP.RF1",0.424261947407488
+"211","DSP RF1","GRR.GJS.2015.20","Thelypteris palustris","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"212","DSP RF1","GRR.GJS.2015.20","Glyceria striata","Graminoid",0.535,0,0,0,4,0.5349946500535,"Houghton","Houghton.DSP.RF1",0.731433284759109
+"213","DSP RF1","GRR.GJS.2015.20","Nyssa sylvatica","Deciduous",0.1475,0,0,0,4,0.147498525014755,"Houghton","Houghton.DSP.RF1",0.384055367121403
+"214","DSP RF1","GRR.GJS.2015.20","Platanthera clavellata","Forb",0.18,0,0,0,4,0.179998200017994,"Houghton","Houghton.DSP.RF1",0.424261947407488
+"215","DSP RF1","GRR.GJS.2015.20","Apios americana","Forb",0.2325,0,0,0,4,0.232497675023247,"Houghton","Houghton.DSP.RF1",0.482180127155036
+"216","DSP RF1","GRR.GJS.2015.20","Symphyotrichum lanceolatum","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"217","DSP RF1","GRR.GJS.2015.20","Lycopus americanus","Forb",0.0325,0,0,0,4,0.0324996750032502,"Houghton","Houghton.DSP.RF1",0.180276662392142
+"218","DSP RF2","GRR.GJS.2015.22","Vitis riparia","Deciduous",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"219","DSP RF2","GRR.GJS.2015.22","Smilax hispida","Deciduous",0.05,0.05,0,0,4,0.0999740005100058,"Houghton","Houghton.DSP.RF2",0.316186654541279
+"220","DSP RF2","GRR.GJS.2015.22","Lysimachia borealis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"221","DSP RF2","GRR.GJS.2015.22","Elymus hystrix","Graminoid",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF2",0.591605020292255
+"222","DSP RF2","GRR.GJS.2015.22","Scutellaria lateriflora","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"223","DSP RF2","GRR.GJS.2015.22","Osmunda spectabilis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"224","DSP RF2","GRR.GJS.2015.22","Amphicarpaea bracteata","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF2",0.524401802082618
+"225","DSP RF2","GRR.GJS.2015.22","Caltha palustris","Forb",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RF2",0.353551622839572
+"226","DSP RF2","GRR.GJS.2015.22","Medeola virginiana","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"227","DSP RF2","GRR.GJS.2015.22","Actaea rubra","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"228","DSP RF2","GRR.GJS.2015.22","Parthenocissus quinquefolia","Deciduous",0.875,0.1,0.1025,0,4,1.07561578444277,"Houghton","Houghton.DSP.RF2",1.03711898278007
+"229","DSP RF2","GRR.GJS.2015.22","Alnus incana","Deciduous",0,0.5,0,0,4,0.499995000050002,"Houghton","Houghton.DSP.RF2",0.70710324567916
+"230","DSP RF2","GRR.GJS.2015.22","Polygonatum biflorum","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"231","DSP RF2","GRR.GJS.2015.22","Symphyotrichum lateriflorum","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"232","DSP RF2","GRR.GJS.2015.22","Onoclea sensibilis","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF2",0.524401802082618
+"233","DSP RF2","GRR.GJS.2015.22","Helianthus giganteus","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"234","DSP RF2","GRR.GJS.2015.22","Aralia nudicaulis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"235","DSP RF2","GRR.GJS.2015.22","Polygonatum pubescens","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"236","DSP RF2","GRR.GJS.2015.22","Apios americana","Forb",3.25,0,0,0,4,3.249967500325,"Houghton","Houghton.DSP.RF2",1.80276662392141
+"237","DSP RF2","GRR.GJS.2015.22","Pinus strobus","Evergreen",0.1,0.6,0,22.1825,4,22.7265298857987,"Houghton","Houghton.DSP.RF2",4.76723503572025
+"238","DSP RF2","GRR.GJS.2015.22","Ulmus americana","Deciduous",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"239","DSP RF2","GRR.GJS.2015.22","Carex leptonervia","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"240","DSP RF2","GRR.GJS.2015.22","Viola blanda","Forb",0.3,0,0,0,4,0.299997000029995,"Houghton","Houghton.DSP.RF2",0.547719818912913
+"241","DSP RF2","GRR.GJS.2015.22","Cicuta maculata","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"242","DSP RF2","GRR.GJS.2015.22","Platanthera clavellata","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"243","DSP RF2","GRR.GJS.2015.22","Cirsium muticum","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.RF2",0.474339277334804
+"244","DSP RF2","GRR.GJS.2015.22","Osmundastrum cinnamomeum","Forb",25,0,0,0,4,24.9997500025,"Houghton","Houghton.DSP.RF2",4.9999750001875
+"245","DSP RF2","GRR.GJS.2015.22","Packera aurea","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"246","DSP RF2","GRR.GJS.2015.22","Carex lacustris","Graminoid",0.3,0,0,0,4,0.299997000029995,"Houghton","Houghton.DSP.RF2",0.547719818912913
+"247","DSP RF2","GRR.GJS.2015.22","Arisaema triphyllum","Forb",1.8,0,0,0,4,1.79998200018,"Houghton","Houghton.DSP.RF2",1.34163407834625
+"248","DSP RF2","GRR.GJS.2015.22","Acer rubrum","Deciduous",0,0,27.45,7.0975,4,32.5989297431453,"Houghton","Houghton.DSP.RF2",5.70954724502261
+"249","DSP RF2","GRR.GJS.2015.22","Clematis virginiana","Deciduous",0.25,0.05,0,0,4,0.299872002529966,"Houghton","Houghton.DSP.RF2",0.547605699869866
+"250","DSP RF2","GRR.GJS.2015.22","Impatiens capensis","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF2",0.591605020292255
+"251","DSP RF2","GRR.GJS.2015.22","Glyceria striata","Graminoid",0.725,0,0,0,4,0.724992750072495,"Houghton","Houghton.DSP.RF2",0.851465060981656
+"252","DSP RF2","GRR.GJS.2015.22","Equisetum fluviatile","Forb",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"253","DSP RF2","GRR.GJS.2015.22","Lysimachia ciliata","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"254","DSP RF2","GRR.GJS.2015.22","Fragaria vesca","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"255","DSP RF2","GRR.GJS.2015.22","Maianthemum canadense","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF2",0.524401802082618
+"256","DSP RF2","GRR.GJS.2015.22","Solidago rugosa","Forb",0.6,0,0,0,4,0.59999400006,"Houghton","Houghton.DSP.RF2",0.774592796287185
+"257","DSP RF2","GRR.GJS.2015.22","Fraxinus nigra","Deciduous",0.1,3.05,10.215,0.51,4,13.4838516152765,"Houghton","Houghton.DSP.RF2",3.67203643980782
+"258","DSP RF2","GRR.GJS.2015.22","Cypripedium parviflorum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"259","DSP RF2","GRR.GJS.2015.22","Carex rosea","Graminoid",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"260","DSP RF2","GRR.GJS.2015.22","Persicaria sagittata","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"261","DSP RF2","GRR.GJS.2015.22","Trillium cernuum","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF2",0.387296398143596
+"262","DSP RF2","GRR.GJS.2015.22","Carex stipata","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"263","DSP RF2","GRR.GJS.2015.22","Toxicodendron vernix","Deciduous",0.05,0.05,0,0,4,0.0999740005100058,"Houghton","Houghton.DSP.RF2",0.316186654541279
+"264","DSP RF2","GRR.GJS.2015.22","Brachyelytrum erectum","Graminoid",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"265","DSP RF2","GRR.GJS.2015.22","Carex hystericina","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"266","DSP RF2","GRR.GJS.2015.22","Prunus virginiana","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"267","DSP RF2","GRR.GJS.2015.22","Sanicula odorata","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.RF2",0.474339277334804
+"268","DSP RF2","GRR.GJS.2015.22","Lilium michiganense","Forb",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"269","DSP RF2","GRR.GJS.2015.22","Doellingeria umbellata","Forb",1.425,0,0,0,4,1.42498575014249,"Houghton","Houghton.DSP.RF2",1.1937276700079
+"270","DSP RF2","GRR.GJS.2015.22","Carex comosa","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"271","DSP RF2","GRR.GJS.2015.22","Conocephalum conicum","Nonvascular",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"272","DSP RF2","GRR.GJS.2015.22","Athyrium angustum","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF2",0.591605020292255
+"273","DSP RF2","GRR.GJS.2015.22","Cornus racemosa","Deciduous",0.05,1.25,0,0,4,1.29936201262981,"Houghton","Houghton.DSP.RF2",1.13989561479541
+"274","DSP RF2","GRR.GJS.2015.22","Larix laricina","Deciduous",0,0,0,4.865,4,4.86495135048649,"Houghton","Houghton.DSP.RF2",2.20566347172149
+"275","DSP RF2","GRR.GJS.2015.22","Carex gracillima","Graminoid",0.65,0,0,0,4,0.649993500065005,"Houghton","Houghton.DSP.RF2",0.806221743731217
+"276","DSP RF2","GRR.GJS.2015.22","Ilex verticillata","Deciduous",0,5,0,0,4,4.9999500005,"Houghton","Houghton.DSP.RF2",2.23605679724375
+"277","DSP RF2","GRR.GJS.2015.22","Maianthemum racemosum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"278","DSP RF2","GRR.GJS.2015.22","Vaccinium corymbosum","Deciduous",0.05,0.6,0,0,4,0.649693506064919,"Houghton","Houghton.DSP.RF2",0.806035672948114
+"279","DSP RF2","GRR.GJS.2015.22","Rumex crispus","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"280","DSP RF2","GRR.GJS.2015.22","Thuja occidentalis","Evergreen",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"281","DSP RF2","GRR.GJS.2015.22","Bidens tripartita","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF2",0.387296398143596
+"282","DSP RF2","GRR.GJS.2015.22","Coptis trifolia","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"283","DSP RF2","GRR.GJS.2015.22","Mitchella repens","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF2",0.447211359448747
+"284","DSP RF2","GRR.GJS.2015.22","Quercus rubra","Deciduous",0.05,0.25,1.515,0,4,1.81031383727329,"Houghton","Houghton.DSP.RF2",1.34547903635593
+"285","DSP RF2","GRR.GJS.2015.22","Laportea canadensis","Forb",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"286","DSP RF2","GRR.GJS.2015.22","Cryptotaenia canadensis","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"287","DSP RF2","GRR.GJS.2015.22","Toxicodendron radicans","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"288","DSP RF2","GRR.GJS.2015.22","Lobelia siphilitica","Forb",0.65,0,0,0,4,0.649993500065005,"Houghton","Houghton.DSP.RF2",0.806221743731217
+"289","DSP RF2","GRR.GJS.2015.22","Milium effusum","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"290","DSP RF2","GRR.GJS.2015.22","Lindera benzoin","Deciduous",0,5,0,0,4,4.9999500005,"Houghton","Houghton.DSP.RF2",2.23605679724375
+"291","DSP RF2","GRR.GJS.2015.22","Mitella diphylla","Forb",0.55,0,0,0,4,0.549994500054996,"Houghton","Houghton.DSP.RF2",0.741616140638131
+"292","DSP RF2","GRR.GJS.2015.22","Elaeagnus umbellata","Deciduous",0,0.175,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"293","DSP RF2","GRR.GJS.2015.22","Boehmeria cylindrica","Forb",0.475,0,0,0,4,0.474995250047494,"Houghton","Houghton.DSP.RF2",0.689198991618164
+"294","DSP RF2","GRR.GJS.2015.22","Carpinus caroliniana","Deciduous",0.05,1.25,0,0,4,1.29936201262981,"Houghton","Houghton.DSP.RF2",1.13989561479541
+"295","DSP RF2","GRR.GJS.2015.22","Circaea canadensis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"296","DSP RF2","GRR.GJS.2015.22","Maianthemum stellatum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"297","DSP RF2","GRR.GJS.2015.22","Eupatorium perfoliatum","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"298","DSP RF2","GRR.GJS.2015.22","Persicaria virginiana","Forb",0.675,0,0,0,4,0.674993250067502,"Houghton","Houghton.DSP.RF2",0.821579728369378
+"299","DSP RF2","GRR.GJS.2015.22","Symphyotrichum puniceum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"300","DSP RF2","GRR.GJS.2015.22","Dryopteris cristata","Forb",0.425,0,0,0,4,0.424995750042501,"Houghton","Houghton.DSP.RF2",0.65191698094351
+"301","DSP RF2","GRR.GJS.2015.22","Galium aparine","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.RF2",0.474339277334804
+"302","DSP RF2","GRR.GJS.2015.22","Geranium maculatum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"303","DSP RF2","GRR.GJS.2015.22","Solidago gigantea","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"304","DSP RF2","GRR.GJS.2015.22","Thalictrum dasycarpum","Forb",0.425,0,0,0,4,0.424995750042501,"Houghton","Houghton.DSP.RF2",0.65191698094351
+"305","DSP RF2","GRR.GJS.2015.22","Geum canadense","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"306","DSP RF2","GRR.GJS.2015.22","Viola striata","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF2",0.387296398143596
+"307","DSP RF2","GRR.GJS.2015.22","Solidago patula","Forb",0.475,0,0,0,4,0.474995250047494,"Houghton","Houghton.DSP.RF2",0.689198991618164
+"308","DSP RF2","GRR.GJS.2015.22","Rosa multiflora","Deciduous",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"309","DSP RF2","GRR.GJS.2015.22","Symplocarpus foetidus","Forb",9.55,0,0,0,4,9.54990450095499,"Houghton","Houghton.DSP.RF2",3.09029197665123
+"310","DSP RF2","GRR.GJS.2015.22","Rudbeckia laciniata","Forb",0.425,0,0,0,4,0.424995750042501,"Houghton","Houghton.DSP.RF2",0.65191698094351
+"311","DSP RF2","GRR.GJS.2015.22","Solanum dulcamara","Deciduous",0,0.1,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF2",0.316226184889864
+"312","DSP RF2","GRR.GJS.2015.22","Eutrochium maculatum","Forb",0.55,0,0,0,4,0.549994500054996,"Houghton","Houghton.DSP.RF2",0.741616140638131
+"313","DSP RF2","GRR.GJS.2015.22","Pteridium aquilinum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"314","DSP RF2","GRR.GJS.2015.22","Rubus pubescens","Deciduous",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF2",0.591605020292255
+"315","DSP RF2","GRR.GJS.2015.22","Uvularia grandiflora","Forb",0.65,0,0,0,4,0.649993500065005,"Houghton","Houghton.DSP.RF2",0.806221743731217
+"316","DSP RF2","GRR.GJS.2015.22","Aquilegia canadensis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"317","DSP RF2","GRR.GJS.2015.22","Carex blanda","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"318","DSP RF2","GRR.GJS.2015.22","Viburnum lentago","Deciduous",0,1.25,0,0,4,1.24998750012499,"Houghton","Houghton.DSP.RF2",1.11802839862187
+"319","DSP RF2","GRR.GJS.2015.22","Sambucus nigra","Deciduous",0.25,0.3,0,0,4,0.54924451505477,"Houghton","Houghton.DSP.RF2",0.741110325831971
+"320","DSP RF2","GRR.GJS.2015.22","Osmorhiza claytonii","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF2",0.223605679724386
+"321","DSP RF2","GRR.GJS.2015.22","Chelone glabra","Forb",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF2",0.418327921632658
+"322","DSP RF3","GRR.GJS.2015.21","Chelone glabra","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"323","DSP RF3","GRR.GJS.2015.21","Pilea fontana","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"324","DSP RF3","GRR.GJS.2015.21","Ilex verticillata","Deciduous",0.05,4.5,0,0,4,4.54770454545432,"Houghton","Houghton.DSP.RF3",2.13253477004581
+"325","DSP RF3","GRR.GJS.2015.21","Mitella diphylla","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"326","DSP RF3","GRR.GJS.2015.21","Solanum dulcamara","Deciduous",0.15,0.05,0,0,4,0.199923001519986,"Houghton","Houghton.DSP.RF3",0.447127500294923
+"327","DSP RF3","GRR.GJS.2015.21","Lobelia siphilitica","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"328","DSP RF3","GRR.GJS.2015.21","Parthenocissus quinquefolia","Deciduous",0.675,0.05,0.05,0,4,0.774292432822243,"Houghton","Houghton.DSP.RF3",0.879938880162846
+"329","DSP RF3","GRR.GJS.2015.21","Vaccinium corymbosum","Deciduous",0,1.25,0,0,4,1.24998750012499,"Houghton","Houghton.DSP.RF3",1.11802839862187
+"330","DSP RF3","GRR.GJS.2015.21","Osmunda spectabilis","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF3",0.316226184889864
+"331","DSP RF3","GRR.GJS.2015.21","Thalictrum dasycarpum","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"332","DSP RF3","GRR.GJS.2015.21","Galium aparine","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF3",0.447211359448747
+"333","DSP RF3","GRR.GJS.2015.21","Persicaria virginiana","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF3",0.447211359448747
+"334","DSP RF3","GRR.GJS.2015.21","Lysimachia thyrsiflora","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"335","DSP RF3","GRR.GJS.2015.21","Scutellaria lateriflora","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF3",0.316226184889864
+"336","DSP RF3","GRR.GJS.2015.21","Caltha palustris","Forb",0.425,0,0,0,4,0.424995750042501,"Houghton","Houghton.DSP.RF3",0.65191698094351
+"337","DSP RF3","GRR.GJS.2015.21","Cardamine pratensis","Forb",0.3,0,0,0,4,0.299997000029995,"Houghton","Houghton.DSP.RF3",0.547719818912913
+"338","DSP RF3","GRR.GJS.2015.21","Cystopteris protrusa","Forb",0.025,0,0,0,4,0.0249997500024968,"Houghton","Houghton.DSP.RF3",0.158113092444923
+"339","DSP RF3","GRR.GJS.2015.21","Prunus virginiana","Deciduous",0,0.125,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RF3",0.353551622839572
+"340","DSP RF3","GRR.GJS.2015.21","Solidago rugosa","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF3",0.447211359448747
+"341","DSP RF3","GRR.GJS.2015.21","Solidago patula","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF3",0.524401802082618
+"342","DSP RF3","GRR.GJS.2015.21","Quercus bicolor","Deciduous",0.275,0.05,2.5,5,4,7.67582861912289,"Houghton","Houghton.DSP.RF3",2.77052858117777
+"343","DSP RF3","GRR.GJS.2015.21","Viola striata","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.RF3",0.474339277334804
+"344","DSP RF3","GRR.GJS.2015.21","Vitis riparia","Deciduous",0.1,0.1,0.25,0,4,0.449395762037319,"Houghton","Houghton.DSP.RF3",0.670369869577474
+"345","DSP RF3","GRR.GJS.2015.21","Polygonatum pubescens","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"346","DSP RF3","GRR.GJS.2015.21","Ulmus americana","Deciduous",0.05,0.8,2,0,4,2.83257984803978,"Houghton","Houghton.DSP.RF3",1.6830269896944
+"347","DSP RF3","GRR.GJS.2015.21","Frangula alnus","Deciduous",0.175,0.05,0,0,4,0.224910251772481,"Houghton","Houghton.DSP.RF3",0.474247036651238
+"348","DSP RF3","GRR.GJS.2015.21","Arisaema triphyllum","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF3",0.524401802082618
+"349","DSP RF3","GRR.GJS.2015.21","Micranthes pensylvanica","Forb",0.25,0,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RF3",0.499997500018751
+"350","DSP RF3","GRR.GJS.2015.21","Onoclea sensibilis","Forb",0.425,0,0,0,4,0.424995750042501,"Houghton","Houghton.DSP.RF3",0.65191698094351
+"351","DSP RF3","GRR.GJS.2015.21","Circaea canadensis","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF3",0.447211359448747
+"352","DSP RF3","GRR.GJS.2015.21","Viburnum lentago","Deciduous",0,1.35,0,0,4,1.349986500135,"Houghton","Houghton.DSP.RF3",1.16188919443078
+"353","DSP RF3","GRR.GJS.2015.21","Rubus allegheniensis","Deciduous",0,0.1,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF3",0.316226184889864
+"354","DSP RF3","GRR.GJS.2015.21","Amphicarpaea bracteata","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"355","DSP RF3","GRR.GJS.2015.21","Toxicodendron vernix","Deciduous",0.05,0.425,0,0,4,0.474782754297443,"Houghton","Houghton.DSP.RF3",0.689044812982031
+"356","DSP RF3","GRR.GJS.2015.21","Boehmeria cylindrica","Forb",1.05,0,0,0,4,1.049989500105,"Houghton","Houghton.DSP.RF3",1.024689953159
+"357","DSP RF3","GRR.GJS.2015.21","Osmundastrum cinnamomeum","Forb",30,0,0,0,4,29.999700003,"Houghton","Houghton.DSP.RF3",5.47719818912918
+"358","DSP RF3","GRR.GJS.2015.21","Sambucus racemosa","Deciduous",0.175,0.55,0,0,4,0.724030269322207,"Houghton","Houghton.DSP.RF3",0.850899682290578
+"359","DSP RF3","GRR.GJS.2015.21","Carex comosa","Graminoid",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RF3",0.353551622839572
+"360","DSP RF3","GRR.GJS.2015.21","Maianthemum canadense","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF3",0.591605020292255
+"361","DSP RF3","GRR.GJS.2015.21","Impatiens capensis","Forb",10.5,0,0,0,4,10.49989500105,"Houghton","Houghton.DSP.RF3",3.2403541474737
+"362","DSP RF3","GRR.GJS.2015.21","Symphyotrichum puniceum","Forb",0.175,0,0,0,4,0.1749982500175,"Houghton","Houghton.DSP.RF3",0.418327921632658
+"363","DSP RF3","GRR.GJS.2015.21","Ligustrum vulgare","Deciduous",0,0.05,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"364","DSP RF3","GRR.GJS.2015.21","Rubus pubescens","Deciduous",0.475,0,0,0,4,0.474995250047494,"Houghton","Houghton.DSP.RF3",0.689198991618164
+"365","DSP RF3","GRR.GJS.2015.21","Thelypteris palustris","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RF3",0.591605020292255
+"366","DSP RF3","GRR.GJS.2015.21","Lycopus uniflorus","Forb",0.225,0,0,0,4,0.224997750022504,"Houghton","Houghton.DSP.RF3",0.474339277334804
+"367","DSP RF3","GRR.GJS.2015.21","Smilax hispida","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"368","DSP RF3","GRR.GJS.2015.21","Leersia oryzoides","Graminoid",0.25,0,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RF3",0.499997500018751
+"369","DSP RF3","GRR.GJS.2015.21","Dryopteris carthusiana","Forb",0.275,0,0,0,4,0.274997250027498,"Houghton","Houghton.DSP.RF3",0.524401802082618
+"370","DSP RF3","GRR.GJS.2015.21","Berberis thunbergii","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"371","DSP RF3","GRR.GJS.2015.21","Geum canadense","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"372","DSP RF3","GRR.GJS.2015.21","Lemna minor","Forb",1.25,0,0,0,4,1.24998750012499,"Houghton","Houghton.DSP.RF3",1.11802839862187
+"373","DSP RF3","GRR.GJS.2015.21","Aralia nudicaulis","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"374","DSP RF3","GRR.GJS.2015.21","Dryopteris cristata","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"375","DSP RF3","GRR.GJS.2015.21","Lysimachia ciliata","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF3",0.316226184889864
+"376","DSP RF3","GRR.GJS.2015.21","Acer rubrum","Deciduous",0.1,0,58.75,0,4,58.7906626808673,"Houghton","Houghton.DSP.RF3",7.66750694038599
+"377","DSP RF3","GRR.GJS.2015.21","Mentha arvensis","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"378","DSP RF3","GRR.GJS.2015.21","Prunus serotina","Deciduous",0,0.25,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RF3",0.499997500018751
+"379","DSP RF3","GRR.GJS.2015.21","Carex stipata","Graminoid",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RF3",0.447211359448747
+"380","DSP RF3","GRR.GJS.2015.21","Cornus racemosa","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"381","DSP RF3","GRR.GJS.2015.21","Cinna arundinacea","Graminoid",0.675,0,0,0,4,0.674993250067502,"Houghton","Houghton.DSP.RF3",0.821579728369378
+"382","DSP RF3","GRR.GJS.2015.21","Viola blanda","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"383","DSP RF3","GRR.GJS.2015.21","Rosa multiflora","Deciduous",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RF3",0.387296398143596
+"384","DSP RF3","GRR.GJS.2015.21","Athyrium angustum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"385","DSP RF3","GRR.GJS.2015.21","Lemna turionifera","Forb",0.5,0,0,0,4,0.499995000050002,"Houghton","Houghton.DSP.RF3",0.70710324567916
+"386","DSP RF3","GRR.GJS.2015.21","Corylus americana","Deciduous",0,0.85,0,0,4,0.849991500085001,"Houghton","Houghton.DSP.RF3",0.921949835991634
+"387","DSP RF3","GRR.GJS.2015.21","Glyceria striata","Graminoid",1.25,0,0,0,4,1.24998750012499,"Houghton","Houghton.DSP.RF3",1.11802839862187
+"388","DSP RF3","GRR.GJS.2015.21","Betula alleghaniensis","Deciduous",0,0.25,5,0,4,5.23744775052125,"Houghton","Houghton.DSP.RF3",2.28854708287185
+"389","DSP RF3","GRR.GJS.2015.21","Carex leptalea","Graminoid",0.25,0,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RF3",0.499997500018751
+"390","DSP RF3","GRR.GJS.2015.21","Quercus rubra","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RF3",0.223605679724386
+"391","DSP RF3","GRR.GJS.2015.21","Fraxinus pennsylvanica","Deciduous",0.6,1,0.75,0,4,2.33202185887963,"Houghton","Houghton.DSP.RF3",1.52709589053197
+"392","DSP RF3","GRR.GJS.2015.21","Carpinus caroliniana","Deciduous",0.05,0.25,1.25,0,4,1.54611114010696,"Houghton","Houghton.DSP.RF3",1.24342717523262
+"393","DSP RF3","GRR.GJS.2015.21","Rhamnus cathartica","Deciduous",0.1,0.75,0,0,4,0.849241515084775,"Houghton","Houghton.DSP.RF3",0.92154300772388
+"394","DSP RF3","GRR.GJS.2015.21","Toxicodendron radicans","Deciduous",0.5,0,0,0,4,0.499995000050002,"Houghton","Houghton.DSP.RF3",0.70710324567916
+"395","DSP RF3","GRR.GJS.2015.21","Cryptotaenia canadensis","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RF3",0.316226184889864
+"396","DSP RR1","GRR.GJS.2015.25","Cornus racemosa","Deciduous",0.1,0,0,0,4,0.0999990000099982,"Rifle","Rifle.DSP.RR1",0.316226184889864
+"397","DSP RR1","GRR.GJS.2015.25","Scirpus atrovirens","Graminoid",0.125,0,0,0,4,0.124998750012495,"Rifle","Rifle.DSP.RR1",0.353551622839572
+"398","DSP RR1","GRR.GJS.2015.25","Carex bebbii","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"399","DSP RR1","GRR.GJS.2015.25","Carex lacustris","Graminoid",2.25,0,0,0,4,2.249977500225,"Rifle","Rifle.DSP.RR1",1.49999250005625
+"400","DSP RR1","GRR.GJS.2015.25","Sambucus nigra","Deciduous",0,10.75,0,0,4,10.749892501075,"Rifle","Rifle.DSP.RR1",3.27870286867764
+"401","DSP RR1","GRR.GJS.2015.25","Lepidium campestre","Forb",0.2,0,0,0,4,0.199998000019996,"Rifle","Rifle.DSP.RR1",0.447211359448747
+"402","DSP RR1","GRR.GJS.2015.25","Clematis virginiana","Deciduous",0.05,2.85,0,0,4,2.89854602878957,"Rifle","Rifle.DSP.RR1",1.70251168242382
+"403","DSP RR1","GRR.GJS.2015.25","Scirpus cyperinus","Graminoid",0.925,0,0,0,4,0.924990750092503,"Rifle","Rifle.DSP.RR1",0.96176439427362
+"404","DSP RR1","GRR.GJS.2015.25","Mentha arvensis","Forb",0.15,0,0,0,4,0.149998500015003,"Rifle","Rifle.DSP.RR1",0.387296398143596
+"405","DSP RR1","GRR.GJS.2015.25","Rubus idaeus","Deciduous",0,12.25,0,0,4,12.249877501225,"Rifle","Rifle.DSP.RR1",3.49998250013125
+"406","DSP RR1","GRR.GJS.2015.25","Impatiens capensis","Forb",0.1,0,0,0,4,0.0999990000099982,"Rifle","Rifle.DSP.RR1",0.316226184889864
+"407","DSP RR1","GRR.GJS.2015.25","Ludwigia palustris","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"408","DSP RR1","GRR.GJS.2015.25","Eutrochium maculatum","Forb",0.925,0,0,0,4,0.924990750092503,"Rifle","Rifle.DSP.RR1",0.96176439427362
+"409","DSP RR1","GRR.GJS.2015.25","Onoclea sensibilis","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"410","DSP RR1","GRR.GJS.2015.25","Persicaria sagittata","Forb",0.225,0,0,0,4,0.224997750022504,"Rifle","Rifle.DSP.RR1",0.474339277334804
+"411","DSP RR1","GRR.GJS.2015.25","Torilis japonica","Forb",0.15,0,0,0,4,0.149998500015003,"Rifle","Rifle.DSP.RR1",0.387296398143596
+"412","DSP RR1","GRR.GJS.2015.25","Viola blanda","Forb",0.5,0,0,0,4,0.499995000050002,"Rifle","Rifle.DSP.RR1",0.70710324567916
+"413","DSP RR1","GRR.GJS.2015.25","Poa palustris","Graminoid",0.425,0,0,0,4,0.424995750042501,"Rifle","Rifle.DSP.RR1",0.65191698094351
+"414","DSP RR1","GRR.GJS.2015.25","Phleum pratense","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"415","DSP RR1","GRR.GJS.2015.25","Typha latifolia","Graminoid",0.75,0,0,0,4,0.749992500075003,"Rifle","Rifle.DSP.RR1",0.866021073689898
+"416","DSP RR1","GRR.GJS.2015.25","Vitis riparia","Deciduous",0,0.25,0,0,4,0.249997500025001,"Rifle","Rifle.DSP.RR1",0.499997500018751
+"417","DSP RR1","GRR.GJS.2015.25","Erysimum cheiranthoides","Forb",0.15,0,0,0,4,0.149998500015003,"Rifle","Rifle.DSP.RR1",0.387296398143596
+"418","DSP RR1","GRR.GJS.2015.25","Populus deltoides","Deciduous",0.125,0,0,0,4,0.124998750012495,"Rifle","Rifle.DSP.RR1",0.353551622839572
+"419","DSP RR1","GRR.GJS.2015.25","Urtica dioica","Forb",1.5,0,0,0,4,1.49998500014999,"Rifle","Rifle.DSP.RR1",1.22473874771316
+"420","DSP RR1","GRR.GJS.2015.25","Solidago altissima","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"421","DSP RR1","GRR.GJS.2015.25","Geum aleppicum","Forb",0.275,0,0,0,4,0.274997250027498,"Rifle","Rifle.DSP.RR1",0.524401802082618
+"422","DSP RR1","GRR.GJS.2015.25","Solidago gigantea","Forb",0.925,0,0,0,4,0.924990750092503,"Rifle","Rifle.DSP.RR1",0.96176439427362
+"423","DSP RR1","GRR.GJS.2015.25","Silene latifolia","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"424","DSP RR1","GRR.GJS.2015.25","Oxalis stricta","Forb",0.2,0,0,0,4,0.199998000019996,"Rifle","Rifle.DSP.RR1",0.447211359448747
+"425","DSP RR1","GRR.GJS.2015.25","Erigeron canadensis","Forb",0.625,0,0,0,4,0.624993750062497,"Rifle","Rifle.DSP.RR1",0.790565462224664
+"426","DSP RR1","GRR.GJS.2015.25","Carex stricta","Graminoid",0.1,0,0,0,4,0.0999990000099982,"Rifle","Rifle.DSP.RR1",0.316226184889864
+"427","DSP RR1","GRR.GJS.2015.25","Persicaria punctata","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"428","DSP RR1","GRR.GJS.2015.25","Oenothera biennis","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"429","DSP RR1","GRR.GJS.2015.25","Eupatorium perfoliatum","Forb",2.5,0,0,0,4,2.49997500025,"Rifle","Rifle.DSP.RR1",1.58113092444933
+"430","DSP RR1","GRR.GJS.2015.25","Symphyotrichum puniceum","Forb",2,0,0,0,4,1.9999800002,"Rifle","Rifle.DSP.RR1",1.41420649135832
+"431","DSP RR1","GRR.GJS.2015.25","Salix nigra","Deciduous",0,0.05,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"432","DSP RR1","GRR.GJS.2015.25","Fallopia convolvulus","Forb",0.1,0,0,0,4,0.0999990000099982,"Rifle","Rifle.DSP.RR1",0.316226184889864
+"433","DSP RR1","GRR.GJS.2015.25","Circaea canadensis","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"434","DSP RR1","GRR.GJS.2015.25","Parthenocissus quinquefolia","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"435","DSP RR1","GRR.GJS.2015.25","Lycopus americanus","Forb",0.175,0,0,0,4,0.1749982500175,"Rifle","Rifle.DSP.RR1",0.418327921632658
+"436","DSP RR1","GRR.GJS.2015.25","Phalaris arundinacea","Graminoid",20,0,0,0,4,19.999800002,"Rifle","Rifle.DSP.RR1",4.47211359448751
+"437","DSP RR1","GRR.GJS.2015.25","Galium aparine","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"438","DSP RR1","GRR.GJS.2015.25","Acer saccharinum","Deciduous",0,0.05,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"439","DSP RR1","GRR.GJS.2015.25","Erigeron strigosus","Forb",0.1,0,0,0,4,0.0999990000099982,"Rifle","Rifle.DSP.RR1",0.316226184889864
+"440","DSP RR1","GRR.GJS.2015.25","Verbena hastata","Forb",1.55,0,0,0,4,1.549984500155,"Rifle","Rifle.DSP.RR1",1.24498373489576
+"441","DSP RR1","GRR.GJS.2015.25","Potentilla norvegica","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"442","DSP RR1","GRR.GJS.2015.25","Geum canadense","Forb",0.05,0,0,0,4,0.0499995000050046,"Rifle","Rifle.DSP.RR1",0.223605679724386
+"443","DSP RR1","GRR.GJS.2015.25","Euthamia graminifolia","Forb",0.25,0,0,0,4,0.249997500025001,"Rifle","Rifle.DSP.RR1",0.499997500018751
+"444","DSP RR1","GRR.GJS.2015.25","Cirsium arvense","Forb",1.125,0,0,0,4,1.1249887501125,"Rifle","Rifle.DSP.RR1",1.06065486851874
+"445","DSP RR1","GRR.GJS.2015.25","Myosoton aquaticum","Forb",0.15,0,0,0,4,0.149998500015003,"Rifle","Rifle.DSP.RR1",0.387296398143596
+"446","DSP RR1","GRR.GJS.2015.25","Rumex crispus","Forb",0.2,0,0,0,4,0.199998000019996,"Rifle","Rifle.DSP.RR1",0.447211359448747
+"447","DSP RR2","GRR.GJS.2015.29","Calamagrostis canadensis","Graminoid",0.25,0,0,0,4,0.249997500025001,"Houghton","Houghton.DSP.RR2",0.499997500018751
+"448","DSP RR2","GRR.GJS.2015.29","Parthenocissus quinquefolia","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR2",0.223605679724386
+"449","DSP RR2","GRR.GJS.2015.29","Lysimachia thyrsiflora","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR2",0.223605679724386
+"450","DSP RR2","GRR.GJS.2015.29","Thelypteris palustris","Forb",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RR2",0.353551622839572
+"451","DSP RR2","GRR.GJS.2015.29","Fraxinus pennsylvanica","Deciduous",0.05,0,2.55,0,4,2.59869902575961,"Houghton","Houghton.DSP.RR2",1.61204808419588
+"452","DSP RR2","GRR.GJS.2015.29","Carex retrorsa","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR2",0.223605679724386
+"453","DSP RR2","GRR.GJS.2015.29","Boehmeria cylindrica","Forb",0.475,0,0,0,4,0.474995250047494,"Houghton","Houghton.DSP.RR2",0.689198991618164
+"454","DSP RR2","GRR.GJS.2015.29","Phalaris arundinacea","Graminoid",100,0,0,0,4,99.9990000099999,"Houghton","Houghton.DSP.RR2",9.999950000375
+"455","DSP RR3","GRR.GJS.2015.30","Cornus alba","Deciduous",0,0.05,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"456","DSP RR3","GRR.GJS.2015.30","Cirsium arvense","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RR3",0.591605020292255
+"457","DSP RR3","GRR.GJS.2015.30","Euthamia graminifolia","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RR3",0.316226184889864
+"458","DSP RR3","GRR.GJS.2015.30","Eupatorium perfoliatum","Forb",2,0,0,0,4,1.9999800002,"Houghton","Houghton.DSP.RR3",1.41420649135832
+"459","DSP RR3","GRR.GJS.2015.30","Salix amygdaloides","Deciduous",0.25,1.175,0,0,4,1.42204830889162,"Houghton","Houghton.DSP.RR3",1.19249667039016
+"460","DSP RR3","GRR.GJS.2015.30","Pycnanthemum virginianum","Forb",0.325,0,0,0,4,0.324996750032502,"Houghton","Houghton.DSP.RR3",0.570084862132387
+"461","DSP RR3","GRR.GJS.2015.30","Mimulus ringens","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"462","DSP RR3","GRR.GJS.2015.30","Salix interior","Deciduous",0,7.25,0,0,4,7.249927500725,"Houghton","Houghton.DSP.RR3",2.69256894075621
+"463","DSP RR3","GRR.GJS.2015.30","Sambucus nigra","Deciduous",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RR3",0.316226184889864
+"464","DSP RR3","GRR.GJS.2015.30","Epilobium coloratum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"465","DSP RR3","GRR.GJS.2015.30","Solidago altissima","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RR3",0.316226184889864
+"466","DSP RR3","GRR.GJS.2015.30","Leersia oryzoides","Graminoid",77.5,0,0,0,4,77.4992250077499,"Houghton","Houghton.DSP.RR3",8.80336441411747
+"467","DSP RR3","GRR.GJS.2015.30","Lycopus americanus","Forb",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RR3",0.387296398143596
+"468","DSP RR3","GRR.GJS.2015.30","Penthorum sedoides","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"469","DSP RR3","GRR.GJS.2015.30","Poa palustris","Graminoid",2.875,0,0,0,4,2.87497125028749,"Houghton","Houghton.DSP.RR3",1.69557401793242
+"470","DSP RR3","GRR.GJS.2015.30","Carex cristatella","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"471","DSP RR3","GRR.GJS.2015.30","Asclepias incarnata","Forb",1.05,0,0,0,4,1.049989500105,"Houghton","Houghton.DSP.RR3",1.024689953159
+"472","DSP RR3","GRR.GJS.2015.30","Eleocharis palustris","Graminoid",0.5,0,0,0,4,0.499995000050002,"Houghton","Houghton.DSP.RR3",0.70710324567916
+"473","DSP RR3","GRR.GJS.2015.30","Spartina pectinata","Graminoid",1.75,0,0,0,4,1.749982500175,"Houghton","Houghton.DSP.RR3",1.32286904120362
+"474","DSP RR3","GRR.GJS.2015.30","Phalaris arundinacea","Graminoid",0.875,0,0,0,4,0.874991250087498,"Houghton","Houghton.DSP.RR3",0.935409669656829
+"475","DSP RR3","GRR.GJS.2015.30","Glyceria striata","Graminoid",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"476","DSP RR3","GRR.GJS.2015.30","Carex stricta","Graminoid",9.25,0,0,0,4,9.24990750092499,"Houghton","Houghton.DSP.RR3",3.04136605835684
+"477","DSP RR3","GRR.GJS.2015.30","Carex lacustris","Graminoid",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RR3",0.353551622839572
+"478","DSP RR3","GRR.GJS.2015.30","Elymus virginicus","Graminoid",0.75,0,0,0,4,0.749992500075003,"Houghton","Houghton.DSP.RR3",0.866021073689898
+"479","DSP RR3","GRR.GJS.2015.30","Symphyotrichum lanceolatum","Forb",0.8,0,0,0,4,0.799992000079996,"Houghton","Houghton.DSP.RR3",0.8944227188975
+"480","DSP RR3","GRR.GJS.2015.30","Helianthus giganteus","Forb",0.2,0,0,0,4,0.199998000019996,"Houghton","Houghton.DSP.RR3",0.447211359448747
+"481","DSP RR3","GRR.GJS.2015.30","Poa compressa","Graminoid",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RR3",0.353551622839572
+"482","DSP RR3","GRR.GJS.2015.30","Scutellaria lateriflora","Forb",0.55,0,0,0,4,0.549994500054996,"Houghton","Houghton.DSP.RR3",0.741616140638131
+"483","DSP RR3","GRR.GJS.2015.30","Iris virginica","Forb",0.625,0,0,0,4,0.624993750062497,"Houghton","Houghton.DSP.RR3",0.790565462224664
+"484","DSP RR3","GRR.GJS.2015.30","Symphyotrichum puniceum","Forb",0.35,0,0,0,4,0.349996500034999,"Houghton","Houghton.DSP.RR3",0.591605020292255
+"485","DSP RR3","GRR.GJS.2015.30","Populus deltoides","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"486","DSP RR3","GRR.GJS.2015.30","Urtica dioica","Forb",0.1,0,0,0,4,0.0999990000099982,"Houghton","Houghton.DSP.RR3",0.316226184889864
+"487","DSP RR3","GRR.GJS.2015.30","Toxicodendron radicans","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"488","DSP RR3","GRR.GJS.2015.30","Acer negundo","Deciduous",0.15,0,0,0,4,0.149998500015003,"Houghton","Houghton.DSP.RR3",0.387296398143596
+"489","DSP RR3","GRR.GJS.2015.30","Persicaria lapathifolia","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"490","DSP RR3","GRR.GJS.2015.30","Bidens tripartita","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"491","DSP RR3","GRR.GJS.2015.30","Eutrochium maculatum","Forb",0.05,0,0,0,4,0.0499995000050046,"Houghton","Houghton.DSP.RR3",0.223605679724386
+"492","DSP RR3","GRR.GJS.2015.30","Typha angustifolia","Graminoid",2,0,0,0,4,1.9999800002,"Houghton","Houghton.DSP.RR3",1.41420649135832
+"493","DSP RR3","GRR.GJS.2015.30","Verbena hastata","Forb",0.125,0,0,0,4,0.124998750012495,"Houghton","Houghton.DSP.RR3",0.353551622839572
+"494","es20170731.02","GRR.GJS.2017.8","Iris virginica","Forb",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"495","es20170731.02","GRR.GJS.2017.8","Lemna turionifera","Forb",1.6,0,0,0,1,1.59998400015999,"Aurelius","Aurelius.es20170731.02",1.26490473955946
+"496","es20170731.02","GRR.GJS.2017.8","Parthenocissus quinquefolia","Deciduous",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"497","es20170731.02","GRR.GJS.2017.8","Fraxinus pennsylvanica","Deciduous",0,1.6,0,0,1,1.59998400015999,"Aurelius","Aurelius.es20170731.02",1.26490473955946
+"498","es20170731.02","GRR.GJS.2017.8","Toxicodendron radicans","Deciduous",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"499","es20170731.02","GRR.GJS.2017.8","Rosa palustris","Deciduous",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"500","es20170731.02","GRR.GJS.2017.8","Thelypteris palustris","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.es20170731.02",0.8944227188975
+"501","es20170731.02","GRR.GJS.2017.8","Rubus pubescens","Deciduous",1.6,0,0,0,1,1.59998400015999,"Aurelius","Aurelius.es20170731.02",1.26490473955946
+"502","es20170731.02","GRR.GJS.2017.8","Lycopus uniflorus","Forb",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"503","es20170731.02","GRR.GJS.2017.8","Cephalanthus occidentalis","Deciduous",4,24.6,0,0,1,27.6157336825648,"Aurelius","Aurelius.es20170731.02",5.25506742892656
+"504","es20170731.02","GRR.GJS.2017.8","Carex [ovales]","Graminoid",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"505","es20170731.02","GRR.GJS.2017.8","Carex bromoides","Graminoid",4,0,0,0,1,3.99996000039999,"Aurelius","Aurelius.es20170731.02",1.999990000075
+"506","es20170731.02","GRR.GJS.2017.8","Lindera benzoin","Deciduous",4,0,0,0,1,3.99996000039999,"Aurelius","Aurelius.es20170731.02",1.999990000075
+"507","es20170731.02","GRR.GJS.2017.8","Onoclea sensibilis","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.es20170731.02",0.8944227188975
+"508","es20170731.02","GRR.GJS.2017.8","Carpinus caroliniana","Deciduous",0,0.8,0,0,1,0.799992000079996,"Aurelius","Aurelius.es20170731.02",0.8944227188975
+"509","es20170731.02","GRR.GJS.2017.8","Boehmeria cylindrica","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.es20170731.02",0.8944227188975
+"510","es20170731.02","GRR.GJS.2017.8","Bidens frondosa","Forb",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"511","es20170731.02","GRR.GJS.2017.8","Dryopteris marginalis","Forb",0.2,0,0,0,1,0.199998000019996,"Aurelius","Aurelius.es20170731.02",0.447211359448747
+"512","es20170731.02","GRR.GJS.2017.8","Acer saccharinum","Deciduous",0.4,0,5.5,83.2,1,84.1867110743217,"Aurelius","Aurelius.es20170731.02",9.1753316601811
+"513","es20170731.02","GRR.GJS.2017.8","Ulmus americana","Deciduous",0,0,0,5.5,1,5.49994500055,"Aurelius","Aurelius.es20170731.02",2.34519615396026
+"514","es20170731.03","GRR.GJS.2017.9","Ilex verticillata","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"515","es20170731.03","GRR.GJS.2017.9","Toxicodendron radicans","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"516","es20170731.03","GRR.GJS.2017.9","Lobelia cardinalis","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"517","es20170731.03","GRR.GJS.2017.9","Fraxinus pennsylvanica","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"518","es20170731.03","GRR.GJS.2017.9","Carya cordiformis","Deciduous",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"519","es20170731.03","GRR.GJS.2017.9","Symphyotrichum ontarionis","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"520","es20170731.03","GRR.GJS.2017.9","Tilia americana","Deciduous",0,0,1.3,0,1,1.29998700013,"Palms","Palms.es20170731.03",1.14016972426477
+"521","es20170731.03","GRR.GJS.2017.9","Acer saccharinum","Deciduous",0,0,0,94.6,1,94.5990540094599,"Palms","Palms.es20170731.03",9.72620450172933
+"522","es20170731.03","GRR.GJS.2017.9","Fagus grandifolia","Deciduous",0,0,6.3,0,1,6.29993700063,"Palms","Palms.es20170731.03",2.50996752979595
+"523","es20170731.03","GRR.GJS.2017.9","Bartonia virginica","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"524","es20170731.03","GRR.GJS.2017.9","Lycopus uniflorus","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"525","es20170731.03","GRR.GJS.2017.9","Dryopteris carthusiana","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"526","es20170731.03","GRR.GJS.2017.9","Osmundastrum cinnamomeum","Forb",3.7,0,0,0,1,3.69996300037,"Palms","Palms.es20170731.03",1.92352878854724
+"527","es20170731.03","GRR.GJS.2017.9","Scutellaria lateriflora","Forb",0.1,0,0,0,1,0.0999990000099982,"Palms","Palms.es20170731.03",0.316226184889864
+"528","es20170731.03","GRR.GJS.2017.9","Onoclea sensibilis","Forb",3.7,0,0,0,1,3.69996300037,"Palms","Palms.es20170731.03",1.92352878854724
+"529","es20170731.03","GRR.GJS.2017.9","Boehmeria cylindrica","Forb",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.es20170731.03",0.836655843265317
+"530","es20170731.03","GRR.GJS.2017.9","Rubus pubescens","Deciduous",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.es20170731.03",0.836655843265317
+"531","es20170808.01","GRR.GJS.2017.19","Betula alleghaniensis","Deciduous",0,0,0,0.2,1,0.199998000019996,"Adrian","Adrian.es20170808.01",0.447211359448747
+"532","es20170808.01","GRR.GJS.2017.19","Symphyotrichum puniceum","Forb",5.2,0,0,0,1,5.19994800051999,"Adrian","Adrian.es20170808.01",2.28033944852954
+"533","es20170808.01","GRR.GJS.2017.19","Menispermum canadense","Deciduous",0,2.6,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"534","es20170808.01","GRR.GJS.2017.19","Impatiens capensis","Forb",60.8,0,0,0,1,60.7993920060799,"Adrian","Adrian.es20170808.01",7.79739648896219
+"535","es20170808.01","GRR.GJS.2017.19","Liriodendron tulipifera","Deciduous",0,0.5,0,0,1,0.499995000050002,"Adrian","Adrian.es20170808.01",0.70710324567916
+"536","es20170808.01","GRR.GJS.2017.19","Carpinus caroliniana","Deciduous",0,12.6,0,0,1,12.59987400126,"Adrian","Adrian.es20170808.01",3.54963012175353
+"537","es20170808.01","GRR.GJS.2017.19","Ranunculus pensylvanicus","Forb",0.5,0,0,0,1,0.499995000050002,"Adrian","Adrian.es20170808.01",0.70710324567916
+"538","es20170808.01","GRR.GJS.2017.19","Athyrium angustum","Forb",2.6,0,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"539","es20170808.01","GRR.GJS.2017.19","Cryptotaenia canadensis","Forb",0.5,0,0,0,1,0.499995000050002,"Adrian","Adrian.es20170808.01",0.70710324567916
+"540","es20170808.01","GRR.GJS.2017.19","Lindera benzoin","Deciduous",0,12.6,0,0,1,12.59987400126,"Adrian","Adrian.es20170808.01",3.54963012175353
+"541","es20170808.01","GRR.GJS.2017.19","Onoclea sensibilis","Forb",5.2,0,0,0,1,5.19994800051999,"Adrian","Adrian.es20170808.01",2.28033944852954
+"542","es20170808.01","GRR.GJS.2017.19","Sambucus racemosa","Deciduous",0,2.6,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"543","es20170808.01","GRR.GJS.2017.19","Glyceria striata","Graminoid",44.3,0,0,0,1,44.29955700443,"Adrian","Adrian.es20170808.01",6.6557912380445
+"544","es20170808.01","GRR.GJS.2017.19","Pilea pumila","Forb",5.2,0,0,0,1,5.19994800051999,"Adrian","Adrian.es20170808.01",2.28033944852954
+"545","es20170808.01","GRR.GJS.2017.19","Symplocarpus foetidus","Forb",12.6,0,0,0,1,12.59987400126,"Adrian","Adrian.es20170808.01",3.54963012175353
+"546","es20170808.01","GRR.GJS.2017.19","Amphicarpaea bracteata","Forb",2.6,0,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"547","es20170808.01","GRR.GJS.2017.19","Fraxinus pennsylvanica","Deciduous",0,2.6,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"548","es20170808.01","GRR.GJS.2017.19","Acer rubrum","Deciduous",0,0,9.8,0,1,9.79990200097999,"Adrian","Adrian.es20170808.01",3.13047951614126
+"549","es20170808.01","GRR.GJS.2017.19","Eutrochium maculatum","Forb",34.7,0,0,0,1,34.69965300347,"Adrian","Adrian.es20170808.01",5.89064113687721
+"550","es20170808.01","GRR.GJS.2017.19","Chrysosplenium americanum","Forb",12.6,0,0,0,1,12.59987400126,"Adrian","Adrian.es20170808.01",3.54963012175353
+"551","es20170808.01","GRR.GJS.2017.19","Lobelia siphilitica","Forb",2.6,0,0,0,1,2.59997400026,"Adrian","Adrian.es20170808.01",1.61244348746243
+"552","es20170808.01","GRR.GJS.2017.19","Carex lurida","Graminoid",0.5,0,0,0,1,0.499995000050002,"Adrian","Adrian.es20170808.01",0.70710324567916
+"553","es20170808.01","GRR.GJS.2017.19","Eupatorium perfoliatum","Forb",24.2,0,0,0,1,24.19975800242,"Adrian","Adrian.es20170808.01",4.91932495393626
+"554","es20170823.03","GRR.GJS.2017.23","Carex bebbii","Graminoid",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"555","es20170823.03","GRR.GJS.2017.23","Sparganium americanum","Forb",4.6,0,0,0,1,4.59995400045999,"Palms","Palms.es20170823.03",2.14475033522785
+"556","es20170823.03","GRR.GJS.2017.23","Rumex verticillatus","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"557","es20170823.03","GRR.GJS.2017.23","Cicuta maculata","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"558","es20170823.03","GRR.GJS.2017.23","Carex lacustris","Graminoid",4.6,0,0,0,1,4.59995400045999,"Palms","Palms.es20170823.03",2.14475033522785
+"559","es20170823.03","GRR.GJS.2017.23","Lindera benzoin","Deciduous",0,0.2,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"560","es20170823.03","GRR.GJS.2017.23","Sium suave","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"561","es20170823.03","GRR.GJS.2017.23","Epilobium coloratum","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"562","es20170823.03","GRR.GJS.2017.23","Rosa palustris","Deciduous",0,0.2,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"563","es20170823.03","GRR.GJS.2017.23","Solanum dulcamara","Deciduous",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"564","es20170823.03","GRR.GJS.2017.23","Bidens frondosa","Forb",1.8,0,0,0,1,1.79998200018,"Palms","Palms.es20170823.03",1.34163407834625
+"565","es20170823.03","GRR.GJS.2017.23","Scutellaria lateriflora","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"566","es20170823.03","GRR.GJS.2017.23","Rosa multiflora","Deciduous",0,0.2,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"567","es20170823.03","GRR.GJS.2017.23","Acer saccharinum","Deciduous",0,0,0,20.5,1,20.49979500205,"Palms","Palms.es20170823.03",4.52766993077565
+"568","es20170823.03","GRR.GJS.2017.23","Boehmeria cylindrica","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"569","es20170823.03","GRR.GJS.2017.23","Lycopus uniflorus","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"570","es20170823.03","GRR.GJS.2017.23","Cephalanthus occidentalis","Deciduous",0,46.8,0,0,1,46.7995320046799,"Palms","Palms.es20170823.03",6.84101834558861
+"571","es20170823.03","GRR.GJS.2017.23","Ulmus americana","Deciduous",0,0,5.1,0,1,5.09994900051,"Palms","Palms.es20170823.03",2.25830666662214
+"572","es20170823.03","GRR.GJS.2017.23","Bidens tripartita","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"573","es20170823.03","GRR.GJS.2017.23","Carex lupulina","Graminoid",1.8,0,0,0,1,1.79998200018,"Palms","Palms.es20170823.03",1.34163407834625
+"574","es20170823.03","GRR.GJS.2017.23","Riccia fluitans","Nonvascular",4.6,0,0,0,1,4.59995400045999,"Palms","Palms.es20170823.03",2.14475033522785
+"575","es20170823.03","GRR.GJS.2017.23","Glyceria striata","Graminoid",1.8,0,0,0,1,1.79998200018,"Palms","Palms.es20170823.03",1.34163407834625
+"576","es20170823.03","GRR.GJS.2017.23","Vitis riparia","Deciduous",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"577","es20170823.03","GRR.GJS.2017.23","Symphyotrichum lateriflorum","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"578","es20170823.03","GRR.GJS.2017.23","Quercus bicolor","Deciduous",0,0,0,20.5,1,20.49979500205,"Palms","Palms.es20170823.03",4.52766993077565
+"579","es20170823.03","GRR.GJS.2017.23","Persicaria hydropiperoides","Forb",0.2,0,0,0,1,0.199998000019996,"Palms","Palms.es20170823.03",0.447211359448747
+"580","es20170823.03","GRR.GJS.2017.23","Onoclea sensibilis","Forb",0.9,0,0,0,1,0.899991000089995,"Palms","Palms.es20170823.03",0.948678554669596
+"581","gs20180813.02","GRR.GJS.2018.13","Onoclea sensibilis","Forb",0.9,0,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"582","gs20180813.02","GRR.GJS.2018.13","Osmunda spectabilis","Forb",21.1,0,0,0,1,21.09978900211,"Adrian","Adrian.gs20180813.02",4.59345066394644
+"583","gs20180813.02","GRR.GJS.2018.13","Dryopteris carthusiana","Forb",4.5,0,0,0,1,4.49995500045,"Adrian","Adrian.gs20180813.02",2.12130973703747
+"584","gs20180813.02","GRR.GJS.2018.13","Ulmus americana","Deciduous",0,0,6.2,0,1,6.19993800062,"Adrian","Adrian.gs20180813.02",2.48996746979152
+"585","gs20180813.02","GRR.GJS.2018.13","Ambrosia artemisiifolia","Forb",0.9,0,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"586","gs20180813.02","GRR.GJS.2018.13","Boehmeria cylindrica","Forb",21.1,0,0,0,1,21.09978900211,"Adrian","Adrian.gs20180813.02",4.59345066394644
+"587","gs20180813.02","GRR.GJS.2018.13","Rubus allegheniensis","Deciduous",0,0.9,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"588","gs20180813.02","GRR.GJS.2018.13","Quercus palustris","Deciduous",0.9,0,0,6.2,1,7.04413011669325,"Adrian","Adrian.gs20180813.02",2.65407801631626
+"589","gs20180813.02","GRR.GJS.2018.13","Scutellaria lateriflora","Forb",4.5,0,0,0,1,4.49995500045,"Adrian","Adrian.gs20180813.02",2.12130973703747
+"590","gs20180813.02","GRR.GJS.2018.13","Nyssa sylvatica","Deciduous",0.9,0,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"591","gs20180813.02","GRR.GJS.2018.13","Ilex verticillata","Deciduous",0,0.9,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"592","gs20180813.02","GRR.GJS.2018.13","Potentilla simplex","Forb",0.9,0,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"593","gs20180813.02","GRR.GJS.2018.13","Acer saccharinum","Deciduous",4.5,0,0,94.3,1,94.5555968786069,"Adrian","Adrian.gs20180813.02",9.72397022201358
+"594","gs20180813.02","GRR.GJS.2018.13","Toxicodendron radicans","Deciduous",0.9,0,0,0,1,0.899991000089995,"Adrian","Adrian.gs20180813.02",0.948678554669596
+"595","gs20180813.02","GRR.GJS.2018.13","Glyceria striata","Graminoid",8.9,0,0,0,1,8.89991100088999,"Adrian","Adrian.gs20180813.02",2.98327186171324
+"596","gs20180813.03","GRR.GJS.2018.14","Acer saccharinum","Deciduous",5.1,1,0.2,26.5,1,31.0838291223514,"Edwards","Edwards.gs20180813.03",5.57528735782753
+"597","gs20180813.03","GRR.GJS.2018.14","Toxicodendron radicans","Deciduous",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"598","gs20180813.03","GRR.GJS.2018.14","Ulmus americana","Deciduous",2.1,0,8.7,0,1,10.6171956550252,"Edwards","Edwards.gs20180813.03",3.25840385081794
+"599","gs20180813.03","GRR.GJS.2018.14","Rosa multiflora","Deciduous",0,0.2,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"600","gs20180813.03","GRR.GJS.2018.14","Frangula alnus","Deciduous",5.1,80.8,0,0,1,81.7784234233537,"Edwards","Edwards.gs20180813.03",9.04314234231408
+"601","gs20180813.03","GRR.GJS.2018.14","Onoclea sensibilis","Forb",1,0,0,0,1,0.999990000100004,"Edwards","Edwards.gs20180813.03",0.999995000037502
+"602","gs20180813.03","GRR.GJS.2018.14","Carex bebbii","Graminoid",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"603","gs20180813.03","GRR.GJS.2018.14","Catalpa speciosa","Deciduous",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"604","gs20180813.03","GRR.GJS.2018.14","Carex lupulina","Graminoid",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"605","gs20180813.03","GRR.GJS.2018.14","Boehmeria cylindrica","Forb",2.1,0,0,0,1,2.09997900020999,"Edwards","Edwards.gs20180813.03",1.44913042898491
+"606","gs20180813.03","GRR.GJS.2018.14","Scutellaria lateriflora","Forb",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"607","gs20180813.03","GRR.GJS.2018.14","Quercus palustris","Deciduous",5.1,1,0.9,69.9,1,71.9745910215753,"Edwards","Edwards.gs20180813.03",8.48378400370821
+"608","gs20180813.03","GRR.GJS.2018.14","Dryopteris carthusiana","Forb",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"609","gs20180813.03","GRR.GJS.2018.14","Vitis riparia","Deciduous",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.gs20180813.03",0.447211359448747
+"610","gs20180816.01","GRR.GJS.2018.3","Elymus hystrix","Graminoid",18.8,0,0,0,1,18.79981200188,"Adrian","Adrian.gs20180816.01",4.33587499841497
+"611","gs20180816.01","GRR.GJS.2018.3","Campanulastrum americanum","Forb",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"612","gs20180816.01","GRR.GJS.2018.3","Urtica dioica","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"613","gs20180816.01","GRR.GJS.2018.3","Persicaria virginiana","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"614","gs20180816.01","GRR.GJS.2018.3","Bidens frondosa","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"615","gs20180816.01","GRR.GJS.2018.3","Cryptotaenia canadensis","Forb",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"616","gs20180816.01","GRR.GJS.2018.3","Quercus palustris","Deciduous",0,0,0,26,1,25.9997400026,"Adrian","Adrian.gs20180816.01",5.09899401868643
+"617","gs20180816.01","GRR.GJS.2018.3","Lindera benzoin","Deciduous",0,9.9,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"618","gs20180816.01","GRR.GJS.2018.3","Geum canadense","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"619","gs20180816.01","GRR.GJS.2018.3","Parthenocissus quinquefolia","Deciduous",41.1,0,0.4,0,1,41.3351882921006,"Adrian","Adrian.gs20180816.01",6.42924476840792
+"620","gs20180816.01","GRR.GJS.2018.3","Phytolacca americana","Forb",18.8,0,0,0,1,18.79981200188,"Adrian","Adrian.gs20180816.01",4.33587499841497
+"621","gs20180816.01","GRR.GJS.2018.3","Pilea pumila","Forb",41.1,0,0,0,1,41.09958900411,"Adrian","Adrian.gs20180816.01",6.4108961155294
+"622","gs20180816.01","GRR.GJS.2018.3","Celtis occidentalis","Deciduous",0,0,72.3,0,1,72.2992770072299,"Adrian","Adrian.gs20180816.01",8.50289815340804
+"623","gs20180816.01","GRR.GJS.2018.3","Cinna arundinacea","Graminoid",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"624","gs20180816.01","GRR.GJS.2018.3","Amphicarpaea bracteata","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"625","gs20180816.01","GRR.GJS.2018.3","Ageratina altissima","Forb",18.8,0,0,0,1,18.79981200188,"Adrian","Adrian.gs20180816.01",4.33587499841497
+"626","gs20180816.01","GRR.GJS.2018.3","Commelina communis","Forb",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"627","gs20180816.01","GRR.GJS.2018.3","Sanicula odorata","Forb",9.9,0,0,0,1,9.89990100098998,"Adrian","Adrian.gs20180816.01",3.14641081249572
+"628","gs20180816.01","GRR.GJS.2018.3","Lonicera morrowii","Deciduous",0,18.8,0,0,1,18.79981200188,"Adrian","Adrian.gs20180816.01",4.33587499841497
+"629","gs20180816.01","GRR.GJS.2018.3","Carex stipata","Graminoid",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"630","gs20180816.01","GRR.GJS.2018.3","Leersia virginica","Graminoid",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"631","gs20180816.01","GRR.GJS.2018.3","Vitis riparia","Deciduous",0,0,0.4,0,1,0.399996000040004,"Adrian","Adrian.gs20180816.01",0.632452369779736
+"632","gs20180816.01","GRR.GJS.2018.3","Dichanthelium latifolium","Graminoid",2,0,0,0,1,1.9999800002,"Adrian","Adrian.gs20180816.01",1.41420649135832
+"633","gs20180816.01","GRR.GJS.2018.3","Carex rosea","Graminoid",18.8,0,0,0,1,18.79981200188,"Adrian","Adrian.gs20180816.01",4.33587499841497
+"634","gs20180816.01","GRR.GJS.2018.3","Acer negundo","Deciduous",0,0,26,0,1,25.9997400026,"Adrian","Adrian.gs20180816.01",5.09899401868643
+"635","gs20180816.01","GRR.GJS.2018.3","Prunus serotina","Deciduous",2,0,0.4,0,1,2.3919761602376,"Adrian","Adrian.gs20180816.01",1.54660148720916
+"636","gs20180816.02","GRR.GJS.2018.4","Cinna arundinacea","Graminoid",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"637","gs20180816.02","GRR.GJS.2018.4","Persicaria hydropiperoides","Forb",12.6,0,0,0,1,12.59987400126,"Adrian","Adrian.gs20180816.02",3.54963012175353
+"638","gs20180816.02","GRR.GJS.2018.4","Toxicodendron radicans","Deciduous",1.3,1.3,0,0,1,2.58307433825493,"Adrian","Adrian.gs20180816.02",1.60719455519702
+"639","gs20180816.02","GRR.GJS.2018.4","Lindera benzoin","Deciduous",0,6.5,0,0,1,6.49993500064999,"Adrian","Adrian.gs20180816.02",2.54949700934321
+"640","gs20180816.02","GRR.GJS.2018.4","Smilax hispida","Deciduous",0,1.3,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"641","gs20180816.02","GRR.GJS.2018.4","Urtica dioica","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"642","gs20180816.02","GRR.GJS.2018.4","Vitis riparia","Deciduous",0,0,0.5,0,1,0.499995000050002,"Adrian","Adrian.gs20180816.02",0.70710324567916
+"643","gs20180816.02","GRR.GJS.2018.4","Quercus bicolor","Deciduous",0,0,11.1,21.5,1,30.213221732544,"Adrian","Adrian.gs20180816.02",5.49665550426294
+"644","gs20180816.02","GRR.GJS.2018.4","Alliaria petiolata","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"645","gs20180816.02","GRR.GJS.2018.4","Quercus palustris","Deciduous",0,0,0,55.9,1,55.8994410055899,"Adrian","Adrian.gs20180816.02",7.47659287413658
+"646","gs20180816.02","GRR.GJS.2018.4","Pilea pumila","Forb",50.5,0,0,0,1,50.4994950050499,"Adrian","Adrian.gs20180816.02",7.10629967036642
+"647","gs20180816.02","GRR.GJS.2018.4","Campanulastrum americanum","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"648","gs20180816.02","GRR.GJS.2018.4","Acer negundo","Deciduous",0,0,11.1,0,1,11.09988900111,"Adrian","Adrian.gs20180816.02",3.33164959158522
+"649","gs20180816.02","GRR.GJS.2018.4","Ulmus americana","Deciduous",0,0,40.1,0,1,40.09959900401,"Adrian","Adrian.gs20180816.02",6.33242441755209
+"650","gs20180816.02","GRR.GJS.2018.4","Carex stipata","Graminoid",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"651","gs20180816.02","GRR.GJS.2018.4","Lonicera morrowii","Deciduous",0,6.5,0,0,1,6.49993500064999,"Adrian","Adrian.gs20180816.02",2.54949700934321
+"652","gs20180816.02","GRR.GJS.2018.4","Acer rubrum","Deciduous",0,0,11.1,0,1,11.09988900111,"Adrian","Adrian.gs20180816.02",3.33164959158522
+"653","gs20180816.02","GRR.GJS.2018.4","Celtis occidentalis","Deciduous",0,1.3,31.1,0,1,31.9953840891187,"Adrian","Adrian.gs20180816.02",5.65644624204267
+"654","gs20180816.02","GRR.GJS.2018.4","Geum canadense","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"655","gs20180816.02","GRR.GJS.2018.4","Elymus hystrix","Graminoid",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"656","gs20180816.02","GRR.GJS.2018.4","Phytolacca americana","Forb",29,0,0,0,1,28.9997100029,"Adrian","Adrian.gs20180816.02",5.38513788151241
+"657","gs20180816.02","GRR.GJS.2018.4","Ageratina altissima","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"658","gs20180816.02","GRR.GJS.2018.4","Persicaria virginiana","Forb",29,0,0,0,1,28.9997100029,"Adrian","Adrian.gs20180816.02",5.38513788151241
+"659","gs20180816.02","GRR.GJS.2018.4","Dryopteris carthusiana","Forb",1.3,0,0,0,1,1.29998700013,"Adrian","Adrian.gs20180816.02",1.14016972426477
+"660","gs20180816.02","GRR.GJS.2018.4","Parthenocissus quinquefolia","Deciduous",6.5,0,0,0,1,6.49993500064999,"Adrian","Adrian.gs20180816.02",2.54949700934321
+"661","gs20180816.03","GRR.GJS.2018.5","Rosa multiflora","Deciduous",0.3,0.3,0,0,1,0.59909401805972,"Palms","Palms.gs20180816.03",0.774011639485945
+"662","gs20180816.03","GRR.GJS.2018.5","Persicaria virginiana","Forb",6.2,0,0,0,1,6.19993800062,"Palms","Palms.gs20180816.03",2.48996746979152
+"663","gs20180816.03","GRR.GJS.2018.5","Elymus hystrix","Graminoid",6.2,0,0,0,1,6.19993800062,"Palms","Palms.gs20180816.03",2.48996746979152
+"664","gs20180816.03","GRR.GJS.2018.5","Ranunculus hispidus","Forb",1.3,0,0,0,1,1.29998700013,"Palms","Palms.gs20180816.03",1.14016972426477
+"665","gs20180816.03","GRR.GJS.2018.5","Toxicodendron radicans","Deciduous",1.3,0,0,0,1,1.29998700013,"Palms","Palms.gs20180816.03",1.14016972426477
+"666","gs20180816.03","GRR.GJS.2018.5","Lonicera maackii","Deciduous",0,6.2,0,0,1,6.19993800062,"Palms","Palms.gs20180816.03",2.48996746979152
+"667","gs20180816.03","GRR.GJS.2018.5","Maianthemum racemosum","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180816.03",0.547719818912913
+"668","gs20180816.03","GRR.GJS.2018.5","Fraxinus pennsylvanica","Deciduous",6.2,0,0,0,1,6.19993800062,"Palms","Palms.gs20180816.03",2.48996746979152
+"669","gs20180816.03","GRR.GJS.2018.5","Ulmus americana","Deciduous",0,0,41.6,0,1,41.59958400416,"Palms","Palms.gs20180816.03",6.44977394984971
+"670","gs20180816.03","GRR.GJS.2018.5","Quercus palustris","Deciduous",0,0,0,23,1,22.9997700023,"Palms","Palms.gs20180816.03",4.79580754433495
+"671","gs20180816.03","GRR.GJS.2018.5","Populus deltoides","Deciduous",0,0,0,23,1,22.9997700023,"Palms","Palms.gs20180816.03",4.79580754433495
+"672","gs20180816.03","GRR.GJS.2018.5","Parthenocissus quinquefolia","Deciduous",12.4,0,0,0,1,12.39987600124,"Palms","Palms.gs20180816.03",3.52134576564699
+"673","gs20180816.03","GRR.GJS.2018.5","Carex rosea","Graminoid",6.2,0,0,0,1,6.19993800062,"Palms","Palms.gs20180816.03",2.48996746979152
+"674","gs20180816.03","GRR.GJS.2018.5","Laportea canadensis","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180816.03",0.547719818912913
+"675","gs20180816.03","GRR.GJS.2018.5","Quercus bicolor","Deciduous",0,0,23,0,1,22.9997700023,"Palms","Palms.gs20180816.03",4.79580754433495
+"676","gs20180816.03","GRR.GJS.2018.5","Alliaria petiolata","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180816.03",0.547719818912913
+"677","gs20180816.03","GRR.GJS.2018.5","Ribes cynosbati","Deciduous",0,0.3,0,0,1,0.299997000029995,"Palms","Palms.gs20180816.03",0.547719818912913
+"678","gs20180816.03","GRR.GJS.2018.5","Tilia americana","Deciduous",0,0,41.6,67.9,1,81.2530699304761,"Palms","Palms.gs20180816.03",9.01404847615521
+"679","gs20180816.03","GRR.GJS.2018.5","Podophyllum peltatum","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180816.03",0.547719818912913
+"680","gs20180816.03","GRR.GJS.2018.5","Geum canadense","Forb",1.3,0,0,0,1,1.29998700013,"Palms","Palms.gs20180816.03",1.14016972426477
+"681","gs20180830.03","GRR.GJS.2018.17","Phytolacca americana","Forb",8.8,0,0,0,1,8.79991200088,"Boots","Boots.gs20180830.03",2.96646456255253
+"682","gs20180830.03","GRR.GJS.2018.17","Vitis riparia","Deciduous",0,0,4.5,0,1,4.49995500045,"Boots","Boots.gs20180830.03",2.12130973703747
+"683","gs20180830.03","GRR.GJS.2018.17","Acer negundo","Deciduous",0,0,13.7,0,1,13.69986300137,"Boots","Boots.gs20180830.03",3.70133259804763
+"684","gs20180830.03","GRR.GJS.2018.17","Rubus occidentalis","Deciduous",0,8.8,0,0,1,8.79991200088,"Boots","Boots.gs20180830.03",2.96646456255253
+"685","gs20180830.03","GRR.GJS.2018.17","Galium aparine","Forb",4.5,0,0,0,1,4.49995500045,"Boots","Boots.gs20180830.03",2.12130973703747
+"686","gs20180830.03","GRR.GJS.2018.17","Rosa multiflora","Deciduous",0,20.9,0,0,1,20.89979100209,"Boots","Boots.gs20180830.03",4.57162892217752
+"687","gs20180830.03","GRR.GJS.2018.17","Parthenocissus quinquefolia","Deciduous",20.9,0,0,0,1,20.89979100209,"Boots","Boots.gs20180830.03",4.57162892217752
+"688","gs20180830.03","GRR.GJS.2018.17","Pilea pumila","Forb",63.9,0,0,0,1,63.8993610063899,"Boots","Boots.gs20180830.03",7.99370758824652
+"689","gs20180830.03","GRR.GJS.2018.17","Oxalis stricta","Forb",0.9,0,0,0,1,0.899991000089995,"Boots","Boots.gs20180830.03",0.948678554669596
+"690","gs20180830.03","GRR.GJS.2018.17","Prunus serotina","Deciduous",0,0,4.5,0,1,4.49995500045,"Boots","Boots.gs20180830.03",2.12130973703747
+"691","gs20180830.03","GRR.GJS.2018.17","Arctium minus","Forb",0.9,0,0,0,1,0.899991000089995,"Boots","Boots.gs20180830.03",0.948678554669596
+"692","gs20180830.03","GRR.GJS.2018.17","Persicaria virginiana","Forb",20.9,0,0,0,1,20.89979100209,"Boots","Boots.gs20180830.03",4.57162892217752
+"693","gs20180830.03","GRR.GJS.2018.17","Ranunculus hispidus","Forb",0.9,0,0,0,1,0.899991000089995,"Boots","Boots.gs20180830.03",0.948678554669596
+"694","gs20180830.03","GRR.GJS.2018.17","Bidens tripartita","Forb",63.9,0,0,0,1,63.8993610063899,"Boots","Boots.gs20180830.03",7.99370758824652
+"695","gs20180830.03","GRR.GJS.2018.17","Acer saccharinum","Deciduous",0,0,4.5,46.7,1,49.0980300344895,"Boots","Boots.gs20180830.03",7.00699864667387
+"696","gs20180912.03","GRR.GJS.2018.21","Persicaria virginiana","Forb",1.2,0,0,0,1,1.19998800012,"Henrietta","Henrietta.gs20180912.03",1.09543963782584
+"697","gs20180912.03","GRR.GJS.2018.21","Elymus hystrix","Graminoid",0.2,0,0,0,1,0.199998000019996,"Henrietta","Henrietta.gs20180912.03",0.447211359448747
+"698","gs20180912.03","GRR.GJS.2018.21","Urtica dioica","Forb",5.7,0,0,0,1,5.69994300057,"Henrietta","Henrietta.gs20180912.03",2.38745534001581
+"699","gs20180912.03","GRR.GJS.2018.21","Arctium minus","Forb",1.2,0,0,0,1,1.19998800012,"Henrietta","Henrietta.gs20180912.03",1.09543963782584
+"700","gs20180912.03","GRR.GJS.2018.21","Ambrosia trifida","Forb",96.8,0,0,0,1,96.7990320096799,"Henrietta","Henrietta.gs20180912.03",9.83864990787252
+"701","gs20180912.03","GRR.GJS.2018.21","Toxicodendron radicans","Deciduous",0,1.2,0,0,1,1.19998800012,"Henrietta","Henrietta.gs20180912.03",1.09543963782584
+"702","gs20180912.03","GRR.GJS.2018.21","Ulmus americana","Deciduous",0,0,0,19.7,1,19.69980300197,"Henrietta","Henrietta.gs20180912.03",4.43844601205985
+"703","gs20180912.03","GRR.GJS.2018.21","Acer saccharinum","Deciduous",0,0,0,0.2,1,0.199998000019996,"Henrietta","Henrietta.gs20180912.03",0.447211359448747
+"704","gs20180912.03","GRR.GJS.2018.21","Salix nigra","Deciduous",0,0,0,0.2,1,0.199998000019996,"Henrietta","Henrietta.gs20180912.03",0.447211359448747
+"705","gs20180912.03","GRR.GJS.2018.21","Pilea pumila","Forb",65.2,0,0,0,1,65.1993480065199,"Henrietta","Henrietta.gs20180912.03",8.07461132231886
+"706","gs20180912.04","GRR.GJS.2018.22","Toxicodendron radicans","Deciduous",2.5,0,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"707","gs20180912.04","GRR.GJS.2018.22","Acer saccharinum","Deciduous",0,0,0,21.7,1,21.69978300217,"Henrietta","Henrietta.gs20180912.04",4.65830258808613
+"708","gs20180912.04","GRR.GJS.2018.22","Hackelia virginiana","Forb",2.5,0,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"709","gs20180912.04","GRR.GJS.2018.22","Sanicula odorata","Forb",2.5,0,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"710","gs20180912.04","GRR.GJS.2018.22","Laportea canadensis","Forb",11.9,0,0,0,1,11.89988100119,"Henrietta","Henrietta.gs20180912.04",3.44962041407312
+"711","gs20180912.04","GRR.GJS.2018.22","Bidens frondosa","Forb",2.5,0,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"712","gs20180912.04","GRR.GJS.2018.22","Persicaria virginiana","Forb",11.9,0,0,0,1,11.89988100119,"Henrietta","Henrietta.gs20180912.04",3.44962041407312
+"713","gs20180912.04","GRR.GJS.2018.22","Arctium minus","Forb",11.9,0,0,0,1,11.89988100119,"Henrietta","Henrietta.gs20180912.04",3.44962041407312
+"714","gs20180912.04","GRR.GJS.2018.22","Ulmus americana","Deciduous",0,0,63.4,0,1,63.3993660063399,"Henrietta","Henrietta.gs20180912.04",7.96237188319787
+"715","gs20180912.04","GRR.GJS.2018.22","Phytolacca americana","Forb",4.9,0,0,0,1,4.89995100049,"Henrietta","Henrietta.gs20180912.04",2.21358329422906
+"716","gs20180912.04","GRR.GJS.2018.22","Celtis occidentalis","Deciduous",0,2.5,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"717","gs20180912.04","GRR.GJS.2018.22","Pilea pumila","Forb",42.5,0,0,0,1,42.49957500425,"Henrietta","Henrietta.gs20180912.04",6.51916980943509
+"718","gs20180912.04","GRR.GJS.2018.22","Geum canadense","Forb",2.5,0,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"719","gs20180912.04","GRR.GJS.2018.22","Morus alba","Deciduous",0,0,21.7,0,1,21.69978300217,"Henrietta","Henrietta.gs20180912.04",4.65830258808613
+"720","gs20180912.04","GRR.GJS.2018.22","Rubus occidentalis","Deciduous",0,4.9,0,0,1,4.89995100049,"Henrietta","Henrietta.gs20180912.04",2.21358329422906
+"721","gs20180912.04","GRR.GJS.2018.22","Quercus bicolor","Deciduous",2.5,2.5,10.9,0,1,15.2991654470368,"Henrietta","Henrietta.gs20180912.04",3.91141476284948
+"722","gs20180912.04","GRR.GJS.2018.22","Rosa multiflora","Deciduous",0,2.5,0,0,1,2.49997500025,"Henrietta","Henrietta.gs20180912.04",1.58113092444933
+"723","gs20180912.04","GRR.GJS.2018.22","Ambrosia trifida","Forb",11.9,0,0,0,1,11.89988100119,"Henrietta","Henrietta.gs20180912.04",3.44962041407312
+"724","gs20180912.06","GRR.GJS.2018.24","Epilobium coloratum","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"725","gs20180912.06","GRR.GJS.2018.24","Sambucus nigra","Deciduous",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.gs20180912.06",0.70710324567916
+"726","gs20180912.06","GRR.GJS.2018.24","Impatiens capensis","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"727","gs20180912.06","GRR.GJS.2018.24","Helianthus giganteus","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"728","gs20180912.06","GRR.GJS.2018.24","Eupatorium perfoliatum","Forb",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.gs20180912.06",0.70710324567916
+"729","gs20180912.06","GRR.GJS.2018.24","Leersia oryzoides","Graminoid",21.3,0,0,0,1,21.29978700213,"Palms","Palms.gs20180912.06",4.61516922789728
+"730","gs20180912.06","GRR.GJS.2018.24","Calamagrostis canadensis","Graminoid",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.gs20180912.06",0.70710324567916
+"731","gs20180912.06","GRR.GJS.2018.24","Symphyotrichum puniceum","Forb",4.5,0,0,0,1,4.49995500045,"Palms","Palms.gs20180912.06",2.12130973703747
+"732","gs20180912.06","GRR.GJS.2018.24","Solanum dulcamara","Deciduous",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.gs20180912.06",0.70710324567916
+"733","gs20180912.06","GRR.GJS.2018.24","Onoclea sensibilis","Forb",4.5,0,0,0,1,4.49995500045,"Palms","Palms.gs20180912.06",2.12130973703747
+"734","gs20180912.06","GRR.GJS.2018.24","Urtica dioica","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"735","gs20180912.06","GRR.GJS.2018.24","Symphyotrichum lanceolatum","Forb",11,0,0,0,1,10.9998900011,"Palms","Palms.gs20180912.06",3.31660820735582
+"736","gs20180912.06","GRR.GJS.2018.24","Verbena hastata","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"737","gs20180912.06","GRR.GJS.2018.24","Ludwigia palustris","Forb",11,0,0,0,1,10.9998900011,"Palms","Palms.gs20180912.06",3.31660820735582
+"738","gs20180912.06","GRR.GJS.2018.24","Persicaria sagittata","Forb",11,0,0,0,1,10.9998900011,"Palms","Palms.gs20180912.06",3.31660820735582
+"739","gs20180912.06","GRR.GJS.2018.24","Eutrochium maculatum","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"740","gs20180912.06","GRR.GJS.2018.24","Bidens frondosa","Forb",4.5,0,0,0,1,4.49995500045,"Palms","Palms.gs20180912.06",2.12130973703747
+"741","gs20180912.06","GRR.GJS.2018.24","Penthorum sedoides","Forb",4.5,0,0,0,1,4.49995500045,"Palms","Palms.gs20180912.06",2.12130973703747
+"742","gs20180912.06","GRR.GJS.2018.24","Solidago gigantea","Forb",2.3,0,0,0,1,2.29997700023,"Palms","Palms.gs20180912.06",1.51656750599174
+"743","gs20180912.06","GRR.GJS.2018.24","Ambrosia trifida","Forb",0.5,0,0,0,1,0.499995000050002,"Palms","Palms.gs20180912.06",0.70710324567916
+"744","gs20180912.06","GRR.GJS.2018.24","Phalaris arundinacea","Graminoid",97.4,0,0,0,1,97.3990260097399,"Palms","Palms.gs20180912.06",9.86909448783119
+"745","gs20180919.04","GRR.GJS.2018.28","Rumex crispus","Forb",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"746","gs20180919.04","GRR.GJS.2018.28","Cornus racemosa","Deciduous",0,6.5,0,0,1,6.49993500064999,"Palms","Palms.gs20180919.04",2.54949700934321
+"747","gs20180919.04","GRR.GJS.2018.28","Lindera benzoin","Deciduous",0,3.3,0,0,1,3.29996700033,"Palms","Palms.gs20180919.04",1.81658112957555
+"748","gs20180919.04","GRR.GJS.2018.28","Quercus bicolor","Deciduous",0,0,0,0.7,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"749","gs20180919.04","GRR.GJS.2018.28","Eupatorium perfoliatum","Forb",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"750","gs20180919.04","GRR.GJS.2018.28","Rudbeckia laciniata","Forb",15.7,0,0,0,1,15.69984300157,"Palms","Palms.gs20180919.04",3.96230273976762
+"751","gs20180919.04","GRR.GJS.2018.28","Epilobium coloratum","Forb",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"752","gs20180919.04","GRR.GJS.2018.28","Carex lacustris","Graminoid",95.3,0,0,0,1,95.2990470095299,"Palms","Palms.gs20180919.04",9.76212307899926
+"753","gs20180919.04","GRR.GJS.2018.28","Symplocarpus foetidus","Forb",3.3,0,0,0,1,3.29996700033,"Palms","Palms.gs20180919.04",1.81658112957555
+"754","gs20180919.04","GRR.GJS.2018.28","Toxicodendron vernix","Deciduous",0,0,0.7,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"755","gs20180919.04","GRR.GJS.2018.28","Cornus obliqua","Deciduous",0,6.5,0,0,1,6.49993500064999,"Palms","Palms.gs20180919.04",2.54949700934321
+"756","gs20180919.04","GRR.GJS.2018.28","Solidago patula","Forb",3.3,0,0,0,1,3.29996700033,"Palms","Palms.gs20180919.04",1.81658112957555
+"757","gs20180919.04","GRR.GJS.2018.28","Fraxinus nigra","Deciduous",0,0,3.5,0,1,3.49996500034999,"Palms","Palms.gs20180919.04",1.87081933931366
+"758","gs20180919.04","GRR.GJS.2018.28","Viburnum lentago","Deciduous",0,0,0.1,0,1,0.0999990000099982,"Palms","Palms.gs20180919.04",0.316226184889864
+"759","gs20180919.04","GRR.GJS.2018.28","Doellingeria umbellata","Forb",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"760","gs20180919.04","GRR.GJS.2018.28","Sambucus nigra","Deciduous",0,6.5,0,0,1,6.49993500064999,"Palms","Palms.gs20180919.04",2.54949700934321
+"761","gs20180919.04","GRR.GJS.2018.28","Pilea fontana","Forb",3.3,0,0,0,1,3.29996700033,"Palms","Palms.gs20180919.04",1.81658112957555
+"762","gs20180919.04","GRR.GJS.2018.28","Carpinus caroliniana","Deciduous",0,15.7,0,0,1,15.69984300157,"Palms","Palms.gs20180919.04",3.96230273976762
+"763","gs20180919.04","GRR.GJS.2018.28","Persicaria sagittata","Forb",3.3,0,0,0,1,3.29996700033,"Palms","Palms.gs20180919.04",1.81658112957555
+"764","gs20180919.04","GRR.GJS.2018.28","Impatiens capensis","Forb",52.4,0,0,0,1,52.3994760052399,"Palms","Palms.gs20180919.04",7.23874823469085
+"765","gs20180919.04","GRR.GJS.2018.28","Parthenocissus quinquefolia","Deciduous",0.7,0,0,0,1,0.699993000069998,"Palms","Palms.gs20180919.04",0.836655843265317
+"766","gs20180919.04","GRR.GJS.2018.28","Symphyotrichum puniceum","Forb",6.5,0,0,0,1,6.49993500064999,"Palms","Palms.gs20180919.04",2.54949700934321
+"767","gs20180919.05","GRR.GJS.2018.29","Pteridium aquilinum","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"768","gs20180919.05","GRR.GJS.2018.29","Viburnum opulus","Deciduous",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"769","gs20180919.05","GRR.GJS.2018.29","Viola canadensis","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"770","gs20180919.05","GRR.GJS.2018.29","Populus grandidentata","Deciduous",0,0,0,7.8,1,7.79992200077999,"Palms","Palms.gs20180919.05",2.79283404461848
+"771","gs20180919.05","GRR.GJS.2018.29","Ulmus americana","Deciduous",0,0,15.4,0,1,15.39984600154,"Palms","Palms.gs20180919.05",3.92426375280001
+"772","gs20180919.05","GRR.GJS.2018.29","Smilax hispida","Deciduous",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"773","gs20180919.05","GRR.GJS.2018.29","Symphyotrichum lateriflorum","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"774","gs20180919.05","GRR.GJS.2018.29","Acer rubrum","Deciduous",0,0,22.7,85.2,1,88.5589078129878,"Palms","Palms.gs20180919.05",9.41057425521885
+"775","gs20180919.05","GRR.GJS.2018.29","Potentilla simplex","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"776","gs20180919.05","GRR.GJS.2018.29","Lindera benzoin","Deciduous",0,32,0,0,1,31.9996800032,"Palms","Palms.gs20180919.05",5.65682596543326
+"777","gs20180919.05","GRR.GJS.2018.29","Prunus serotina","Deciduous",0.3,0,0,7.8,1,8.07651946880297,"Palms","Palms.gs20180919.05",2.84192179146488
+"778","gs20180919.05","GRR.GJS.2018.29","Sassafras albidum","Deciduous",0,8.5,0,15.4,1,22.5907871819973,"Palms","Palms.gs20180919.05",4.75297666541687
+"779","gs20180919.05","GRR.GJS.2018.29","Vitis aestivalis","Deciduous",0,0,0,7.8,1,7.79992200077999,"Palms","Palms.gs20180919.05",2.79283404461848
+"780","gs20180919.05","GRR.GJS.2018.29","Liriodendron tulipifera","Deciduous",0,0,0,15.4,1,15.39984600154,"Palms","Palms.gs20180919.05",3.92426375280001
+"781","gs20180919.05","GRR.GJS.2018.29","Carya cordiformis","Deciduous",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"782","gs20180919.05","GRR.GJS.2018.29","Fraxinus pennsylvanica","Deciduous",0,8.5,0,0,1,8.49991500084999,"Palms","Palms.gs20180919.05",2.91546137015224
+"783","gs20180919.05","GRR.GJS.2018.29","Rosa multiflora","Deciduous",0,24.5,0,0,1,24.49975500245,"Palms","Palms.gs20180919.05",4.9497227197541
+"784","gs20180919.05","GRR.GJS.2018.29","Rubus allegheniensis","Deciduous",0,0.3,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"785","gs20180919.05","GRR.GJS.2018.29","Quercus velutina","Deciduous",0,0,0,7.8,1,7.79992200077999,"Palms","Palms.gs20180919.05",2.79283404461848
+"786","gs20180919.05","GRR.GJS.2018.29","Geum canadense","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"787","gs20180919.05","GRR.GJS.2018.29","Lonicera maackii","Deciduous",0,1.7,0,0,1,1.69998300017,"Palms","Palms.gs20180919.05",1.30383396188702
+"788","gs20180919.05","GRR.GJS.2018.29","Elaeagnus umbellata","Deciduous",0,1.7,0,0,1,1.69998300017,"Palms","Palms.gs20180919.05",1.30383396188702
+"789","gs20180919.05","GRR.GJS.2018.29","Persicaria virginiana","Forb",0.3,0,0,0,1,0.299997000029995,"Palms","Palms.gs20180919.05",0.547719818912913
+"790","Lamberton Lake Fen","GRR.GJS.2015.24","Pycnanthemum virginianum","Forb",0.15,0,0,0,4,0.149998500015003,"Edwards","Edwards.Lamberton.Lake.Fen",0.387296398143596
+"791","Lamberton Lake Fen","GRR.GJS.2015.24","Muhlenbergia glomerata","Graminoid",0.15,0,0,0,4,0.149998500015003,"Edwards","Edwards.Lamberton.Lake.Fen",0.387296398143596
+"792","Lamberton Lake Fen","GRR.GJS.2015.24","Juncus brachycephalus","Graminoid",0.8,0,0,0,4,0.799992000079996,"Edwards","Edwards.Lamberton.Lake.Fen",0.8944227188975
+"793","Lamberton Lake Fen","GRR.GJS.2015.24","Juniperus virginiana","Evergreen",0,0.125,0,0,4,0.124998750012495,"Edwards","Edwards.Lamberton.Lake.Fen",0.353551622839572
+"794","Lamberton Lake Fen","GRR.GJS.2015.24","Hypericum fraseri","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"795","Lamberton Lake Fen","GRR.GJS.2015.24","Schoenoplectus acutus","Graminoid",2.05,0,0,0,4,2.049979500205,"Edwards","Edwards.Lamberton.Lake.Fen",1.4317749474708
+"796","Lamberton Lake Fen","GRR.GJS.2015.24","Rhynchospora capillacea","Graminoid",0.25,0,0,0,4,0.249997500025001,"Edwards","Edwards.Lamberton.Lake.Fen",0.499997500018751
+"797","Lamberton Lake Fen","GRR.GJS.2015.24","Thelypteris palustris","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"798","Lamberton Lake Fen","GRR.GJS.2015.24","Schoenoplectus pungens","Graminoid",20,0,0,0,4,19.999800002,"Edwards","Edwards.Lamberton.Lake.Fen",4.47211359448751
+"799","Lamberton Lake Fen","GRR.GJS.2015.24","Carex hystericina","Graminoid",4.75,0,0,0,4,4.749952500475,"Edwards","Edwards.Lamberton.Lake.Fen",2.17943857460471
+"800","Lamberton Lake Fen","GRR.GJS.2015.24","Cladium mariscoides","Graminoid",1.05,0,0,0,4,1.049989500105,"Edwards","Edwards.Lamberton.Lake.Fen",1.024689953159
+"801","Lamberton Lake Fen","GRR.GJS.2015.24","Frangula alnus","Deciduous",6.25,1.3,0,0,4,7.46867612573061,"Edwards","Edwards.Lamberton.Lake.Fen",2.73288787287928
+"802","Lamberton Lake Fen","GRR.GJS.2015.24","Cypripedium candidum","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"803","Lamberton Lake Fen","GRR.GJS.2015.24","Asclepias incarnata","Forb",0.1,0,0,0,4,0.0999990000099982,"Edwards","Edwards.Lamberton.Lake.Fen",0.316226184889864
+"804","Lamberton Lake Fen","GRR.GJS.2015.24","Lysimachia quadriflora","Forb",0.425,0,0,0,4,0.424995750042501,"Edwards","Edwards.Lamberton.Lake.Fen",0.65191698094351
+"805","Lamberton Lake Fen","GRR.GJS.2015.24","Selaginella eclipes","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"806","Lamberton Lake Fen","GRR.GJS.2015.24","Lythrum salicaria","Forb",1.1,0,0,0,4,1.09998900011,"Edwards","Edwards.Lamberton.Lake.Fen",1.04880360416524
+"807","Lamberton Lake Fen","GRR.GJS.2015.24","Eupatorium perfoliatum","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"808","Lamberton Lake Fen","GRR.GJS.2015.24","Carex cryptolepis","Graminoid",0.6,0,0,0,4,0.59999400006,"Edwards","Edwards.Lamberton.Lake.Fen",0.774592796287185
+"809","Lamberton Lake Fen","GRR.GJS.2015.24","Juncus nodosus","Graminoid",0.8,0,0,0,4,0.799992000079996,"Edwards","Edwards.Lamberton.Lake.Fen",0.8944227188975
+"810","Lamberton Lake Fen","GRR.GJS.2015.24","Dichanthelium acuminatum","Graminoid",0.1,0,0,0,4,0.0999990000099982,"Edwards","Edwards.Lamberton.Lake.Fen",0.316226184889864
+"811","Lamberton Lake Fen","GRR.GJS.2015.24","Cirsium muticum","Forb",0.175,0,0,0,4,0.1749982500175,"Edwards","Edwards.Lamberton.Lake.Fen",0.418327921632658
+"812","Lamberton Lake Fen","GRR.GJS.2015.24","Eutrochium maculatum","Forb",0.225,0,0,0,4,0.224997750022504,"Edwards","Edwards.Lamberton.Lake.Fen",0.474339277334804
+"813","Lamberton Lake Fen","GRR.GJS.2015.24","Eleocharis elliptica","Graminoid",1.25,0,0,0,4,1.24998750012499,"Edwards","Edwards.Lamberton.Lake.Fen",1.11802839862187
+"814","Lamberton Lake Fen","GRR.GJS.2015.24","Lycopus americanus","Forb",0.1,0,0,0,4,0.0999990000099982,"Edwards","Edwards.Lamberton.Lake.Fen",0.316226184889864
+"815","Lamberton Lake Fen","GRR.GJS.2015.24","Eleocharis palustris","Graminoid",5,0,0,0,4,4.9999500005,"Edwards","Edwards.Lamberton.Lake.Fen",2.23605679724375
+"816","Lamberton Lake Fen","GRR.GJS.2015.24","Cornus racemosa","Deciduous",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"817","Lamberton Lake Fen","GRR.GJS.2015.24","Symphyotrichum lanceolatum","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"818","Lamberton Lake Fen","GRR.GJS.2015.24","Dasiphora fruticosa","Deciduous",8.25,1.75,0,0,4,9.85552788845667,"Edwards","Edwards.Lamberton.Lake.Fen",3.13935150762967
+"819","Lamberton Lake Fen","GRR.GJS.2015.24","Typha angustifolia","Graminoid",0.35,0,0,0,4,0.349996500034999,"Edwards","Edwards.Lamberton.Lake.Fen",0.591605020292255
+"820","Lamberton Lake Fen","GRR.GJS.2015.24","Carex lasiocarpa","Graminoid",52.5,0,0,0,4,52.4994750052499,"Edwards","Edwards.Lamberton.Lake.Fen",7.24565214492456
+"821","Lamberton Lake Fen","GRR.GJS.2015.24","Glyceria striata","Graminoid",0.4,0,0,0,4,0.399996000040004,"Edwards","Edwards.Lamberton.Lake.Fen",0.632452369779736
+"822","Lamberton Lake Fen","GRR.GJS.2015.24","Juncus dudleyi","Graminoid",0.225,0,0,0,4,0.224997750022504,"Edwards","Edwards.Lamberton.Lake.Fen",0.474339277334804
+"823","Lamberton Lake Fen","GRR.GJS.2015.24","Solidago gigantea","Forb",0.15,0,0,0,4,0.149998500015003,"Edwards","Edwards.Lamberton.Lake.Fen",0.387296398143596
+"824","Lamberton Lake Fen","GRR.GJS.2015.24","Carex leptalea","Graminoid",1.05,0,0,0,4,1.049989500105,"Edwards","Edwards.Lamberton.Lake.Fen",1.024689953159
+"825","Lamberton Lake Fen","GRR.GJS.2015.24","Rudbeckia hirta","Forb",0.05,0,0,0,4,0.0499995000050046,"Edwards","Edwards.Lamberton.Lake.Fen",0.223605679724386
+"826","Page Creek Fen","GRR.GJS.2015.23","Symplocarpus foetidus","Forb",0.615,0,0,0,4,0.614993850061496,"Houghton","Houghton.Page.Creek.Fen",0.784215436000527
+"827","Page Creek Fen","GRR.GJS.2015.23","Impatiens capensis","Forb",1.515,0,0,0,4,1.5149848501515,"Houghton","Houghton.Page.Creek.Fen",1.23084720828846
+"828","Page Creek Fen","GRR.GJS.2015.23","Ranunculus pensylvanicus","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"829","Page Creek Fen","GRR.GJS.2015.23","Parthenocissus quinquefolia","Deciduous",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"830","Page Creek Fen","GRR.GJS.2015.23","Lycopus uniflorus","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"831","Page Creek Fen","GRR.GJS.2015.23","Lathyrus palustris","Forb",0.7675,0,0,0,4,0.767492325076746,"Houghton","Houghton.Page.Creek.Fen",0.876066393075745
+"832","Page Creek Fen","GRR.GJS.2015.23","Solidago canadensis","Forb",1.23,0,0,0,4,1.229987700123,"Houghton","Houghton.Page.Creek.Fen",1.10904810541428
+"833","Page Creek Fen","GRR.GJS.2015.23","Apios americana","Forb",1.515,0,0,0,4,1.5149848501515,"Houghton","Houghton.Page.Creek.Fen",1.23084720828846
+"834","Page Creek Fen","GRR.GJS.2015.23","Cirsium muticum","Forb",3.03,0,0,0,4,3.02996970030299,"Houghton","Houghton.Page.Creek.Fen",1.7406808151706
+"835","Page Creek Fen","GRR.GJS.2015.23","Verbena hastata","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"836","Page Creek Fen","GRR.GJS.2015.23","Carex brunnescens","Graminoid",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"837","Page Creek Fen","GRR.GJS.2015.23","Glyceria striata","Graminoid",1.515,0,0,0,4,1.5149848501515,"Houghton","Houghton.Page.Creek.Fen",1.23084720828846
+"838","Page Creek Fen","GRR.GJS.2015.23","Solidago gigantea","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"839","Page Creek Fen","GRR.GJS.2015.23","Chelone glabra","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"840","Page Creek Fen","GRR.GJS.2015.23","Galium boreale","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"841","Page Creek Fen","GRR.GJS.2015.23","Cornus alba","Deciduous",0,43.21,0,0,4,43.209567904321,"Houghton","Houghton.Page.Creek.Fen",6.57339850490756
+"842","Page Creek Fen","GRR.GJS.2015.23","Hydrocotyle americana","Forb",1.8225,0,0,0,4,1.82248177518225,"Houghton","Houghton.Page.Creek.Fen",1.34999325005063
+"843","Page Creek Fen","GRR.GJS.2015.23","Physocarpus opulifolius","Deciduous",0,2.9525,0,0,4,2.95247047529524,"Houghton","Houghton.Page.Creek.Fen",1.71827543638825
+"844","Page Creek Fen","GRR.GJS.2015.23","Salix petiolaris","Deciduous",0,27.92,0,0,4,27.919720802792,"Houghton","Houghton.Page.Creek.Fen",5.28391150595768
+"845","Page Creek Fen","GRR.GJS.2015.23","Salix myricoides","Deciduous",0,15.4625,0,0,4,15.4623453765462,"Houghton","Houghton.Page.Creek.Fen",3.93221888716107
+"846","Page Creek Fen","GRR.GJS.2015.23","Elymus trachycaulus","Graminoid",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"847","Page Creek Fen","GRR.GJS.2015.23","Onoclea sensibilis","Forb",0.615,0,0,0,4,0.614993850061496,"Houghton","Houghton.Page.Creek.Fen",0.784215436000527
+"848","Page Creek Fen","GRR.GJS.2015.23","Cornus racemosa","Deciduous",0,52.765,0,0,4,52.7644723552764,"Houghton","Houghton.Page.Creek.Fen",7.26391577286497
+"849","Page Creek Fen","GRR.GJS.2015.23","Eutrochium maculatum","Forb",25.98,0,0,0,4,25.979740202598,"Houghton","Houghton.Page.Creek.Fen",5.09703248985113
+"850","Page Creek Fen","GRR.GJS.2015.23","Pycnanthemum virginianum","Forb",4.4675,0,0,0,4,4.46745532544675,"Houghton","Houghton.Page.Creek.Fen",2.11363557063339
+"851","Page Creek Fen","GRR.GJS.2015.23","Asclepias incarnata","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"852","Page Creek Fen","GRR.GJS.2015.23","Carex pellita","Graminoid",2.13,0,0,0,4,2.129978700213,"Houghton","Houghton.Page.Creek.Fen",1.45944465472761
+"853","Page Creek Fen","GRR.GJS.2015.23","Rumex altissimus","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"854","Page Creek Fen","GRR.GJS.2015.23","Spiraea alba","Deciduous",8.3425,1.515,0,0,4,9.73101507872532,"Houghton","Houghton.Page.Creek.Fen",3.11945749750262
+"855","Page Creek Fen","GRR.GJS.2015.23","Carex stricta","Graminoid",86.4725,0,0,0,4,86.4716352836471,"Houghton","Houghton.Page.Creek.Fen",9.29901259724102
+"856","Page Creek Fen","GRR.GJS.2015.23","Bromus ciliatus","Graminoid",4.545,0,0,0,4,4.54495455045449,"Houghton","Houghton.Page.Creek.Fen",2.13188990110993
+"857","Page Creek Fen","GRR.GJS.2015.23","Carex hystericina","Graminoid",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"858","Page Creek Fen","GRR.GJS.2015.23","Symphyotrichum puniceum","Forb",23.435,0,0,0,4,23.4347656523435,"Houghton","Houghton.Page.Creek.Fen",4.8409467723105
+"859","Page Creek Fen","GRR.GJS.2015.23","Ribes hirtellum","Deciduous",3.3375,1.515,0,0,4,4.80188936173258,"Houghton","Houghton.Page.Creek.Fen",2.19132137344858
+"860","Page Creek Fen","GRR.GJS.2015.23","Solidago patula","Forb",6.1375,0,0,0,4,6.13743862561375,"Houghton","Houghton.Page.Creek.Fen",2.47738544147126
+"861","Page Creek Fen","GRR.GJS.2015.23","Mentha arvensis","Forb",0.3075,0,0,0,4,0.307496925030748,"Houghton","Houghton.Page.Creek.Fen",0.554524052707137
+"862","Page Creek Fen","GRR.GJS.2015.23","Cornus obliqua","Deciduous",0,22.73,0,0,4,22.729772702273,"Houghton","Houghton.Page.Creek.Fen",4.76757513860799
+"863","Page Creek Fen","GRR.GJS.2015.23","Iris virginica","Forb",1.8225,0,0,0,4,1.82248177518225,"Houghton","Houghton.Page.Creek.Fen",1.34999325005063
+"864","Page Creek Fen","GRR.GJS.2015.23","Lycopus americanus","Forb",2.4375,0,0,0,4,2.43747562524375,"Houghton","Houghton.Page.Creek.Fen",1.56124169341065
+"865","Page Creek Fen","GRR.GJS.2015.23","Calamagrostis canadensis","Graminoid",15.0475,0,0,0,4,15.0473495265047,"Houghton","Houghton.Page.Creek.Fen",3.87909132742511
+"866","Page Creek Fen","GRR.GJS.2015.23","Thelypteris palustris","Forb",1.515,0,0,0,4,1.5149848501515,"Houghton","Houghton.Page.Creek.Fen",1.23084720828846
+"867","Page Creek Fen","GRR.GJS.2015.23","Caltha palustris","Forb",0.615,0,0,0,4,0.614993850061496,"Houghton","Houghton.Page.Creek.Fen",0.784215436000527
+"868","Page Creek Fen","GRR.GJS.2015.23","Salix eriocephala","Deciduous",0.7675,24.035,0,0,4,24.6177870417974,"Houghton","Houghton.Page.Creek.Fen",4.96163148992319
+"869","Page Creek Fen","GRR.GJS.2015.23","Thalictrum dasycarpum","Forb",1.8425,0,0,0,4,1.84248157518425,"Houghton","Houghton.Page.Creek.Fen",1.35738040916475
+"870","Page Creek Fen","GRR.GJS.2015.23","Galium aparine","Forb",6.06,0,0,0,4,6.059939400606,"Houghton","Houghton.Page.Creek.Fen",2.46169441657692
+"871","Page Creek Fen","GRR.GJS.2015.23","Salix discolor","Deciduous",0,10.0875,0,0,4,10.0873991260087,"Houghton","Houghton.Page.Creek.Fen",3.17606661233809
+"872","Page Creek Fen","GRR.GJS.2015.23","Eupatorium perfoliatum","Forb",3.3375,0,0,0,4,3.33746662533375,"Houghton","Houghton.Page.Creek.Fen",1.82687345630007
+"873","Page Creek Fen","GRR.GJS.2015.23","Monarda fistulosa","Forb",3.3375,0,0,0,4,3.33746662533375,"Houghton","Houghton.Page.Creek.Fen",1.82687345630007
+"874","Page Creek Fen","GRR.GJS.2015.23","Angelica atropurpurea","Forb",1.8225,0,0,0,4,1.82248177518225,"Houghton","Houghton.Page.Creek.Fen",1.34999325005063
+"875","S12053101","GRR.GJS.2012.23","Iris virginica","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12053101",0.447211359448747
+"876","S12053101","GRR.GJS.2012.23","Acer saccharinum","Deciduous",0,0,0,1,1,0.999990000100004,"Houghton","Houghton.S12053101",0.999995000037502
+"877","S12053101","GRR.GJS.2012.23","Cornus racemosa","Deciduous",0,5,0,0,1,4.9999500005,"Houghton","Houghton.S12053101",2.23605679724375
+"878","S12053101","GRR.GJS.2012.23","Frangula alnus","Deciduous",0,5,0,0,1,4.9999500005,"Houghton","Houghton.S12053101",2.23605679724375
+"879","S12053101","GRR.GJS.2012.23","Solanum dulcamara","Deciduous",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12053101",0.999995000037502
+"880","S12053101","GRR.GJS.2012.23","Calamagrostis canadensis","Graminoid",5,0,0,0,1,4.9999500005,"Houghton","Houghton.S12053101",2.23605679724375
+"881","S12053101","GRR.GJS.2012.23","Eupatorium perfoliatum","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12053101",0.999995000037502
+"882","S12053101","GRR.GJS.2012.23","Carex comosa","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12053101",0.999995000037502
+"883","S12053101","GRR.GJS.2012.23","Carex stricta","Graminoid",80,0,0,0,1,79.9992000079999,"Houghton","Houghton.S12053101",8.94422718897502
+"884","S12053101","GRR.GJS.2012.23","Lythrum salicaria","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12053101",0.447211359448747
+"885","S12053101","GRR.GJS.2012.23","Carex stipata","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12053101",0.999995000037502
+"886","S12060401","GRR.GJS.2012.24","Thelypteris palustris","Forb",2,0,0,0,1,1.9999800002,"Adrian","Adrian.S12060401",1.41420649135832
+"887","S12060401","GRR.GJS.2012.24","Micranthes pensylvanica","Forb",0.2,0,0,0,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"888","S12060401","GRR.GJS.2012.24","Carex prairea","Graminoid",0.2,0,0,0,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"889","S12060401","GRR.GJS.2012.24","Cornus racemosa","Deciduous",0,1,0,0,1,0.999990000100004,"Adrian","Adrian.S12060401",0.999995000037502
+"890","S12060401","GRR.GJS.2012.24","Fraxinus nigra","Deciduous",0,0,0,0.2,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"891","S12060401","GRR.GJS.2012.24","Pycnanthemum virginianum","Forb",0.2,0,0,0,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"892","S12060401","GRR.GJS.2012.24","Populus tremuloides","Deciduous",0,0,0,5,1,4.9999500005,"Adrian","Adrian.S12060401",2.23605679724375
+"893","S12060401","GRR.GJS.2012.24","Onoclea sensibilis","Forb",2,0,0,0,1,1.9999800002,"Adrian","Adrian.S12060401",1.41420649135832
+"894","S12060401","GRR.GJS.2012.24","Spiraea alba","Deciduous",0,0.5,0,0,1,0.499995000050002,"Adrian","Adrian.S12060401",0.70710324567916
+"895","S12060401","GRR.GJS.2012.24","Carex stricta","Graminoid",90,0,0,0,1,89.9991000089999,"Adrian","Adrian.S12060401",9.48678554669599
+"896","S12060401","GRR.GJS.2012.24","Eutrochium maculatum","Forb",1,0,0,0,1,0.999990000100004,"Adrian","Adrian.S12060401",0.999995000037502
+"897","S12060401","GRR.GJS.2012.24","Physocarpus opulifolius","Deciduous",0,0.2,0,0,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"898","S12060401","GRR.GJS.2012.24","Dasiphora fruticosa","Deciduous",0.2,0,0,0,1,0.199998000019996,"Adrian","Adrian.S12060401",0.447211359448747
+"899","S12060701","GRR.GJS.2012.31","Salix discolor","Deciduous",0,10,0,0,1,9.99990000099999,"Edwards","Edwards.S12060701",3.16226184889866
+"900","S12060701","GRR.GJS.2012.31","Lindera benzoin","Deciduous",0,1,0,0,1,0.999990000100004,"Edwards","Edwards.S12060701",0.999995000037502
+"901","S12060701","GRR.GJS.2012.31","Schoenoplectus acutus","Graminoid",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.S12060701",0.447211359448747
+"902","S12060701","GRR.GJS.2012.31","Salix bebbiana","Deciduous",0,10,0,0,1,9.99990000099999,"Edwards","Edwards.S12060701",3.16226184889866
+"903","S12060701","GRR.GJS.2012.31","Tilia americana","Deciduous",0,0,0,0.1,1,0.0999990000099982,"Edwards","Edwards.S12060701",0.316226184889864
+"904","S12060701","GRR.GJS.2012.31","Symplocarpus foetidus","Forb",0.2,0,0,0,1,0.199998000019996,"Edwards","Edwards.S12060701",0.447211359448747
+"905","S12060701","GRR.GJS.2012.31","Chara","Nonvascular",5,0,0,0,1,4.9999500005,"Edwards","Edwards.S12060701",2.23605679724375
+"906","S12060701","GRR.GJS.2012.31","Typha angustifolia","Graminoid",90,0,0,0,1,89.9991000089999,"Edwards","Edwards.S12060701",9.48678554669599
+"907","S12060701","GRR.GJS.2012.31","Juncus marginatus","Graminoid",1,0,0,0,1,0.999990000100004,"Edwards","Edwards.S12060701",0.999995000037502
+"908","S12060701","GRR.GJS.2012.31","Rosa palustris","Deciduous",0,1,0,0,1,0.999990000100004,"Edwards","Edwards.S12060701",0.999995000037502
+"909","S12060701","GRR.GJS.2012.31","Eleocharis elliptica","Graminoid",1,0,0,0,1,0.999990000100004,"Edwards","Edwards.S12060701",0.999995000037502
+"910","S12060701","GRR.GJS.2012.31","Thelypteris palustris","Forb",10,0,0,0,1,9.99990000099999,"Edwards","Edwards.S12060701",3.16226184889866
+"911","S12060701","GRR.GJS.2012.31","Platanus occidentalis","Deciduous",0,0.1,0,0,1,0.0999990000099982,"Edwards","Edwards.S12060701",0.316226184889864
+"912","S12060701","GRR.GJS.2012.31","Rhamnus alnifolia","Deciduous",5,0,0,0,1,4.9999500005,"Edwards","Edwards.S12060701",2.23605679724375
+"913","S12060701","GRR.GJS.2012.31","Liriodendron tulipifera","Deciduous",0,0,0,0.1,1,0.0999990000099982,"Edwards","Edwards.S12060701",0.316226184889864
+"914","S12060701","GRR.GJS.2012.31","Toxicodendron vernix","Deciduous",0,5,0,0,1,4.9999500005,"Edwards","Edwards.S12060701",2.23605679724375
+"915","S12060701","GRR.GJS.2012.31","Cornus alba","Deciduous",0,5,0,0,1,4.9999500005,"Edwards","Edwards.S12060701",2.23605679724375
+"916","S12060701","GRR.GJS.2012.31","Larix laricina","Deciduous",0,1,0,10,1,10.89989200107,"Edwards","Edwards.S12060701",3.30149844783698
+"917","S12061201","GRR.GJS.2012.70","Pedicularis lanceolata","Forb",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"918","S12061201","GRR.GJS.2012.70","Toxicodendron vernix","Deciduous",0,0.2,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"919","S12061201","GRR.GJS.2012.70","Phragmites australis","Graminoid",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"920","S12061201","GRR.GJS.2012.70","Chara","Nonvascular",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"921","S12061201","GRR.GJS.2012.70","Eupatorium perfoliatum","Forb",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"922","S12061201","GRR.GJS.2012.70","Asclepias incarnata","Forb",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"923","S12061201","GRR.GJS.2012.70","Carex viridula","Graminoid",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"924","S12061201","GRR.GJS.2012.70","Selaginella eclipes","Forb",0.2,0,0,0,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"925","S12061201","GRR.GJS.2012.70","Larix laricina","Deciduous",0,0,0,0.2,1,0.199998000019996,"Carlisle","Carlisle.S12061201",0.447211359448747
+"926","S12061201","GRR.GJS.2012.70","Thelypteris palustris","Forb",0.5,0,0,0,1,0.499995000050002,"Carlisle","Carlisle.S12061201",0.70710324567916
+"927","S12062501","GRR.GJS.2012.34","Asclepias incarnata","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"928","S12062501","GRR.GJS.2012.34","Proserpinaca palustris","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"929","S12062501","GRR.GJS.2012.34","Osmundastrum cinnamomeum","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"930","S12062501","GRR.GJS.2012.34","Carex stricta","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"931","S12062501","GRR.GJS.2012.34","Phalaris arundinacea","Graminoid",2,0,0,0,1,1.9999800002,"Houghton","Houghton.S12062501",1.41420649135832
+"932","S12062501","GRR.GJS.2012.34","Nuphar advena","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"933","S12062501","GRR.GJS.2012.34","Carex pseudocyperus","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"934","S12062501","GRR.GJS.2012.34","Dulichium arundinaceum","Graminoid",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"935","S12062501","GRR.GJS.2012.34","Osmunda spectabilis","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"936","S12062501","GRR.GJS.2012.34","Carex alata","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"937","S12062501","GRR.GJS.2012.34","Peltandra virginica","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"938","S12062501","GRR.GJS.2012.34","Toxicodendron vernix","Deciduous",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"939","S12062501","GRR.GJS.2012.34","Boehmeria cylindrica","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"940","S12062501","GRR.GJS.2012.34","Betula pumila","Deciduous",2,0,0,0,1,1.9999800002,"Houghton","Houghton.S12062501",1.41420649135832
+"941","S12062501","GRR.GJS.2012.34","Hypericum fraseri","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"942","S12062501","GRR.GJS.2012.34","Schoenoplectus tabernaemontani","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"943","S12062501","GRR.GJS.2012.34","Thelypteris palustris","Forb",15,0,0,0,1,14.9998500015,"Houghton","Houghton.S12062501",3.87296398143592
+"944","S12062501","GRR.GJS.2012.34","Carex diandra","Graminoid",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062501",0.999995000037502
+"945","S12062501","GRR.GJS.2012.34","Chamaedaphne calyculata","Evergreen",3,0,0,0,1,2.9999700003,"Houghton","Houghton.S12062501",1.73204214737979
+"946","S12062501","GRR.GJS.2012.34","Typha latifolia","Graminoid",5,0,0,0,1,4.9999500005,"Houghton","Houghton.S12062501",2.23605679724375
+"947","S12062501","GRR.GJS.2012.34","Iris virginica","Forb",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062501",0.447211359448747
+"948","S12062502","GRR.GJS.2012.35","Eutrochium maculatum","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062502",0.999995000037502
+"949","S12062502","GRR.GJS.2012.35","Toxicodendron vernix","Deciduous",0.2,0,0,0,1,0.199998000019996,"Houghton","Houghton.S12062502",0.447211359448747
+"950","S12062502","GRR.GJS.2012.35","Carex lacustris","Graminoid",5,0,0,0,1,4.9999500005,"Houghton","Houghton.S12062502",2.23605679724375
+"951","S12062502","GRR.GJS.2012.35","Typha latifolia","Graminoid",2,0,0,0,1,1.9999800002,"Houghton","Houghton.S12062502",1.41420649135832
+"952","S12062502","GRR.GJS.2012.35","Osmundastrum cinnamomeum","Forb",5,0,0,0,1,4.9999500005,"Houghton","Houghton.S12062502",2.23605679724375
+"953","S12062502","GRR.GJS.2012.35","Onoclea sensibilis","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062502",0.999995000037502
+"954","S12062502","GRR.GJS.2012.35","Phalaris arundinacea","Graminoid",90,0,0,0,1,89.9991000089999,"Houghton","Houghton.S12062502",9.48678554669599
+"955","S12062503","GRR.GJS.2012.36","Rhamnus alnifolia","Deciduous",0,1,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"956","S12062503","GRR.GJS.2012.36","Frangula alnus","Deciduous",1,0,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"957","S12062503","GRR.GJS.2012.36","Carex pellita","Graminoid",10,0,0,0,1,9.99990000099999,"Gilford","Gilford.S12062503",3.16226184889866
+"958","S12062503","GRR.GJS.2012.36","Lobelia spicata","Forb",1,0,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"959","S12062503","GRR.GJS.2012.36","Liatris spicata","Forb",60,0,0,0,1,59.9994000059999,"Gilford","Gilford.S12062503",7.74592796287184
+"960","S12062503","GRR.GJS.2012.36","Salix petiolaris","Deciduous",0,1,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"961","S12062503","GRR.GJS.2012.36","Carex flava","Graminoid",0.2,0,0,0,1,0.199998000019996,"Gilford","Gilford.S12062503",0.447211359448747
+"962","S12062503","GRR.GJS.2012.36","Salix eriocephala","Deciduous",0,1,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"963","S12062503","GRR.GJS.2012.36","Dasiphora fruticosa","Deciduous",0,90,0,0,1,89.9991000089999,"Gilford","Gilford.S12062503",9.48678554669599
+"964","S12062503","GRR.GJS.2012.36","Thalictrum dasycarpum","Forb",1,0,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"965","S12062503","GRR.GJS.2012.36","Juniperus virginiana","Evergreen",0,1,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"966","S12062503","GRR.GJS.2012.36","Cornus obliqua","Deciduous",0,0.2,0,0,1,0.199998000019996,"Gilford","Gilford.S12062503",0.447211359448747
+"967","S12062503","GRR.GJS.2012.36","Eutrochium maculatum","Forb",1,0,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"968","S12062503","GRR.GJS.2012.36","Juncus dudleyi","Graminoid",1,0,0,0,1,0.999990000100004,"Gilford","Gilford.S12062503",0.999995000037502
+"969","S12062901","GRR.GJS.2012.40","Quercus bicolor","Deciduous",0,0,0,1,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"970","S12062901","GRR.GJS.2012.40","Saururus cernuus","Forb",70,0,0,0,1,69.9993000069999,"Houghton","Houghton.S12062901",8.36655843265317
+"971","S12062901","GRR.GJS.2012.40","Parthenocissus quinquefolia","Deciduous",0,1,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"972","S12062901","GRR.GJS.2012.40","Platanthera psycodes","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"973","S12062901","GRR.GJS.2012.40","Fraxinus pennsylvanica","Deciduous",5,0,0,90,1,90.4991400081499,"Houghton","Houghton.S12062901",9.51310359494471
+"974","S12062901","GRR.GJS.2012.40","Betula alleghaniensis","Deciduous",0,2,0,0.2,1,2.1959780802188,"Houghton","Houghton.S12062901",1.48188328832563
+"975","S12062901","GRR.GJS.2012.40","Equisetum fluviatile","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"976","S12062901","GRR.GJS.2012.40","Onoclea sensibilis","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"977","S12062901","GRR.GJS.2012.40","Osmunda spectabilis","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"978","S12062901","GRR.GJS.2012.40","Lindera benzoin","Deciduous",0,1,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"979","S12062901","GRR.GJS.2012.40","Symplocarpus foetidus","Forb",5,0,0,0,1,4.9999500005,"Houghton","Houghton.S12062901",2.23605679724375
+"980","S12062901","GRR.GJS.2012.40","Toxicodendron radicans","Deciduous",0,1,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"981","S12062901","GRR.GJS.2012.40","Osmundastrum cinnamomeum","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"982","S12062901","GRR.GJS.2012.40","Prunus serotina","Deciduous",0,0.2,0,0,1,0.199998000019996,"Houghton","Houghton.S12062901",0.447211359448747
+"983","S12062901","GRR.GJS.2012.40","Acer saccharinum","Deciduous",0,0,0,10,1,9.99990000099999,"Houghton","Houghton.S12062901",3.16226184889866
+"984","S12062901","GRR.GJS.2012.40","Fraxinus nigra","Deciduous",0,0,0,1,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"985","S12062901","GRR.GJS.2012.40","Carpinus caroliniana","Deciduous",0,5,0,0,1,4.9999500005,"Houghton","Houghton.S12062901",2.23605679724375
+"986","S12062901","GRR.GJS.2012.40","Iris virginica","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"987","S12062901","GRR.GJS.2012.40","Impatiens capensis","Forb",1,0,0,0,1,0.999990000100004,"Houghton","Houghton.S12062901",0.999995000037502
+"988","S12062901","GRR.GJS.2012.40","Acer rubrum","Deciduous",0,0,0,0.2,1,0.199998000019996,"Houghton","Houghton.S12062901",0.447211359448747
+"989","S12062901","GRR.GJS.2012.40","Ilex verticillata","Deciduous",0,0.2,0,0,1,0.199998000019996,"Houghton","Houghton.S12062901",0.447211359448747
+"990","s20190701.01","GRR.GJS.2019.22","Phalaris arundinacea","Graminoid",98.8,0,0,0,1,98.7990120098799,"Thomas","Thomas.s20190701.01",9.93976921310952
+"991","s20190701.01","GRR.GJS.2019.22","Juglans nigra","Deciduous",0,0,5.7,0,1,5.69994300057,"Thomas","Thomas.s20190701.01",2.38745534001581
+"992","s20190701.01","GRR.GJS.2019.22","Salix nigra","Deciduous",0,0,11.3,0,1,11.29988700113,"Thomas","Thomas.s20190701.01",3.36153045518407
+"993","s20190701.01","GRR.GJS.2019.22","Poa palustris","Graminoid",0.3,0,0,0,1,0.299997000029995,"Thomas","Thomas.s20190701.01",0.547719818912913
+"994","s20190701.01","GRR.GJS.2019.22","Fraxinus pennsylvanica","Deciduous",0,0,0,5.7,1,5.69994300057,"Thomas","Thomas.s20190701.01",2.38745534001581
+"995","s20190701.01","GRR.GJS.2019.22","Sambucus nigra","Deciduous",0,3,0,0,1,2.9999700003,"Thomas","Thomas.s20190701.01",1.73204214737979
+"996","s20190701.01","GRR.GJS.2019.22","Eutrochium maculatum","Forb",1.5,0,0,0,1,1.49998500014999,"Thomas","Thomas.s20190701.01",1.22473874771316
+"997","s20190701.01","GRR.GJS.2019.22","Solidago altissima","Forb",1.5,0,0,0,1,1.49998500014999,"Thomas","Thomas.s20190701.01",1.22473874771316
+"998","s20190701.01","GRR.GJS.2019.22","Carex vulpinoidea","Graminoid",0.3,0,0,0,1,0.299997000029995,"Thomas","Thomas.s20190701.01",0.547719818912913
+"999","s20190701.01","GRR.GJS.2019.22","Acer saccharinum","Deciduous",0,0,0,11.3,1,11.29988700113,"Thomas","Thomas.s20190701.01",3.36153045518407
+"1000","s20190701.01","GRR.GJS.2019.22","Echinocystis lobata","Forb",0.3,0,0,0,1,0.299997000029995,"Thomas","Thomas.s20190701.01",0.547719818912913
+"1001","s20190701.01","GRR.GJS.2019.22","Mentha arvensis","Forb",0.3,0,0,0,1,0.299997000029995,"Thomas","Thomas.s20190701.01",0.547719818912913
+"1002","s20190701.01","GRR.GJS.2019.22","Impatiens capensis","Forb",3,0,0,0,1,2.9999700003,"Thomas","Thomas.s20190701.01",1.73204214737979
+"1003","s20190701.01","GRR.GJS.2019.22","Cornus obliqua","Deciduous",0,3,0,0,1,2.9999700003,"Thomas","Thomas.s20190701.01",1.73204214737979
+"1004","s20190701.01","GRR.GJS.2019.22","Carex lacustris","Graminoid",1.5,0,0,0,1,1.49998500014999,"Thomas","Thomas.s20190701.01",1.22473874771316
+"1005","s20190701.01","GRR.GJS.2019.22","Boehmeria cylindrica","Forb",1.5,0,0,0,1,1.49998500014999,"Thomas","Thomas.s20190701.01",1.22473874771316
+"1006","s20190820.02","GRR.GJS.2019.11","Persicaria virginiana","Forb",12.6,0,0,0,1,12.59987400126,"Aurelius","Aurelius.s20190820.02",3.54963012175353
+"1007","s20190820.02","GRR.GJS.2019.11","Amphicarpaea bracteata","Forb",0.5,0,0,0,1,0.499995000050002,"Aurelius","Aurelius.s20190820.02",0.70710324567916
+"1008","s20190820.02","GRR.GJS.2019.11","Lycopus americanus","Forb",5.2,0,0,0,1,5.19994800051999,"Aurelius","Aurelius.s20190820.02",2.28033944852954
+"1009","s20190820.02","GRR.GJS.2019.11","Boehmeria cylindrica","Forb",60.7,0,0,0,1,60.6993930060699,"Aurelius","Aurelius.s20190820.02",7.79098151750278
+"1010","s20190820.02","GRR.GJS.2019.11","Cinna arundinacea","Graminoid",24.1,0,0,0,1,24.09975900241,"Aurelius","Aurelius.s20190820.02",4.90915053776211
+"1011","s20190820.02","GRR.GJS.2019.11","Carex grayi","Graminoid",0.5,0,0,0,1,0.499995000050002,"Aurelius","Aurelius.s20190820.02",0.70710324567916
+"1012","s20190820.02","GRR.GJS.2019.11","Pilea pumila","Forb",24.1,0,0,0,1,24.09975900241,"Aurelius","Aurelius.s20190820.02",4.90915053776211
+"1013","s20190820.02","GRR.GJS.2019.11","Acer saccharinum","Deciduous",24.1,0,4.4,65.5,1,74.9660957250383,"Aurelius","Aurelius.s20190820.02",8.65829635234544
+"1014","s20190820.02","GRR.GJS.2019.11","Toxicodendron radicans","Deciduous",0.5,0,0,0,1,0.499995000050002,"Aurelius","Aurelius.s20190820.02",0.70710324567916
+"1015","s20190820.02","GRR.GJS.2019.11","Scutellaria lateriflora","Forb",12.6,0,0,0,1,12.59987400126,"Aurelius","Aurelius.s20190820.02",3.54963012175353
+"1016","s20190820.02","GRR.GJS.2019.11","Fraxinus pennsylvanica","Deciduous",0,12.6,0,0,1,12.59987400126,"Aurelius","Aurelius.s20190820.02",3.54963012175353
+"1017","s20190820.02","GRR.GJS.2019.11","Ulmus americana","Deciduous",0,0,0,8.9,1,8.89991100088999,"Aurelius","Aurelius.s20190820.02",2.98327186171324
+"1018","s20190820.02","GRR.GJS.2019.11","Impatiens capensis","Forb",5.2,0,0,0,1,5.19994800051999,"Aurelius","Aurelius.s20190820.02",2.28033944852954
+"1019","s20190820.02","GRR.GJS.2019.11","Vitis riparia","Deciduous",0.5,0.5,0.2,0,1,1.19549308996866,"Aurelius","Aurelius.s20190820.02",1.09338606629528
+"1020","s20190820.03","GRR.GJS.2019.12","Acer saccharinum","Deciduous",0,0,61.7,0,1,61.6993830061699,"Aurelius","Aurelius.s20190820.03",7.85489548028298
+"1021","s20190820.03","GRR.GJS.2019.12","Prunella vulgaris","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.s20190820.03",0.8944227188975
+"1022","s20190820.03","GRR.GJS.2019.12","Viburnum lentago","Deciduous",0,4.1,2.1,0,1,6.11383972259416,"Aurelius","Aurelius.s20190820.03",2.47261798962035
+"1023","s20190820.03","GRR.GJS.2019.12","Fraxinus pennsylvanica","Deciduous",35.7,19.3,0,0,1,48.1094878054329,"Aurelius","Aurelius.s20190820.03",6.93610033126922
+"1024","s20190820.03","GRR.GJS.2019.12","Zanthoxylum americanum","Deciduous",35.7,19.3,10.5,0,1,53.5579371013695,"Aurelius","Aurelius.s20190820.03",7.31832884621684
+"1025","s20190820.03","GRR.GJS.2019.12","Circaea canadensis","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.s20190820.03",0.8944227188975
+"1026","s20190820.03","GRR.GJS.2019.12","Carex grayi","Graminoid",19.3,0,0,0,1,19.29980700193,"Aurelius","Aurelius.s20190820.03",4.39315456157987
+"1027","s20190820.03","GRR.GJS.2019.12","Toxicodendron radicans","Deciduous",4.1,0,0,0,1,4.09995900040999,"Aurelius","Aurelius.s20190820.03",2.02483554897922
+"1028","s20190820.03","GRR.GJS.2019.12","Agrimonia gryposepala","Forb",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.s20190820.03",0.8944227188975
+"1029","s20190820.03","GRR.GJS.2019.12","Cornus racemosa","Deciduous",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.s20190820.03",0.8944227188975
+"1030","s20190820.03","GRR.GJS.2019.12","Geum canadense","Forb",4.1,0,0,0,1,4.09995900040999,"Aurelius","Aurelius.s20190820.03",2.02483554897922
+"1031","s20190820.03","GRR.GJS.2019.12","Persicaria virginiana","Forb",19.3,0,0,0,1,19.29980700193,"Aurelius","Aurelius.s20190820.03",4.39315456157987
+"1032","s20190820.03","GRR.GJS.2019.12","Prunus serotina","Deciduous",0,0,10.5,0,1,10.49989500105,"Aurelius","Aurelius.s20190820.03",3.2403541474737
+"1033","s20190820.03","GRR.GJS.2019.12","Parthenocissus quinquefolia","Deciduous",19.3,0.8,0.2,0,1,20.1055096847078,"Aurelius","Aurelius.s20190820.03",4.48391677941371
+"1034","s20190820.03","GRR.GJS.2019.12","Bidens frondosa","Forb",8.1,0,0,0,1,8.09991900081,"Aurelius","Aurelius.s20190820.03",2.8460356640088
+"1035","s20190820.03","GRR.GJS.2019.12","Rubus occidentalis","Deciduous",0.8,0,0,0,1,0.799992000079996,"Aurelius","Aurelius.s20190820.03",0.8944227188975
+"1036","s20190820.04","GRR.GJS.2019.13","Carex lacustris","Graminoid",96.9,0,0,0,1,96.8990310096899,"Toto","Toto.s20190820.04",9.8437305433301
+"1037","s20190820.04","GRR.GJS.2019.13","Phalaris arundinacea","Graminoid",0.3,0,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1038","s20190820.04","GRR.GJS.2019.13","Quercus bicolor","Deciduous",0,3,0,0,1,2.9999700003,"Toto","Toto.s20190820.04",1.73204214737979
+"1039","s20190820.04","GRR.GJS.2019.13","Eutrochium maculatum","Forb",28.6,0,0,0,1,28.59971400286,"Toto","Toto.s20190820.04",5.347870043565
+"1040","s20190820.04","GRR.GJS.2019.13","Fraxinus pennsylvanica","Deciduous",0,7.4,0,0,1,7.39992600074,"Toto","Toto.s20190820.04",2.72028050037859
+"1041","s20190820.04","GRR.GJS.2019.13","Cornus obliqua","Deciduous",0,28.6,0,0,1,28.59971400286,"Toto","Toto.s20190820.04",5.347870043565
+"1042","s20190820.04","GRR.GJS.2019.13","Symphyotrichum puniceum","Forb",7.4,0,0,0,1,7.39992600074,"Toto","Toto.s20190820.04",2.72028050037859
+"1043","s20190820.04","GRR.GJS.2019.13","Onoclea sensibilis","Forb",7.4,0,0,0,1,7.39992600074,"Toto","Toto.s20190820.04",2.72028050037859
+"1044","s20190820.04","GRR.GJS.2019.13","Arisaema triphyllum","Forb",0.3,0,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1045","s20190820.04","GRR.GJS.2019.13","Ilex verticillata","Deciduous",0,1.5,0,0,1,1.49998500014999,"Toto","Toto.s20190820.04",1.22473874771316
+"1046","s20190820.04","GRR.GJS.2019.13","Solidago rugosa","Forb",0.3,0,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1047","s20190820.04","GRR.GJS.2019.13","Impatiens capensis","Forb",14.7,0,0,0,1,14.69985300147,"Toto","Toto.s20190820.04",3.83403873239043
+"1048","s20190820.04","GRR.GJS.2019.13","Acer saccharinum","Deciduous",0,0,10.6,10.6,1,20.0762104737829,"Toto","Toto.s20190820.04",4.48064844344911
+"1049","s20190820.04","GRR.GJS.2019.13","Clematis virginiana","Deciduous",0,0.3,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1050","s20190820.04","GRR.GJS.2019.13","Vitis riparia","Deciduous",0,0.3,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1051","s20190820.04","GRR.GJS.2019.13","Parthenocissus quinquefolia","Deciduous",0,0.3,0,0,1,0.299997000029995,"Toto","Toto.s20190820.04",0.547719818912913
+"1052","s20190905.04","GRR.GJS.2019.17","Acer negundo","Deciduous",0,2.4,0,0,1,2.39997600024,"Thomas","Thomas.s20190905.04",1.54918559257437
+"1053","s20190905.04","GRR.GJS.2019.17","Quercus bicolor","Deciduous",0,0,0,26.1,1,26.09973900261,"Thomas","Thomas.s20190905.04",5.10879036588995
+"1054","s20190905.04","GRR.GJS.2019.17","Boehmeria cylindrica","Forb",17.5,0,0,0,1,17.49982500175,"Thomas","Thomas.s20190905.04",4.18327921632659
+"1055","s20190905.04","GRR.GJS.2019.17","Phalaris arundinacea","Graminoid",66.2,0,0,0,1,66.1993380066199,"Thomas","Thomas.s20190905.04",8.13629756133709
+"1056","s20190905.04","GRR.GJS.2019.17","Impatiens capensis","Forb",5.9,0,0,0,1,5.89994100058999,"Thomas","Thomas.s20190905.04",2.42897941543151
+"1057","s20190905.04","GRR.GJS.2019.17","Cinna arundinacea","Graminoid",5.9,0,0,0,1,5.89994100058999,"Thomas","Thomas.s20190905.04",2.42897941543151
+"1058","s20190905.04","GRR.GJS.2019.17","Cornus obliqua","Deciduous",0,11.7,0,0,1,11.69988300117,"Thomas","Thomas.s20190905.04",3.42050917279431
+"1059","s20190905.04","GRR.GJS.2019.17","Smilax lasioneuron","Forb",0.2,0,0,0,1,0.199998000019996,"Thomas","Thomas.s20190905.04",0.447211359448747
+"1060","s20190905.04","GRR.GJS.2019.17","Ricciocarpos natans","Nonvascular",2.4,0,0,0,1,2.39997600024,"Thomas","Thomas.s20190905.04",1.54918559257437
+"1061","s20190905.04","GRR.GJS.2019.17","Scutellaria galericulata","Forb",1.2,0,0,0,1,1.19998800012,"Thomas","Thomas.s20190905.04",1.09543963782584
+"1062","s20190905.04","GRR.GJS.2019.17","Juglans nigra","Deciduous",0,0,0,5.3,1,5.29994700052999,"Thomas","Thomas.s20190905.04",2.30216137586616
+"1063","s20190905.04","GRR.GJS.2019.17","Lemna turionifera","Forb",2.4,0,0,0,1,2.39997600024,"Thomas","Thomas.s20190905.04",1.54918559257437
+"1064","s20200611.01","GRR.GJS.2020.13","Toxicodendron vernix","Deciduous",0,9,0,0,1,8.99991000089999,"Houghton","Houghton.s20200611.01",2.9999850001125
+"1065","s20200611.01","GRR.GJS.2020.13","Osmundastrum cinnamomeum","Forb",9,0,0,0,1,8.99991000089999,"Houghton","Houghton.s20200611.01",2.9999850001125
+"1066","s20200611.01","GRR.GJS.2020.13","Vaccinium corymbosum","Deciduous",1.8,33.7,0,0,1,34.893057135368,"Houghton","Houghton.s20200611.01",5.90703454665435
+"1067","s20200611.01","GRR.GJS.2020.13","Onoclea sensibilis","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1068","s20200611.01","GRR.GJS.2020.13","Thalictrum dasycarpum","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1069","s20200611.01","GRR.GJS.2020.13","Carex comosa","Graminoid",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1070","s20200611.01","GRR.GJS.2020.13","Ilex verticillata","Deciduous",0,25.9,0,0,1,25.89974100259,"Houghton","Houghton.s20200611.01",5.08917881416933
+"1071","s20200611.01","GRR.GJS.2020.13","Frangula alnus","Deciduous",1.8,1.8,0,0,1,3.56756464835029,"Houghton","Houghton.s20200611.01",1.88879979043579
+"1072","s20200611.01","GRR.GJS.2020.13","Boehmeria cylindrica","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1073","s20200611.01","GRR.GJS.2020.13","Arisaema triphyllum","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1074","s20200611.01","GRR.GJS.2020.13","Rosa palustris","Deciduous",0,1.8,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1075","s20200611.01","GRR.GJS.2020.13","Carex stipata","Graminoid",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1076","s20200611.01","GRR.GJS.2020.13","Lemna turionifera","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1077","s20200611.01","GRR.GJS.2020.13","Acer rubrum","Deciduous",0,0,3.8,0,1,3.79996200038,"Houghton","Houghton.s20200611.01",1.94934912224055
+"1078","s20200611.01","GRR.GJS.2020.13","Celastrus scandens","Deciduous",0,0.4,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1079","s20200611.01","GRR.GJS.2020.13","Acalypha rhomboidea","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1080","s20200611.01","GRR.GJS.2020.13","Osmunda spectabilis","Forb",9,0,0,0,1,8.99991000089999,"Houghton","Houghton.s20200611.01",2.9999850001125
+"1081","s20200611.01","GRR.GJS.2020.13","Packera aurea","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1082","s20200611.01","GRR.GJS.2020.13","Lindera benzoin","Deciduous",0,3.7,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1083","s20200611.01","GRR.GJS.2020.13","Amphicarpaea bracteata","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1084","s20200611.01","GRR.GJS.2020.13","Cornus racemosa","Deciduous",0,3.7,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1085","s20200611.01","GRR.GJS.2020.13","Cicuta bulbifera","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1086","s20200611.01","GRR.GJS.2020.13","Toxicodendron radicans","Deciduous",1.8,1.8,0,0,1,3.56756464835029,"Houghton","Houghton.s20200611.01",1.88879979043579
+"1087","s20200611.01","GRR.GJS.2020.13","Lysimachia thyrsiflora","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1088","s20200611.01","GRR.GJS.2020.13","Fraxinus nigra","Deciduous",0,9,0,0,1,8.99991000089999,"Houghton","Houghton.s20200611.01",2.9999850001125
+"1089","s20200611.01","GRR.GJS.2020.13","Equisetum fluviatile","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1090","s20200611.01","GRR.GJS.2020.13","Cicuta maculata","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1091","s20200611.01","GRR.GJS.2020.13","Typha latifolia","Graminoid",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1092","s20200611.01","GRR.GJS.2020.13","Calamagrostis canadensis","Graminoid",9,0,0,0,1,8.99991000089999,"Houghton","Houghton.s20200611.01",2.9999850001125
+"1093","s20200611.01","GRR.GJS.2020.13","Symphyotrichum puniceum","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1094","s20200611.01","GRR.GJS.2020.13","Larix laricina","Deciduous",0,0,7.6,0.7,1,8.24671806481403,"Houghton","Houghton.s20200611.01",2.87170995485513
+"1095","s20200611.01","GRR.GJS.2020.13","Solidago patula","Forb",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1096","s20200611.01","GRR.GJS.2020.13","Caltha palustris","Forb",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1097","s20200611.01","GRR.GJS.2020.13","Iris virginica","Forb",1.8,0,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1098","s20200611.01","GRR.GJS.2020.13","Leersia oryzoides","Graminoid",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1099","s20200611.01","GRR.GJS.2020.13","Quercus bicolor","Deciduous",1.8,3.7,0,0,1,5.43334633253002,"Houghton","Houghton.s20200611.01",2.33095395332684
+"1100","s20200611.01","GRR.GJS.2020.13","Carpinus caroliniana","Deciduous",0,1.8,0,0,1,1.79998200018,"Houghton","Houghton.s20200611.01",1.34163407834625
+"1101","s20200611.01","GRR.GJS.2020.13","Symplocarpus foetidus","Forb",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1102","s20200611.01","GRR.GJS.2020.13","Betula alleghaniensis","Deciduous",0,0,3.8,0,1,3.79996200038,"Houghton","Houghton.s20200611.01",1.94934912224055
+"1103","s20200611.01","GRR.GJS.2020.13","Rubus pubescens","Deciduous",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1104","s20200611.01","GRR.GJS.2020.13","Impatiens capensis","Forb",3.7,0,0,0,1,3.69996300037,"Houghton","Houghton.s20200611.01",1.92352878854724
+"1105","s20200611.01","GRR.GJS.2020.13","Carex leptalea","Graminoid",0.4,0,0,0,1,0.399996000040004,"Houghton","Houghton.s20200611.01",0.632452369779736
+"1106","s20200701.01","GRR.GJS.2020.14","Symphyotrichum puniceum","Forb",1.5,0,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1107","s20200701.01","GRR.GJS.2020.14","Carex lacustris","Graminoid",7.5,0,0,0,1,7.49992500075,"Houghton","Houghton.s20200701.01",2.73859909456459
+"1108","s20200701.01","GRR.GJS.2020.14","Ulmus americana","Deciduous",0,0.3,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1109","s20200701.01","GRR.GJS.2020.14","Carex aquatilis","Graminoid",7.5,0,0,0,1,7.49992500075,"Houghton","Houghton.s20200701.01",2.73859909456459
+"1110","s20200701.01","GRR.GJS.2020.14","Toxicodendron vernix","Deciduous",0,14.7,0,0,1,14.69985300147,"Houghton","Houghton.s20200701.01",3.83403873239043
+"1111","s20200701.01","GRR.GJS.2020.14","Elaeagnus umbellata","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1112","s20200701.01","GRR.GJS.2020.14","Typha latifolia","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1113","s20200701.01","GRR.GJS.2020.14","Vitis riparia","Deciduous",0,0.3,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1114","s20200701.01","GRR.GJS.2020.14","Chelone glabra","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1115","s20200701.01","GRR.GJS.2020.14","Equisetum fluviatile","Forb",7.5,0,0,0,1,7.49992500075,"Houghton","Houghton.s20200701.01",2.73859909456459
+"1116","s20200701.01","GRR.GJS.2020.14","Carex hystericina","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1117","s20200701.01","GRR.GJS.2020.14","Amelanchier arborea","Deciduous",0,1.5,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1118","s20200701.01","GRR.GJS.2020.14","Carex pseudocyperus","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1119","s20200701.01","GRR.GJS.2020.14","Lysimachia thyrsiflora","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1120","s20200701.01","GRR.GJS.2020.14","Agrostis gigantea","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1121","s20200701.01","GRR.GJS.2020.14","Acer rubrum","Deciduous",0,0,1.6,0,1,1.59998400015999,"Houghton","Houghton.s20200701.01",1.26490473955946
+"1122","s20200701.01","GRR.GJS.2020.14","Larix laricina","Deciduous",0,0,20.6,0,1,20.59979400206,"Houghton","Houghton.s20200701.01",4.53869959372285
+"1123","s20200701.01","GRR.GJS.2020.14","Solidago rugosa","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1124","s20200701.01","GRR.GJS.2020.14","Ribes americanum","Deciduous",0,0.3,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1125","s20200701.01","GRR.GJS.2020.14","Rubus pubescens","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1126","s20200701.01","GRR.GJS.2020.14","Solidago patula","Forb",3,0,0,0,1,2.9999700003,"Houghton","Houghton.s20200701.01",1.73204214737979
+"1127","s20200701.01","GRR.GJS.2020.14","Spiraea alba","Deciduous",0,0.3,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1128","s20200701.01","GRR.GJS.2020.14","Vaccinium corymbosum","Deciduous",0,1.5,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1129","s20200701.01","GRR.GJS.2020.14","Maianthemum canadense","Forb",1.5,0,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1130","s20200701.01","GRR.GJS.2020.14","Galium asprellum","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1131","s20200701.01","GRR.GJS.2020.14","Rosa palustris","Deciduous",0,7.5,0,0,1,7.49992500075,"Houghton","Houghton.s20200701.01",2.73859909456459
+"1132","s20200701.01","GRR.GJS.2020.14","Lindera benzoin","Deciduous",0,3,0,0,1,2.9999700003,"Houghton","Houghton.s20200701.01",1.73204214737979
+"1133","s20200701.01","GRR.GJS.2020.14","Onoclea sensibilis","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1134","s20200701.01","GRR.GJS.2020.14","Carex stipata","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1135","s20200701.01","GRR.GJS.2020.14","Mimulus ringens","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1136","s20200701.01","GRR.GJS.2020.14","Symplocarpus foetidus","Forb",41.7,0,0,0,1,41.69958300417,"Houghton","Houghton.s20200701.01",6.45752142885875
+"1137","s20200701.01","GRR.GJS.2020.14","Aronia prunifolia","Deciduous",0,3,0,0,1,2.9999700003,"Houghton","Houghton.s20200701.01",1.73204214737979
+"1138","s20200701.01","GRR.GJS.2020.14","Geum canadense","Forb",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1139","s20200701.01","GRR.GJS.2020.14","Fraxinus pennsylvanica","Deciduous",0,0.3,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1140","s20200701.01","GRR.GJS.2020.14","Rhamnus alnifolia","Deciduous",0,3,0,0,1,2.9999700003,"Houghton","Houghton.s20200701.01",1.73204214737979
+"1141","s20200701.01","GRR.GJS.2020.14","Thelypteris palustris","Forb",41.7,0,0,0,1,41.69958300417,"Houghton","Houghton.s20200701.01",6.45752142885875
+"1142","s20200701.01","GRR.GJS.2020.14","Betula pumila","Deciduous",0,3,0,0,1,2.9999700003,"Houghton","Houghton.s20200701.01",1.73204214737979
+"1143","s20200701.01","GRR.GJS.2020.14","Cornus obliqua","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1144","s20200701.01","GRR.GJS.2020.14","Sphagnum","Nonvascular",64.9,0,0,0,1,64.8993510064899,"Houghton","Houghton.s20200701.01",8.05601334448311
+"1145","s20200701.01","GRR.GJS.2020.14","Viburnum lentago","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1146","s20200701.01","GRR.GJS.2020.14","Viburnum opulus","Deciduous",0,1.5,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1147","s20200701.01","GRR.GJS.2020.14","Cornus racemosa","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1148","s20200701.01","GRR.GJS.2020.14","Toxicodendron radicans","Deciduous",0.3,0.3,0,0,1,0.59909401805972,"Houghton","Houghton.s20200701.01",0.774011639485945
+"1149","s20200701.01","GRR.GJS.2020.14","Glyceria striata","Graminoid",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1150","s20200701.01","GRR.GJS.2020.14","Populus tremuloides","Deciduous",0,0,4,0,1,3.99996000039999,"Houghton","Houghton.s20200701.01",1.999990000075
+"1151","s20200701.01","GRR.GJS.2020.14","Carex leptalea","Graminoid",1.5,0,0,0,1,1.49998500014999,"Houghton","Houghton.s20200701.01",1.22473874771316
+"1152","s20200701.01","GRR.GJS.2020.14","Ilex verticillata","Deciduous",0,7.5,0,0,1,7.49992500075,"Houghton","Houghton.s20200701.01",2.73859909456459
+"1153","s20200701.01","GRR.GJS.2020.14","Lonicera dioica","Deciduous",0.3,0,0,0,1,0.299997000029995,"Houghton","Houghton.s20200701.01",0.547719818912913
+"1154","s20200710.01","GRR.GJS.2020.15","Andropogon gerardi","Graminoid",6.7,0,0,0,1,6.69993300066999,"Edwards","Edwards.s20200710.01",2.58842287902692
+"1155","s20200710.01","GRR.GJS.2020.15","Hypericum kalmianum","Deciduous",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1156","s20200710.01","GRR.GJS.2020.15","Dichanthelium acuminatum","Graminoid",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1157","s20200710.01","GRR.GJS.2020.15","Cladium mariscoides","Graminoid",38.3,0,0,0,1,38.29961700383,"Edwards","Edwards.s20200710.01",6.1886684354415
+"1158","s20200710.01","GRR.GJS.2020.15","Rudbeckia hirta","Forb",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1159","s20200710.01","GRR.GJS.2020.15","Phragmites australis","Graminoid",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.01",1.64315945673875
+"1160","s20200710.01","GRR.GJS.2020.15","Carex cryptolepis","Graminoid",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1161","s20200710.01","GRR.GJS.2020.15","Solidago ohioensis","Forb",6.7,0,0,0,1,6.69993300066999,"Edwards","Edwards.s20200710.01",2.58842287902692
+"1162","s20200710.01","GRR.GJS.2020.15","Rhynchospora capillacea","Graminoid",6.7,0,0,0,1,6.69993300066999,"Edwards","Edwards.s20200710.01",2.58842287902692
+"1163","s20200710.01","GRR.GJS.2020.15","Arnoglossum plantagineum","Forb",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1164","s20200710.01","GRR.GJS.2020.15","Larix laricina","Deciduous",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1165","s20200710.01","GRR.GJS.2020.15","Dasiphora fruticosa","Deciduous",60.8,0,0,0,1,60.7993920060799,"Edwards","Edwards.s20200710.01",7.79739648896219
+"1166","s20200710.01","GRR.GJS.2020.15","Juniperus virginiana","Evergreen",1.3,0,0,0,1,1.29998700013,"Edwards","Edwards.s20200710.01",1.14016972426477
+"1167","s20200710.01","GRR.GJS.2020.15","Triantha glutinosa","Forb",0.3,0,0,0,1,0.299997000029995,"Edwards","Edwards.s20200710.01",0.547719818912913
+"1168","s20200710.01","GRR.GJS.2020.15","Liatris spicata","Forb",26,0,0,0,1,25.9997400026,"Edwards","Edwards.s20200710.01",5.09899401868643
+"1169","s20200710.01","GRR.GJS.2020.15","Schoenoplectus acutus","Graminoid",6.7,0,0,0,1,6.69993300066999,"Edwards","Edwards.s20200710.01",2.58842287902692
+"1170","s20200710.02","GRR.GJS.2020.16","Solidago ohioensis","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1171","s20200710.02","GRR.GJS.2020.16","Carex aquatilis","Graminoid",62.5,0,0,0,1,62.4993750062499,"Edwards","Edwards.s20200710.02",7.90565462224666
+"1172","s20200710.02","GRR.GJS.2020.16","Calamagrostis stricta","Graminoid",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1173","s20200710.02","GRR.GJS.2020.16","Juniperus virginiana","Evergreen",0,2.7,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1174","s20200710.02","GRR.GJS.2020.16","Spiraea alba","Deciduous",0,5.4,0,0,1,5.39994600053999,"Edwards","Edwards.s20200710.02",2.32377838886155
+"1175","s20200710.02","GRR.GJS.2020.16","Solidago uliginosa","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1176","s20200710.02","GRR.GJS.2020.16","Eutrochium maculatum","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1177","s20200710.02","GRR.GJS.2020.16","Carex lasiocarpa","Graminoid",75.4,0,0,0,1,75.3992460075399,"Edwards","Edwards.s20200710.02",8.68327392217589
+"1178","s20200710.02","GRR.GJS.2020.16","Frangula alnus","Deciduous",0,0.5,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1179","s20200710.02","GRR.GJS.2020.16","Apocynum cannabinum","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1180","s20200710.02","GRR.GJS.2020.16","Asclepias incarnata","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1181","s20200710.02","GRR.GJS.2020.16","Cladium mariscoides","Graminoid",5.4,0,0,0,1,5.39994600053999,"Edwards","Edwards.s20200710.02",2.32377838886155
+"1182","s20200710.02","GRR.GJS.2020.16","Lysimachia quadriflora","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1183","s20200710.02","GRR.GJS.2020.16","Phragmites australis","Graminoid",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1184","s20200710.02","GRR.GJS.2020.16","Pycnanthemum virginianum","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1185","s20200710.02","GRR.GJS.2020.16","Lycopus americanus","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1186","s20200710.02","GRR.GJS.2020.16","Toxicodendron vernix","Deciduous",0,0.5,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1187","s20200710.02","GRR.GJS.2020.16","Dasiphora fruticosa","Deciduous",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1188","s20200710.02","GRR.GJS.2020.16","Utricularia intermedia","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1189","s20200710.02","GRR.GJS.2020.16","Cornus obliqua","Deciduous",0,2.7,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1190","s20200710.02","GRR.GJS.2020.16","Thelypteris palustris","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1191","s20200710.02","GRR.GJS.2020.16","Eupatorium perfoliatum","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1192","s20200710.02","GRR.GJS.2020.16","Hypericum fraseri","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1193","s20200710.02","GRR.GJS.2020.16","Carex flava","Graminoid",13.2,0,0,0,1,13.19986800132,"Edwards","Edwards.s20200710.02",3.63316225915111
+"1194","s20200710.02","GRR.GJS.2020.16","Liatris spicata","Forb",0.5,0,0,0,1,0.499995000050002,"Edwards","Edwards.s20200710.02",0.70710324567916
+"1195","s20200710.02","GRR.GJS.2020.16","Persicaria amphibia","Forb",2.7,0,0,0,1,2.69997300027,"Edwards","Edwards.s20200710.02",1.64315945673875
+"1196","s20210525.01","GRR.GJS.2021.1","Rubus allegheniensis","Deciduous",1.7,0,0,0,1,1.69998300017,"Rifle","Rifle.s20210525.01",1.30383396188702
+"1197","s20210525.01","GRR.GJS.2021.1","Vaccinium corymbosum","Deciduous",0,1.7,0,0,1,1.69998300017,"Rifle","Rifle.s20210525.01",1.30383396188702
+"1198","s20210525.01","GRR.GJS.2021.1","Prunus serotina","Deciduous",0,0,2.5,0,1,2.49997500025,"Rifle","Rifle.s20210525.01",1.58113092444933
+"1199","s20210525.01","GRR.GJS.2021.1","Populus tremuloides","Deciduous",0,0,2.5,0,1,2.49997500025,"Rifle","Rifle.s20210525.01",1.58113092444933
+"1200","s20210525.01","GRR.GJS.2021.1","Chamaedaphne calyculata","Evergreen",1.7,0,0,0,1,1.69998300017,"Rifle","Rifle.s20210525.01",1.30383396188702
+"1201","s20210525.01","GRR.GJS.2021.1","Prunus virginiana","Deciduous",0,0.2,0,0,1,0.199998000019996,"Rifle","Rifle.s20210525.01",0.447211359448747
+"1202","s20210525.01","GRR.GJS.2021.1","Rubus hispidus","Deciduous",26,0,0,0,1,25.9997400026,"Rifle","Rifle.s20210525.01",5.09899401868643
+"1203","s20210525.01","GRR.GJS.2021.1","Solidago gigantea","Forb",4.2,0,0,0,1,4.19995800041999,"Rifle","Rifle.s20210525.01",2.049379906318
+"1204","s20210525.01","GRR.GJS.2021.1","Aronia prunifolia","Deciduous",0,79.9,0,0,1,79.8992010079899,"Rifle","Rifle.s20210525.01",8.93863529896985
+"1205","s20210525.01","GRR.GJS.2021.1","Vaccinium myrtilloides","Deciduous",26,0,0,0,1,25.9997400026,"Rifle","Rifle.s20210525.01",5.09899401868643
+"1206","s20210525.02","GRR.GJS.2021.2","Populus tremuloides","Deciduous",0,0,0,10,1,9.99990000099999,"Pinnebog","Pinnebog.s20210525.02",3.16226184889866
+"1207","s20210525.02","GRR.GJS.2021.2","Berberis thunbergii","Deciduous",0,2,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1208","s20210525.02","GRR.GJS.2021.2","Equisetum arvense","Forb",9.7,0,0,0,1,9.69990300096999,"Pinnebog","Pinnebog.s20210525.02",3.11446672818478
+"1209","s20210525.02","GRR.GJS.2021.2","Trientalis borealis","Forb",2,0,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1210","s20210525.02","GRR.GJS.2021.2","Spiraea alba","Deciduous",0,2,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1211","s20210525.02","GRR.GJS.2021.2","Parthenocissus quinquefolia","Deciduous",3.9,0,0,0,1,3.89996100039,"Pinnebog","Pinnebog.s20210525.02",1.97483189167838
+"1212","s20210525.02","GRR.GJS.2021.2","Onoclea sensibilis","Forb",50.8,0,0,0,1,50.7994920050799,"Pinnebog","Pinnebog.s20210525.02",7.1273762356901
+"1213","s20210525.02","GRR.GJS.2021.2","Thuja occidentalis","Evergreen",0,0,19.4,51.9,1,61.2308883761094,"Pinnebog","Pinnebog.s20210525.02",7.82501682912627
+"1214","s20210525.02","GRR.GJS.2021.2","Aralia racemosa","Forb",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1215","s20210525.02","GRR.GJS.2021.2","Prunus virginiana","Deciduous",0,9.7,0,0,1,9.69990300096999,"Pinnebog","Pinnebog.s20210525.02",3.11446672818478
+"1216","s20210525.02","GRR.GJS.2021.2","Fraxinus nigra","Deciduous",0,3.9,0,0,1,3.89996100039,"Pinnebog","Pinnebog.s20210525.02",1.97483189167838
+"1217","s20210525.02","GRR.GJS.2021.2","Mitella nuda","Forb",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1218","s20210525.02","GRR.GJS.2021.2","Galium aparine","Forb",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1219","s20210525.02","GRR.GJS.2021.2","Boehmeria cylindrica","Forb",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1220","s20210525.02","GRR.GJS.2021.2","Acer rubrum","Deciduous",0,0,10,0,1,9.99990000099999,"Pinnebog","Pinnebog.s20210525.02",3.16226184889866
+"1221","s20210525.02","GRR.GJS.2021.2","Rubus pubescens","Deciduous",2,0,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1222","s20210525.02","GRR.GJS.2021.2","Athyrium angustum","Forb",9.7,0,0,0,1,9.69990300096999,"Pinnebog","Pinnebog.s20210525.02",3.11446672818478
+"1223","s20210525.02","GRR.GJS.2021.2","Ulmus americana","Deciduous",0,3.9,0,0,1,3.89996100039,"Pinnebog","Pinnebog.s20210525.02",1.97483189167838
+"1224","s20210525.02","GRR.GJS.2021.2","Lonicera dioica","Deciduous",0,0.4,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1225","s20210525.02","GRR.GJS.2021.2","Vitis riparia","Deciduous",0.4,0,2,0,1,2.3919761602376,"Pinnebog","Pinnebog.s20210525.02",1.54660148720916
+"1226","s20210525.02","GRR.GJS.2021.2","Maianthemum canadense","Forb",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1227","s20210525.02","GRR.GJS.2021.2","Impatiens capensis","Forb",50.8,0,0,0,1,50.7994920050799,"Pinnebog","Pinnebog.s20210525.02",7.1273762356901
+"1228","s20210525.02","GRR.GJS.2021.2","Carex gracillima","Graminoid",0.4,0,0,0,1,0.399996000040004,"Pinnebog","Pinnebog.s20210525.02",0.632452369779736
+"1229","s20210525.02","GRR.GJS.2021.2","Betula papyrifera","Deciduous",0,0,0,19.4,1,19.39980600194,"Pinnebog","Pinnebog.s20210525.02",4.40452108655867
+"1230","s20210525.02","GRR.GJS.2021.2","Fraxinus pennsylvanica","Deciduous",0,0,19.4,0,1,19.39980600194,"Pinnebog","Pinnebog.s20210525.02",4.40452108655867
+"1231","s20210525.02","GRR.GJS.2021.2","Arisaema triphyllum","Forb",2,0,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1232","s20210525.02","GRR.GJS.2021.2","Cornus sericea","Deciduous",0,2,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1233","s20210525.02","GRR.GJS.2021.2","Gymnocarpium dryopteris","Forb",3.9,0,0,0,1,3.89996100039,"Pinnebog","Pinnebog.s20210525.02",1.97483189167838
+"1234","s20210525.02","GRR.GJS.2021.2","Circaea canadensis","Forb",2,0,0,0,1,1.9999800002,"Pinnebog","Pinnebog.s20210525.02",1.41420649135832
+"1235","s20210525.02","GRR.GJS.2021.2","Lindera benzoin","Deciduous",0,50.8,0,0,1,50.7994920050799,"Pinnebog","Pinnebog.s20210525.02",7.1273762356901
+"1236","s20210525.03","GRR.GJS.2021.3","Parthenocissus quinquefolia","Deciduous",4.9,0,1.3,0,1,6.13623927460089,"Linwood","Linwood.s20210525.03",2.47714336981146
+"1237","s20210525.03","GRR.GJS.2021.3","Fraxinus pennsylvanica","Deciduous",0,9.9,0,0,1,9.89990100098998,"Linwood","Linwood.s20210525.03",3.14641081249572
+"1238","s20210525.03","GRR.GJS.2021.3","Geum canadense","Forb",0.2,0,0,0,1,0.199998000019996,"Linwood","Linwood.s20210525.03",0.447211359448747
+"1239","s20210525.03","GRR.GJS.2021.3","Acer saccharinum","Deciduous",0,0,0,94.6,1,94.5990540094599,"Linwood","Linwood.s20210525.03",9.72620450172933
+"1240","s20210525.03","GRR.GJS.2021.3","Onoclea sensibilis","Forb",0.2,0,0,0,1,0.199998000019996,"Linwood","Linwood.s20210525.03",0.447211359448747
+"1241","s20210525.03","GRR.GJS.2021.3","Toxicodendron radicans","Deciduous",2,0,0,0,1,1.9999800002,"Linwood","Linwood.s20210525.03",1.41420649135832
+"1242","s20210525.03","GRR.GJS.2021.3","Boehmeria cylindrica","Forb",0.2,0,0,0,1,0.199998000019996,"Linwood","Linwood.s20210525.03",0.447211359448747
+"1243","s20210525.03","GRR.GJS.2021.3","Circaea canadensis","Forb",0.2,0,0,0,1,0.199998000019996,"Linwood","Linwood.s20210525.03",0.447211359448747
+"1244","s20210525.03","GRR.GJS.2021.3","Ulmus americana","Deciduous",0,0,6.3,0,1,6.29993700063,"Linwood","Linwood.s20210525.03",2.50996752979595
+"1245","s20210525.03","GRR.GJS.2021.3","Carex radiata","Graminoid",0.2,0,0,0,1,0.199998000019996,"Linwood","Linwood.s20210525.03",0.447211359448747
+"1246","s20210525.03","GRR.GJS.2021.3","Matteuccia struthiopteris","Forb",39.6,0,0,0,1,39.59960400396,"Linwood","Linwood.s20210525.03",6.29282162499144
+"1247","W14090801","GRR.GJS.2014.39","Boehmeria cylindrica","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1248","W14090801","GRR.GJS.2014.39","Phalaris arundinacea","Graminoid",15,0,0,0,1,14.9998500015,"Carlisle","Carlisle.W14090801",3.87296398143592
+"1249","W14090801","GRR.GJS.2014.39","Persicaria sagittata","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1250","W14090801","GRR.GJS.2014.39","Impatiens capensis","Forb",15,0,0,0,1,14.9998500015,"Carlisle","Carlisle.W14090801",3.87296398143592
+"1251","W14090801","GRR.GJS.2014.39","Cephalanthus occidentalis","Deciduous",0,1,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1252","W14090801","GRR.GJS.2014.39","Epilobium coloratum","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1253","W14090801","GRR.GJS.2014.39","Onoclea sensibilis","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1254","W14090801","GRR.GJS.2014.39","Spiraea alba","Deciduous",0,5,0,0,1,4.9999500005,"Carlisle","Carlisle.W14090801",2.23605679724375
+"1255","W14090801","GRR.GJS.2014.39","Scutellaria lateriflora","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1256","W14090801","GRR.GJS.2014.39","Bidens tripartita","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1257","W14090801","GRR.GJS.2014.39","Carex lacustris","Graminoid",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1258","W14090801","GRR.GJS.2014.39","Rosa palustris","Deciduous",0,1,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1259","W14090801","GRR.GJS.2014.39","Salix petiolaris","Deciduous",0,1,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1260","W14090801","GRR.GJS.2014.39","Glyceria striata","Graminoid",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090801",0.999995000037502
+"1261","W14090801","GRR.GJS.2014.39","Fraxinus pennsylvanica","Deciduous",0,0,0,90,1,89.9991000089999,"Carlisle","Carlisle.W14090801",9.48678554669599
+"1262","W14090802","GRR.GJS.2014.40","Impatiens capensis","Forb",5,0,0,0,1,4.9999500005,"Carlisle","Carlisle.W14090802",2.23605679724375
+"1263","W14090802","GRR.GJS.2014.40","Bidens tripartita","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090802",0.999995000037502
+"1264","W14090802","GRR.GJS.2014.40","Salix nigra","Deciduous",0,0,0,90,1,89.9991000089999,"Carlisle","Carlisle.W14090802",9.48678554669599
+"1265","W14090802","GRR.GJS.2014.40","Vitis riparia","Deciduous",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090802",0.999995000037502
+"1266","W14090802","GRR.GJS.2014.40","Prunus serotina","Deciduous",0,0,1,0,1,0.999990000100004,"Carlisle","Carlisle.W14090802",0.999995000037502
+"1267","W14090802","GRR.GJS.2014.40","Cephalanthus occidentalis","Deciduous",0,50,0,0,1,49.999500005,"Carlisle","Carlisle.W14090802",7.07103245679158
+"1268","W14090802","GRR.GJS.2014.40","Eupatorium perfoliatum","Forb",1,0,0,0,1,0.999990000100004,"Carlisle","Carlisle.W14090802",0.999995000037502
+"1269","W14090802","GRR.GJS.2014.40","Sambucus nigra","Deciduous",0,5,0,0,1,4.9999500005,"Carlisle","Carlisle.W14090802",2.23605679724375
+"1270","W14090802","GRR.GJS.2014.40","Phalaris arundinacea","Graminoid",90,0,0,0,1,89.9991000089999,"Carlisle","Carlisle.W14090802",9.48678554669599
+"1271","W2015062504","GRR.GJS.2015.15","Lemna minor","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1272","W2015062504","GRR.GJS.2015.15","Quercus bicolor","Deciduous",0,1,0,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1273","W2015062504","GRR.GJS.2015.15","Salix petiolaris","Deciduous",0,5,0,0,1,4.9999500005,"Palms","Palms.W2015062504",2.23605679724375
+"1274","W2015062504","GRR.GJS.2015.15","Iris virginica","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1275","W2015062504","GRR.GJS.2015.15","Phalaris arundinacea","Graminoid",90,0,0,0,1,89.9991000089999,"Palms","Palms.W2015062504",9.48678554669599
+"1276","W2015062504","GRR.GJS.2015.15","Fraxinus pennsylvanica","Deciduous",0,1,0,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1277","W2015062504","GRR.GJS.2015.15","Carex lacustris","Graminoid",2,0,0,0,1,1.9999800002,"Palms","Palms.W2015062504",1.41420649135832
+"1278","W2015062504","GRR.GJS.2015.15","Salix nigra","Deciduous",0,0,1,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1279","W2015062504","GRR.GJS.2015.15","Asclepias incarnata","Forb",1,0,0,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
+"1280","W2015062504","GRR.GJS.2015.15","Ulmus americana","Deciduous",0,0,1,0,1,0.999990000100004,"Palms","Palms.W2015062504",0.999995000037502
