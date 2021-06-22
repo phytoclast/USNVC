@@ -9,6 +9,7 @@ library(rpart)
 library(rpart.plot)
 library(goeveg)
 library(proxy)
+library(optpart)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 betasim <- function(p){
   d <- matrix(1, nrow = nrow(p), ncol = nrow(p))
@@ -78,68 +79,10 @@ plotdata <- readRDS('data/Com.Sp.mean.RDS')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\)', '.')
 plotdata$soilplot <- str_replace_all(plotdata$soilplot, '\\(', '.')
 
-plots <- c(
-  'GRR.GJS.2016.21',
-  'GRR.GJS.2016.59',
-  'GRR.GJS.2016.30',
-  'GRR.GJS.2016.32',
-  'GRR.2011.GJS.12',
-  'GRR.GJS.2015.27',
-  'GRR.GJS.2015.26',
-  'GRR.GJS.2015.28',
-  'GRR.GJS.2015.20',
-  'GRR.GJS.2015.22',
-  'GRR.GJS.2015.21',
-  'GRR.GJS.2015.25',
-  'GRR.GJS.2015.29',
-  'GRR.GJS.2015.30',
-  'GRR.GJS.2017.8',
-  'GRR.GJS.2017.9',
-  'GRR.GJS.2017.19',
-  'GRR.GJS.2017.23',
-  'GRR.GJS.2018.13',
-  'GRR.GJS.2018.14',
-  'GRR.GJS.2018.3',
-  'GRR.GJS.2018.4',
-  'GRR.GJS.2018.5',
-  'GRR.GJS.2018.17',
-  'GRR.GJS.2018.21',
-  'GRR.GJS.2018.22',
-  'GRR.GJS.2018.24',
-  'GRR.GJS.2018.28',
-  'GRR.GJS.2018.29',
-  'GRR.GJS.2015.24',
-  'GRR.GJS.2015.23',
-  'GRR.GJS.2012.23',
-  'GRR.GJS.2012.24',
-  'GRR.GJS.2012.25',
-  'GRR.GJS.2012.31',
-  'GRR.GJS.2012.70',
-  'GRR.GJS.2012.34',
-  'GRR.GJS.2012.35',
-  'GRR.GJS.2012.36',
-  'GRR.GJS.2012.40',
-  'GRR.GJS.2019.22',
-  'GRR.GJS.2019.11',
-  'GRR.GJS.2019.12',
-  'GRR.GJS.2019.13',
-  'GRR.GJS.2019.17',
-  'GRR.GJS.2014.39',
-  'GRR.GJS.2014.40',
-  'GRR.GJS.2020.13',
-  'GRR.GJS.2020.14',
-  'GRR.GJS.2020.15',
-  'GRR.GJS.2020.16',
-  'GRR.GJS.2021.1',
-  'GRR.GJS.2021.2',
-  'GRR.GJS.2021.3'
-)
 
 
-#plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')] <- plotdata[substr(plotdata$Habit, 1,1) %in% 'T',c('Field', 'Shrub')]/1000
-#plotdata$Total <- 100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum')))
-#plotdata$sqrttotal <- plotdata$Total^0.5
-prematrix <- subset(plotdata, Observation_ID %in% plots)
+
+prematrix <- plotdata
 
 Com.Sp.agg <- aggregate(log10(1-(prematrix[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), by=list(soilplot = prematrix$soilplot),  FUN='sum')
 Com.Sp.agg[,c('Field', 'Shrub', 'Subcanopy', 'Tree')] <- 100*(1-10^(Com.Sp.agg[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]))                 
@@ -151,40 +94,13 @@ Com.Sp.agg <- Com.Sp.agg[,-1]
 
 
 
+plotdata$logtotal <- (log10(100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum'))))+2)
 
+plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'logtotal', drop = TRUE)
 
-plotmatrix <- makecommunitydataset(prematrix, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
-#plotmatrix <- merge(Com.Sp.agg,plotmatrix , by=0) 
-#rownames(plotmatrix) <- plotmatrix$Row.names
-#plotmatrix <- plotmatrix[,-1]
-#plotmatrix <- plotmatrix[,-c(1:4,6)]
-if (T){
-  amethod <- 'bray-ward' 
-  k=8
-  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
-  p.over <- Com.Sp.agg[,c('over', 'invover')]
-  p.over$over <- p.over$over/(p.over$over+12.5)*(1+12.5/100)*100
-  p.over$invover <- 100 -  p.over$over
-  d.over <- vegdist(p.over, method='euclidean', binary=FALSE, na.rm=T)
-  wt <- 9
-  d2 <- (d.over/mean(d.over) + d/mean(d)*wt)/(wt+1)
-  t <- agnes(d2, method='ward')
-  makeplot(amethod,d,t,k)
-}
-if (F){
-  amethod <- 'kulczynski-ward' 
-  k=9
-  d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
-  t <- agnes(d, method='ward')
-  makeplot(amethod,d,t,k)
-}
-if (F){
-  amethod <- 'kulczynski-upgma' 
-  k=9
-  d <- vegdist(plotmatrix, method='kulczynski', binary=FALSE, na.rm=T)
-  t <- agnes(d, method='average')
-  makeplot(amethod,d,t,k)
-}
+d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+t <- flexbeta(d, beta =  -0.25)
+k=8
 groups <- cutree(t, k = k)
 soilplot <- names(groups)
 clust <- unname(groups)

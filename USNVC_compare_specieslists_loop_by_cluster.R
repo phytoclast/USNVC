@@ -103,83 +103,222 @@ plotdata[plotdata$Observation_ID %in% Grassland,c('Shrub', 'Subcanopy', 'Tree')]
 
 plotdata$sqrttotal <- (100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum'))))^0.5
 }
-plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'sqrttotal', drop = TRUE)
+plotdata$logtotal <- (log10(100*(1-10^(apply(log10(1-(plotdata[,c('Field', 'Shrub', 'Subcanopy', 'Tree')]/100.001)), MARGIN = 1, FUN='sum'))))+2)
+
+plotmatrix <- makecommunitydataset(plotdata, row = 'soilplot', column = 'Species', value = 'logtotal', drop = TRUE)
 
 
 
-if (T){
-  amethod <- 'bray-ward' 
+if (F){
   k=8
-  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
-  t <- agnes(d, method='ward')
-  makeplot(amethod,d,t,k)
-}
-if (T){
-  amethod <- 'bray-wardbin' 
-  k=8
-  d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
-  t <- agnes(d, method='ward')
-  makeplot(amethod,d,t,k)
-}
-if (T){
-   k=8
-   c = 1
+  c = 2
+  pv <- 0.01
   #flex
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- flexbeta(d, beta =  -0.25)
   s <- stride(seq= 2:k,arg2= t)
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- data.frame(cbind(clusters = o$clusters, flex.sp = o$sig.spc, flex.cl = o$sig.clust))
   #ward
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='ward')
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, ward.sp = o$sig.spc, ward.cl = o$sig.clust)
   #upgma
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- agnes(d, method='average')
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, upgma.sp = o$sig.spc, upgma.cl = o$sig.clust)
   #jacc
   d <- vegdist(plotmatrix, method='jaccard', binary=FALSE, na.rm=T)
   t <- agnes(d, method='average')
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, jacc.sp = o$sig.spc, jacc.cl = o$sig.clust)
   #diana
   d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
   t <- diana(d)
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, diana.sp = o$sig.spc, diana.cl = o$sig.clust)
   #flexbin
   d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
   t <- flexbeta(d, beta =  -0.25)
   s <- stride(seq= 2:k,arg2= t)
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, flexbin.sp = o$sig.spc, flexbin.cl = o$sig.clust)
   #wardbin
   d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
   t <- agnes(d, method='ward')
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, wardbin.sp = o$sig.spc, wardbin.cl = o$sig.clust)
   #upgmabin
   d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
   t <- agnes(d, method='average')
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, upgmabin.sp = o$sig.spc, upgmabin.cl = o$sig.clust)
-    #dianabin
+  #dianabin
   d <- vegdist(plotmatrix, method='bray', binary=TRUE, na.rm=T)
   t <- diana(d)
   s <- stride(seq= 2:k,arg2= as.hclust(t))
-  o <- optimclass(comm=plotmatrix, stride=s, pval = 0.01, counts = c)
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
   oo <- cbind(oo, dianabin.sp = o$sig.spc, dianabin.cl = o$sig.clust)
   oo <- oo[,c(1, (1:9)*2+1, (1:9)*2)]
+}
+if (T){
+  k=8
+  c = 2
+  pv <- 0.01
+  #ward ----
+  amethod <- 'bray-ward' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='ward')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
   }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  makeplot(amethod,d,t,k)
+  #upgma ----
+  amethod <- 'bray-upgma' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- agnes(d, method='average')
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)
+  makeplot(amethod,d,t,k)
+  #diana ----
+  amethod <- 'bray-diana' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- diana(d)
+  s <- stride(seq= 2:k,arg2= as.hclust(t))
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)
+  makeplot(amethod,d,t,k)
+  #flexp00 ----
+  amethod <- 'bray-flexp00' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  0.00)
+  s <- stride(seq= 2:k,arg2= t)
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)  
+  makeplot(amethod,d,t,k)
+  #flexn10 ----
+  amethod <- 'bray-flexn10' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.10)
+  s <- stride(seq= 2:k,arg2= t)
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0) 
+  makeplot(amethod,d,t,k)
+  #flexn25 ----
+  amethod <- 'bray-flexn25' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.25)
+  s <- stride(seq= 2:k,arg2= t)
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)
+  makeplot(amethod,d,t,k)
+  #flexn30 ----
+  amethod <- 'bray-flexn30' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.3)
+  s <- stride(seq= 2:k,arg2= t)
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)
+  makeplot(amethod,d,t,k)
+  #flexn35 ----
+  amethod <- 'bray-flexn35' 
+  d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+  t <- flexbeta(d, beta =  -0.35)
+  s <- stride(seq= 2:k,arg2= t)
+  sil<-NA
+  for(j in 2:k){
+    sil0 <- (t %>% cutree(k=j) %>% silhouette(d)) 
+    siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+    silneg <- subset(siltable, sil_width <0) %>% nrow()
+    silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+    sil0 <- as.data.frame(cbind(silmean=silmean, silneg=silneg))
+    if(is.na(sil)[1]){sil <- sil0}else{sil <- rbind(sil,sil0)}
+  }
+  o <- optimclass(comm=plotmatrix, stride=s, pval = pv, counts = c)
+  oo0 <- data.frame(cbind(clusters = o$clusters, method = amethod, ind.sp = o$sig.spc, ind.clust = o$sig.clust, sil.mean = sil$silmean, sil.neg = sil$silneg))
+  oo <- rbind(oo,oo0)
+  makeplot(amethod,d,t,k)
+  oo[,c(1,3:6)] <- apply(oo[,c(1,3:6)], MARGIN = 2, FUN = 'as.numeric')
+  oo <- oo[order(oo$clusters, -oo$sil.mean),]
+}
 if (F){
   amethod <- 'kulczynski-isopam' 
   k=4
@@ -204,6 +343,16 @@ if (F){
   t <- diana(d)
   makeplot(amethod,d,t,k)
 }
+
+d <- vegdist(plotmatrix, method='bray', binary=FALSE, na.rm=T)
+t <- flexbeta(d, beta =  -0.25)
+
+sil0 <- (t %>% cutree(k=8) %>% silhouette(d)) 
+siltable <-  cbind(plot = rownames(plotmatrix), sil0) %>% as.data.frame()
+siltable[,c(2:4)] <- apply(siltable[,c(2:4)], MARGIN = 2, FUN = 'as.numeric')
+silneg <- subset(siltable, sil_width <0) %>% nrow()
+silmean <- siltable$sil_width %>% as.numeric() %>% mean()
+#continue ----
 groups <- cutree(t, k = k)
 #Get species importance by cluster
 soilplot <- names(groups)
