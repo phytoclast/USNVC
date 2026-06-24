@@ -129,3 +129,38 @@ usnvcspp2 <- usnvcspp2 |> group_by(taxon, ELEMENT_GLOBAL_ID) |> summarise(indica
 
 usnvcspp2 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp2) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
 write.csv(usnvcspp2, 'usnvcspp2.csv', row.names = F, na='')
+
+
+#Extract any bryophytes or lichens ----
+
+usda <- read.csv('data/plantlst.txt')
+usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
+usda.backbone <- subset(usda, acc==syn, select=c("Common.Name","Family", "taxon","auth","acc")) |> mutate(acgenus = extractTaxon(harmonize.taxa(taxon, fix = TRUE), 'genus'))
+colnames(usda.backbone)
+apg <- vegnasis::apg
+familylink <- vegnasis::familylink
+apglink <- apg |> left_join(familylink)
+usda.backbone <- usda.backbone |> merge(apglink, by.x = 'acgenus', by.y = 'genus', all.x = TRUE)
+usdanva <- subset(usda.backbone, is.na(phylum))
+(nvataxonomy$kingdom)|>unique()
+bry <- read.delim('data/0000116-260623161305970.csv')
+lic <- read.delim('data/0000193-260623161305970.csv')
+alg <- read.delim('data/0000322-260623161305970.csv')
+lic2 <- read.delim('data/0000964-260623161305970.csv')
+alg2 <- read.delim('data/0000982-260623161305970.csv')
+
+nva <-rbind(bry,lic,alg,lic2,alg2)
+nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = extractTaxon(acceptedScientificName, 'author'), 
+                     acgenus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author'),
+                     genus = extractTaxon(taxon, 'genus'))
+
+
+# nvataxonomy <- subset(nva, taxonRank %in% 'SPECIES'  & kingdom %in% c("Bacteria","Chromista","Fungi","Plantae"), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+# usdalichens <- usdanva[,1:6] |> left_join(nvataxonomy, by=join_by(acgenus == genus))
+# 
+# missingfams = subset(usdalichens, is.na(kingdom) & !Family %in% c(apg$family, nvataxonomy$family) , select='Family') |> unique()
+
+nvataxonomy <- subset(nva, (taxonRank %in% 'GENUS' | (numberOfOccurrences >= 500 & taxonRank %in% 'SPECIES'))  & taxonomicStatus %in% 'ACCEPTED' & (kingdom %in% c("Bacteria","Fungi") | class %in% c("Phaeophyceae","Xanthophyceae") | phylum %in% c("Bryophyta","Marchantiophyta","Anthocerotophyta","Rhodophyta","Charophyta","Chlorophyta")), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+
+#
+nvataxonomy$class |> unique()
