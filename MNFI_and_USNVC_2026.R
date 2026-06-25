@@ -142,7 +142,7 @@ familylink <- vegnasis::familylink
 apglink <- apg |> left_join(familylink)
 usda.backbone <- usda.backbone |> merge(apglink, by.x = 'acgenus', by.y = 'genus', all.x = TRUE)
 usdanva <- subset(usda.backbone, is.na(phylum))
-(nvataxonomy$kingdom)|>unique()
+
 bry <- read.delim('data/0000116-260623161305970.csv')
 lic <- read.delim('data/0000193-260623161305970.csv')
 alg <- read.delim('data/0000322-260623161305970.csv')
@@ -160,7 +160,32 @@ nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = ext
 # 
 # missingfams = subset(usdalichens, is.na(kingdom) & !Family %in% c(apg$family, nvataxonomy$family) , select='Family') |> unique()
 
-nvataxonomy <- subset(nva, (taxonRank %in% 'GENUS' | (numberOfOccurrences >= 500 & taxonRank %in% 'SPECIES'))  & taxonomicStatus %in% 'ACCEPTED' & (kingdom %in% c("Bacteria","Fungi") | class %in% c("Phaeophyceae","Xanthophyceae") | phylum %in% c("Bryophyta","Marchantiophyta","Anthocerotophyta","Rhodophyta","Charophyta","Chlorophyta")), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+nvataxonomy <- subset(nva, (taxonRank %in% 'GENUS' | (numberOfOccurrences >= 100 & taxonRank %in% 'SPECIES'))  & taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') & (kingdom %in% c("Bacteria","Fungi") | class %in% c("Phaeophyceae","Xanthophyceae") | phylum %in% c("Bryophyta","Marchantiophyta","Anthocerotophyta","Rhodophyta","Charophyta","Chlorophyta")), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+correct = data.frame(
+  genus = c('Bissetia','Bilimbia','Baculifera','Audouinella','Asterella','Aspicilia', 'Aspergillus','Arthopyrenia', 'Ankyra','Aneura','Analipus','Phaeoceros','Hymenoloma','Halochlorococcum','Tolypothrix','Punctaria','Micrasterias','Leathesia','Hypnea','Cornicularia','Coilodesme','Loxospora', 'Aspicilia','Soranthera','Schizothrix','Amandinea','Dirinaria','Opegrapha','Porina','Rhizofabronia','Tephromela','Ulvella','Wilsoniella'), 
+  family = c('Neckeraceae','Ramalinaceae','Caliciaceae','Acrochaetiaceae', 'Aytoniaceae','Megasporaceae', 'Aspergillaceae', 'Trypetheliaceae', 'Sphaeropleaceae','Aneuraceae','Scytosiphonaceae','Notothyladaceae','Hymenolomataceae','Oltmannsiellopsidaceae','Tolypothrichaceae','Chordariaceae','Desmidiaceae','Chordariaceae','Cystocloniaceae','Parmeliaceae','Chordariaceae','Sarrameanaceae', 'Megasporaceae','Chordariaceae','Trichocoleusaceae','Caliciaceae','Caliciaceae','Opegraphaceae','Porinaceae','Rhizofabroniaceae','Tephromelataceae','Ulvellaceae','Ditrichaceae'), correct=1)
+#	Analipus -> Ralfsiaceae
+nvataxonomy <- left_join(nvataxonomy, correct) |> unique()
+nvataxonomy <- nvataxonomy |> subset(n %in% 1 | correct %in% 1, select=-c(correct,n))
+usdalich <- subset(usda, grepl(tolower('lichen'), Common.Name)) |> mutate(genus = extractTaxon(taxon, 'genus'))
+nvataxonomy <- nvataxonomy |> mutate(usdalichen = ifelse(genus %in% usdalich$genus,1,0), usdalichen2 = ifelse(family %in% usdalich$Family,1,0))
+nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteria' ~ 'Cyanobacteria',
+                                                       class %in% 'Phaeophyceae' ~ 'brown algae',
+                                                       class %in% 'Xanthophyceae' ~ 'yellow-green algae',
+                                                       class %in% 'Arthoniomycetes' ~ 'lichen',
+                                                       #class %in% 'Eurotiomycetes' ~ 'lichen',
+                                                       class %in% 'Lecanoromycetes' ~ 'lichen',
+                                                       class %in% 'Lichinomycetes' ~ 'lichen',
+                                                       class %in% 'Candelariomycetes' ~ 'lichen',
+                                                       class %in% 'Coniocybomycetes' ~ 'lichen',
+                                                       order %in% 'Trypetheliales' ~ 'lichen',
+                                                       phylum %in% 'Anthocerotophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Bryophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Chlorophyta' ~ 'green algae',
+                                                       phylum %in% 'Marchantiophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Chlorophyta' ~ 'green algae',
+                                                       phylum %in% 'Rhodophyta' ~ 'red algae',
+                                                       phylum %in% 'Charophyta' ~ 'green algae',
+                                                       usdalichen2 %in% 1 | usdalichen2 %in% 1 ~ 'lichen',
+                                                       TRUE ~ NA))
 
-#
-nvataxonomy$class |> unique()
