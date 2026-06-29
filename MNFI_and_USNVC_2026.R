@@ -124,10 +124,8 @@ if(is.null(allasspar)){allasspar = asspar0}else{allasspar = rbind(allasspar, ass
 }
 allasspar <- allasspar |> subset(!is.na(epithet)) |> mutate(taxon = paste(genus, epithet), indicator = 1) 
 usnvcspp2 <- rbind(usnvcspp,allasspar[,c("taxon", "ELEMENT_GLOBAL_ID","indicator")]) |> unique()  
-usnvcspp2 <- usnvcspp2 |> group_by(taxon, ELEMENT_GLOBAL_ID) |> summarise(indicator=sum(indicator))
-
-
-usnvcspp2 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp2) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
+# usnvcspp2 <- usnvcspp2 |> group_by(taxon, ELEMENT_GLOBAL_ID) |> summarise(indicator=sum(indicator))
+# usnvcspp2 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp2) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
 write.csv(usnvcspp2, 'usnvcspp2.csv', row.names = F, na='')
 
 
@@ -202,8 +200,127 @@ nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteri
                                                        usdalichen %in% 1 | usdalichen2 %in% 1 ~ '2lich',
                                                        TRUE ~ NA)) |> subset(!is.na(type) & !type %in% '2lich', select=-c(usdalichen,usdalichen2))
 
-nvaselect <- nva |> subset((taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') | numberOfOccurrences >= 500 | taxon %in% usda$taxon) & acgenus %in% nvataxonomy$genus & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select=c("acgenus","actaxon","acauth","taxon","auth" ))
-nva$taxonRank |> unique()
+nvaselect <- nva #|> subset((taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') | numberOfOccurrences >= 500 | taxon %in% usda$taxon) & acgenus %in% nvataxonomy$genus & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select=c("acgenus","actaxon","acauth","taxon","auth" ))
 
-write.csv(nvataxonomy, 'nvataxonomy.csv', row.names = F, na='')
-write.csv(nvaselect, 'nva.csv', row.names = F, na='')
+write.csv(nvataxonomy, 'data/nvataxonomy.csv', row.names = F, na='')
+write.csv(nvaselect, 'data/nva.csv', row.names = F, na='')
+
+#######Talley nonvascular species by USNVC
+library(vegnasis)
+library(xlsx)
+#set working directory to folder where this R file is saved
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#species to choose from
+nva <- read.csv('data/nva.csv')
+nvataxonomy <- read.csv('data/nvataxonomy.csv')
+sppacc <- subset(nva, !grepl('\\.',taxon)) 
+sppacc <- unique(c(sppacc$actaxon, sppacc$taxon, nvataxonomy$genus))
+#USNVC association names
+ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
+#USNVC species mentions
+desc <- read.csv('data/USNVC v3.0.3 2026-03-25/unitDescription.csv')
+
+timA <- Sys.time()
+spbyass <- NULL
+spbydesc <- NULL
+for(i in 1:length(sppacc)){#i=1
+  thistax <- sppacc[i]
+  #thistax <- 'Nostoc'
+  
+  thisass <- ass[grepl(thistax, ass$scientificName),]$ELEMENT_GLOBAL_ID
+  if(length(thisass)>0){
+    spbyass0 <- data.frame(taxon=paste0(thistax,'\\W|',thistax,'$'), ELEMENT_GLOBAL_ID=thisass)
+    if(is.null(spbyass)){spbyass <- spbyass0}else{spbyass <- rbind(spbyass,spbyass0)}}
+  
+  thisdesc <- desc[grepl(thistax, desc$Floristics),]$ELEMENT_GLOBAL_ID
+  if(length(thisdesc)>0){
+    spbydesc0 <- data.frame(taxon=paste0(thistax,'\\W|',thistax,'$'), ELEMENT_GLOBAL_ID=thisdesc)
+    if(is.null(spbydesc)){spbydesc <- spbydesc0}else{spbydesc <- rbind(spbydesc,spbydesc0)}}
+}
+Sys.time() - timA#Time difference of 1.324091 hours
+spbyass$indicator <- 1
+spbydesc$indicator <- 0
+
+usnvcnva <- rbind(spbyass,spbydesc) |> unique() 
+# colnames(usnvcnva) <- c("taxon","ELEMENT_GLOBAL_ID","indicator" )
+write.csv(usnvcnva, 'usnvcnva.csv', row.names = F, na='')
+
+
+
+#sweep up vascular genera ----
+
+spp <- vegnasis::syns3
+sppacc <- c(spp$bonap, spp$kew, spp$wplants, spp$usda) |> unique()
+sppacc <- extractTaxon(sppacc, 'genus') |> unique()
+#USNVC association names
+ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
+#USNVC species mentions
+desc <- read.csv('data/USNVC v3.0.3 2026-03-25/unitDescription.csv')
+
+timA <- Sys.time()
+spbyass <- NULL
+spbydesc <- NULL
+for(i in 1:length(sppacc)){#i=1
+  thistax <- sppacc[i]
+  #thistax <- 'Pinus strobus'
+  
+  thisass <- ass[grepl(paste0(thistax,'\\W|',thistax,'$'), ass$scientificName),]$ELEMENT_GLOBAL_ID
+  if(length(thisass)>0){
+    spbyass0 <- data.frame(taxon=thistax, ELEMENT_GLOBAL_ID=thisass)
+    if(is.null(spbyass)){spbyass <- spbyass0}else{spbyass <- rbind(spbyass,spbyass0)}}
+  
+  thisdesc <- desc[grepl(paste0(thistax,'\\W|',thistax,'$'), desc$Floristics),]$ELEMENT_GLOBAL_ID
+  if(length(thisdesc)>0){
+    spbydesc0 <- data.frame(taxon=thistax, ELEMENT_GLOBAL_ID=thisdesc)
+    if(is.null(spbydesc)){spbydesc <- spbydesc0}else{spbydesc <- rbind(spbydesc,spbydesc0)}}
+}
+Sys.time() - timA#Time difference of 11.32324 mins
+spbyass$indicator <- 1
+spbydesc$indicator <- 0
+
+usnvcspp <- rbind(spbyass,spbydesc) |> unique() 
+write.csv(usnvcspp, 'usnvcgen.csv', row.names = F, na='')
+
+
+
+
+#Combine lists and clean them up ----
+library(vegnasis)
+library(xlsx)
+#set working directory to folder where this R file is saved
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#vasculars
+spp <- vegnasis::syns3
+familylink <- vegnasis::familylink
+apg <- vegnasis::apg
+#nonvasculars
+nva <- read.csv('data/nva.csv')
+nvataxonomy <- read.csv('data/nvataxonomy.csv')
+#USNVC association names
+ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
+#USNVC species mentions
+desc <- read.csv('data/USNVC v3.0.3 2026-03-25/unitDescription.csv')
+
+#fix misapplied genera in respective vascular and non-vascular lists
+familylink <- subset(familylink, !genus %in% c('Botrydium','Hedwigia','Hookeria','Ephemerum','Carteria'))
+nvataxonomy0 <-  subset(nvataxonomy, genus %in% familylink$genus)
+spp0  <-  spp |> mutate(genus=extractTaxon(kew, 'genus')) |> subset(genus %in% nvataxonomy$genus)
+nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
+
+usnvcspp <- read.csv('usnvcspp2.csv')
+# usnvcspp <- usnvcspp |> mutate(taxon=harmonize.taxa(taxon, fix=TRUE, sensu = 'kew'), taxon=extractTaxon(taxon, 'binomial'))
+usnvcgen <- read.csv('usnvcgen.csv')
+usnvcnva <- read.csv('usnvcnva.csv')
+
+usnvcspp <- rbind(usnvcspp[,colnames(usnvcnva)], usnvcnva, usnvcgen) |> unique()
+usnvcspp <- usnvcspp |> mutate(genus = extractTaxon(taxon, 'genus'))
+usnvcspp <- usnvcspp |> group_by(genus, ELEMENT_GLOBAL_ID, indicator) |> mutate(n=length(taxon)) |> ungroup()
+usnvcspp <- usnvcspp |> mutate(flag=ifelse((genus != taxon | n == 1) & nchar(taxon) >= 1,0,1))
+usnvcspp <- usnvcspp |> subset(!flag %in% 1, select=-c(genus, n, flag))
+
+
+
+
+usnvcspp3 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
