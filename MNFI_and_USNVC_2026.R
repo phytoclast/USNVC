@@ -155,10 +155,6 @@ nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = ext
                      genus = extractTaxon(taxon, 'genus'))
 
 
-# nvataxonomy <- subset(nva, taxonRank %in% 'SPECIES'  & kingdom %in% c("Bacteria","Chromista","Fungi","Plantae"), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
-# usdalichens <- usdanva[,1:6] |> left_join(nvataxonomy, by=join_by(acgenus == genus))
-# 
-# missingfams = subset(usdalichens, is.na(kingdom) & !Family %in% c(apg$family, nvataxonomy$family) , select='Family') |> unique()
 
 nvataxonomy <- subset(nva, (taxonRank %in% 'GENUS' | (numberOfOccurrences >= 100 & taxonRank %in% 'SPECIES'))  & taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') & (kingdom %in% c("Bacteria","Fungi") | class %in% c("Phaeophyceae","Xanthophyceae") | phylum %in% c("Bryophyta","Marchantiophyta","Anthocerotophyta","Rhodophyta","Charophyta","Chlorophyta")), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
 correct = data.frame(
@@ -166,20 +162,36 @@ correct = data.frame(
   
   family = c('Volvocaceae','Palmophyllaceae','Pertusariaceae','Seligeriaceae', 'Ulotrichaceae','Pylaisiadelphaceae','Timmiellaceae','Protothelenellaceae','Thoreaceae','Desmidiaceae','Tephromelataceae','Desmidiaceae','Syringodermataceae','Symphyodontaceae','Chordariaceae','Stigonemataceae','Chordariaceae','Prasiolaceae','Stereocaulaceae','Desmidiaceae','Desmidiaceae','Sporastatiaceae','Splachnobryaceae','Leprocaulaceae','Sematophyllaceae', 'Scouleriaceae',	'Sclerococcaceae','Schizochlamydaceae','Schimmelmanniaceae','Schaereriaceae','Saelaniaceae', 'Ropalosporaceae', 'Nostocaceae','Chordariaceae','Pyrenulaceae','Pycnoraceae','Pterospermataceae','Pylaisiadelphaceae','Pterobryellaceae', 'Corallinaceae', 'Lithodermataceae', 'Hypnaceae','Chaetophoraceae','Porinaceae','Polycoccaceae','Desmidiaceae','Acarosporaceae','Oscillatoriaceae','Graphidaceae','Lembophyllaceae','Phymatocerotaceae','Phaeostrophionaceae','Graphidaceae','Pelliaceae','Pallaviciniaceae','Orthodontiaceae','Opegraphaceae','Cephaloziaceae','Dendrocerotaceae','Neohodgsoniaceae','Chordariaceae','Trypetheliaceae','Ramalinaceae','Verrucariaceae','Syringodermataceae','Microthamniaceae','Coenogoniaceae','Micromitriaceae','Microcoleaceae','Desmidiaceae','Aulacomniaceae','Nostochopsidaceae','Pilocarpaceae','Onygenaceae','Timmiellaceae','Lopadiaceae', 'Megasporaceae', 'Lithodermataceae', 'Amblystegiaceae','Phaeococcomycetaceae', 'Leucomiaceae', 'Orthodontiaceae', 'Thuidiaceae', 'Bryaceae', 'Lecideaceae', 'Chordariaceae','Klebsormidiaceae', 'Selenastraceae','Adelanthaceae', 'Hypopterygiaceae', 'Hypodontiaceae','Ophioparmaceae','Pilotrichaceae','Orthodontiaceae','Sematophyllaceae','Microcoleaceae','Desmidiaceae','Chordariaceae','Pilotrichaceae','Hypodontiaceae','Lembophyllaceae','Graphidaceae','Chordariaceae','Chordariaceae','Leprocaulaceae','Halymeniaceae','Graphidaceae','Gracilariaceae','Rhabdoweisiaceae','Mytilinidiaceae','Radiococcaceae','Chlorellaceae','Ptychomniaceae','Rhodomelaceae','Ptychomniaceae','Desmidiaceae','Epibryaceae','Drummondiaceae','Aphanizomenonaceae','Distichiaceae','Caliciaceae','Diphysciaceae','Graphidaceae','Coenogoniaceae','Chordariaceae','Chordariaceae','Dactylosporaceae','Cyrtopoaceae','Hypopterygiaceae','Scenedesmaceae','Ramalinaceae','Desmidiaceae','Desmidiaceae','Scytosiphonaceae','Coenogoniaceae','Megasporaceae','Chrysoblastellaceae','Stylonemataceae','Rhodomelaceae','Characiaceae','Chaetosphaeridiaceae','Symphyodontaceae','Ceramiaceae','Graphidaceae','Ulotrichaceae','Helotiaceae','Rivulariaceae','Scytonemataceae','Neckeraceae','Ramalinaceae','Caliciaceae','Acrochaetiaceae', 'Aytoniaceae','Megasporaceae', 'Aspergillaceae', 'Trypetheliaceae', 'Sphaeropleaceae','Aneuraceae','Scytosiphonaceae','Notothyladaceae','Hymenolomataceae','Oltmannsiellopsidaceae','Tolypothrichaceae','Chordariaceae','Desmidiaceae','Chordariaceae','Cystocloniaceae','Parmeliaceae','Chordariaceae','Sarrameanaceae', 'Megasporaceae','Chordariaceae','Trichocoleusaceae','Caliciaceae','Caliciaceae','Opegraphaceae','Porinaceae','Rhizofabroniaceae','Tephromelataceae','Ulvellaceae','Ditrichaceae'), correct=1)
 #	Analipus -> Ralfsiaceae; Mastigocoleus -> Hapalosiphonaceae; Rivularia ->	Rivulariaceae
+
 nvataxonomy <- left_join(nvataxonomy, correct) |> unique()
 nvataxonomy <- nvataxonomy |> subset(n %in% 1 | correct %in% 1, select=-c(correct,n))
+nvataxonomy <- nvataxonomy |> mutate(family = case_when(genus %in% 'Analipus' ~ 'Ralfsiaceae',
+                                                        genus %in% 'Mastigocoleus' ~ 'Hapalosiphonaceae',
+                                                        genus %in% 'Rivularia' ~ 'Rivulariaceae',
+                                                        TRUE ~ family
+))
+nvataxonomy <- nvataxonomy |> mutate(order = case_when(family %in% 'Ralfsiaceae' ~ 'Ralfsiales',
+                                                        TRUE ~ order
+))
+
+
 usdalich <- subset(usda, grepl(tolower('lichen'), Common.Name)) |> mutate(genus = extractTaxon(taxon, 'genus'))
 nvataxonomy <- nvataxonomy |> mutate(usdalichen = ifelse(genus %in% usdalich$genus,1,0), usdalichen2 = ifelse(family %in% usdalich$Family,1,0))
 nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteria' ~ 'Cyanobacteria',
                                                        class %in% 'Phaeophyceae' ~ 'brown algae',
                                                        class %in% 'Xanthophyceae' ~ 'yellow-green algae',
-                                                       class %in% 'Arthoniomycetes' ~ 'lichen',
+                                                       order %in% 'Arthoniales' ~ 'lichen',
+                                                       order %in% 'Vezdaeales' ~ 'lichen',
+                                                       order %in% 'Monoblastiales' ~ 'lichen',
+                                                       order %in% 'Strigulales' ~ 'lichen',
                                                        #class %in% 'Eurotiomycetes' ~ 'lichen',
                                                        class %in% 'Lecanoromycetes' ~ 'lichen',
                                                        class %in% 'Lichinomycetes' ~ 'lichen',
                                                        class %in% 'Candelariomycetes' ~ 'lichen',
                                                        class %in% 'Coniocybomycetes' ~ 'lichen',
-                                                       order %in% 'Trypetheliales' ~ 'lichen',
+                                                       family %in% 'Trypetheliaceae' ~ 'lichen',
+                                                       family %in% 'Pyrenulaceae' ~ 'lichen',
+                                                       family %in% 'Verrucariaceae' ~ 'lichen',
                                                        phylum %in% 'Anthocerotophyta' ~ 'bryophyte',
                                                        phylum %in% 'Bryophyta' ~ 'bryophyte',
                                                        phylum %in% 'Chlorophyta' ~ 'green algae',
@@ -187,6 +199,11 @@ nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteri
                                                        phylum %in% 'Chlorophyta' ~ 'green algae',
                                                        phylum %in% 'Rhodophyta' ~ 'red algae',
                                                        phylum %in% 'Charophyta' ~ 'green algae',
-                                                       usdalichen2 %in% 1 | usdalichen2 %in% 1 ~ 'lichen',
-                                                       TRUE ~ NA))
+                                                       usdalichen %in% 1 | usdalichen2 %in% 1 ~ '2lich',
+                                                       TRUE ~ NA)) |> subset(!is.na(type) & !type %in% '2lich', select=-c(usdalichen,usdalichen2))
 
+nvaselect <- nva |> subset((taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') | numberOfOccurrences >= 500 | taxon %in% usda$taxon) & acgenus %in% nvataxonomy$genus & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select=c("acgenus","actaxon","acauth","taxon","auth" ))
+nva$taxonRank |> unique()
+
+write.csv(nvataxonomy, 'nvataxonomy.csv', row.names = F, na='')
+write.csv(nvaselect, 'nva.csv', row.names = F, na='')
