@@ -1,5 +1,8 @@
 library(vegnasis)
 library(xlsx)
+
+library(WorldFlora)
+
 #set working directory to folder where this R file is saved
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
@@ -149,41 +152,45 @@ alg2 <- read.delim('data/0000982-260623161305970.csv')
 
 nva <-rbind(bry,lic,alg,lic2,alg2)
 nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = extractTaxon(acceptedScientificName, 'author'), 
-                     acgenus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author'),
-                     genus = extractTaxon(taxon, 'genus'))
+                     genus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author'))
+nva <- nva |> mutate(taxon=gsub('ë','e',taxon), actaxon=gsub('ë','e',actaxon))
+nvae <- subset(nva, grepl('ë',taxon))
+nva.all <- subset(nva, taxonomicStatus %in% c('SYNONYM','ACCEPTED') & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select = c(actaxon, acauth, taxon, auth))
+nva.all2 <- data.frame(actaxon=nva.all$actaxon, acauth=nva.all$acauth, taxon=nva.all$actaxon, auth=nva.all$acauth)
+nva.all <- rbind(nva.all, nva.all2) |> unique()
+
+#URLs: https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip
+inattax <- read.csv('data/taxa.csv')
+inatgen <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plantae","Chromista","Fungi","Bacteria") & !genus %in% '' & !family %in% '', select=c("kingdom","phylum","class","order","family","genus")) |> unique()
+inatspp <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plantae","Chromista","Fungi","Bacteria") & !genus %in% '' & !family %in% '', select=c("kingdom","phylum","class","order","family", "scientificName")) |> unique()
+nva.all <- nva.all |> mutate(genus = extractTaxon(actaxon, 'genus'))
+nva.all <- nva.all |>   left_join(inatgen)
+
+nva.misstax <- subset(nva.all, is.na(family), select=-c(kingdom,phylum,class,order,family)) 
+#nva.misstax <- nva.misstax |> left_join(inatspp, by=join_by(taxon==scientificName))
+#nva.misstax2 <- subset(nva.misstax, is.na(family), select=-c(kingdom,phylum,class,order,family))
 
 
-
-nvataxonomy <- subset(nva, (taxonRank %in% 'GENUS' | (numberOfOccurrences >= 1 & taxonRank %in% 'SPECIES'))  & taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') & (kingdom %in% c("Bacteria","Fungi") | class %in% c("Phaeophyceae","Xanthophyceae") | phylum %in% c("Bryophyta","Marchantiophyta","Anthocerotophyta","Rhodophyta","Charophyta","Chlorophyta")), select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+nvataxonomy <- subset(nva, actaxon %in% nva.misstax$actaxon, select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> unique() |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
 correct0 = data.frame(
-  genus = c('Volvox','Verdigellas','Variolaria','Valdonia','Urospora','Trismegistia','Timmiella','Thrombium','Thorea','Tetmemorus','Tephromela','Teilingia','Syringoderma','Symphyodon','Striaria','Stigonema','Stictyosiphon','Stichococcus','Stereocaulon','Staurodesmus','Staurastrum','Sporastatia','Splachnobryum', 'Speerschneidera', 'Sematophyllum','Scouleria','Sclerococcum','Schizochlamys','Schimmelmannia','Schaereria','Saelania', 'Ropalospora', 'Rivularia','Rhadinocladia','Pyrenastrum', 'Pycnora','Pterospermella','Pterogonidium', 'Pterobryella', 'Pseudolithophyllum', 'Pseudolithoderma','Pseudohypnella','Protoderma','Porina','Polycoccum','Pleurotaenium','Pleopsidium','Plectonema','Platygramme','Pilotrichella','Phymatoceros','Phaeostrophion','Phaeographina','Pellia','Pallavicinia','Orthodontium','Opegrapha','Nowellia','Nothoceros','Neohodgsonia','Myriotrichia','Mycomicrothelia','Mycobilimbia', 'Muellerella','Microzonia','Microthamnion','Microphiale','Micromitrium','Microcoleus','Micrasterias','Mesochaete','Mastigocoleus','Malcolmiella', 'Malbranchea','Luisierella','Lopadium', 'Lobothallia', 'Lithoderma', 'Limbella', 'Lichenostigma', 'Leucomium', 'Leptotheca', 'Leptopterigynandrum', 'Leptobryum','Lecidea', 'Leathesia','Klebsormidium', 'Kirchneriella','Jamesoniella','Hypopterygium', 'Hypodontium', 'Hypocenomyce','Hypnella','Hymenodon','Hydropogonella','Hydrocoleum','Hyalotheca','Hummia','Hookeriopsis','Holodontium','Heterocladium','Helminthocarpon','Haplogloia','Halorhipis','Halecania','Grateloupia','Graphina','Gracilariopsis','Glyphomitrium','Glyphium','Gloeocystis','Geminella','Garovaglia','Fimbriaria','Euptychium','Euastrum','Epibryon','Drummondia','Dolichospermum','Distichium','Dirinaria','Diphyscium','Diorygma','Dimerella','Dictyosiphon','Delamarea','Dactylospora','Cyrtopus','Cyathophorum','Crucigenia','Crocynia','Cosmocladium','Cosmarium','Compsonema','Coenogonium','Circinaria','Chrysoblastella','Chroodactylon','Chondria','Characium','Chaetosphaeridium','Chaetomitrium','Ceramium','Carbacanthographis','Capsosiphon','Calyptrozyma','Calothrix','Brachytrichia','Bissetia','Bilimbia','Baculifera','Audouinella','Asterella','Aspicilia', 'Aspergillus','Arthopyrenia', 'Ankyra','Aneura','Analipus','Phaeoceros','Hymenoloma','Halochlorococcum','Tolypothrix','Punctaria','Micrasterias','Leathesia','Hypnea','Cornicularia','Coilodesme','Loxospora', 'Aspicilia','Soranthera','Schizothrix','Amandinea','Dirinaria','Opegrapha','Porina','Rhizofabronia','Tephromela','Ulvella','Wilsoniella'), 
+  genus = c('Spiloma', 'Naevia', 'Lithothamnion' ,'Elharveya','Chaetomitrium','Volvox','Verdigellas','Variolaria','Valdonia','Urospora','Trismegistia','Timmiella','Thrombium','Thorea','Tetmemorus','Tephromela','Teilingia','Syringoderma','Symphyodon','Striaria','Stigonema','Stictyosiphon','Stichococcus','Stereocaulon','Staurodesmus','Staurastrum','Sporastatia','Splachnobryum', 'Speerschneidera', 'Sematophyllum','Scouleria','Sclerococcum','Schizochlamys','Schimmelmannia','Schaereria','Saelania', 'Ropalospora', 'Rivularia','Rhadinocladia','Pyrenastrum', 'Pycnora','Pterospermella','Pterogonidium', 'Pterobryella', 'Pseudolithophyllum', 'Pseudolithoderma','Pseudohypnella','Protoderma','Porina','Polycoccum','Pleurotaenium','Pleopsidium','Plectonema','Platygramme','Pilotrichella','Phymatoceros','Phaeostrophion','Phaeographina','Pellia','Pallavicinia','Orthodontium','Opegrapha','Nowellia','Nothoceros','Neohodgsonia','Myriotrichia','Mycomicrothelia','Mycobilimbia', 'Muellerella','Microzonia','Microthamnion','Microphiale','Micromitrium','Microcoleus','Micrasterias','Mesochaete','Mastigocoleus','Malcolmiella', 'Malbranchea','Luisierella','Lopadium', 'Lobothallia', 'Lithoderma', 'Limbella', 'Lichenostigma', 'Leucomium', 'Leptotheca', 'Leptopterigynandrum', 'Leptobryum','Lecidea', 'Leathesia','Klebsormidium', 'Kirchneriella','Jamesoniella','Hypopterygium', 'Hypodontium', 'Hypocenomyce','Hypnella','Hymenodon','Hydropogonella','Hydrocoleum','Hyalotheca','Hummia','Hookeriopsis','Holodontium','Heterocladium','Helminthocarpon','Haplogloia','Halorhipis','Halecania','Grateloupia','Graphina','Gracilariopsis','Glyphomitrium','Glyphium','Gloeocystis','Geminella','Garovaglia','Fimbriaria','Euptychium','Euastrum','Epibryon','Drummondia','Dolichospermum','Distichium','Dirinaria','Diphyscium','Diorygma','Dimerella','Dictyosiphon','Delamarea','Dactylospora','Cyrtopus','Cyathophorum','Crucigenia','Crocynia','Cosmocladium','Cosmarium','Compsonema','Coenogonium','Circinaria','Chrysoblastella','Chroodactylon','Chondria','Characium','Chaetosphaeridium','Chaetomitrium','Ceramium','Carbacanthographis','Capsosiphon','Calyptrozyma','Calothrix','Brachytrichia','Bissetia','Bilimbia','Baculifera','Audouinella','Asterella','Aspicilia', 'Aspergillus','Arthopyrenia', 'Ankyra','Aneura','Analipus','Phaeoceros','Hymenoloma','Halochlorococcum','Tolypothrix','Punctaria','Micrasterias','Leathesia','Hypnea','Cornicularia','Coilodesme','Loxospora', 'Aspicilia','Soranthera','Schizothrix','Amandinea','Dirinaria','Opegrapha','Porina','Rhizofabronia','Tephromela','Ulvella','Wilsoniella'), 
   
-  family = c('Volvocaceae','Palmophyllaceae','Pertusariaceae','Seligeriaceae', 'Ulotrichaceae','Pylaisiadelphaceae','Timmiellaceae','Protothelenellaceae','Thoreaceae','Desmidiaceae','Tephromelataceae','Desmidiaceae','Syringodermataceae','Symphyodontaceae','Chordariaceae','Stigonemataceae','Chordariaceae','Prasiolaceae','Stereocaulaceae','Desmidiaceae','Desmidiaceae','Sporastatiaceae','Splachnobryaceae','Leprocaulaceae','Sematophyllaceae', 'Scouleriaceae',	'Sclerococcaceae','Schizochlamydaceae','Schimmelmanniaceae','Schaereriaceae','Saelaniaceae', 'Ropalosporaceae', 'Nostocaceae','Chordariaceae','Pyrenulaceae','Pycnoraceae','Pterospermataceae','Pylaisiadelphaceae','Pterobryellaceae', 'Corallinaceae', 'Lithodermataceae', 'Hypnaceae','Chaetophoraceae','Porinaceae','Polycoccaceae','Desmidiaceae','Acarosporaceae','Oscillatoriaceae','Graphidaceae','Lembophyllaceae','Phymatocerotaceae','Phaeostrophionaceae','Graphidaceae','Pelliaceae','Pallaviciniaceae','Orthodontiaceae','Opegraphaceae','Cephaloziaceae','Dendrocerotaceae','Neohodgsoniaceae','Chordariaceae','Trypetheliaceae','Ramalinaceae','Verrucariaceae','Syringodermataceae','Microthamniaceae','Coenogoniaceae','Micromitriaceae','Microcoleaceae','Desmidiaceae','Aulacomniaceae','Nostochopsidaceae','Pilocarpaceae','Onygenaceae','Timmiellaceae','Lopadiaceae', 'Megasporaceae', 'Lithodermataceae', 'Amblystegiaceae','Phaeococcomycetaceae', 'Leucomiaceae', 'Orthodontiaceae', 'Thuidiaceae', 'Bryaceae', 'Lecideaceae', 'Chordariaceae','Klebsormidiaceae', 'Selenastraceae','Adelanthaceae', 'Hypopterygiaceae', 'Hypodontiaceae','Ophioparmaceae','Pilotrichaceae','Orthodontiaceae','Sematophyllaceae','Microcoleaceae','Desmidiaceae','Chordariaceae','Pilotrichaceae','Hypodontiaceae','Lembophyllaceae','Graphidaceae','Chordariaceae','Chordariaceae','Leprocaulaceae','Halymeniaceae','Graphidaceae','Gracilariaceae','Rhabdoweisiaceae','Mytilinidiaceae','Radiococcaceae','Chlorellaceae','Ptychomniaceae','Rhodomelaceae','Ptychomniaceae','Desmidiaceae','Epibryaceae','Drummondiaceae','Aphanizomenonaceae','Distichiaceae','Caliciaceae','Diphysciaceae','Graphidaceae','Coenogoniaceae','Chordariaceae','Chordariaceae','Dactylosporaceae','Cyrtopoaceae','Hypopterygiaceae','Scenedesmaceae','Ramalinaceae','Desmidiaceae','Desmidiaceae','Scytosiphonaceae','Coenogoniaceae','Megasporaceae','Chrysoblastellaceae','Stylonemataceae','Rhodomelaceae','Characiaceae','Chaetosphaeridiaceae','Symphyodontaceae','Ceramiaceae','Graphidaceae','Ulotrichaceae','Helotiaceae','Rivulariaceae','Scytonemataceae','Neckeraceae','Ramalinaceae','Caliciaceae','Acrochaetiaceae', 'Aytoniaceae','Megasporaceae', 'Aspergillaceae', 'Trypetheliaceae', 'Sphaeropleaceae','Aneuraceae','Scytosiphonaceae','Notothyladaceae','Hymenolomataceae','Oltmannsiellopsidaceae','Tolypothrichaceae','Chordariaceae','Desmidiaceae','Chordariaceae','Cystocloniaceae','Parmeliaceae','Chordariaceae','Sarrameanaceae', 'Megasporaceae','Chordariaceae','Trichocoleusaceae','Caliciaceae','Caliciaceae','Opegraphaceae','Porinaceae','Rhizofabroniaceae','Tephromelataceae','Ulvellaceae','Ditrichaceae'), correct=1)
-
-correct2 <-data.frame(rbind(c('Halochlorococcum','Oltmannsiellopsidaceae'),
-                            c('Hymenoloma','Hymenolomataceae'),
-                            c('',''),
-                            c('',''),
-                            c('',''),
-                            c('',''),
-                            c('',''),
-                            c('','')
-                            ))
-
-#	Analipus -> Ralfsiaceae; Mastigocoleus -> Hapalosiphonaceae; Rivularia ->	Rivulariaceae
+  family = c('Xylographaceae', 'Arthoniaceae', 'Lithophyllaceae', 'Hypnaceae' ,'Symphyodontaceae','Volvocaceae','Palmophyllaceae','Pertusariaceae','Seligeriaceae', 'Ulotrichaceae','Pylaisiadelphaceae','Timmiellaceae','Protothelenellaceae','Thoreaceae','Desmidiaceae','Tephromelataceae','Desmidiaceae','Syringodermataceae','Symphyodontaceae','Chordariaceae','Stigonemataceae','Chordariaceae','Prasiolaceae','Stereocaulaceae','Desmidiaceae','Desmidiaceae','Sporastatiaceae','Splachnobryaceae','Leprocaulaceae','Sematophyllaceae', 'Scouleriaceae',	'Sclerococcaceae','Schizochlamydaceae','Schimmelmanniaceae','Schaereriaceae','Saelaniaceae', 'Ropalosporaceae', 'Nostocaceae','Chordariaceae','Pyrenulaceae','Pycnoraceae','Pterospermataceae','Pylaisiadelphaceae','Pterobryellaceae', 'Corallinaceae', 'Lithodermataceae', 'Hypnaceae','Chaetophoraceae','Porinaceae','Polycoccaceae','Desmidiaceae','Acarosporaceae','Oscillatoriaceae','Graphidaceae','Lembophyllaceae','Phymatocerotaceae','Phaeostrophionaceae','Graphidaceae','Pelliaceae','Pallaviciniaceae','Orthodontiaceae','Opegraphaceae','Cephaloziaceae','Dendrocerotaceae','Neohodgsoniaceae','Chordariaceae','Trypetheliaceae','Ramalinaceae','Verrucariaceae','Syringodermataceae','Microthamniaceae','Coenogoniaceae','Micromitriaceae','Microcoleaceae','Desmidiaceae','Aulacomniaceae','Nostochopsidaceae','Pilocarpaceae','Onygenaceae','Timmiellaceae','Lopadiaceae', 'Megasporaceae', 'Lithodermataceae', 'Amblystegiaceae','Phaeococcomycetaceae', 'Leucomiaceae', 'Orthodontiaceae', 'Thuidiaceae', 'Bryaceae', 'Lecideaceae', 'Chordariaceae','Klebsormidiaceae', 'Selenastraceae','Adelanthaceae', 'Hypopterygiaceae', 'Hypodontiaceae','Ophioparmaceae','Pilotrichaceae','Orthodontiaceae','Sematophyllaceae','Microcoleaceae','Desmidiaceae','Chordariaceae','Pilotrichaceae','Hypodontiaceae','Lembophyllaceae','Graphidaceae','Chordariaceae','Chordariaceae','Leprocaulaceae','Halymeniaceae','Graphidaceae','Gracilariaceae','Rhabdoweisiaceae','Mytilinidiaceae','Radiococcaceae','Chlorellaceae','Ptychomniaceae','Rhodomelaceae','Ptychomniaceae','Desmidiaceae','Epibryaceae','Drummondiaceae','Aphanizomenonaceae','Distichiaceae','Caliciaceae','Diphysciaceae','Graphidaceae','Coenogoniaceae','Chordariaceae','Chordariaceae','Dactylosporaceae','Cyrtopoaceae','Hypopterygiaceae','Scenedesmaceae','Ramalinaceae','Desmidiaceae','Desmidiaceae','Scytosiphonaceae','Coenogoniaceae','Megasporaceae','Chrysoblastellaceae','Stylonemataceae','Rhodomelaceae','Characiaceae','Chaetosphaeridiaceae','Symphyodontaceae','Ceramiaceae','Graphidaceae','Ulotrichaceae','Helotiaceae','Rivulariaceae','Scytonemataceae','Neckeraceae','Ramalinaceae','Caliciaceae','Acrochaetiaceae', 'Aytoniaceae','Megasporaceae', 'Aspergillaceae', 'Trypetheliaceae', 'Sphaeropleaceae','Aneuraceae','Scytosiphonaceae','Notothyladaceae','Hymenolomataceae','Oltmannsiellopsidaceae','Tolypothrichaceae','Chordariaceae','Desmidiaceae','Chordariaceae','Cystocloniaceae','Parmeliaceae','Chordariaceae','Sarrameanaceae', 'Megasporaceae','Chordariaceae','Trichocoleusaceae','Caliciaceae','Caliciaceae','Opegraphaceae','Porinaceae','Rhizofabroniaceae','Tephromelataceae','Ulvellaceae','Ditrichaceae'), correct=1)
 
 nvataxonomy <- left_join(nvataxonomy, correct0) |> unique() |> mutate(correct = ifelse(is.na(correct),0,correct))
-nvataxonomy <- nvataxonomy |> subset(n %in% 1 | correct %in% 1 | !genus %in% correct0$genus)#, select=-c(correct,n))
-nvataxonomy <- nvataxonomy |> mutate(family = case_when(genus %in% 'Analipus' ~ 'Ralfsiaceae',
-                                                        genus %in% 'Mastigocoleus' ~ 'Hapalosiphonaceae',
-                                                        genus %in% 'Rivularia' ~ 'Rivulariaceae',
-                                                        TRUE ~ family
-))
-nvataxonomy <- nvataxonomy |> mutate(order = case_when(family %in% 'Ralfsiaceae' ~ 'Ralfsiales',
-                                                        TRUE ~ order
-))
+nvataxonomy <- nvataxonomy |> subset(family != '' & n %in% 1 | correct %in% 1, select=-c(correct,n))#| !genus %in% correct0$genus)#, select=-c(correct,n))
+nva.misstax <- nva.misstax |> left_join(nvataxonomy)
+nva.misstax <- subset(nva.misstax, !is.na(family))
+nva.all0 <- rbind(nva.all, nva.misstax)
+nva.all <- subset(nva.all0, !is.na(family)) |> mutate(genus=extractTaxon(actaxon, 'genus')) |> unique() |> arrange(kingdom, phylum, class, order, family, genus, actaxon, taxon)
 
-
+nvataxonomy <- subset(nva.all, select=c(kingdom, phylum, class, order, family, genus)) |> unique()
+# ordermissing <- subset(nvataxonomy, order =='')
+# correct = data.frame(rbind(c('Aphanopsidaceae','Lecanorales','Lecanoromycetes','Ascomycota'),
+#                            c('Characeae','Charales','Charophyceae','Charophyta'),
+#                            c('Epigloeaceae','Lecanorales','Lecanoromycetes','Ascomycota'),
+#                            c('Aphanopsidaceae','Lecanorales','Lecanoromycetes','Ascomycota'),
+                     
 usdalich <- subset(usda, grepl(tolower('lichen'), Common.Name)) |> mutate(genus = extractTaxon(taxon, 'genus'))
 nvataxonomy <- nvataxonomy |> mutate(usdalichen = ifelse(genus %in% usdalich$genus,1,0), usdalichen2 = ifelse(family %in% usdalich$Family,1,0))
 nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteria' ~ 'Cyanobacteria',
@@ -201,6 +208,10 @@ nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteri
                                                        family %in% 'Trypetheliaceae' ~ 'lichen',
                                                        family %in% 'Pyrenulaceae' ~ 'lichen',
                                                        family %in% 'Verrucariaceae' ~ 'lichen',
+                                                       family %in% 'Pyrenidiaceae' ~ 'lichen',
+                                                       family %in% 'Strangosporaceae' ~ 'lichen',
+                                                       family %in% 'Harpidiaceae' ~ 'lichen',
+                                                       family %in% 'Aphanopsidaceae' ~ 'lichen',
                                                        phylum %in% 'Anthocerotophyta' ~ 'bryophyte',
                                                        phylum %in% 'Bryophyta' ~ 'bryophyte',
                                                        phylum %in% 'Chlorophyta' ~ 'green algae',
@@ -209,12 +220,12 @@ nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteri
                                                        phylum %in% 'Rhodophyta' ~ 'red algae',
                                                        phylum %in% 'Charophyta' ~ 'green algae',
                                                        usdalichen %in% 1 | usdalichen2 %in% 1 ~ '2lich',
-                                                       TRUE ~ NA)) |> subset(!is.na(type) & !type %in% '2lich', select=-c(usdalichen,usdalichen2))
-
-nvaselect <- nva #|> subset((taxonomicStatus %in% c('PROVISIONALLY_ACCEPTED','ACCEPTED') | numberOfOccurrences >= 500 | taxon %in% usda$taxon) & acgenus %in% nvataxonomy$genus & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select=c("acgenus","actaxon","acauth","taxon","auth" ))
+                                                       TRUE ~ 'unk')) |> subset(type != 'unk' & !type %in% '2lich', select=-c(usdalichen,usdalichen2))
+nvataxonomy <- nvataxonomy |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+nva.all.tax <- nva.all |> left_join(nvataxonomy[,c('genus', 'type')]) |> subset(!is.na(type)) |> unique()
 
 write.csv(nvataxonomy, 'data/nvataxonomy.csv', row.names = F, na='')
-write.csv(nvaselect, 'data/nva.csv', row.names = F, na='')
+write.csv(nva.all.tax, 'data/nva.csv', row.names = F, na='')
 
 #######Talley nonvascular species by USNVC
 library(vegnasis)
@@ -249,7 +260,7 @@ for(i in 1:length(sppacc)){#i=1
     spbydesc0 <- data.frame(taxon=thistax, ELEMENT_GLOBAL_ID=thisdesc)
     if(is.null(spbydesc)){spbydesc <- spbydesc0}else{spbydesc <- rbind(spbydesc,spbydesc0)}}
 }
-Sys.time() - timA#Time difference of 2.155002 hours
+Sys.time() - timA#Time difference of 2.653698 hours
 spbyass$indicator <- 1
 spbydesc$indicator <- 0
 
