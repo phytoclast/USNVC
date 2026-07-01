@@ -239,17 +239,17 @@ for(i in 1:length(sppacc)){#i=1
   thistax <- sppacc[i]
   #thistax <- 'Nostoc'
   
-  thisass <- ass[grepl(thistax, ass$scientificName),]$ELEMENT_GLOBAL_ID
+  thisass <- ass[grepl(paste0(thistax,'\\W|',thistax,'$'), ass$scientificName),]$ELEMENT_GLOBAL_ID
   if(length(thisass)>0){
-    spbyass0 <- data.frame(taxon=paste0(thistax,'\\W|',thistax,'$'), ELEMENT_GLOBAL_ID=thisass)
+    spbyass0 <- data.frame(taxon=thistax, ELEMENT_GLOBAL_ID=thisass)
     if(is.null(spbyass)){spbyass <- spbyass0}else{spbyass <- rbind(spbyass,spbyass0)}}
   
-  thisdesc <- desc[grepl(thistax, desc$Floristics),]$ELEMENT_GLOBAL_ID
+  thisdesc <- desc[grepl(paste0(thistax,'\\W|',thistax,'$'), desc$Floristics),]$ELEMENT_GLOBAL_ID
   if(length(thisdesc)>0){
-    spbydesc0 <- data.frame(taxon=paste0(thistax,'\\W|',thistax,'$'), ELEMENT_GLOBAL_ID=thisdesc)
+    spbydesc0 <- data.frame(taxon=thistax, ELEMENT_GLOBAL_ID=thisdesc)
     if(is.null(spbydesc)){spbydesc <- spbydesc0}else{spbydesc <- rbind(spbydesc,spbydesc0)}}
 }
-Sys.time() - timA#Time difference of 1.324091 hours
+Sys.time() - timA#Time difference of 2.155002 hours
 spbyass$indicator <- 1
 spbydesc$indicator <- 0
 
