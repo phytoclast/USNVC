@@ -219,6 +219,7 @@ nvataxonomy <- nvataxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteri
                                                        phylum %in% 'Chlorophyta' ~ 'green algae',
                                                        phylum %in% 'Rhodophyta' ~ 'red algae',
                                                        phylum %in% 'Charophyta' ~ 'green algae',
+                                                       genus %in% 'Pyrenothrix' ~ 'lichen',
                                                        usdalichen %in% 1 | usdalichen2 %in% 1 ~ '2lich',
                                                        TRUE ~ 'unk')) |> subset(type != 'unk' & !type %in% '2lich', select=-c(usdalichen,usdalichen2))
 nvataxonomy <- nvataxonomy |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
@@ -317,6 +318,8 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 spp <- vegnasis::syns3
 familylink <- vegnasis::familylink
 apg <- vegnasis::apg
+#vascular forms
+habs <- vegnasis::taxon.habits
 #nonvasculars
 nva <- read.csv('data/nva.csv')
 nvataxonomy <- read.csv('data/nvataxonomy.csv')
@@ -331,6 +334,8 @@ nvataxonomy0 <-  subset(nvataxonomy, genus %in% familylink$genus)
 spp0  <-  spp |> mutate(genus=extractTaxon(kew, 'genus')) |> subset(genus %in% nvataxonomy$genus)
 nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
+
+
 usnvcspp <- read.csv('usnvcspp2.csv')
 # usnvcspp <- usnvcspp |> mutate(taxon=harmonize.taxa(taxon, fix=TRUE, sensu = 'kew'), taxon=extractTaxon(taxon, 'binomial'))
 usnvcgen <- read.csv('usnvcgen.csv')
@@ -341,8 +346,34 @@ usnvcspp <- usnvcspp |> mutate(genus = extractTaxon(taxon, 'genus'))
 usnvcspp <- usnvcspp |> group_by(genus, ELEMENT_GLOBAL_ID, indicator) |> mutate(n=length(taxon)) |> ungroup()
 usnvcspp <- usnvcspp |> mutate(flag=ifelse((genus != taxon | n == 1) & nchar(taxon) >= 1,0,1))
 usnvcspp <- usnvcspp |> subset(!flag %in% 1, select=-c(genus, n, flag))
+nvaforms <- nvataxonomy |> subset(select=c(genus, type)) |> unique()
 
-
-
-
+usnvcspp <- usnvcspp |> mutate(genus=extractTaxon(taxon, 'genus')) |> left_join(nvaforms) |> mutate(type1 = vegnasis::fill.type(taxon))
+usnvcspp <- usnvcspp |> mutate(type=ifelse(is.na(type), type1,type)) |> subset(select=-c(type1, genus))
 usnvcspp3 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
+
+gennul <- subset(usnvcspp3, type %in% 'NA' | is.na(type), select = taxon) |> unique()
+
+
+
+usda <- read.csv('data/plantlst.txt')
+usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
+
+missing.lichen.fams <- usda |> subset(grepl('lichen',Common.Name) & !Family %in% nvataxonomy$family, select=Family) |> unique()
+#write.csv(missing.lichen.fams, 'data/missing.lichen.fams2.csv', row.names = F)
+missing.lichen.fams <- read.csv('data/missing.lichen.fams.csv')
+
+usda.backbone <- subset(usda, (Family %in% nvataxonomy$family | Family %in% missing.lichen.fams$Family) & grepl(' ', taxon), select=c("Common.Name","Family", "taxon","auth","acc"))
+usda.syns <- usda |> subset(syn!=acc, select=c("taxon","auth","acc"))
+usda.df <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth, taxon=usda.backbone$taxon, auth=usda.backbone$auth)
+usda.df1 <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth)
+usda.df1 <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
+usda.df <- usda.df |> rbind(usda.df1)
+nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)
+#---combine nva with usda ----
+#need to weed out homonyms. 1. take away any that are synonyms if one is accepted, then maybe keep those with the most records?
+nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon)
+nva1a <- data.frame(taxon=usda.df$taxon, usda=usda.df$actaxon)
+nva1 <- nva1 |> left_join(nva1a)
+nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
+nva1 <- nva1 |> rbind(nva2)
