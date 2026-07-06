@@ -133,6 +133,11 @@ write.csv(usnvcspp2, 'usnvcspp2.csv', row.names = F, na='')
 
 
 #Extract any bryophytes or lichens ----
+library(vegnasis)
+library(xlsx)
+
+#set working directory to folder where this R file is saved
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 usda <- read.csv('data/plantlst.txt')
 usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
@@ -154,10 +159,17 @@ nva <-rbind(bry,lic,alg,lic2,alg2)
 nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = extractTaxon(acceptedScientificName, 'author'), 
                      genus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author'))
 nva <- nva |> mutate(taxon=gsub('ë','e',taxon), actaxon=gsub('ë','e',actaxon))
-nvae <- subset(nva, grepl('ë',taxon))
-nva.all <- subset(nva, taxonomicStatus %in% c('SYNONYM','ACCEPTED') & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select = c(actaxon, acauth, taxon, auth))
+# nvae <- subset(nva, grepl('ë',taxon))
+
+# nva.all <- subset(nva, taxonomicStatus %in% c('SYNONYM','ACCEPTED') & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select = c(actaxon, acauth, taxon, auth))
+
+nva.all <- nva  |> subset(taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES')) |> mutate(isusda = ifelse(scientificName %in% usda$Scientific.Name.with.Author,1,0), ac = ifelse(taxonomicStatus %in% c('ACCEPTED', 'PROVISIONALLY_ACCEPTED'),1,0)) |> group_by(taxon, ac) |> mutate(nhom = length(taxon), maxocc = max(numberOfOccurrences)) |> group_by(taxon) |> mutate(maxac = max(ac), maxusda = max(isusda)) |> ungroup() |> 
+  mutate(keep = ifelse(maxusda == isusda & maxac == 0, 1, ifelse(maxocc == numberOfOccurrences & maxac == ac & (maxusda == 0 | maxac==1) ,1,0))) |> subset(keep %in% 1, select = c(actaxon, acauth, taxon, auth))
+
 nva.all2 <- data.frame(actaxon=nva.all$actaxon, acauth=nva.all$acauth, taxon=nva.all$actaxon, auth=nva.all$acauth)
 nva.all <- rbind(nva.all, nva.all2) |> unique()
+
+
 
 #URLs: https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip
 inattax <- read.csv('data/taxa.csv')
@@ -370,6 +382,7 @@ usda.df1 <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, aca
 usda.df1 <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
 usda.df <- usda.df |> rbind(usda.df1)
 nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)
+
 #---combine nva with usda ----
 #need to weed out homonyms. 1. take away any that are synonyms if one is accepted, then maybe keep those with the most records?
 nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon)
