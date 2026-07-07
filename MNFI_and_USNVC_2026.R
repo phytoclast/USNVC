@@ -164,11 +164,13 @@ nva <- nva |> mutate(taxon=gsub('ë','e',taxon), actaxon=gsub('ë','e',actaxon))
 # nva.all <- subset(nva, taxonomicStatus %in% c('SYNONYM','ACCEPTED') & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select = c(actaxon, acauth, taxon, auth))
 
 nva.all <- nva  |> subset(taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES')) |> mutate(isusda = ifelse(scientificName %in% usda$Scientific.Name.with.Author,1,0), ac = ifelse(taxonomicStatus %in% c('ACCEPTED', 'PROVISIONALLY_ACCEPTED'),1,0)) |> group_by(taxon, ac) |> mutate(nhom = length(taxon), maxocc = max(numberOfOccurrences)) |> group_by(taxon) |> mutate(maxac = max(ac), maxusda = max(isusda)) |> ungroup() |> 
-  mutate(keep = ifelse(maxusda == isusda & maxac == 0, 1, ifelse(maxocc == numberOfOccurrences & maxac == ac & (maxusda == 0 | maxac==1) ,1,0))) |> subset(keep %in% 1, select = c(actaxon, acauth, taxon, auth))
+  mutate(keep = ifelse(maxusda == isusda & maxusda == 1 & maxac == 0, 1, ifelse(maxocc == numberOfOccurrences & maxac == ac & (maxusda == 0 | maxac==1) ,1,0))) |> subset(keep %in% 1, select = c(actaxon, acauth, taxon, auth))
 
 nva.all2 <- data.frame(actaxon=nva.all$actaxon, acauth=nva.all$acauth, taxon=nva.all$actaxon, auth=nva.all$acauth)
 nva.all <- rbind(nva.all, nva.all2) |> unique()
+nva.all <- nva.all |> mutate(nauth =  nchar(auth), sameauth = ifelse(taxon==actaxon & auth==acauth,1,0)) |> group_by(taxon) |> mutate(n=length(taxon)) |> group_by(taxon, actaxon) |> mutate(n2=length(taxon), maxsameauth = max(sameauth)) |> group_by(taxon) |> mutate(maxn2 = max(n2)) |> group_by(taxon, actaxon)  |> mutate(maxnchar = max(nauth)) |> ungroup() |> mutate(keep = (maxn2==n2 & maxnchar==nauth & maxsameauth == 0) | (maxsameauth ==1 & sameauth==1))
 
+nva.all <- nva.all |> subset(keep, select = c(actaxon,acauth,taxon,auth)) |> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
 
 
 #URLs: https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip
@@ -335,10 +337,6 @@ habs <- vegnasis::taxon.habits
 #nonvasculars
 nva <- read.csv('data/nva.csv')
 nvataxonomy <- read.csv('data/nvataxonomy.csv')
-#USNVC association names
-ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
-#USNVC species mentions
-desc <- read.csv('data/USNVC v3.0.3 2026-03-25/unitDescription.csv')
 
 #fix misapplied genera in respective vascular and non-vascular lists
 familylink <- subset(familylink, !genus %in% c('Botrydium','Hedwigia','Hookeria','Ephemerum','Carteria'))
@@ -346,25 +344,6 @@ nvataxonomy0 <-  subset(nvataxonomy, genus %in% familylink$genus)
 spp0  <-  spp |> mutate(genus=extractTaxon(kew, 'genus')) |> subset(genus %in% nvataxonomy$genus)
 nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
-
-
-usnvcspp <- read.csv('usnvcspp2.csv')
-# usnvcspp <- usnvcspp |> mutate(taxon=harmonize.taxa(taxon, fix=TRUE, sensu = 'kew'), taxon=extractTaxon(taxon, 'binomial'))
-usnvcgen <- read.csv('usnvcgen.csv')
-usnvcnva <- read.csv('usnvcnva.csv')
-
-usnvcspp <- rbind(usnvcspp[,colnames(usnvcnva)], usnvcnva, usnvcgen) |> unique()
-usnvcspp <- usnvcspp |> mutate(genus = extractTaxon(taxon, 'genus'))
-usnvcspp <- usnvcspp |> group_by(genus, ELEMENT_GLOBAL_ID, indicator) |> mutate(n=length(taxon)) |> ungroup()
-usnvcspp <- usnvcspp |> mutate(flag=ifelse((genus != taxon | n == 1) & nchar(taxon) >= 1,0,1))
-usnvcspp <- usnvcspp |> subset(!flag %in% 1, select=-c(genus, n, flag))
-nvaforms <- nvataxonomy |> subset(select=c(genus, type)) |> unique()
-
-usnvcspp <- usnvcspp |> mutate(genus=extractTaxon(taxon, 'genus')) |> left_join(nvaforms) |> mutate(type1 = vegnasis::fill.type(taxon))
-usnvcspp <- usnvcspp |> mutate(type=ifelse(is.na(type), type1,type)) |> subset(select=-c(type1, genus))
-usnvcspp3 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
-
-gennul <- subset(usnvcspp3, type %in% 'NA' | is.na(type), select = taxon) |> unique()
 
 
 
@@ -390,3 +369,29 @@ nva1a <- data.frame(taxon=usda.df$taxon, usda=usda.df$actaxon)
 nva1 <- nva1 |> left_join(nva1a)
 nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
 nva1 <- nva1 |> rbind(nva2)
+
+
+
+#join with USNVC
+#USNVC association names
+ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
+#USNVC species mentions
+desc <- read.csv('data/USNVC v3.0.3 2026-03-25/unitDescription.csv')
+
+usnvcspp <- read.csv('usnvcspp2.csv')
+# usnvcspp <- usnvcspp |> mutate(taxon=harmonize.taxa(taxon, fix=TRUE, sensu = 'kew'), taxon=extractTaxon(taxon, 'binomial'))
+usnvcgen <- read.csv('usnvcgen.csv')
+usnvcnva <- read.csv('usnvcnva.csv')
+
+usnvcspp <- rbind(usnvcspp[,colnames(usnvcnva)], usnvcnva, usnvcgen) |> unique()
+usnvcspp <- usnvcspp |> mutate(genus = extractTaxon(taxon, 'genus'))
+usnvcspp <- usnvcspp |> group_by(genus, ELEMENT_GLOBAL_ID, indicator) |> mutate(n=length(taxon)) |> ungroup()
+usnvcspp <- usnvcspp |> mutate(flag=ifelse((genus != taxon | n == 1) & nchar(taxon) >= 1,0,1))
+usnvcspp <- usnvcspp |> subset(!flag %in% 1, select=-c(genus, n, flag))
+nvaforms <- nvataxonomy |> subset(select=c(genus, type)) |> unique()
+
+usnvcspp <- usnvcspp |> mutate(genus=extractTaxon(taxon, 'genus')) |> left_join(nvaforms) |> mutate(type1 = vegnasis::fill.type(taxon))
+usnvcspp <- usnvcspp |> mutate(type=ifelse(is.na(type), type1,type)) |> subset(select=-c(type1, genus))
+usnvcspp3 <- ass[,c('classificationCode','databaseCode','PARENT_ID','ELEMENT_GLOBAL_ID','hierarchyLevel','colloquialName', 'scientificName')] |> left_join(usnvcspp) |> arrange(classificationCode, scientificName, -indicator, taxon) |> subset(hierarchyLevel %in% 'Association')
+
+gennul <- subset(usnvcspp3, type %in% 'NA' | is.na(type), select = taxon) |> unique()
