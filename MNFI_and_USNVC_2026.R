@@ -212,7 +212,8 @@ correct0 = data.frame(
   family = c('Xylographaceae', 'Arthoniaceae', 'Lithophyllaceae', 'Hypnaceae' ,'Symphyodontaceae','Volvocaceae','Palmophyllaceae','Pertusariaceae','Seligeriaceae', 'Ulotrichaceae','Pylaisiadelphaceae','Timmiellaceae','Protothelenellaceae','Thoreaceae','Desmidiaceae','Tephromelataceae','Desmidiaceae','Syringodermataceae','Symphyodontaceae','Chordariaceae','Stigonemataceae','Chordariaceae','Prasiolaceae','Stereocaulaceae','Desmidiaceae','Desmidiaceae','Sporastatiaceae','Splachnobryaceae','Leprocaulaceae','Sematophyllaceae', 'Scouleriaceae',	'Sclerococcaceae','Schizochlamydaceae','Schimmelmanniaceae','Schaereriaceae','Saelaniaceae', 'Ropalosporaceae', 'Nostocaceae','Chordariaceae','Pyrenulaceae','Pycnoraceae','Pterospermataceae','Pylaisiadelphaceae','Pterobryellaceae', 'Corallinaceae', 'Lithodermataceae', 'Hypnaceae','Chaetophoraceae','Porinaceae','Polycoccaceae','Desmidiaceae','Acarosporaceae','Oscillatoriaceae','Graphidaceae','Lembophyllaceae','Phymatocerotaceae','Phaeostrophionaceae','Graphidaceae','Pelliaceae','Pallaviciniaceae','Orthodontiaceae','Opegraphaceae','Cephaloziaceae','Dendrocerotaceae','Neohodgsoniaceae','Chordariaceae','Trypetheliaceae','Ramalinaceae','Verrucariaceae','Syringodermataceae','Microthamniaceae','Coenogoniaceae','Micromitriaceae','Microcoleaceae','Desmidiaceae','Aulacomniaceae','Nostochopsidaceae','Pilocarpaceae','Onygenaceae','Timmiellaceae','Lopadiaceae', 'Megasporaceae', 'Lithodermataceae', 'Amblystegiaceae','Phaeococcomycetaceae', 'Leucomiaceae', 'Orthodontiaceae', 'Thuidiaceae', 'Bryaceae', 'Lecideaceae', 'Chordariaceae','Klebsormidiaceae', 'Selenastraceae','Adelanthaceae', 'Hypopterygiaceae', 'Hypodontiaceae','Ophioparmaceae','Pilotrichaceae','Orthodontiaceae','Sematophyllaceae','Microcoleaceae','Desmidiaceae','Chordariaceae','Pilotrichaceae','Hypodontiaceae','Lembophyllaceae','Graphidaceae','Chordariaceae','Chordariaceae','Leprocaulaceae','Halymeniaceae','Graphidaceae','Gracilariaceae','Rhabdoweisiaceae','Mytilinidiaceae','Radiococcaceae','Chlorellaceae','Ptychomniaceae','Rhodomelaceae','Ptychomniaceae','Desmidiaceae','Epibryaceae','Drummondiaceae','Aphanizomenonaceae','Distichiaceae','Caliciaceae','Diphysciaceae','Graphidaceae','Coenogoniaceae','Chordariaceae','Chordariaceae','Dactylosporaceae','Cyrtopoaceae','Hypopterygiaceae','Scenedesmaceae','Ramalinaceae','Desmidiaceae','Desmidiaceae','Scytosiphonaceae','Coenogoniaceae','Megasporaceae','Chrysoblastellaceae','Stylonemataceae','Rhodomelaceae','Characiaceae','Chaetosphaeridiaceae','Symphyodontaceae','Ceramiaceae','Graphidaceae','Ulotrichaceae','Helotiaceae','Rivulariaceae','Scytonemataceae','Neckeraceae','Ramalinaceae','Caliciaceae','Acrochaetiaceae', 'Aytoniaceae','Megasporaceae', 'Aspergillaceae', 'Trypetheliaceae', 'Sphaeropleaceae','Aneuraceae','Scytosiphonaceae','Notothyladaceae','Hymenolomataceae','Oltmannsiellopsidaceae','Tolypothrichaceae','Chordariaceae','Desmidiaceae','Chordariaceae','Cystocloniaceae','Parmeliaceae','Chordariaceae','Sarrameanaceae', 'Megasporaceae','Chordariaceae','Trichocoleusaceae','Caliciaceae','Caliciaceae','Opegraphaceae','Porinaceae','Rhizofabroniaceae','Tephromelataceae','Ulvellaceae','Ditrichaceae'), correct=1)
 
 nvataxonomy <- left_join(nvataxonomy, correct0) |> unique() |> mutate(correct = ifelse(is.na(correct),0,correct))
-nvataxonomy <- nvataxonomy |> subset(family != '' & n %in% 1 | correct %in% 1, select=-c(correct,n))#| !genus %in% correct0$genus)#, select=-c(correct,n))
+nvataxonomy <- nvataxonomy |> group_by(genus) |> mutate(maxocc=max(n), maxcor = max(correct)) |> ungroup()
+nvataxonomy <- nvataxonomy |> subset((family != '' & n2 %in% 1 & nchar(order) > 1) | correct %in% 1 | (family != '' & nchar(order) > 1 & n > 10 & maxocc == n & maxcor == 0), select=-c(maxocc, maxcor,correct,n,n2))#| !genus %in% correct0$genus)#, select=-c(correct,n))
 nva.misstax <- nva.misstax |> left_join(nvataxonomy)
 nva.misstax <- subset(nva.misstax, !is.na(family))
 nva.all0 <- rbind(nva.all, nva.misstax)
@@ -369,6 +370,7 @@ nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
 usda <- read.csv('data/plantlst.txt')
 usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
+usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct',auth))
 
 missing.lichen.fams <- usda |> subset(grepl('lichen',Common.Name) & !Family %in% nvataxonomy$family, select=Family) |> unique()
 #write.csv(missing.lichen.fams, 'data/missing.lichen.fams2.csv', row.names = F)
@@ -380,12 +382,15 @@ usda.df <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acau
 usda.df1 <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth)
 usda.df1 <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
 usda.df <- usda.df |> rbind(usda.df1)
-nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)
-
+nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup() |> arrange(taxon)
+redund <- nva.new |> subset(n > 1); # write.csv(redund, 'data/redund.csv', row.names = F, na='', fileEncoding = "latin1")
+redund <- read.csv('data/redund.csv',fileEncoding = "latin1")
+nva.new <- nva.new |> left_join(redund[,c('taxon', 'auth', 'keep')])
+nva.new <- nva.new |> subset(n == 1 | keep==1, select=-c(n,keep))
 #---combine nva with usda ----
 #need to weed out homonyms. 1. take away any that are synonyms if one is accepted, then maybe keep those with the most records?
-nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon)
-nva1a <- data.frame(taxon=usda.df$taxon, usda=usda.df$actaxon)
+nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon) |> unique()#|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
+nva1a <- data.frame(taxon=nva.new$taxon, usda=nva.new$actaxon) |> unique() #|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
 nva1 <- nva1 |> left_join(nva1a)
 nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
 nva1 <- nva1 |> rbind(nva2)
