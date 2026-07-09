@@ -156,23 +156,41 @@ lic2 <- read.delim('data/0000964-260623161305970.csv')
 alg2 <- read.delim('data/0000982-260623161305970.csv')
 
 nva <-rbind(bry,lic,alg,lic2,alg2)
-nva <- nva |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = extractTaxon(acceptedScientificName, 'author'), 
-                     genus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author'))
-nva <- nva |> mutate(taxon=gsub('ë','e',taxon), actaxon=gsub('ë','e',actaxon))
 # nvae <- subset(nva, grepl('ë',taxon))
 
 # nva.all <- subset(nva, taxonomicStatus %in% c('SYNONYM','ACCEPTED') & taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select = c(actaxon, acauth, taxon, auth))
 
-nva.all <- nva  |> subset(taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES')) |> mutate(isusda = ifelse(scientificName %in% usda$Scientific.Name.with.Author,1,0), ac = ifelse(taxonomicStatus %in% c('ACCEPTED', 'PROVISIONALLY_ACCEPTED'),1,0)) |> group_by(taxon, ac) |> mutate(nhom = length(taxon), maxocc = max(numberOfOccurrences)) |> group_by(taxon) |> mutate(maxac = max(ac), maxusda = max(isusda)) |> ungroup() |> 
-  mutate(keep = ifelse(maxusda == isusda & maxusda == 1 & maxac == 0, 1, ifelse(maxocc == numberOfOccurrences & maxac == ac & (maxusda == 0 | maxac==1) ,1,0))) |> subset(keep %in% 1, select = c(actaxon, acauth, taxon, auth))
+nva.all <- nva  |> subset(taxonRank %in% c('SPECIES', 'VARIETY', 'SUBSPECIES'), select=c(numberOfOccurrences,acceptedScientificName, scientificName)) 
 
-nva.all2 <- data.frame(actaxon=nva.all$actaxon, acauth=nva.all$acauth, taxon=nva.all$actaxon, auth=nva.all$acauth)
-nva.all <- rbind(nva.all, nva.all2) |> unique()
+nva.all2 <- data.frame(numberOfOccurrences = nva.all$numberOfOccurrences, acceptedScientificName=nva.all$acceptedScientificName,  scientificName=nva.all$acceptedScientificName)
+
+nva.all <- rbind(nva.all, nva.all2) |> unique() |> mutate(actaxon = extractTaxon(acceptedScientificName),acauth = extractTaxon(acceptedScientificName, 'author'), genus = extractTaxon(actaxon, 'genus'), taxon = extractTaxon(scientificName),auth = extractTaxon(scientificName, 'author')) |> mutate(taxon=gsub('ë','e',taxon), actaxon=gsub('ë','e',actaxon)) 
+  
+nva.all <- nva.all |> mutate(isusda = ifelse(scientificName %in% usda$Scientific.Name.with.Author,1,0), ac = ifelse(taxon == actaxon,1,0)) |> group_by(taxon, ac) |> mutate(nhom = length(taxon), maxocc = max(numberOfOccurrences)) |> group_by(taxon) |> mutate(maxac = max(ac), maxusda = max(isusda)) |> ungroup() |> 
+  mutate(keep = case_when(ac == 0 & numberOfOccurrences < 5 ~ 0,
+                          maxusda == isusda & maxusda == 1 & maxac == 0 ~ 1, 
+                          maxocc == numberOfOccurrences & maxac == ac & (maxusda == 0 | maxac==1) ~ 1,
+                          TRUE ~ 0)) |> subset(keep == 1, select = c(numberOfOccurrences, actaxon, acauth, taxon, auth))
+
 nva.all <- nva.all |> mutate(nauth =  nchar(auth), sameauth = ifelse(taxon==actaxon & auth==acauth,1,0)) |> group_by(taxon) |> mutate(n=length(taxon)) |> group_by(taxon, actaxon) |> mutate(n2=length(taxon), maxsameauth = max(sameauth)) |> group_by(taxon) |> mutate(maxn2 = max(n2)) |> group_by(taxon, actaxon)  |> mutate(maxnchar = max(nauth)) |> ungroup() |> mutate(keep = (maxn2==n2 & maxnchar==nauth & maxsameauth == 0) | (maxsameauth ==1 & sameauth==1))
 
-nva.all <- nva.all |> subset(keep, select = c(actaxon,acauth,taxon,auth)) |> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
+nva.all <- nva.all |> subset(keep, select = c(numberOfOccurrences, actaxon,acauth,taxon,auth)) |> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup() 
 
-
+nva.all <- nva.all |> mutate(keep=ifelse(n>1,0,1)) 
+nvalist <- unique(nva.all[nva.all$n > 1,]$taxon)
+for (i in 1:length(nvalist)){#i=3
+  thistaxon <-  nvalist[i]#'Aphanolejeunea diaphana'
+  usdadist <- usda |> subset(taxon %in% thistaxon)
+  nvanarrow <- nva.all |> subset(taxon %in% thistaxon)
+  if(nrow(usdadist) > 0){
+    nvanarrow <- nvanarrow |> mutate(d = stringdist::stringdist(auth, usdadist$auth), mind = min(d))
+    nvanarrow <- nvanarrow |> subset(mind==d)
+    nva.all <- nva.all |> mutate(keep = case_when(taxon %in% thistaxon & auth %in% nvanarrow$auth ~ -1,
+                                                  TRUE ~ keep))
+  }
+}
+nva.all <- nva.all |> group_by(taxon) |> mutate(rnk = rank(paste(keep,auth)))
+nva.all <- nva.all |> subset(rnk == 1,  select = c(actaxon,acauth,taxon,auth))
 #URLs: https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip
 inattax <- read.csv('data/taxa.csv')
 inatgen <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plantae","Chromista","Fungi","Bacteria") & !genus %in% '' & !family %in% '', select=c("kingdom","phylum","class","order","family","genus")) |> unique()
@@ -180,12 +198,14 @@ inatspp <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plan
 nva.all <- nva.all |> mutate(genus = extractTaxon(actaxon, 'genus'))
 nva.all <- nva.all |>   left_join(inatgen)
 
-nva.misstax <- subset(nva.all, is.na(family), select=-c(kingdom,phylum,class,order,family)) 
+nva.misstax <- subset(nva.all, is.na(family), select=-c(kingdom,phylum,class,order,family)) |> mutate(genus=extractTaxon(actaxon, 'genus'))
 #nva.misstax <- nva.misstax |> left_join(inatspp, by=join_by(taxon==scientificName))
 #nva.misstax2 <- subset(nva.misstax, is.na(family), select=-c(kingdom,phylum,class,order,family))
 
+nvaac <- subset(nva, select=c(numberOfOccurrences, kingdom, phylum, class, order, family, acceptedScientificName)) |> mutate(genus=extractTaxon(acceptedScientificName, 'genus'), actaxon = extractTaxon(acceptedScientificName)) |> group_by(kingdom, phylum, class, order, family, genus) |> summarise(n=sum(numberOfOccurrences)) |> ungroup()
 
-nvataxonomy <- subset(nva, actaxon %in% nva.misstax$actaxon, select=c(kingdom, phylum, class, order, family, genus)) |> unique() |> arrange(kingdom, phylum, class, order, family, genus) |> unique() |> group_by(genus) |> mutate(n = length(genus)) |> ungroup()
+nvataxonomy <- subset(nvaac, genus %in% nva.misstax$genus, select=c(n, kingdom, phylum, class, order, family, genus)) |> arrange(kingdom, phylum, class, order, family, genus) |> unique() |> group_by(genus) |> mutate(n2 = length(genus)) |> ungroup()
+
 correct0 = data.frame(
   genus = c('Spiloma', 'Naevia', 'Lithothamnion' ,'Elharveya','Chaetomitrium','Volvox','Verdigellas','Variolaria','Valdonia','Urospora','Trismegistia','Timmiella','Thrombium','Thorea','Tetmemorus','Tephromela','Teilingia','Syringoderma','Symphyodon','Striaria','Stigonema','Stictyosiphon','Stichococcus','Stereocaulon','Staurodesmus','Staurastrum','Sporastatia','Splachnobryum', 'Speerschneidera', 'Sematophyllum','Scouleria','Sclerococcum','Schizochlamys','Schimmelmannia','Schaereria','Saelania', 'Ropalospora', 'Rivularia','Rhadinocladia','Pyrenastrum', 'Pycnora','Pterospermella','Pterogonidium', 'Pterobryella', 'Pseudolithophyllum', 'Pseudolithoderma','Pseudohypnella','Protoderma','Porina','Polycoccum','Pleurotaenium','Pleopsidium','Plectonema','Platygramme','Pilotrichella','Phymatoceros','Phaeostrophion','Phaeographina','Pellia','Pallavicinia','Orthodontium','Opegrapha','Nowellia','Nothoceros','Neohodgsonia','Myriotrichia','Mycomicrothelia','Mycobilimbia', 'Muellerella','Microzonia','Microthamnion','Microphiale','Micromitrium','Microcoleus','Micrasterias','Mesochaete','Mastigocoleus','Malcolmiella', 'Malbranchea','Luisierella','Lopadium', 'Lobothallia', 'Lithoderma', 'Limbella', 'Lichenostigma', 'Leucomium', 'Leptotheca', 'Leptopterigynandrum', 'Leptobryum','Lecidea', 'Leathesia','Klebsormidium', 'Kirchneriella','Jamesoniella','Hypopterygium', 'Hypodontium', 'Hypocenomyce','Hypnella','Hymenodon','Hydropogonella','Hydrocoleum','Hyalotheca','Hummia','Hookeriopsis','Holodontium','Heterocladium','Helminthocarpon','Haplogloia','Halorhipis','Halecania','Grateloupia','Graphina','Gracilariopsis','Glyphomitrium','Glyphium','Gloeocystis','Geminella','Garovaglia','Fimbriaria','Euptychium','Euastrum','Epibryon','Drummondia','Dolichospermum','Distichium','Dirinaria','Diphyscium','Diorygma','Dimerella','Dictyosiphon','Delamarea','Dactylospora','Cyrtopus','Cyathophorum','Crucigenia','Crocynia','Cosmocladium','Cosmarium','Compsonema','Coenogonium','Circinaria','Chrysoblastella','Chroodactylon','Chondria','Characium','Chaetosphaeridium','Chaetomitrium','Ceramium','Carbacanthographis','Capsosiphon','Calyptrozyma','Calothrix','Brachytrichia','Bissetia','Bilimbia','Baculifera','Audouinella','Asterella','Aspicilia', 'Aspergillus','Arthopyrenia', 'Ankyra','Aneura','Analipus','Phaeoceros','Hymenoloma','Halochlorococcum','Tolypothrix','Punctaria','Micrasterias','Leathesia','Hypnea','Cornicularia','Coilodesme','Loxospora', 'Aspicilia','Soranthera','Schizothrix','Amandinea','Dirinaria','Opegrapha','Porina','Rhizofabronia','Tephromela','Ulvella','Wilsoniella'), 
   
