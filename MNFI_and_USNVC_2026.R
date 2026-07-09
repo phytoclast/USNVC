@@ -370,6 +370,7 @@ nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
 usda <- read.csv('data/plantlst.txt')
 usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
+#weed out homonyms
 usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct',auth))
 
 missing.lichen.fams <- usda |> subset(grepl('lichen',Common.Name) & !Family %in% nvataxonomy$family, select=Family) |> unique()
@@ -381,16 +382,16 @@ usda.syns <- usda |> subset(syn!=acc, select=c("taxon","auth","acc"))
 usda.df <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth, taxon=usda.backbone$taxon, auth=usda.backbone$auth)
 usda.df1 <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth)
 usda.df1 <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
-usda.df <- usda.df |> rbind(usda.df1)
+usda.df <- usda.df |> rbind(usda.df1) #need to remove redundant names...
 nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup() |> arrange(taxon)
 redund <- nva.new |> subset(n > 1); # write.csv(redund, 'data/redund.csv', row.names = F, na='', fileEncoding = "latin1")
 redund <- read.csv('data/redund.csv',fileEncoding = "latin1")
 nva.new <- nva.new |> left_join(redund[,c('taxon', 'auth', 'keep')])
 nva.new <- nva.new |> subset(n == 1 | keep==1, select=-c(n,keep))
-#---combine nva with usda ----
-#need to weed out homonyms. 1. take away any that are synonyms if one is accepted, then maybe keep those with the most records?
+#---combine nva with usda ---- 
+#nva taxa 
 nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon) |> unique()#|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
-nva1a <- data.frame(taxon=nva.new$taxon, usda=nva.new$actaxon) |> unique() #|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
+nva1a <- data.frame(taxon=usda.df$taxon, usda=usda.df$actaxon) |> unique() #|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
 nva1 <- nva1 |> left_join(nva1a)
 nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
 nva1 <- nva1 |> rbind(nva2)
