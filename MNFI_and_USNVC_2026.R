@@ -371,23 +371,34 @@ nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 usda <- read.csv('data/plantlst.txt')
 usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
 #weed out homonyms
-usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct',auth))
+usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct|sensu\\s',auth))
 
+#Narrow to only non-vasculars then create a core set of taxa to include
 missing.lichen.fams <- usda |> subset(grepl('lichen',Common.Name) & !Family %in% nvataxonomy$family, select=Family) |> unique()
 #write.csv(missing.lichen.fams, 'data/missing.lichen.fams2.csv', row.names = F)
 missing.lichen.fams <- read.csv('data/missing.lichen.fams.csv')
-
+#list of accepteds
 usda.backbone <- subset(usda, (Family %in% nvataxonomy$family | Family %in% missing.lichen.fams$Family) & grepl(' ', taxon), select=c("Common.Name","Family", "taxon","auth","acc"))
+usda.acc <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth, taxon=usda.backbone$taxon, auth=usda.backbone$auth)
+#list of synonyms
 usda.syns <- usda |> subset(syn!=acc, select=c("taxon","auth","acc"))
-usda.df <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth, taxon=usda.backbone$taxon, auth=usda.backbone$auth)
 usda.df1 <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth)
-usda.df1 <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
-usda.df <- usda.df |> rbind(usda.df1) #need to remove redundant names...
+usda.syns <- usda.df1 |> left_join(usda.syns) |> subset(!is.na(taxon))
+
+usda.df <- usda.acc |> rbind(usda.syns)
+#need to remove redundant names...
+usda.df <- usda.df |> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
+redund <- usda.df |> subset(n > 1) |> arrange(taxon); # write.csv(redund, 'data/redund2.csv', row.names = F, na='', fileEncoding = "latin1")
+redund <- read.csv('data/redund2.csv',fileEncoding = "latin1")
+usda.df <- usda.df |> left_join(redund[,c('taxon', 'auth', 'keep')])
+usda.df <- usda.df |> subset(n == 1 | keep==1, select=-c(n,keep))
+
+
+
 nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup() |> arrange(taxon)
-redund <- nva.new |> subset(n > 1); # write.csv(redund, 'data/redund.csv', row.names = F, na='', fileEncoding = "latin1")
-redund <- read.csv('data/redund.csv',fileEncoding = "latin1")
-nva.new <- nva.new |> left_join(redund[,c('taxon', 'auth', 'keep')])
-nva.new <- nva.new |> subset(n == 1 | keep==1, select=-c(n,keep))
+
+
+
 #---combine nva with usda ---- 
 #nva taxa 
 nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon) |> unique()#|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
