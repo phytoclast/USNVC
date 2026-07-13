@@ -392,14 +392,7 @@ redund <- usda.df |> subset(n > 1) |> arrange(taxon); # write.csv(redund, 'data/
 redund <- read.csv('data/redund2.csv',fileEncoding = "latin1")
 usda.df <- usda.df |> left_join(redund[,c('taxon', 'auth', 'keep')])
 usda.df <- usda.df |> subset(n == 1 | keep==1, select=-c(n,keep))
-
-
-
 nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup() |> arrange(taxon)
-
-
-
-
 #---combine nva with usda ---- 
 #nva taxa 
 nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon) |> unique()#|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
@@ -407,12 +400,106 @@ nva1a <- data.frame(taxon=usda.df$taxon, usda=usda.df$actaxon) |> unique() #|> g
 nva1 <- nva1 |> left_join(nva1a)
 nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
 nva1 <- nva1 |> rbind(nva2)
+nva1 <- nva1 |> mutate(gbif=case_when(taxon %in% c('Polychidium intricatulum','Polychidium umhausense') ~ 'Ricasolia amplissima',
+                                      TRUE ~ gbif))
 
-nvaextra <- nva1 |> mutate(usda1=usda) |> subset(!is.na(usda) & !is.na(gbif), select=c(gbif, usda1)) |> unique()
-nvaextra <- nvaextra |> group_by(gbif) |> mutate(n=length(gbif)) |> ungroup()
-nva.fill <- nva1 |> left_join(nvaextra)
-nva.fill <- nva.fill |> mutate(usda=ifelse(is.na(usda), usda1,usda))|> select(-c(usda1)) |> unique()
-nva.fill <- nva.fill |> group_by(taxon, gbif, usda) |> mutate(n=length(taxon)) |> ungroup()
+#rejoin taxonomy
+nva <- read.csv('data/nva.csv')
+nvataxonomy <- nva |> subset(!phylum %in% c('Foraminifera','Ciliophora') & !family %in% c('Chaetomiaceae'), select = c("kingdom","phylum","class","order","family","genus","type")) |> unique()
+nva1.taxonomy <- nva1 |> mutate(genus1 = extractTaxon(gbif, 'genus'), genus2=extractTaxon(usda, 'genus'), genus=ifelse(is.na(gbif), genus2, genus1)) |> unique() 
+nva1.taxonomy <- nva1.taxonomy |> left_join(nvataxonomy)
+inattax <- read.csv('data/taxa.csv')
+inatgen <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plantae","Chromista","Fungi","Bacteria") & !genus %in% '' & !family %in% '', select=c("kingdom","phylum","class","order","family","genus")) |> unique()
+inatfam <- subset(inattax, !is.na(genus) & !is.na(family) & kingdom %in% c("Plantae","Chromista","Fungi","Bacteria") & !genus %in% '' & !family %in% '', select=c("kingdom","phylum","class","order","family")) |> unique()
+colnames(inatgen) <- c("kingdom1","phylum1","class1","order1","family1","genus")
+nva1.taxonomy <- nva1.taxonomy |> left_join(inatgen)
+nva1.taxonomy <- nva1.taxonomy |> mutate(kingdom = ifelse(is.na(kingdom), kingdom1, kingdom),
+                                         phylum = ifelse(is.na(phylum), phylum1, phylum),
+                                         class = ifelse(is.na(class), class1, class),
+                                         order = ifelse(is.na(order), order1, order),
+                                         family = ifelse(is.na(family), family1, family)) |> subset(select= -c(kingdom1,phylum1,class1,order1,family1))
+missingfams <- subset(nva1.taxonomy, is.na(family))
+missingfams <- nva1.taxonomy |> subset(genus2 %in% missingfams$genus & !is.na(family), select = c("kingdom","phylum","class","order","family","genus2")) |> unique()
+colnames(missingfams) <- c("kingdom1","phylum1","class1","order1","family1","genus")
+nva1.taxonomy <- nva1.taxonomy |> left_join(missingfams)
+nva1.taxonomy <- nva1.taxonomy |> mutate(kingdom = ifelse(is.na(kingdom), kingdom1, kingdom),
+                                         phylum = ifelse(is.na(phylum), phylum1, phylum),
+                                         class = ifelse(is.na(class), class1, class),
+                                         order = ifelse(is.na(order), order1, order),
+                                         family = ifelse(is.na(family), family1, family)) |> subset(select= -c(kingdom1,phylum1,class1,order1,family1))
+missingfams <- subset(nva1.taxonomy, is.na(family)) |> unique()
+correct= data.frame(rbind(c('Anamylospora',	'Baeomycetaceae'),
+                          c('Solenospora',	'Catillariaceae'),
+                          c('Eopyrenula',	'Dacampiaceae'),
+                          c('Hafellnera',	'Schaereriaceae'),
+                          c('Lauderlindsaya',	'Verrucariaceae'),
+                          c('Pyrenocollema',	'Xanthopyreniaceae')))
+colnames(correct) <- c('genus', 'family')
+correct <- correct |> left_join(inatfam)
+colnames(correct) <- c("genus","family1","kingdom1","phylum1","class1","order1")
+nva1.taxonomy <- nva1.taxonomy |> left_join(correct)
+nva1.taxonomy <- nva1.taxonomy |> mutate(kingdom = ifelse(is.na(kingdom), kingdom1, kingdom),
+                                         phylum = ifelse(is.na(phylum), phylum1, phylum),
+                                         class = ifelse(is.na(class), class1, class),
+                                         order = ifelse(is.na(order), order1, order),
+                                         family = ifelse(is.na(family), family1, family)) |> subset(select= -c(kingdom1,phylum1,class1,order1,family1))
+nva1.taxonomy <- nva1.taxonomy |> mutate(type =  case_when(phylum %in% 'Cyanobacteria' ~ 'Cyanobacteria',
+                                                       class %in% 'Phaeophyceae' ~ 'brown algae',
+                                                       class %in% 'Xanthophyceae' ~ 'yellow-green algae',
+                                                       order %in% 'Arthoniales' ~ 'lichen',
+                                                       order %in% 'Vezdaeales' ~ 'lichen',
+                                                       order %in% 'Monoblastiales' ~ 'lichen',
+                                                       order %in% 'Strigulales' ~ 'lichen',
+                                                       order %in% 'Thelocarpales' ~ 'lichen',
+                                                       
+                                                       #class %in% 'Eurotiomycetes' ~ 'lichen',
+                                                       class %in% 'Lecanoromycetes' ~ 'lichen',
+                                                       class %in% 'Lichinomycetes' & !order %in% 'Sareales' ~ 'lichen',
+                                                       class %in% 'Candelariomycetes' ~ 'lichen',
+                                                       class %in% 'Coniocybomycetes' ~ 'lichen',
+                                                       family %in% 'Trypetheliaceae' ~ 'lichen',
+                                                       family %in% 'Pyrenulaceae' ~ 'lichen',
+                                                       family %in% 'Verrucariaceae' ~ 'lichen',
+                                                       family %in% 'Pyrenidiaceae' ~ 'lichen',
+                                                       family %in% 'Strangosporaceae' ~ 'lichen',
+                                                       family %in% 'Harpidiaceae' ~ 'lichen',
+                                                       family %in% 'Aphanopsidaceae' ~ 'lichen',
+                                                       phylum %in% 'Anthocerotophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Bryophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Chlorophyta' ~ 'green algae',
+                                                       phylum %in% 'Marchantiophyta' ~ 'bryophyte',
+                                                       phylum %in% 'Chlorophyta' ~ 'green algae',
+                                                       phylum %in% 'Rhodophyta' ~ 'red algae',
+                                                       phylum %in% 'Charophyta' ~ 'green algae',
+                                                       genus %in% 'Pyrenothrix' ~ 'lichen',
+                                                       TRUE ~ 'unk')) |> subset(type != 'unk')
+nva1.taxonomy <- nva1.taxonomy |> unique() |> group_by(taxon) |> mutate(n = length(genus)) |> ungroup()
+nva2.taxonomy <- nva1.taxonomy |> select(c(kingdom,phylum,class,order,family, type))|> unique() |> group_by(family, type) |> mutate(n = length(family)) |> ungroup()
+colnames(inatfam) <- c("kingdom1","phylum1", "class1","order1","family") 
+familytaxonomy <- nva2.taxonomy |> unique() |> left_join(inatfam)
+familytaxonomy <- familytaxonomy |> mutate(wrong = ifelse(order != order1 | class != class1, 1,0))
+familytaxonomy <- familytaxonomy |> subset(n == 1 | wrong ==0)
+familytaxonomy <- familytaxonomy |> mutate(kingdom = ifelse(wrong == 1 & !is.na(wrong), kingdom1, kingdom),
+       phylum = ifelse(wrong == 1 & !is.na(wrong), phylum1, phylum),
+       class = ifelse(wrong == 1 & !is.na(wrong), class1, class),
+       order = ifelse(wrong == 1 & !is.na(wrong), order1, order)) 
+familytaxonomy <- familytaxonomy |> select(c(kingdom,phylum,class,order,family, type)) |> arrange(kingdom,phylum,class,order,family)
+genustaxonomy <- nva1.taxonomy |> select(c(family, genus, type))|> unique() #|> group_by(family, genus) |> mutate(n = length(family)) |> ungroup()
+nva <- nva1.taxonomy |> select(c(taxon, auth, gbif, usda))|> unique()
+write.csv(familytaxonomy, 'familytaxonomy.csv', na='', row.names = F)
+write.csv(genustaxonomy, 'genustaxonomy.csv', na='', row.names = F)
+write.csv(nva, 'nvanomenclature.csv', na='', row.names = F)
+
+
+# nvaextra <- nva1 |> mutate(usda1=usda) |> subset(!is.na(usda) & !is.na(gbif), select=c(gbif, usda1)) |> unique()
+# nvaextra <- nvaextra |> group_by(gbif) |> mutate(n=length(gbif)) |> ungroup()
+# nva.fill <- nva1 |> left_join(nvaextra)
+# nva.fill <- nva.fill |> mutate(usda=ifelse(is.na(usda), usda1,usda))|> select(-c(usda1)) |> unique()
+# nva.fill <- nva.fill |> group_by(taxon, gbif, usda) |> mutate(n=length(taxon)) |> ungroup()
+
+
+
+
 #join with USNVC
 #USNVC association names
 ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
