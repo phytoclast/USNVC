@@ -367,7 +367,6 @@ nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
 
 
-
 usda <- read.csv('data/plantlst.txt')
 usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'),genus=extractTaxon(Scientific.Name.with.Author, 'genus'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
 #weed out homonyms
@@ -375,8 +374,11 @@ usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct|sensu\\s',auth))
 
 #Narrow to only non-vasculars then create a core set of taxa to include
 missing.lichen.fams <- usda |> subset((grepl('lichen|moss|liverwort',Common.Name)|genus %in% nva$genus) & !Family %in% nvataxonomy$family & !Family %in% apg$family, select=Family) |> unique()
+
+
 #write.csv(missing.lichen.fams, 'data/missing.lichen.fams3.csv', row.names = F)
 missing.lichen.fams <- read.csv('data/missing.lichen.fams.csv')
+missing.lichen.fams <- missing.lichen.fams |> subset(!type %in% 'na')
 #list of accepteds
 usda.backbone <- subset(usda, (Family %in% nvataxonomy$family | Family %in% missing.lichen.fams$Family) & grepl(' ', taxon), select=c("Common.Name","Family", "taxon","auth","acc"))
 usda.acc <- data.frame(acc = usda.backbone$acc, actaxon=usda.backbone$taxon, acauth=usda.backbone$auth, taxon=usda.backbone$taxon, auth=usda.backbone$auth)
@@ -486,12 +488,12 @@ familytaxonomy <- familytaxonomy |> mutate(kingdom = ifelse(wrong == 1 & !is.na(
 familytaxonomy <- familytaxonomy |> select(c(kingdom,phylum,class,order,family, type)) |> arrange(kingdom,phylum,class,order,family)
 genustaxonomy <- nva1.taxonomy |> select(c(family, genus, type))|> unique() #|> group_by(family, genus) |> mutate(n = length(family)) |> ungroup()
 nva <- nva1.taxonomy |> select(c(taxon, auth, gbif, usda))|> unique()
-write.csv(familytaxonomy, 'familytaxonomy.csv', na='', row.names = F)
-write.csv(genustaxonomy, 'genustaxonomy.csv', na='', row.names = F)
+write.csv(familytaxonomy, 'nvafamilytaxonomy.csv', na='', row.names = F)
+write.csv(genustaxonomy, 'nvagenustaxonomy.csv', na='', row.names = F)
 write.csv(nva, 'nvanomenclature.csv', na='', row.names = F)
 
 
-# nvaextra <- nva1 |> mutate(usda1=usda) |> subset(!is.na(usda) & !is.na(gbif), select=c(gbif, usda1)) |> unique()
+# nvaextra <- nva1 |> mutiate(usda1=usda) |> subset(!is.na(usda) & !is.na(gbif), select=c(gbif, usda1)) |> unique()
 # nvaextra <- nvaextra |> group_by(gbif) |> mutate(n=length(gbif)) |> ungroup()
 # nva.fill <- nva1 |> left_join(nvaextra)
 # nva.fill <- nva.fill |> mutate(usda=ifelse(is.na(usda), usda1,usda))|> select(-c(usda1)) |> unique()

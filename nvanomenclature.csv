@@ -1675,7 +1675,7 @@
 "Arthonia polygramma","Nyl.","Arthonia polygramma","Arthonia polygramma"
 "Arthonia polymorpha","Ach., 1814","Arthonia polymorpha","Arthonia polymorpha"
 "Arthonia pruinascens","(Zahlbr.) Grube","Arthonia pruinascens",
-"Arthothelium pruinascens","Zahlbr.","Arthonia pruinascens","Arthothelium pruinascens"
+"Arthothelium pruinascens","Zahlbr.","Arthonia pruinascens",
 "Arthonia pruinosella","Nyl.","Arthonia pruinosella","Arthonia pruinosella"
 "Arthonia pruinosula","Nyl.","Arthonia pruinosula","Arthonia pruinosula"
 "Arthonia pulicosa","Nyl.","Arthonia pulicosa",
@@ -1734,33 +1734,33 @@
 "Arthonia willeyi","Tuck.","Arthonia willeyi","Arthonia willeyi"
 "Arthonia xanthoparmeliarum","Etayo","Arthonia xanthoparmeliarum",
 "Arthonia xylographica","Nyl.","Arthonia xylographica","Arthonia xylographica"
-"Arthothelium abnorme","(Ach.) Müll.Arg., 1880","Arthothelium abnorme","Arthothelium abnorme"
-"Arthothelium adveniens","(Nyl.) Müll.Arg., 1887","Arthothelium adveniens","Arthothelium adveniens"
+"Arthothelium abnorme","(Ach.) Müll.Arg., 1880","Arthothelium abnorme",
+"Arthothelium adveniens","(Nyl.) Müll.Arg., 1887","Arthothelium adveniens",
 "Arthothelium azulense","B.de Lesd.","Arthothelium azulense",
 "Arthonia cyrtodes","Nyl.","Arthothelium cyrtodes",
 "Arthothelium cyrtodes","(Nyl.) Zahlbr.","Arthothelium cyrtodes",
-"Arthothelium distendens","","Arthothelium distendens","Arthothelium distendens"
+"Arthothelium distendens","","Arthothelium distendens",
 "Arthonia interveniens","Nyl.","Arthothelium interveniens",
-"Arthothelium interveniens","(Nyl.) Müll.Arg.","Arthothelium interveniens","Arthothelium interveniens"
+"Arthothelium interveniens","(Nyl.) Müll.Arg.","Arthothelium interveniens",
 "Arthothelium lirellans","(Almq.) Coppins","Arthothelium lirellans",
 "Arthonia macounii","G.Merr.","Arthothelium macounii",
-"Arthothelium macounii","(G.Merr.) W.J.Noble","Arthothelium macounii","Arthothelium macounii"
+"Arthothelium macounii","(G.Merr.) W.J.Noble","Arthothelium macounii",
 "Arthothelium macrothecium","","Arthothelium macrothecium",
 "Arthonia macrotheca","Fée","Arthothelium macrothecum",
-"Arthothelium macrothecum","(Fée) A.Massal.","Arthothelium macrothecum","Arthothelium macrothecum"
+"Arthothelium macrothecum","(Fée) A.Massal.","Arthothelium macrothecum",
 "Arthothelium nephelinum","(Nyl.) Zahlbr.","Arthothelium nephelinum",
 "Arthonia norvegica","(Coppins & Tønsberg) McCune","Arthothelium norvegicum",
 "Arthothelium norvegicum","Coppins & Tønsberg","Arthothelium norvegicum",
-"Arthothelium orbilliferum","(Almq.) Hasse","Arthothelium orbilliferum","Arthothelium orbilliferum"
+"Arthothelium orbilliferum","(Almq.) Hasse","Arthothelium orbilliferum",
 "Arthonia ruana","A.Massal.","Arthothelium ruanum",
-"Arthothelium anastomosans","Arnold, 1872","Arthothelium ruanum","Arthothelium anastomosans"
+"Arthothelium anastomosans","Arnold, 1872","Arthothelium ruanum",
 "Arthothelium ruanum","(A.Massal.) Körb.","Arthothelium ruanum",
-"Arthothelium sanguineum","","Arthothelium sanguineum","Arthothelium sanguineum"
+"Arthothelium sanguineum","","Arthothelium sanguineum",
 "Arthothelium scandinavicum","Th.Fr.","Arthothelium scandinavicum",
 "Arthonia spectabilis","Flot.","Arthothelium spectabile",
 "Arthopyrenia spectabilis","","Arthothelium spectabile",
-"Arthothelium spectabile","A.Massal.","Arthothelium spectabile","Arthothelium spectabile"
-"Arthothelium taediosum","(Nyl.) Müll.Arg.","Arthothelium taediosum","Arthothelium taediosum"
+"Arthothelium spectabile","A.Massal.","Arthothelium spectabile",
+"Arthothelium taediosum","(Nyl.) Müll.Arg.","Arthothelium taediosum",
 "Briancoppinsia cytospora","(Vouaux) Diederich, Ertz, Lawrey & van den Boom","Briancoppinsia cytospora",
 "Phoma cytospora","(Vouaux) D.Hawksw.","Briancoppinsia cytospora",
 "Arthonia biatoricola","Ihlen & Owe-Larss.","Bryostigma biatoricola",
@@ -1801,7 +1801,7 @@
 "Cryptothecia subnidulans","Stirt.","Cryptothecia subnidulans",
 "Dermatina finkii","Zahlbr.","Dermatina finkii",
 "Dermatina pycnocarpoides","(Müll.Arg.) Zahlbr.","Dermatina pycnocarpoides",
-"Mycoporum pycnocarpoides","Müll.Arg.","Dermatina pycnocarpoides","Mycoporum pycnocarpoides"
+"Mycoporum pycnocarpoides","Müll.Arg.","Dermatina pycnocarpoides",
 "Arthonia lurida","Ach.","Diarthonis spadicea","Arthonia spadicea"
 "Arthonia spadicea","Leight.","Diarthonis spadicea","Arthonia spadicea"
 "Diarthonis spadicea","(Leight.) Frisch, Ertz, Coppins & P.F.Cannon","Diarthonis spadicea",
@@ -1865,8 +1865,8 @@
 "Synarthonia hodgesii","(R.C.Harris & Lendemer) Van den Broeck & Ertz","Synarthonia hodgesii",
 "Synarthonia inconspicua","(Stirt.) Van den Broeck & Ertz","Synarthonia inconspicua",
 "Tylophoron hibernicum","(D.Hawksw., Coppins & P.James) Ertz, Diederich, Bungartz & Tibell","Tylophoron hibernicum",
-"Tylophoron moderatum","Nyl.","Tylophoron moderatum","Tylophoron moderatum"
-"Tylophoron protrudens","Nyl.","Tylophoron protrudens","Tylophoron protrudens"
+"Tylophoron moderatum","Nyl.","Tylophoron moderatum",
+"Tylophoron protrudens","Nyl.","Tylophoron protrudens",
 "Byssocaulon candidum","Müll.Arg.","Byssocaulon candidum",
 "Chrysothrix bergeri","LaGreca","Chrysothrix bergeri",
 "Allarthonia caesia","Flotow","Chrysothrix caesia","Arthonia caesia"
@@ -1909,23 +1909,23 @@
 "Opegrapha varia var. pulicaris","(Hoffm.) Fr.","Alyxoria varia",
 "Alyxoria xerica","(Torrente & Egea) Van Haluwyn & Cl.Roux","Alyxoria xerica",
 "Opegrapha xerica","Torrente & Egea","Alyxoria xerica",
-"Heterocyphelium leucampyx","(Tuck.) Vain.","Heterocyphelium leucampyx","Heterocyphelium leucampyx"
+"Heterocyphelium leucampyx","(Tuck.) Vain.","Heterocyphelium leucampyx",
 "Lecanographa aggregata","Egea & Torrente","Lecanographa aggregata",
-"Lecanographa amylacea","(Ehrh. ex Pers.) Egea & Torrente","Lecanographa amylacea","Lecanographa amylacea"
+"Lecanographa amylacea","(Ehrh. ex Pers.) Egea & Torrente","Lecanographa amylacea",
 "Lecanographa brattiae","(Egea & Ertz) Ertz & Tehler","Lecanographa brattiae",
 "Opegrapha brattiae","Egea & Ertz","Lecanographa brattiae",
 "Lecanactis dimelaenoides","Egea & Torrente","Lecanographa dimelaenoides",
-"Lecanographa dimelaenoides","(Egea & Torrente) Egea & Torrente","Lecanographa dimelaenoides","Lecanographa dimelaenoides"
-"Lecanographa hypothallina","(Zahlbr.) Egea & Torrente","Lecanographa hypothallina","Lecanographa hypothallina"
+"Lecanographa dimelaenoides","(Egea & Torrente) Egea & Torrente","Lecanographa dimelaenoides",
+"Lecanographa hypothallina","(Zahlbr.) Egea & Torrente","Lecanographa hypothallina",
 "Opegrapha hassei","Zahlbr.","Lecanographa hypothallina","Opegrapha hassei"
-"Schismatomma hypothallinum","(Zahlbr.) Zahlbr.","Lecanographa hypothallina","Lecanographa hypothallina"
+"Schismatomma hypothallinum","(Zahlbr.) Zahlbr.","Lecanographa hypothallina",
 "Lecanographa illecebrosula","(Müll.Arg.) Egea & Torrente","Lecanographa illecebrosula",
 "Lecanographa insolita","Lendemer & K.Knudsen","Lecanographa insolita",
 "Lecanographa lyncea","(Sm.) Egea & Torrente","Lecanographa lyncea",
 "Opegrapha stictica","(Durieu & Mont.) Nyl.","Lecanographa lyncea",
 "Lecanographa lynceoides","(Müll.Arg.) Egea & Torrente","Lecanographa lynceoides",
 "Lecanographa rufa","(Müll.Arg.) Ertz","Lecanographa rufa",
-"Lecanographa subdryophila","(Follmann & Vezda) Egea & Torrente","Lecanographa subdryophila","Lecanographa subdryophila"
+"Lecanographa subdryophila","(Follmann & Vezda) Egea & Torrente","Lecanographa subdryophila",
 "Phacographa glaucomaria","(Nyl.) Hafellner","Phacographa glaucomaria",
 "Plectocarpon cladoniae","R.Sant.","Plectocarpon cladoniae",
 "Plectocarpon diedertzianum","Y.Joshi, S.Upadhyay & K.Chandra","Plectocarpon diedertzianum",
@@ -2162,7 +2162,7 @@
 "Lecanora rediunta","Stizenb.","Ocellomma rediuntum",
 "Ocellomma rediuntum","(Stizenb. ex Hasse) Kantvilas, Gueidan & Tehler","Ocellomma rediuntum",
 "Schismatomma rediuntum","(Stizenb. ex Hasse) Tehler","Ocellomma rediuntum",
-"Lecanographa grumulosa","(Dufour) Egea & Torrente","Paralecanographa grumulosa","Lecanographa grumulosa"
+"Lecanographa grumulosa","(Dufour) Egea & Torrente","Paralecanographa grumulosa",
 "Opegrapha alboatra","Nyl.","Paralecanographa grumulosa",
 "Paralecanographa grumulosa","(Dufour) Ertz & Tehler","Paralecanographa grumulosa",
 "Perigrapha superveniens","(Nyl.) Hafellner","Perigrapha superveniens",
@@ -2485,8 +2485,8 @@
 "Trypethelium scorites","Tuck.","Viridothelium virens","Trypethelium virens"
 "Trypethelium virens","Tuck.","Viridothelium virens","Trypethelium virens"
 "Viridothelium virens","(Tuck. ex E.Michener) Lücking, M.P.Nelsen & Aptroot","Viridothelium virens",
-"Lichenothrix riddlei","Henssen","Pyrenothrix nigra","Pyrenothrix nigra"
-"Pyrenothrix nigra","Riddle","Pyrenothrix nigra","Pyrenothrix nigra"
+"Lichenothrix riddlei","Henssen","Pyrenothrix nigra",
+"Pyrenothrix nigra","Riddle","Pyrenothrix nigra",
 "Anthracothecium albescens","(Nyl.) Müll.Arg.","Anthracothecium albescens",
 "Anthracothecium americanum","(Ach.) Müll.Arg.","Anthracothecium americanum",
 "Anthracothecium australiense","(Müll.Arg.) Aptroot","Anthracothecium australiense",
@@ -2858,7 +2858,7 @@
 "Staurothele hymenogonia","(Nyl.) Th.Fr.","Nesothele hymenogonia","Staurothele discedens"
 "Normandina acroglypta","(Norman) Aptroot","Normandina acroglypta",
 "Normandina jungermanniae","(Nyl.) Nyl.","Normandina pulchella",
-"Normandina pulchella","(Borrer) Nyl.","Normandina pulchella","Normandina pulchella"
+"Normandina pulchella","(Borrer) Nyl.","Normandina pulchella",
 "Parabagliettoa cyanea","(A.Massal.) Gueidan & Cl.Roux","Parabagliettoa cyanea",
 "Parabagliettoa dufourii","(DC.) Gueidan & Cl.Roux","Parabagliettoa dufourii",
 "Parmentaria chilensis","Fée","Parmentaria chilensis",
@@ -4369,7 +4369,7 @@
 "Septotrapelia triseptata","(Hepp) Aptroot","Septotrapelia triseptata",
 "Septotrapelia usnica","(Sipman) Kalb & Bungartz","Septotrapelia usnica",
 "Szczawinskia leucopoda","Holien & Tønsberg","Szczawinskia leucopoda",
-"Szczawinskia tsugae","A.Funk","Szczawinskia tsugae","Szczawinskia tsugae"
+"Szczawinskia tsugae","A.Funk","Szczawinskia tsugae",
 "Tapellariopsis octomera","Lücking","Tapellariopsis octomera",
 "Biatora anthracophila","(Nyl.) Hafellner","Carbonicola anthracophila","Biatora anthracophila"
 "Carbonicola anthracophila","(Nyl.) Bendiksby & Timdal","Carbonicola anthracophila",
@@ -7655,10 +7655,10 @@
 "Lecania toninioides","Zahlbr.","Lecania toninioides","Lecania toninioides"
 "Lecania turicensis","(Hepp) Müll.Arg.","Lecania turicensis","Lecania turicensis"
 "Lithocalla ecorticata","(J.R.Laundon) Orange","Lithocalla ecorticata",
-"Catinaria versicolor","(Flot.) Sipman","Lopezaria versicolor","Lopezaria versicolor"
-"Lopezaria versicolor","(Flot.) Kalb & Hafellner","Lopezaria versicolor","Lopezaria versicolor"
+"Catinaria versicolor","(Flot.) Sipman","Lopezaria versicolor",
+"Lopezaria versicolor","(Flot.) Kalb & Hafellner","Lopezaria versicolor",
 "Megalaria versicolor","(Flot.) Fryday & Lendemer","Lopezaria versicolor",
-"Megalospora versicolor","(Flot.) Zahlbr.","Lopezaria versicolor","Lopezaria versicolor"
+"Megalospora versicolor","(Flot.) Zahlbr.","Lopezaria versicolor",
 "Megalaria bengalensis","Jagad.Ram, Aptroot, G.P.Sinha & Kr.P.Singh","Megalaria bengalensis",
 "Megalaria brodoana","S.Ekman & Tønsberg","Megalaria brodoana","Megalaria brodoana"
 "Catillaria columbiana","(G.K.Merr.) Noble","Megalaria columbiana","Megalaria columbiana"
@@ -8057,7 +8057,7 @@
 "Lepraria achariana","Flakus & Kukwa","Lepraria achariana",
 "Lepraria alba","(Roth) Ach.","Lepraria alba",
 "Lepraria albicans","(Th.Fr.) Lendemer & B.P.Hodk.","Lepraria albicans",
-"Stereocaulon albicans","Th.Fr.","Lepraria albicans","Leprocaulon albicans"
+"Stereocaulon albicans","Th.Fr.","Lepraria albicans",
 "Lepraria alpina","(B.de Lesd.) Tretiach & Baruffo","Lepraria alpina",
 "Lepraria arbuscula","(Nyl.) Lendemer & B.P.Hodk.","Lepraria arbuscula",
 "Lepraria aurescens","Orange & Wolseley","Lepraria aurescens",
@@ -8080,7 +8080,7 @@
 "Lepraria friabilis","Lendemer, K.Knudsen & Elix","Lepraria friabilis",
 "Lepraria gelida","Tønsberg & Zhurb.","Lepraria gelida",
 "Lepraria gracilescens","(Nyl.) Lendemer & B.P.Hodk.","Lepraria gracilescens",
-"Leprocaulon gracilescens","(Nyl.) I.M.Lamb & A.Ward","Lepraria gracilescens","Leprocaulon gracilescens"
+"Leprocaulon gracilescens","(Nyl.) I.M.Lamb & A.Ward","Lepraria gracilescens",
 "Lepraria harrisiana","Lendemer","Lepraria harrisiana",
 "Lepraria hodkinsoniana","Lendemer","Lepraria hodkinsoniana",
 "Lepraria humida","Slav.-Bay. & Orange","Lepraria humida",
@@ -8109,7 +8109,7 @@
 "Lepraria salazinica","Tønsberg","Lepraria salazinica",
 "Lepraria squamatica","Elix","Lepraria squamatica",
 "Lepraria subalbicans","(I.M.Lamb) Lendemer & B.P.Hodk.","Lepraria subalbicans",
-"Leprocaulon subalbicans","(I.M.Lamb) I.M.Lamb & A.Ward","Lepraria subalbicans","Leprocaulon subalbicans"
+"Leprocaulon subalbicans","(I.M.Lamb) I.M.Lamb & A.Ward","Lepraria subalbicans",
 "Lepraria torii","Pérez-Ort. & T.Sprib.","Lepraria torii",
 "Lepraria arctica","(Lynge) Wetmore","Lepraria vouauxii","Leproloma vouauxii"
 "Lepraria vouauxii","(Hue) R.C.Harris","Lepraria vouauxii","Leproloma vouauxii"
@@ -8586,11 +8586,11 @@
 "Halecania viridescens","Coppins & P.James","Halecania viridescens","Halecania viridescens"
 "Lepraria adhaerens","K.Knudsen, Elix & Lendemer","Leprocaulon adhaerens",
 "Leprocaulon adhaerens","(K.Knudsen, Elix & Lendemer) Lendemer & B.P.Hodk.","Leprocaulon adhaerens",
-"Leprocaulon albicans","(Th.Fr.) Nyl. ex Hue","Leprocaulon albicans","Leprocaulon albicans"
+"Leprocaulon albicans","(Th.Fr.) Nyl. ex Hue","Leprocaulon albicans",
 "Leprocaulon americanum","Lendemer & B.P.Hodk.","Leprocaulon americanum",
 "Leprocaulon beechingii","Lendemer","Leprocaulon beechingii",
 "Leprocaulon knudsenii","Lendemer & B.P.Hodk.","Leprocaulon knudsenii",
-"Leprocaulon microscopicum","(Vill.) Gams","Leprocaulon microscopicum","Leprocaulon microscopicum"
+"Leprocaulon microscopicum","(Vill.) Gams","Leprocaulon microscopicum",
 "Leprocaulon nanum","(Ach.) Nyl.","Leprocaulon nanum",
 "Leprocaulon nicholsiae","Lendemer & E.Tripp","Leprocaulon nicholsiae",
 "Leprocaulon quisquiliare","(Leers) M.Choisy","Leprocaulon quisquiliare",
@@ -8669,7 +8669,7 @@
 "Calenia obtecta","Lücking","Calenia obtecta",
 "Calenia phyllogena","(Müll.Arg.) R.Sant.","Calenia phyllogena",
 "Calenia solorinoides","Lücking","Calenia solorinoides",
-"Corticifraga fuckelii","(Rehm) D.Hawksw. & R.Sant.","Corticifraga fuckelii","Corticifraga fuckelii"
+"Corticifraga fuckelii","(Rehm) D.Hawksw. & R.Sant.","Corticifraga fuckelii",
 "Corticifraga peltigerae","(Fuckel) D.Hawksw. & R.Sant.","Corticifraga peltigerae",
 "Corticifraga santessonii","Zhurb. & Zavarzin","Corticifraga santessonii",
 "Echinoplaca areolata","Lücking & W.R.Buck","Echinoplaca areolata",
@@ -9530,9 +9530,9 @@
 "Cornutispora ciliata","Kalb","Spirographa ciliata",
 "Spirographa ciliata","(Kalb) Flakus, Etayo & Miądl.","Spirographa ciliata",
 "Spirographa fusisporella","(Nyl.) Zahlbr.","Spirographa fusisporella",
-"Cornutispora intermedia","Punith. & D.Hawksw.","Spirographa intermedia","Cornutispora intermedia"
+"Cornutispora intermedia","Punith. & D.Hawksw.","Spirographa intermedia",
 "Spirographa intermedia","(Punith. & D.Hawksw.) Flakus, Etayo & Miądl.","Spirographa intermedia",
-"Cornutispora lichenicola","D.Hawksw. & B.Sutton","Spirographa lichenicola","Cornutispora lichenicola"
+"Cornutispora lichenicola","D.Hawksw. & B.Sutton","Spirographa lichenicola",
 "Spirographa lichenicola","(D.Hawksw. & B.Sutton) Flakus, Etayo & Miądl.","Spirographa lichenicola",
 "Spirographa limaciformis","(Piroz.) Flakus, Etayo & Miądl.","Spirographa limaciformis",
 "Asteroglobulus pyramidalis","(Etayo) Diederich","Spirographa pyramidalis",
@@ -10437,9 +10437,9 @@
 "Baeomyces aeruginosus","(Scop.) DC.","Icmadophila ericetorum",
 "Icmadophila aeruginosa","(Scop.) Trevis.","Icmadophila ericetorum",
 "Icmadophila ericetorum","(L.) Zahlbr.","Icmadophila ericetorum","Icmadophila ericetorum"
-"Siphula ceratites","(Wahlenb.) Fr.","Siphula ceratites","Siphula ceratites"
+"Siphula ceratites","(Wahlenb.) Fr.","Siphula ceratites",
 "Siphula complanata","(Hook.f. & Taylor) R.Sant.","Siphula complanata",
-"Siphula dactyliza","Nyl.","Siphula dactyliza","Siphula dactyliza"
+"Siphula dactyliza","Nyl.","Siphula dactyliza",
 "Siphula decumbens","Nyl.","Siphula decumbens",
 "Siphula fastigiata","(Nyl.) Nyl.","Siphula fastigiata",
 "Siphula abscondita","H.Magn.","Siphula pickeringii",
@@ -10448,11 +10448,11 @@
 "Siphula pteruloides","Nyl.","Siphula pteruloides",
 "Siphula subulata","Krempelh.","Siphula subulata",
 "Thamnolia papelillo","R.Sant.","Thamnolia papelillo",
-"Thamnolia subuliformis","(Ehrh.) W.L.Culb.","Thamnolia subuliformis","Thamnolia subuliformis"
+"Thamnolia subuliformis","(Ehrh.) W.L.Culb.","Thamnolia subuliformis",
 "Thamnolia vermicularis var. subuliformis","(Ehrh.) Schaer.","Thamnolia subuliformis",
 "Thamnolia taurica","(Wulfen) A.Massal.","Thamnolia taurica",
-"Thamnolia subvermicularis","Asahina","Thamnolia vermicularis","Thamnolia subuliformis"
-"Thamnolia vermicularis","(Sw.) Schaer.","Thamnolia vermicularis","Thamnolia vermicularis"
+"Thamnolia subvermicularis","Asahina","Thamnolia vermicularis",
+"Thamnolia vermicularis","(Sw.) Schaer.","Thamnolia vermicularis",
 "Thamnolia vermicularis var. vermicularis","","Thamnolia vermicularis",
 "Aspicilia albomarginata","","Aspicilia albomarginata","Aspicilia albomarginata"
 "Aspicilia albonota","McCune & J.Di Meglio","Aspicilia albonota",
@@ -10741,7 +10741,7 @@
 "Pertusaria ventosa","Malme","Lepra ventosa","Pertusaria ventosa"
 "Lepra waghornei","(Hulting) Lendemer & R.C.Harris","Lepra waghornei",
 "Pertusaria waghornei","Hulting","Lepra waghornei","Pertusaria waghornei"
-"Loxosporopsis corallifera","Brodo, Henssen & Imshaug","Loxosporopsis corallifera","Loxosporopsis corallifera"
+"Loxosporopsis corallifera","Brodo, Henssen & Imshaug","Loxosporopsis corallifera",
 "Pertusaria aceroae","Hern.-Padr., Etayo, Pérez-Vargas & Elix","Pertusaria aceroae",
 "Pertusaria alaskensis","Erichsen","Pertusaria alaskensis","Pertusaria alaskensis"
 "Pertusaria alpina","Hepp","Pertusaria alpina","Pertusaria alpina"
@@ -20291,28 +20291,28 @@
 "Ephemerum subaequinoctale","Broth.","Micromitrium lacustre",
 "Micromitrium lacustre","(Müll.Hal.) Crosby","Micromitrium lacustre",
 "Nanomitrium subaequinoctale","(Broth.) G.Roth","Micromitrium lacustre",
-"Ephemerum megalosporum","(Austin) E.S.Salmon","Micromitrium megalosporum",
-"Micromitrium megalosporum","Austin","Micromitrium megalosporum",
-"Nanomitrium megalosporum","(Austin) E.Britton","Micromitrium megalosporum",
+"Ephemerum megalosporum","(Austin) E.S.Salmon","Micromitrium megalosporum","Micromitrium megalosporum"
+"Micromitrium megalosporum","Austin","Micromitrium megalosporum","Micromitrium megalosporum"
+"Nanomitrium megalosporum","(Austin) E.Britton","Micromitrium megalosporum","Micromitrium megalosporum"
 "Ephemerum perexiguum","Müll.Hal.","Micromitrium perexiguum",
 "Micromitrium perexiguum","(Müll.Hal.) Crosby","Micromitrium perexiguum",
 "Nanomitrium perexiguum","(Müll.Hal.) Broth.","Micromitrium perexiguum",
 "Ephemerum synoicum","James","Micromitrium synoicum",
-"Micromitrium synoicum","(James) Austin","Micromitrium synoicum",
-"Nanomitrium synoicum","(James) Lindb.","Micromitrium synoicum",
+"Micromitrium synoicum","(James) Austin","Micromitrium synoicum","Micromitrium synoicum"
+"Nanomitrium synoicum","(James) Lindb.","Micromitrium synoicum","Micromitrium synoicum"
 "Ephemerum grandifolium","Müll.Hal.","Micromitrium tenerum",
 "Ephemerum tenerum","(Bruch & Schimp.) Hampe ex Müll.Hal.","Micromitrium tenerum",
-"Micromitrium austinii","Sull.","Micromitrium tenerum",
-"Micromitrium tenerum","(Bruch & Schimp.) Crosby","Micromitrium tenerum",
-"Nanomitrium austinii","(Sull.) Lindb.","Micromitrium tenerum",
-"Nanomitrium austinii var. floridanum","Grout","Micromitrium tenerum",
+"Micromitrium austinii","Sull.","Micromitrium tenerum","Micromitrium austinii"
+"Micromitrium tenerum","(Bruch & Schimp.) Crosby","Micromitrium tenerum","Micromitrium tenerum"
+"Nanomitrium austinii","(Sull.) Lindb.","Micromitrium tenerum","Micromitrium austinii"
+"Nanomitrium austinii var. floridanum","Grout","Micromitrium tenerum","Micromitrium austinii"
 "Nanomitrium grandifolium","(Müll.Hal.) Broth.","Micromitrium tenerum",
-"Nanomitrium tenerum","(Bruch & Schimp.) Lindb.","Micromitrium tenerum",
+"Nanomitrium tenerum","(Bruch & Schimp.) Lindb.","Micromitrium tenerum","Micromitrium tenerum"
 "Micromitrium tenerum var. longifolium","(Limpr.) Crosby","Micromitrium tenerum var. longifolium",
 "Nanomitrium tenerum var. longifolium","Limpr.","Micromitrium tenerum var. longifolium",
 "Micromitrium thelephorothecum","(Florsch.) Crosby","Micromitrium thelephorothecum",
-"Micromitrium wrightii","(Müll.Hal.) Crosby","Micromitrium wrightii",
-"Nanomitrium wrightii","(Müll.Hal.) V.S.Bryan & L.E.Anderson","Micromitrium wrightii",
+"Micromitrium wrightii","(Müll.Hal.) Crosby","Micromitrium wrightii","Micromitrium wrightii"
+"Nanomitrium wrightii","(Müll.Hal.) V.S.Bryan & L.E.Anderson","Micromitrium wrightii","Micromitrium wrightii"
 "Octoblepharum africanum","(Broth.) Cardot","Octoblepharum africanum",
 "Octoblepharum albidum","Hedw.","Octoblepharum albidum","Octoblepharum albidum"
 "Octoblepharum albidum var. violascens","Müll.Hal.","Octoblepharum albidum",
@@ -22771,7 +22771,7 @@
 "Lepidopilum caudatum","Müll.Hal.","Lepidopilum polytrichoides",
 "Lepidopilum flexifolium","Mitt.","Lepidopilum polytrichoides",
 "Lepidopilum platyphyllum","Renauld & Cardot","Lepidopilum polytrichoides",
-"Lepidopilum polytrichoides","(Hedw.) Brid.","Lepidopilum polytrichoides",
+"Lepidopilum polytrichoides","(Hedw.) Brid.","Lepidopilum polytrichoides","Lepidopilum polytrichoides"
 "Lepidopilum polytrichoides var. costaricense","Renauld & Cardot","Lepidopilum polytrichoides",
 "Lepidopilum subpolytrichoides","Müll.Hal.","Lepidopilum polytrichoides",
 "Lepidopilum rupestre","Broth.","Lepidopilum rupestre",
@@ -23027,14 +23027,14 @@
 "Callicostella aquatica","E.B.Bartram","Callicostella pallida",
 "Callicostella aspera","(Mitt.) A.Jaeger","Callicostella pallida",
 "Callicostella cruceana","(Duby) A.Jaeger","Callicostella pallida",
-"Callicostella pallida","(Hornsch.) Ångstr.","Callicostella pallida",
+"Callicostella pallida","(Hornsch.) Ångstr.","Callicostella pallida","Callicostella pallida"
 "Callicostella radicans","(Besch.) A.Jaeger","Callicostella pallida",
-"Callicostella scabriseta","(Hook.) A.Jaeger","Callicostella pallida",
+"Callicostella scabriseta","(Hook.) A.Jaeger","Callicostella pallida","Callicostella pallida"
 "Hookeria aspera","Mitt.","Callicostella pallida",
 "Hookeria crenata","Mitt.","Callicostella pallida",
-"Hookeria pallida","Hornsch.","Callicostella pallida",
+"Hookeria pallida","Hornsch.","Callicostella pallida","Callicostella pallida"
 "Hookeria scabriseta","Hook.","Callicostella pallida",
-"Schizomitrium pallidum","(Hornsch.) H.A.Crum & L.E.Anderson","Callicostella pallida",
+"Schizomitrium pallidum","(Hornsch.) H.A.Crum & L.E.Anderson","Callicostella pallida","Callicostella pallida"
 "Schizomitrium radicans","(Besch.) H.A.Crum","Callicostella pallida",
 "Callicostella andamana","Müll.Hal.","Callicostella papillata",
 "Callicostella oblongifolia","(Sull.) A.Jaeger","Callicostella papillata",
@@ -23332,9 +23332,9 @@
 "Hookeriopsis velutina","(Hampe) A.Jaeger","Trachyxiphium guadalupense",
 "Hookeriopsis versicolor","(Schimp. ex Besch.) A.Jaeger","Trachyxiphium guadalupense",
 "Trachyxiphium guadalupense","(Brid.) W.R.Buck","Trachyxiphium guadalupense",
-"Hookeriopsis heteroica","Cardot","Trachyxiphium hypnaceum",
+"Hookeriopsis heteroica","Cardot","Trachyxiphium hypnaceum","Trachyxiphium heteroicum"
 "Hookeriopsis hypnacea","(Müll.Hal.) A.Jaeger","Trachyxiphium hypnaceum",
-"Trachyxiphium heteroicum","(Cardot) W.R.Buck","Trachyxiphium hypnaceum",
+"Trachyxiphium heteroicum","(Cardot) W.R.Buck","Trachyxiphium hypnaceum","Trachyxiphium heteroicum"
 "Trachyxiphium hypnaceum","(Müll.Hal.) W.R.Buck","Trachyxiphium hypnaceum",
 "Hookeria repens","Hook. & Grev.","Trachyxiphium repens",
 "Trachyxiphium repens","(Hook. & Grev.) B.H.Allen","Trachyxiphium repens",
@@ -23569,7 +23569,7 @@
 "Cyclodictyon validirugosum","B.H.Allen","Cyclodictyon validirugosum",
 "Cyclodictyon vallis-gratiae","(Hampe ex Müll.Hal.) Kuntze","Cyclodictyon vallis-gratiae",
 "Cyclodictyon cubense","R.S.Williams","Cyclodictyon varians",
-"Cyclodictyon varians","(Sull.) Kuntze","Cyclodictyon varians",
+"Cyclodictyon varians","(Sull.) Kuntze","Cyclodictyon varians","Cyclodictyon varians"
 "Hookeria antillarum","Mitt.","Cyclodictyon varians",
 "Hookeria pallens","Mitt.","Cyclodictyon varians",
 "Hookeria varians","Sull.","Cyclodictyon varians",
@@ -27401,13 +27401,13 @@
 "Stereodon reptilis","(Michx.) Mitt.","Jochenia pallescens",
 "Hypnum pallescens var. protuberans","(Brid.) Austin","Jochenia protuberans","Hypnum pallescens var. protuberans"
 "Jochenia protuberans","(Brid.) Jan Kučera & Ignatov","Jochenia protuberans",
-"Bestia holzingeri","(Renauld & Cardot) Broth.","Bryolawtonia vancouveriensis",
-"Bestia occidentalis","(Kindb.) Grout","Bryolawtonia vancouveriensis",
-"Bestia vancouveriensis","(Kindb.) Wijk & Margad.","Bryolawtonia vancouveriensis",
-"Bryolawtonia vancouveriensis","(Kindb.) D.H.Norris & Enroth","Bryolawtonia vancouveriensis",
+"Bestia holzingeri","(Renauld & Cardot) Broth.","Bryolawtonia vancouveriensis","Porotrichum vancouveriense"
+"Bestia occidentalis","(Kindb.) Grout","Bryolawtonia vancouveriensis","Porotrichum vancouveriense"
+"Bestia vancouveriensis","(Kindb.) Wijk & Margad.","Bryolawtonia vancouveriensis","Porotrichum vancouveriense"
+"Bryolawtonia vancouveriensis","(Kindb.) D.H.Norris & Enroth","Bryolawtonia vancouveriensis","Porotrichum vancouveriense"
 "Heterocladium vancouveriense","(Kindb.) Kindb.","Bryolawtonia vancouveriensis",
 "Hypnum occidentale","Sull. & Lesq.","Bryolawtonia vancouveriensis",
-"Porotrichum vancouveriense","(Kindb.) H.A.Crum","Bryolawtonia vancouveriensis",
+"Porotrichum vancouveriense","(Kindb.) H.A.Crum","Bryolawtonia vancouveriensis","Porotrichum vancouveriense"
 "Thuidium vancouveriense","Kindb.","Bryolawtonia vancouveriensis",
 "Camptochaete angustata","(Mitt.) Reichardt","Camptochaete angustata",
 "Camptochaete arbuscula","(Sm.) Reichardt","Camptochaete arbuscula",
@@ -28680,9 +28680,9 @@
 "Thamnium siamense","Horik. & Ando","Curvicladium kurzii",
 "Dannorrisia bigelovii","(Sull.) Enroth","Dannorrisia bigelovii",
 "Hypnum bigelovii","Sull.","Dannorrisia bigelovii",
-"Porothamnium bigelovii","(Sull.) M.Fleisch.","Dannorrisia bigelovii",
-"Porotrichum bigelovii","(Sull.) Kindb.","Dannorrisia bigelovii",
-"Thamnium bigelovii","(Sull.) A.Jaeger","Dannorrisia bigelovii",
+"Porothamnium bigelovii","(Sull.) M.Fleisch.","Dannorrisia bigelovii","Porotrichum bigelovii"
+"Porotrichum bigelovii","(Sull.) Kindb.","Dannorrisia bigelovii","Porotrichum bigelovii"
+"Thamnium bigelovii","(Sull.) A.Jaeger","Dannorrisia bigelovii","Porotrichum bigelovii"
 "Echinodiopsis hispida","(Hook.f. & Wilson) S.Olsson, Enroth & D.Quandt","Echinodiopsis hispida",
 "Echinodium falcatulum","Broth. & Paris","Echinodiopsis hispida",
 "Hypnum hispidum","Hook.f. & Wilson","Echinodiopsis hispida",
@@ -29131,12 +29131,12 @@
 "Thamnobryum microalopecurum","(Kindb.) Nieuwl.","Thamnobryum microalopecurum",
 "Hypnum leibergii","E.Britton","Thamnobryum neckeroides",
 "Isothecium neckeroides","(Hook.) Brid.","Thamnobryum neckeroides",
-"Porotrichum neckeroides","(Hook.) R.S.Williams","Thamnobryum neckeroides",
+"Porotrichum neckeroides","(Hook.) R.S.Williams","Thamnobryum neckeroides","Thamnobryum neckeroides"
 "Thamnium laevinerve","Broth.","Thamnobryum neckeroides",
 "Thamnium leibergii","(E.Britton) Renauld & Cardot","Thamnobryum neckeroides",
 "Thamnium neckeroides","(Hook.) A.Jaeger","Thamnobryum neckeroides",
-"Thamnobryum leibergii","(E.Britton) Renauld & Cardot","Thamnobryum neckeroides",
-"Thamnobryum neckeroides","(Hook.) E.Lawton","Thamnobryum neckeroides",
+"Thamnobryum leibergii","(E.Britton) Renauld & Cardot","Thamnobryum neckeroides","Thamnobryum neckeroides"
+"Thamnobryum neckeroides","(Hook.) E.Lawton","Thamnobryum neckeroides","Thamnobryum neckeroides"
 "Thamnobryum parvulum","(Mitt.) R.S.Chopra","Thamnobryum parvulum",
 "Thamnobryum pendulirameum","(Müll.Hal.) S.He","Thamnobryum pendulirameum",
 "Thamnobryum planifrons","(Broth. & M.Yasuda) Nog. & Z.Iwats.","Thamnobryum planifrons",
@@ -29158,8 +29158,8 @@
 "Thamnobryum subseriatum","(Mitt. ex Sande Lac.) B.C.Tan","Thamnobryum subseriatum",
 "Hypnum alleghaniense","Müll.Hal.","Thamnobryum subserratum",
 "Porotrichum alleghaniense","(Müll.Hal.) Grout","Thamnobryum subserratum",
-"Thamnium alleghaniense","(Müll.Hal.) A.Jaeger","Thamnobryum subserratum",
-"Thamnobryum alleghaniense","(Müll.Hal.) Nieuwl.","Thamnobryum subserratum",
+"Thamnium alleghaniense","(Müll.Hal.) A.Jaeger","Thamnobryum subserratum","Thamnobryum alleghaniense"
+"Thamnobryum alleghaniense","(Müll.Hal.) Nieuwl.","Thamnobryum subserratum","Thamnobryum alleghaniense"
 "Thamnobryum subserratum","(Hook. ex Harv.) Nog. & Z.Iwats.","Thamnobryum subserratum",
 "Thamnobryum tumidum","(Nog.) Nog. & Z.Iwats.","Thamnobryum tumidum",
 "Homalia defoliata","(Müll.Hal.) A.Jaeger","Thamnomalia glabella",
@@ -29523,8 +29523,8 @@
 "Isopterygium homomallifolium","Redf.","Redfearnia homomallifolia","Pseudotaxiphyllum homomallifolium"
 "Redfearnia homomallifolia","(Redf.) J.T.Wynns","Redfearnia homomallifolia",
 "Climacium ruthenicum","(Weinm.) Lindb.","Pleuroziopsis ruthenica",
-"Girgensohnia ruthenica","(Weinm.) Kindb.","Pleuroziopsis ruthenica",
-"Pleuroziopsis ruthenica","(Weinm.) Kindb. ex E.Britton","Pleuroziopsis ruthenica",
+"Girgensohnia ruthenica","(Weinm.) Kindb.","Pleuroziopsis ruthenica","Pleuroziopsis ruthenica"
+"Pleuroziopsis ruthenica","(Weinm.) Kindb. ex E.Britton","Pleuroziopsis ruthenica","Pleuroziopsis ruthenica"
 "Lescuraea arizonae","(R.S.Williams) P.S.Wilson & D.H.Norris","Lescuraea arizonae","Lescuraea arizonae"
 "Pseudoleskea arizonae","R.S.Williams","Lescuraea arizonae","Lescuraea arizonae"
 "Pseudoleskeella arizonae","(R.S.Williams) E.Lawton","Lescuraea arizonae","Lescuraea arizonae"
@@ -35472,11 +35472,11 @@
 "Ephemerum argentinicum","Schiavone & Sarmiento","Ephemerum argentinicum",
 "Ephemerum asiaticum","Paris & Broth.","Ephemerum asiaticum",
 "Ephemerum capense","Müll.Hal.","Ephemerum capense",
-"Ephemerum cohaerens","(Hedw.) Hampe","Ephemerum cohaerens",
+"Ephemerum cohaerens","(Hedw.) Hampe","Ephemerum cohaerens","Ephemerum cohaerens"
 "Phascum cohaerens","Hedw.","Ephemerum cohaerens",
 "Ephemerum conicum","Müll.Hal.","Ephemerum conicum",
-"Ephemerum crassinervium","(Schwägr.) Hampe","Ephemerum crassinervium",
-"Ephemerum crassinervium var. papillosum","(Austin) Renauld & Cardot","Ephemerum crassinervium",
+"Ephemerum crassinervium","(Schwägr.) Hampe","Ephemerum crassinervium","Ephemerum crassinervium"
+"Ephemerum crassinervium var. papillosum","(Austin) Renauld & Cardot","Ephemerum crassinervium","Ephemerum crassinervium var. crassinervium"
 "Ephemerum papillosum","Austin","Ephemerum crassinervium",
 "Ephemerum stenophyllum","(Voit) Schimp.","Ephemerum crassinervium",
 "Phascum crassinervium","Schwägr.","Ephemerum crassinervium",
@@ -35484,8 +35484,8 @@
 "Ephemerum rutheanum","Schimp.","Ephemerum crassinervium ssp. rutheanum",
 "Ephemerum crassinervium ssp. sessile","(Bruch) Holyoak","Ephemerum crassinervium ssp. sessile",
 "Ephemerum sessile","(Bruch) Müll.Hal.","Ephemerum crassinervium ssp. sessile",
-"Ephemerum crassinervium var. crassinervium","","Ephemerum crassinervium var. crassinervium",
-"Ephemerum crassinervium var. texanum","(Grout) V.S.Bryan & L.E.Anderson","Ephemerum crassinervium var. texanum",
+"Ephemerum crassinervium var. crassinervium","","Ephemerum crassinervium var. crassinervium","Ephemerum crassinervium var. crassinervium"
+"Ephemerum crassinervium var. texanum","(Grout) V.S.Bryan & L.E.Anderson","Ephemerum crassinervium var. texanum","Ephemerum crassinervium var. texanum"
 "Ephemerum cristatum","(Hook. & Wilson) Müll.Hal.","Ephemerum cristatum",
 "Ephemerum diversifolium","Mitt.","Ephemerum diversifolium",
 "Ephemerum fimbriatum","Müll.Hal.","Ephemerum fimbriatum",
@@ -35503,12 +35503,12 @@
 "Phascum recurvifolium","Dicks.","Ephemerum recurvifolium",
 "Ephemerum rehmannii","(Müll.Hal.) Broth.","Ephemerum rehmannii",
 "Ephemerum intermedium","Mitt.","Ephemerum serratum",
-"Ephemerum minutissimum","Lindb.","Ephemerum serratum",
-"Ephemerum serratum","(Schreb. ex Hedw.) Hampe","Ephemerum serratum",
+"Ephemerum minutissimum","Lindb.","Ephemerum serratum","Ephemerum serratum"
+"Ephemerum serratum","(Schreb. ex Hedw.) Hampe","Ephemerum serratum","Ephemerum serratum"
 "Ephemerum serratum var. angustifolium","(Bruch & Schimp.) Bruch & Schimp.","Ephemerum serratum",
-"Ephemerum serratum var. minutissimum","(Lindb.) Grout","Ephemerum serratum",
+"Ephemerum serratum var. minutissimum","(Lindb.) Grout","Ephemerum serratum","Ephemerum serratum"
 "Phascum serratum","Schreb. ex Hedw.","Ephemerum serratum",
-"Ephemerum spinulosum","Bruch & Schimp.","Ephemerum spinulosum",
+"Ephemerum spinulosum","Bruch & Schimp.","Ephemerum spinulosum","Ephemerum spinulosum"
 "Ephemerum serratum ssp. serratum","","Ephemerum stoloniferum",
 "Ephemerum stellatum","H.Philib.","Ephemerum stoloniferum",
 "Ephemerum stoloniferum","(Dicks. ex Hedw.) L.T.Ellis & M.J.Price","Ephemerum stoloniferum",
@@ -36554,7 +36554,7 @@
 "Splachnobryum subjulaceum","Cardot","Splachnobryum gracile",
 "Splachnobryum limbatum","D.H.Norris & R.H.Zander","Splachnobryum limbatum",
 "Splachnobryum novae-guineae","Broth.","Splachnobryum novae-guineae",
-"Splachnobryum bernoullii","Müll.Hal.","Splachnobryum obtusum",
+"Splachnobryum bernoullii","Müll.Hal.","Splachnobryum obtusum","Splachnobryum obtusum"
 "Splachnobryum boivinii","Müll.Hal.","Splachnobryum obtusum",
 "Splachnobryum corbierei","Renauld & Cardot","Splachnobryum obtusum",
 "Splachnobryum crenulatulum","Cardot","Splachnobryum obtusum",
@@ -36563,7 +36563,7 @@
 "Splachnobryum indicum","Hampe & Müll.Hal.","Splachnobryum obtusum",
 "Splachnobryum ligulifolium","Cardot","Splachnobryum obtusum",
 "Splachnobryum luzonense","Broth.","Splachnobryum obtusum",
-"Splachnobryum obtusum","(Brid.) Müll.Hal.","Splachnobryum obtusum",
+"Splachnobryum obtusum","(Brid.) Müll.Hal.","Splachnobryum obtusum","Splachnobryum obtusum"
 "Splachnobryum spruceanum","Müll.Hal.","Splachnobryum obtusum",
 "Splachnobryum suborbifolium","Paris & Broth.","Splachnobryum obtusum",
 "Splachnobryum wrightii","Müll.Hal.","Splachnobryum obtusum",
@@ -44680,7 +44680,7 @@
 "Lophozia rutheana","(Limpr.) M.Howe","Mesoptychia rutheana","Lophozia rutheana"
 "Lophozia schultzii","Schiffn.","Mesoptychia rutheana",
 "Mesoptychia rutheana","(Limpr.) L.Söderstr. & Váňa","Mesoptychia rutheana",
-"Mesoptychia sahlbergii","(Lindb. & Arnell) A.Evans","Mesoptychia sahlbergii",
+"Mesoptychia sahlbergii","(Lindb. & Arnell) A.Evans","Mesoptychia sahlbergii","Mesoptychia sahlbergii"
 "Lophozia dubia","Schiffn.","Mesoptychia subcrispa",
 "Mesoptychia subcrispa","(Herzog) L.Söderstr. & Váňa","Mesoptychia subcrispa",
 "Jungermannia algeriensis","Gottsche & Rabenh.","Mesoptychia turbinata",
@@ -59123,6 +59123,8 @@
 "Aphanolejeunea diaphana var. diaphana","(A. Evans) R.M. Schust.",,"Aphanolejeunea diaphana var. diaphana"
 "Aphanolejeunea tuberculata","(A. Evans) R.M. Schust.",,"Aphanolejeunea tuberculata"
 "Aplodon wormskjoldii","(Hornem.) Kindb.",,"Aplodon wormskjoldii"
+"Arbuscula alleghaniensis","(Müll. Hal.) H.A. Crum, Steere & L.E. Anderson",,"Thamnobryum alleghaniense"
+"Arbuscula leibergii","(E. Britton) H.A. Crum, Steere & L.E. Anderson",,"Thamnobryum neckeroides"
 "Archidium floridanum","Austin ex Cain",,"Archidium ohioense"
 "Arctoparmelia aleuritica","(Nyl.) Hale",,"Arctoparmelia centrifuga"
 "Arctopeltis thuleana","Poelt",,"Arctopeltis thuleana"
@@ -59157,13 +59159,6 @@
 "Arthopyrenia quinqueseptata","(Nyl.) Müll. Arg.",,"Polymeridium quinqueseptatum"
 "Arthopyrenia sanfordensis","Zahlbr.",,"Anisomeridium excaecariae"
 "Arthopyrenia sphaeroides","(Wallr.) Zahlbr.",,"Acrocordia gemmata"
-"Arthothelium albovirescens","(Nyl.) Fink",,"Arthothelium albovirescens"
-"Arthothelium gregarium","(Willey) Zahlbr.",,"Arthothelium gregarium"
-"Arthothelium hallii","(Tuck.) Zahlbr.",,"Arthothelium hallii"
-"Arthothelium ruanideum","(Nyl.) Arnold",,"Arthothelium ruanun"
-"Arthothelium ruanun","(A. Massal.) Körb.",,"Arthothelium ruanun"
-"Arthothelium subcyrtodes","(Willey) Hasse",,"Arthothelium subcyrtodes"
-"Arthothelium violascens","(Nyl.) Zahlbr.",,"Arthothelium violascens"
 "Aspicilia albopruinosa","(Looman) ?, ined.?",,"Aspicilia albopruinosa"
 "Aspicilia concinna","(J.W. Thomson) J.W. Thomson",,"Aspicilia concinna"
 "Aspicilia excavata","Thor & Timdal",,"Aspicilia moenium"
@@ -59741,6 +59736,10 @@
 "Entosthodon polaris","(Bryhn) Fife",,"Funaria polaris"
 "Entosthodon tucsonii","(E.B. Bartram) Grout",,"Entosthodon tucsonii"
 "Ephebeia hispidula","(Ach.) Nyl.",,"Ephebe hispidula"
+"Ephemerum cohaerens var. flotowianum","(Funck) Hampe",,"Ephemerum cohaerens"
+"Ephemerum spinulosum var. hystrix","(Lindb.) Grout",,"Ephemerum spinulosum"
+"Ephemerum spinulosum var. texanum","Grout",,"Ephemerum crassinervium var. texanum"
+"Ephemerum wrightii","Müll. Hal.",,"Micromitrium wrightii"
 "Erioderma boreale","Ahlner",,"Erioderma pedicellatum"
 "Erythrobarbula recurvirostris","(Hedw.) Steere",,"Bryoerythrophyllum recurvirostre"
 "Eurhynchium fallax var. taylorae","(R.S. Williams) Grout",,"Eurhynchium pulchellum var. barnesii"
@@ -59966,14 +59965,9 @@
 "Lahmia fueistingii","Körb.",,"Arthrorhaphis grisea"
 "Lauderlindsaya borreri","(Leight.) R. Sant.",,"Lauderlindsaya borreri"
 "Lecanactis akompsa","(Tuck.) ?, ined.?",,"Lecanactis akompsa"
-"Lecanactis amylacea","(Ehrh. ex Pers.) Arnold",,"Lecanographa amylacea"
-"Lecanactis grumulosa","(Dufour) Fr.",,"Lecanographa grumulosa"
-"Lecanactis illicebrosa","(Dufour) Fr.",,"Lecanographa amylacea"
-"Lecanactis nashii","Egea & Torrente",,"Lecanographa hypothallina"
 "Lecanactis patellarioides","(Nyl.) Vain.",,"Bactrospora patellarioides"
 "Lecanactis ravenelii","(Tuck.) R.C. Harris",,"Opegrapha ravenelii"
 "Lecanactis subattigens","(Nyl.) R.C. Harris",,"Lecanactis subattigens"
-"Lecanactis subdryophila","Follmann & Vezda",,"Lecanographa subdryophila"
 "Lecania albariella","(Nyl.) Müll. Arg.",,"Lecania turicensis"
 "Lecania alpivaga","Th. Fr.",,"Halecania alpivaga"
 "Lecania arctica","Lynge",,"Caloplaca diphyodes"
@@ -60271,7 +60265,6 @@
 "Lepraria crassissima var. isidiata","Llimona",,"Lepraria crassissima var. isidiata"
 "Lepraria flava","(Schaerer) Sm.",,"Chrysothrix candelaris"
 "Lepraria frigida","J.R. Laundon",,"Lepraria frigida"
-"Leprocaulon arbuscula","(Nyl.) Nyl.",,"Leprocaulon arbuscula"
 "Leproloma angardianum","(Ovstedal) J.R. Laundon",,"Lepraria cacuminum"
 "Leproloma cacuminum","(A. Massal.) J.R. Laundon",,"Lepraria cacuminum"
 "Leproloma diffusum var. chrysodetoides","J.R. Laundon",,"Leproloma diffusum var. chrysodetoides"
@@ -60371,7 +60364,6 @@
 "Metzgeria leptoneura var. polychaeta","R.M. Schust.",,"Metzgeria leptoneura var. polychaeta"
 "Micarea bauschiana","(Körb.) V. Wirth & Vezda",,"Micarea bauschiana"
 "Micarea chlorostictica","(Tuck.) R.C. Harris",,"Micarea chlorostictica"
-"Micarea clavopycnidiata","Brodo & Tønsberg",,"Szczawinskia tsugae"
 "Micarea lutulata","(Nyl.) Coppins",,"Micarea lutulata"
 "Micarea populina","(Müll. Arg. ex Nyl.) R. Anderson & M.P. Carmer",,"Lecidea populina"
 "Micarea subviolescens","(H. Magn.) Coppins",,"Micarea subviolescens"
@@ -60384,6 +60376,7 @@
 "Microglaena sphinctrinoides","(Nyl.) Lonnr.",,"Protothelenella sphinctrinoides"
 "Microglaena subcorallina","Hasse",,"Thelenella modesta"
 "Microglaena sychnogonoides","Zahlbr.",,"Thelenella hassei"
+"Micromitrium austinii var. floridanum","(Grout) Crosby",,"Micromitrium austinii"
 "Mielichhoferia macrocarpa var. pungens","E.B. Bartram",,"Mielichhoferia macrocarpa"
 "Mielichhoferia mielichhoferiana var. mielichhoferiana","(Funck) Loeske",,"Mielichhoferia mielichhoferiana var. mielichhoferiana"
 "Miriquidica griseoatra","(Flotow) Hertel & Rambold",,"Miriquidica griseoatra"
@@ -60463,9 +60456,7 @@
 "Omphalodiscus crustulosus","(Ach.) Schol.",,"Umbilicaria crustulosa"
 "Oncophorus virens var. nigrescens","R.S. Williams",,"Oncophorus virens"
 "Opegrapha aurantiaca","de Lesd.",,"Opegrapha aurantiaca"
-"Opegrapha diaphoroides","Nyl.",,"Lecanographa grumulosa"
 "Opegrapha glaucomaria","(Nyl.) Kallsten",,"Opegrapha glaucomaria"
-"Opegrapha hypothallina","(Zahlbr.) Tehler",,"Lecanographa hypothallina"
 "Opegrapha lamyi","(O.J. Rich. ex Nyl.) Triebel",,"Opegrapha lamyi"
 "Opegrapha lithryga","Ach.",,"Opegrapha lithryga"
 "Opegrapha sorediifera","P. James",,"Opegrapha sorediifera"
@@ -60701,7 +60692,6 @@
 "Philonotis longiseta var. porteri","(Austin) Flow.",,"Philonotis longiseta"
 "Philonotis longiseta var. propagulaecaulis","Flow.",,"Philonotis longiseta"
 "Philonotis wilsonii","(Bruch & Schimp.) Griffin & W.R. Buck",,"Bartramidula wilsonii"
-"Phragmonaevia fuckelii","Rehm",,"Corticifraga fuckelii"
 "Phyllopsora buettneri var. glauca","(de Lesd.) Brako",,"Phyllopsora buettneri var. glauca"
 "Phyllopsora halei","(Tuck.) Zahlbr.",,"Phyllopsora halei"
 "Phyllopsora subcorallina","Zahlbr.",,"Catinaria subcorallina"
@@ -60756,7 +60746,6 @@
 "Plagiothecium micans var. minus","Grout",,"Isopterygium tenerum"
 "Plagiothecium sylvaticum var. roeseanum","(Schimp.) Lindb.",,"Plagiothecium cavifolium"
 "Platydictya jungermannioides var. minutissima","(Sull. & Lesq.) H.A. Crum",,"Platydictya minutissima"
-"Platygrapha hypothallina","Zahlbr.",,"Lecanographa hypothallina"
 "Platygrapha ravenelii","Tuck.",,"Opegrapha ravenelii"
 "Platygyrium orthoclados","Kindb.",,"Platygyrium repens"
 "Platygyrium repens var. ascendens","(Schwägr.) Grout",,"Platygyrium repens"
@@ -60862,7 +60851,6 @@
 "Pylaisia polyantha var. pseudoplatygyria","(Kindb.) Grout",,"Pylaisiella polyantha"
 "Pylaisiella steerei","Ando & Higuchi",,"Pylaisiella steerei"
 "Pyrenastrum pyrenastraeum","(Nyl.) Zahlbr.",,"Pyrenula septicollaris"
-"Pyrenidium hyalosporum","Alstrup,D. Hawksw. & R. Sant.",,"Pyrenidium hyalosporum"
 "Pyrenidium octosporum","Looman",,"Chromatochlamys muscorum var. octospora"
 "Pyrenodesmia albovariegata","de Lesd.",,"Caloplaca albovariegata"
 "Pyrenodesmia elaeodes","E.D. Rudolph",,"Caloplaca pelodella"
@@ -61024,7 +61012,6 @@
 "Scorpidium latifolium","(Lindb. & Arnell) Paul",,"Drepanocladus brevifolius"
 "Scorpidium trifarium","(F. Weber & D. Mohr) Paul",,"Calliergon trifarium"
 "Secoligia geoica","(Wahlenb. ex Ach.) Körb.",,"Gyalecta geoica"
-"Siphula simplex","(Taylor) Nyl.",,"Siphula ceratites"
 "Solenospora candicans","(Dicks.) J. Steiner",,"Solenospora candicans"
 "Solenospora crenata","(Herre) Zahlbr.",,"Solenospora crenata"
 "Solenospora hassei","(Zahlbr.) Zahlbr.",,"Lecania hassei"
@@ -61057,13 +61044,8 @@
 "Staurothele tenuissima","Degel.",,"Staurothele tenuissima"
 "Stellariomnium blyttii","(Bruch & Schimp.) M.C. Bowers",,"Mnium blyttii"
 "Stellariomnium stellare","(Hedw.) M.C. Bowers",,"Mnium stellare"
-"Stereocaulon arbuscula","Nyl.",,"Leprocaulon arbuscula"
 "Stereocaulon evoutoides","(H. Magn.) Frey",,"Stereocaulon saxatile"
-"Stereocaulon microscopicum","(Vill.) Frey",,"Leprocaulon microscopicum"
-"Stereocaulon pseudoarbuscula","Asah.",,"Leprocaulon subalbicans"
-"Stereocaulon quisquilare","(Leers) Hoffm.",,"Leprocaulon microscopicum"
 "Stereocaulon sasakii var. simplex","(Riddle) Lamb",,"Stereocaulon sasakii var. simplex"
-"Stereocaulon subalbicans","Lamb",,"Leprocaulon subalbicans"
 "Sticta erosa","(Eschw.) Tuck.",,"Lobaria ravenelii"
 "Sticta linita","Ach.",,"Lobaria linita"
 "Stirtonia alba","(Müll. Arg.) ?, ined.?",,"Stirtonia alba"
