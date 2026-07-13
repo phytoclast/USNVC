@@ -369,13 +369,13 @@ nvataxonomy <- subset(nvataxonomy, !genus %in% familylink$genus)
 
 
 usda <- read.csv('data/plantlst.txt')
-usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
+usda <- usda |> mutate(taxon = extractTaxon(Scientific.Name.with.Author), auth=extractTaxon(Scientific.Name.with.Author, 'author'),genus=extractTaxon(Scientific.Name.with.Author, 'genus'), acc=Symbol, syn=ifelse(Synonym.Symbol %in% '',Symbol,Synonym.Symbol))
 #weed out homonyms
 usda <- usda |> subset(!grepl('^non\\s|\\snon\\s|auct|sensu\\s',auth))
 
 #Narrow to only non-vasculars then create a core set of taxa to include
-missing.lichen.fams <- usda |> subset(grepl('lichen',Common.Name) & !Family %in% nvataxonomy$family, select=Family) |> unique()
-#write.csv(missing.lichen.fams, 'data/missing.lichen.fams2.csv', row.names = F)
+missing.lichen.fams <- usda |> subset((grepl('lichen|moss|liverwort',Common.Name)|genus %in% nva$genus) & !Family %in% nvataxonomy$family & !Family %in% apg$family, select=Family) |> unique()
+#write.csv(missing.lichen.fams, 'data/missing.lichen.fams3.csv', row.names = F)
 missing.lichen.fams <- read.csv('data/missing.lichen.fams.csv')
 #list of accepteds
 usda.backbone <- subset(usda, (Family %in% nvataxonomy$family | Family %in% missing.lichen.fams$Family) & grepl(' ', taxon), select=c("Common.Name","Family", "taxon","auth","acc"))
@@ -399,6 +399,7 @@ nva.new <-  usda.df |> subset(!taxon %in% nva$taxon)|> group_by(taxon) |> mutate
 
 
 
+
 #---combine nva with usda ---- 
 #nva taxa 
 nva1 <- data.frame(taxon = nva$taxon, auth = nva$auth, gbif = nva$actaxon) |> unique()#|> group_by(taxon) |> mutate(n=length(taxon)) |> ungroup()
@@ -407,8 +408,11 @@ nva1 <- nva1 |> left_join(nva1a)
 nva2 <- data.frame(taxon = nva.new$taxon, auth = nva.new$auth, gbif = NA, usda = nva.new$actaxon)
 nva1 <- nva1 |> rbind(nva2)
 
-
-
+nvaextra <- nva1 |> mutate(usda1=usda) |> subset(!is.na(usda) & !is.na(gbif), select=c(gbif, usda1)) |> unique()
+nvaextra <- nvaextra |> group_by(gbif) |> mutate(n=length(gbif)) |> ungroup()
+nva.fill <- nva1 |> left_join(nvaextra)
+nva.fill <- nva.fill |> mutate(usda=ifelse(is.na(usda), usda1,usda))|> select(-c(usda1)) |> unique()
+nva.fill <- nva.fill |> group_by(taxon, gbif, usda) |> mutate(n=length(taxon)) |> ungroup()
 #join with USNVC
 #USNVC association names
 ass <- read.csv('data/USNVC v3.0.3 2026-03-25/unit.csv')
